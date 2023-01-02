@@ -7,6 +7,8 @@ export const Container = styled.View`
 
 export const TextButton = styled.Text`
     color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
 `;
 
 export const AccountText = styled.Text`
@@ -45,27 +47,39 @@ export const Input = styled.TextInput`
     padding: 20px 10px;
     border: solid 1px #FFF;
     margin: 10px 0;
-    border-radius: 8px;
+    border-radius: 4px;
 `;
 
 export const ContainerInput = styled.View`
     flex: 1;
     width: 100%;
-    padding: 20% 10%;
+    padding: 20px 10%;
 `;
 
 export const ButtonInput = styled.TouchableOpacity`
-    background-color: #FBB03F;
-    border-radius: 9px;
+    background-color: #0C64BB;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+
+    border-radius: 4px;
     padding: 20px 0;
     justify-content: center;
     align-items: center;
 `;
 
-export const ButtonInputDisabled = styled.TouchableOpacity`
-    background-color: #FBB03F50;
-    border-radius: 9px;
-    padding: 20px 0;
+export const ButtonAccess = styled.TouchableOpacity`
+    align-self: center;
+`
+
+export const TextQuestAccess = styled.Text`
+    color: #BDBDBD;
+    text-align: center;
+    margin-top: 15px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    `
+`
+export const TextAccess = styled.Text`
+    color: #FFF;
+    font-weight: 600;
+    margin-left: 7px;
+`

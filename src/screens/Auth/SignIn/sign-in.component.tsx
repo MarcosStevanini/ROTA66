@@ -1,5 +1,9 @@
 import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
+
+import { AntDesign } from '@expo/vector-icons';
+import { SvgUri } from 'react-native-svg';
 
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../../services/firebaseConfig';
@@ -26,33 +30,58 @@ const SignIn: React.FC<T.SignInProps> = () => {
   }
 
   return (
-    <S.Container>
-      <S.Image source={require('../../../assets/logo.png')} resizeMode="cover" />
+    <LinearGradient
+      colors={['#065099', '#065099', '#010A14']}
+      style={{
+        flex: 1,
+        paddingTop: 70,
+      }}
+    >
+      <S.Container>
+        <S.Image source={require('../../../assets/logo-white.png')} resizeMode="contain" />
 
-      <S.ContainerInput>
-        <S.Input
-          keyboardType='email-address'
-          placeholder='E-mail'
-          placeholderTextColor='#fff'
-          value={email}
-          onChangeText={e => setEmail(e)}
-        />
-        <S.Input
-          secureTextEntry={true}
-          placeholder='Senha'
-          placeholderTextColor='#fff'
-          value={password}
-          onChangeText={e => setPassword(e)}
-        />
-        <S.changePassword>
-          <S.submitText>Esqueceu a senha?</S.submitText>
-        </S.changePassword>
+        <S.ContainerInput>
+          <S.CreateAccountSocial>
+            <SvgUri
+              style={{ position: 'absolute', left: 15 }}
+              width="23px"
+              height="23px"
+              uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+            />
+            <S.CreateAccountTextSocial>
+              Continue com Google
+            </S.CreateAccountTextSocial>
+          </S.CreateAccountSocial>
+          <S.CreateAccountSocial>
+            <AntDesign style={{ color: '#000', position: 'absolute', left: 15 }} name="apple1" size={24} color="black" />
+            <S.CreateAccountTextSocial>
+              Continue com Apple
+            </S.CreateAccountTextSocial>
+          </S.CreateAccountSocial>
+          <S.Input
+            keyboardType='email-address'
+            placeholder='E-mail'
+            placeholderTextColor='#BDBDBD'
+            value={email}
+            onChangeText={e => setEmail(e)}
+          />
+          <S.Input
+            secureTextEntry={true}
+            placeholder='Senha'
+            placeholderTextColor='#BDBDBD'
+            value={password}
+            onChangeText={e => setPassword(e)}
+          />
+          <S.changePassword>
+            <S.submitText>Esqueceu a senha?</S.submitText>
+          </S.changePassword>
 
-        <S.ButtonInput onPress={() => signInWithEmailAndPassword(email, password)}>{loading && <S.TextButton>Buscando dados...</S.TextButton> || <S.TextButton>Entrar</S.TextButton>}</S.ButtonInput>
-        <S.AccountText>Você não tem uma conta?</S.AccountText>
-        <S.CreateAccount onPress={() => navigator.navigate('SignUp')}><S.CreateAccountText>Crie sua conta aqui</S.CreateAccountText></S.CreateAccount>
-      </S.ContainerInput>
-    </S.Container>
+          <S.ButtonInput onPress={() => signInWithEmailAndPassword(email, password)}>{loading && <S.TextButton>Buscando dados...</S.TextButton> || <S.TextButton>Entrar</S.TextButton>}</S.ButtonInput>
+          <S.AccountText>Você não tem uma conta?</S.AccountText>
+          <S.CreateAccount onPress={() => navigator.navigate('SignUp')}><S.CreateAccountText>Crie sua conta aqui</S.CreateAccountText></S.CreateAccount>
+        </S.ContainerInput>
+      </S.Container>
+    </LinearGradient>
   )
 };
 

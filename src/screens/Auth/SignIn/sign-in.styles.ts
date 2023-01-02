@@ -7,16 +7,19 @@ export const Container = styled.View`
 
 export const TextButton = styled.Text`
     color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
 `;
 
 export const AccountText = styled.Text`
-    color: #B0B0B0;
+    color: #BDBDBD;
     align-items: center;
     align-self: center;
     margin: 15px 0 8px 0;
 `;
 export const CreateAccountText = styled.Text`
-    color: #FBB03F95;
+    color: #FFFFFF;
+    
 `;
 
 export const CreateAccount = styled.TouchableOpacity`
@@ -25,7 +28,7 @@ export const CreateAccount = styled.TouchableOpacity`
 `;
 
 export const submitText = styled.Text`
-    color: #B0B0B0;
+    color: #BDBDBD;
 `;
 export const changePassword = styled.TouchableOpacity`
     margin: 20px 0;
@@ -33,9 +36,9 @@ export const changePassword = styled.TouchableOpacity`
 `;
 
 export const Image = styled.Image`
-    width: 200px;
-    height: 200px;
-    margin-top: 70px;
+    width: 150px;
+    height: 150px;
+    /* margin-top: 70px; */
 `;
 
 export const Loading = styled.Image`
@@ -45,11 +48,12 @@ export const Loading = styled.Image`
 
 export const Input = styled.TextInput`
     background: transparent;
-    color: #FFF;
+    text-transform: uppercase;
+    color: #fff;
     padding: 20px 10px;
-    border: solid 1px #FFF;
+    border: 1px solid #BDBDBD;
     margin: 10px 0;
-    border-radius: 8px;
+    border-radius: 4px;
 `;
 
 export const ContainerInput = styled.View`
@@ -59,9 +63,29 @@ export const ContainerInput = styled.View`
 `;
 
 export const ButtonInput = styled.TouchableOpacity`
-    background-color: #FBB03F;
-    border-radius: 9px;
+    /* background-color: #FBB03F;
+    border-radius: 9px;*/
+    background: #0C64BB;
     padding: 20px 0;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 `;
+
+export const CreateAccountSocial = styled.TouchableOpacity`
+    background: #DADADA;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+`
+export const CreateAccountTextSocial = styled.Text`
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+`
