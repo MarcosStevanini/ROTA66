@@ -2,9 +2,31 @@
   "expo": {
     "name": "Rota66",
     "slug": "Rota66",
-    "version": "1.0.0",
+    "icon": "./src/assets/logo.png",
+    "userInterfaceStyle": "light",
+    "version": "1.0.1",
+    "splash": {
+      "image": "./src/assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#132440"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/logo.png",
+        "backgroundColor": "#132440"
+      }
+    },
+    "web": {
+      "favicon": "./src/assets/logo.png"
+    }
   }
 }
