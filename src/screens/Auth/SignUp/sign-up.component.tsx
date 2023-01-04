@@ -2,6 +2,9 @@ import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
 import React, { useState } from 'react'
 
+import { SvgUri } from 'react-native-svg'
+import { AntDesign } from '@expo/vector-icons'
+
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
 
@@ -13,6 +16,7 @@ import * as S from './sign-up.styles'
 import * as T from './sign-up.types'
 
 const SignUp: React.FC<T.SignUpProps> = () => {
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setconfirmPassword] = useState('')
@@ -66,16 +70,42 @@ const SignUp: React.FC<T.SignUpProps> = () => {
         colors={['#065099', '#065099', '#010A14']}
         style={{
           flex: 1,
-          paddingTop: 70
+          paddingTop: 100
         }}
       >
         <S.Container>
-          <S.Image
-            source={require('../../../assets/logo-white.png')}
-            resizeMode="contain"
-          />
-
+    
           <S.ContainerInput>
+          <S.CreateAccountSocial>
+              <SvgUri
+                style={{ position: 'absolute', left: 15 }}
+                width="23px"
+                height="23px"
+                uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+              />
+              <S.CreateAccountTextSocial>
+                Continue com Google
+              </S.CreateAccountTextSocial>
+            </S.CreateAccountSocial>
+            <S.CreateAccountSocial>
+              <AntDesign
+                style={{ color: '#000', position: 'absolute', left: 15 }}
+                name="apple1"
+                size={24}
+                color="black"
+              />
+              <S.CreateAccountTextSocial>
+                Continue com Apple
+              </S.CreateAccountTextSocial>
+            </S.CreateAccountSocial>
+            <S.TextOr>ou</S.TextOr>
+          <S.Input
+              keyboardType="name-phone-pad"
+              placeholder="Nome"
+              placeholderTextColor="#BDBDBD"
+              value={name}
+              onChangeText={e => setName(e)}
+            />
             <S.Input
               keyboardType="email-address"
               placeholder="E-mail"
@@ -103,7 +133,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
             >
               {(loading && (
                 <S.TextButton>Cadastrando usuário...</S.TextButton>
-              )) || <S.TextButton>Criar conta</S.TextButton>}
+              )) || <S.TextButton>Cadastre-se</S.TextButton>}
             </S.ButtonInput>
 
             <S.ButtonAccess onPress={() => navigator.navigate('SignIn')}>

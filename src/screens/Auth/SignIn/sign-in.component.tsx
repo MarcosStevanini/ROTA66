@@ -33,7 +33,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
         colors={['#065099', '#065099', '#010A14']}
         style={{
           flex: 1,
-          paddingTop: 70
+          paddingTop: 100
         }}
       >
         <S.Container>
@@ -75,7 +75,9 @@ const SignIn: React.FC<T.SignInProps> = () => {
               value={password}
               onChangeText={e => setPassword(e)}
             />
-            <S.changePassword>
+            <S.changePassword
+              onPress={() => navigator.navigate('ForgotPassword')}
+            >
               <S.submitText>Esqueceu a senha?</S.submitText>
             </S.changePassword>
 
@@ -86,8 +88,8 @@ const SignIn: React.FC<T.SignInProps> = () => {
                 <S.TextButton>Entrar</S.TextButton>
               )}
             </S.ButtonInput>
-            <S.AccountText>Ainda nao tem acesso?</S.AccountText>
             <S.CreateAccount onPress={() => navigator.navigate('SignUp')}>
+              <S.AccountText>Ainda nao tem acesso? </S.AccountText>
               <S.CreateAccountText>Cadastre-se</S.CreateAccountText>
             </S.CreateAccount>
           </S.ContainerInput>

@@ -14,9 +14,7 @@ export const TextButton = styled.Text`
 
 export const AccountText = styled.Text`
     color: #BDBDBD;
-    align-items: center;
-    align-self: center;
-    margin: 15px 0 8px 0;
+   
 `;
 export const CreateAccountText = styled.Text`
     color: #FFFFFF;
@@ -24,15 +22,18 @@ export const CreateAccountText = styled.Text`
 `;
 
 export const CreateAccount = styled.TouchableOpacity`
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    margin-top: 48px;
 `;
 
 export const submitText = styled.Text`
     color: #BDBDBD;
 `;
 export const changePassword = styled.TouchableOpacity`
-    margin: 20px 0;
+    margin-bottom: 36px;
     align-self: flex-end;
 `;
 
@@ -51,15 +52,15 @@ export const Input = styled.TextInput`
     background: transparent;
     text-transform: uppercase;
     color: #fff;
-    padding: 16px 10px;
+    padding: 13px 16px;
     border: 1px solid #BDBDBD;
-    margin: 10px 0;
+    margin-bottom: 16px;
     border-radius: 4px;
 `;
 
 export const ContainerInput = styled.View`
     width: 100%;
-    padding: 20% 8%;
+    padding: 10% 8%;
 `;
 
 export const ButtonInput = styled.TouchableOpacity`
@@ -75,7 +76,7 @@ export const ButtonInput = styled.TouchableOpacity`
 
 export const CreateAccountSocial = styled.TouchableOpacity`
     background: #DADADA;
-    padding: 20px;
+    padding: 16px;
     margin-bottom: ${RFPercentage(3)}px;
     border-radius: 4px;
     flex-direction: row;
@@ -95,5 +96,5 @@ export const TextOr = styled.Text`
     color: #BDBDBD;
     align-items: center;
     align-self: center;
-    margin: 10px 0 10px 0;
+   margin-bottom: 24px;
 `;
