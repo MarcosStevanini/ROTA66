@@ -115,6 +115,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
             />
             <S.Input
               secureTextEntry={true}
+              keyboardType="numeric"
               placeholder="Senha"
               placeholderTextColor="#BDBDBD"
               value={password}
@@ -122,6 +123,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
             />
             <S.Input
               secureTextEntry={true}
+              keyboardType="numeric"
               placeholder="Confirmar Senha"
               placeholderTextColor="#BDBDBD"
               value={confirmPassword}
