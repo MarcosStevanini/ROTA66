@@ -1,1 +1,1 @@
-export { default as Share } from './share.component';
+export { default as Share } from '../Share/share.component';
