@@ -13,7 +13,7 @@ import * as S from '../theme.styles';
 
 export default function Routes() {
   const Stack = createNativeStackNavigator();
-  const [ user ] = useAuthState(auth);  
+  const [ user ] = useAuthState(auth);
 
    function AppScreen() {
     if (user) {
