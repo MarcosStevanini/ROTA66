@@ -64,8 +64,6 @@ export const ContainerInput = styled.View`
 `;
 
 export const ButtonInput = styled.TouchableOpacity`
-    /* background-color: #FBB03F;
-    border-radius: 9px;*/
     background: #0C64BB;
     padding: 12px 0;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);

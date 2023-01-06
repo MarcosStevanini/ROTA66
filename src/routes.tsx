@@ -13,9 +13,9 @@ import * as S from '../theme.styles';
 
 export default function Routes() {
   const Stack = createNativeStackNavigator();
-  const [ user ] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
-   function AppScreen() {
+  function AppScreen() {
     if (user) {
       return <Stack.Screen name='StackAuth' component={StackAuth} />
     }

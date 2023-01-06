@@ -5,7 +5,7 @@ import { Entypo, MaterialIcons, Feather } from '@expo/vector-icons';
 import Home from '../screens/App/Home/home.component'
 import Share from '../components/Share/share.component';
 import Config from '../screens/App/Config/config.component';
-import Playlist from '../screens/App/Playlist/playlist.component'
+import Playlist from '../screens/App/Playlist/playlist.component';
 
 const Tab = createBottomTabNavigator();
 

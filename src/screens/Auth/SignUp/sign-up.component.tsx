@@ -8,7 +8,7 @@ import { AntDesign } from '@expo/vector-icons'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
 
-import { TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
+import { TouchableWithoutFeedback, Keyboard } from 'react-native'
 
 import Toast from 'react-native-toast-message'
 
@@ -16,7 +16,6 @@ import * as S from './sign-up.styles'
 import * as T from './sign-up.types'
 
 const SignUp: React.FC<T.SignUpProps> = () => {
-  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setconfirmPassword] = useState('')
@@ -51,17 +50,10 @@ const SignUp: React.FC<T.SignUpProps> = () => {
     })
   }
 
-  if (user) {
-    Toast.show({
-      type: 'success',
-      visibilityTime: 3000,
-      text1: 'Conta criada com sucesso',
-      text2: 'Seja bem-vindo! Sua conta foi criada com sucesso'
-    })
+  if(user) navigator.navigate('SignIn')
 
-    setTimeout(() => {
-      navigator.navigate('SignIn')
-    }, 3000)
+  const createAuth = () => {
+    createUserWithEmailAndPassword(email, password);
   }
 
   return (
@@ -74,9 +66,9 @@ const SignUp: React.FC<T.SignUpProps> = () => {
         }}
       >
         <S.Container>
-    
+
           <S.ContainerInput>
-          <S.CreateAccountSocial>
+            <S.CreateAccountSocial>
               <SvgUri
                 style={{ position: 'absolute', left: 15 }}
                 width="23px"
@@ -99,13 +91,6 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               </S.CreateAccountTextSocial>
             </S.CreateAccountSocial>
             <S.TextOr>ou</S.TextOr>
-          <S.Input
-              keyboardType="name-phone-pad"
-              placeholder="Nome"
-              placeholderTextColor="#BDBDBD"
-              value={name}
-              onChangeText={e => setName(e)}
-            />
             <S.Input
               keyboardType="email-address"
               placeholder="E-mail"
@@ -130,9 +115,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               onChangeText={e => setconfirmPassword(e)}
             />
 
-            <S.ButtonInput
-              onPress={() => createUserWithEmailAndPassword(email, password)}
-            >
+            <S.ButtonInput onPress={() => createAuth()} >
               {(loading && (
                 <S.TextButton>Cadastrando usuário...</S.TextButton>
               )) || <S.TextButton>Cadastre-se</S.TextButton>}
