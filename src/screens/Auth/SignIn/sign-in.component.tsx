@@ -15,9 +15,9 @@ import * as S from './sign-in.styles';
 import * as T from './sign-in.types';
 
 const SignIn: React.FC<T.SignInProps> = () => {
+  const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth)
   const navigator = useNavigation()
 
   useMemo(() => {
