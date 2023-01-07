@@ -1,34 +1,48 @@
-import { useNavigation } from '@react-navigation/native'
-import React, { useState } from 'react'
-import { LinearGradient } from 'expo-linear-gradient'
+import { useNavigation } from '@react-navigation/native';
+import React, { useState, useMemo } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 
-import { TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
+import { TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView } from 'react-native';
+import Toast from 'react-native-toast-message'
 
-import { AntDesign } from '@expo/vector-icons'
-import { SvgUri } from 'react-native-svg'
+import { AntDesign } from '@expo/vector-icons';
+import { SvgUri } from 'react-native-svg';
 
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
-import { auth } from '../../../services/firebaseConfig'
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from '../../../services/firebaseConfig';
 
-import * as S from './sign-in.styles'
-import * as T from './sign-in.types'
+import * as S from './sign-in.styles';
+import * as T from './sign-in.types';
 
 const SignIn: React.FC<T.SignInProps> = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth)
+  const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth)
   const navigator = useNavigation()
 
-  if (error) {
-    console.log(`E-mail ou senha incorreta`)
-  }
-  if (user) {
-    navigator.navigate('Home')
-  }
+  useMemo(() => {
+    if (error) {
+      Toast.show({
+        type: 'error',
+        visibilityTime: 3000,
+        text1: 'Sua credencial está errada',
+        text2: 'Informe um e-mail e uma senha validos'
+      });
+    }
+  }, [error])
 
+  const authGoogle = () => {
+    Toast.show({
+      type: 'info',
+      visibilityTime: 3000,
+      text1: 'Funcionalidade inativa',
+      text2: 'Estamos em constante evolução',
+    })
+  }
+    
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
       <LinearGradient
         colors={['#065099', '#065099', '#010A14']}
         style={{
@@ -38,7 +52,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
       >
         <S.Container>
           <S.ContainerInput>
-            <S.CreateAccountSocial>
+            <S.CreateAccountSocial onPress={() => authGoogle()}>
               <SvgUri
                 style={{ position: 'absolute', left: 15 }}
                 width="23px"
@@ -49,7 +63,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
                 Continue com Google
               </S.CreateAccountTextSocial>
             </S.CreateAccountSocial>
-            <S.CreateAccountSocial>
+            <S.CreateAccountSocial onPress={() => authGoogle()}>
               <AntDesign
                 style={{ color: '#000', position: 'absolute', left: 15 }}
                 name="apple1"
@@ -62,8 +76,9 @@ const SignIn: React.FC<T.SignInProps> = () => {
             </S.CreateAccountSocial>
             <S.TextOr>ou</S.TextOr>
             <S.Input
-              keyboardType="email-address"
               placeholder="E-mail"
+              keyboardType="email-address"
+              returnKeyType='join'
               placeholderTextColor="#BDBDBD"
               value={email}
               onChangeText={e => setEmail(e)}
@@ -71,13 +86,15 @@ const SignIn: React.FC<T.SignInProps> = () => {
             />
             <S.Input
               secureTextEntry={true}
+              keyboardType="numeric"
+              returnKeyType='join'
               placeholder="Senha"
               placeholderTextColor="#BDBDBD"
               value={password}
               onChangeText={e => setPassword(e)}
             />
             <S.changePassword
-              onPress={() => navigator.navigate('ForgotPassword')}
+              // onPress={() => navigator.navigate('ForgotPassword')}
             >
               <S.submitText>Esqueceu a senha?</S.submitText>
             </S.changePassword>
@@ -95,7 +112,9 @@ const SignIn: React.FC<T.SignInProps> = () => {
             </S.CreateAccount>
           </S.ContainerInput>
         </S.Container>
+        <Toast position="top" />
       </LinearGradient>
+      </KeyboardAvoidingView>
     </TouchableWithoutFeedback>
   )
 }

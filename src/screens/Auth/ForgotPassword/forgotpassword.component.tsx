@@ -49,7 +49,9 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
               onChangeText={e => setEmail(e)}
             />
 
-            <S.ButtonInput onPress={() => {}}>
+            <S.ButtonInput
+              onPress={() => { }}
+            >
               <S.TextButton>Enviar</S.TextButton>
             </S.ButtonInput>
           </S.ContainerInput>
