@@ -50,12 +50,12 @@ export const Loading = styled.Image`
 
 export const Input = styled.TextInput`
     background: transparent;
-    text-transform: uppercase;
     color: #fff;
     padding: 13px 16px;
     border: 1px solid #BDBDBD;
     margin-bottom: 16px;
     border-radius: 4px;
+    
 `;
 
 export const ContainerInput = styled.View`

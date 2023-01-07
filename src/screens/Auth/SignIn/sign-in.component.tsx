@@ -67,6 +67,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
               placeholderTextColor="#BDBDBD"
               value={email}
               onChangeText={e => setEmail(e)}
+             
             />
             <S.Input
               secureTextEntry={true}
