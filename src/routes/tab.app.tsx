@@ -17,7 +17,7 @@ export default function TabApp() {
         component={Home}
         options={{ 
           tabBarIcon: () => <Entypo name="home" size={24} color="white" />,
-          headerShown: true,
+          headerShown: false,
           headerStyle: {backgroundColor: '#065099'},
           tabBarStyle: {backgroundColor: '#010A14'},
         }} />
@@ -26,7 +26,7 @@ export default function TabApp() {
         component={Playlist}
         options={{
           tabBarIcon: () => <MaterialIcons name="playlist-add" size={24} color="white" />,
-          headerShown: true,
+          headerShown: false,
           headerStyle: {backgroundColor: '#065099'},
           tabBarStyle: {backgroundColor: '#010A14'},
         }} />
@@ -36,7 +36,7 @@ export default function TabApp() {
         options={{
           title: 'Compartilhar',
           tabBarIcon: () => <Entypo name="share" size={24} color="white" />,
-          headerShown: true,
+          headerShown: false,
           headerStyle: {backgroundColor: '#065099'},
           tabBarStyle: {backgroundColor: '#010A14'},
         }} />
@@ -46,7 +46,7 @@ export default function TabApp() {
         options={{
           title: 'Configurações',
           tabBarIcon: () => <Feather name="settings" size={24} color="white" />,
-          headerShown: true,
+          headerShown: false,
           headerStyle: {backgroundColor: '#065099'},
           tabBarStyle: {backgroundColor: '#010A14'},
         }} />

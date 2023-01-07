@@ -22,11 +22,13 @@ const Config: React.FC<T.ConfigProps> = () => {
   }
   return (
     <LinearGradient
-      colors={['#065099', '#065099', '#010A14']}
+     
+    colors={[ '#010A14','#065099', '#065099']}
       style={{
         flex: 1,
         paddingHorizontal: 20,
         paddingVertical: 30,
+        paddingTop: 100
       }}
     >
     <S.Container>

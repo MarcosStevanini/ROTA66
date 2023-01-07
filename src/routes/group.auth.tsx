@@ -6,6 +6,7 @@ import ForgotPassword from '../screens/Auth/ForgotPassword/forgotpassword.compon
 import Loading from '../components/Loading/loading.component';
 import CreateProfile from '../components/Profile/CreateProfile.component';
 
+
 export const GroupAuth = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -14,6 +15,8 @@ export const GroupAuth = () => {
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{headerShown: false}} />
       <Stack.Screen name="CreateProfile" component={CreateProfile} options={{headerShown: false}} />
       <Stack.Screen name="Loading" component={Loading} options={{headerShown: false}}/>
+
+
     </Stack.Group>
   )
 }

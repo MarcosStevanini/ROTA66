@@ -27,7 +27,7 @@ export const TextExplore = styled.Text`
   font-size: 17px;
 `;
 
-export const ContainerExploreBook = styled.Text`
+export const ContainerExploreBook = styled.ScrollView`
   margin-top: 30px;
 `;
 
@@ -39,6 +39,22 @@ export const ButtonExplore = styled.TouchableOpacity`
   background-color: #DADADA;
   border-radius: 25px;
   padding: 10px 30px;
+  margin-left: 10px;
+`;
+
+//Button All Chapter
+export const ContainerButtonAllChapter = styled.TouchableOpacity`
+margin-top: 24px;
+margin-bottom: 25px;
+flex-direction: row;
+justify-content: flex-end;
+`;
+export const TextButtonAllChapter = styled.Text`
+font-size: 12px;
+font-weight: 500;
+color: ${({theme})=>theme.colors.white400};
+
+margin-right: 8px;
 `;
 
 // Search Theme
