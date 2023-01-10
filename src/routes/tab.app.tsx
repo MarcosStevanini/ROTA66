@@ -18,8 +18,8 @@ export default function TabApp() {
         options={{ 
           tabBarIcon: () => <Entypo name="home" size={24} color="white" />,
           headerShown: false,
-          headerStyle: {backgroundColor: '#065099'},
-          tabBarStyle: {backgroundColor: '#010A14'},
+          headerStyle: {backgroundColor: '#010A14'},
+          tabBarStyle: {backgroundColor: '#065099'},
         }} />
       <Tab.Screen
         name="Playlist"

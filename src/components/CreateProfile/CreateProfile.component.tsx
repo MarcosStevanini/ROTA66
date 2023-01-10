@@ -8,17 +8,19 @@ import { useNavigation } from '@react-navigation/native';
 import Toast from 'react-native-toast-message'
 
 
-import * as S from './profile.styles';
-import * as T from './profile.types';
+import * as S from './createProfile.styles';
+import * as T from './createProfile.types';
 
 
 const Profile: React.FC<T.ProfileProps> = () => {
   const [name, setName] = useState('');
   // const [phone, setPhone] = useState<any>(undefined);
   // const [photoURL, setPhotoURL] = useState('')
-  // const [user] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const [updateProfile, updating, error] = useUpdateProfile(auth);
   const navigator = useNavigation();
+
+  if(user?.displayName) navigator.navigate('TabNavigation');
 
   if (error) {
     Toast.show({
@@ -31,7 +33,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
   if (updating) {
     Toast.show({
       type: 'info',
-      text1: 'Estamos felizes em te-lo',
+      text1: 'Aguarde, estamos salvando seus dados',
       text2: 'Obrigado por nos informar os dados necessários'
     });
   }

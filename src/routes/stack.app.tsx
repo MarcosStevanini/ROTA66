@@ -8,7 +8,7 @@ import SignIn from '../screens/Auth/SignIn/sign-in.component';
 export const StackApp = () => {
   const Stack = createNativeStackNavigator();
   return (
-    <Stack.Navigator initialRouteName='SignIn'>
+    <Stack.Navigator>
       <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
       {GroupAuth()}
     </Stack.Navigator>
