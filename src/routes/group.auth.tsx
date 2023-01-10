@@ -15,8 +15,6 @@ export const GroupAuth = () => {
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{headerShown: false}} />
       <Stack.Screen name="CreateProfile" component={CreateProfile} options={{headerShown: false}} />
       <Stack.Screen name="Loading" component={Loading} options={{headerShown: false}}/>
-
-
     </Stack.Group>
   )
 }

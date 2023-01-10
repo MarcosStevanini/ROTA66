@@ -10,7 +10,6 @@ export const StackApp = () => {
   return (
     <Stack.Navigator initialRouteName='SignIn'>
       <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
-   
       {GroupAuth()}
     </Stack.Navigator>
   )
