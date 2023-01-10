@@ -27,7 +27,7 @@ export default function Routes() {
     <NavigationContainer>
       <StatusBar style="light" />
       <Stack.Navigator
-        screenOptions={{ headerShown: false }}
+        screenOptions={{ headerShown: false}}
       >
         {AppScreen()}
       </Stack.Navigator>

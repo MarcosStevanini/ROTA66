@@ -11,15 +11,24 @@ const Tab = createBottomTabNavigator();
 
 export default function TabApp() {
   return (
-    <Tab.Navigator initialRouteName='Home'>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarInactiveTintColor: '#FFF',
+        tabBarActiveTintColor: '#1F8FFD',
+        tabBarStyle: {
+          backgroundColor: '#000',
+          borderTopColor: 'transparent',
+        },
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={Home}
         options={{ 
           tabBarIcon: () => <Entypo name="home" size={24} color="white" />,
           headerShown: false,
-          headerStyle: {backgroundColor: '#010A14'},
-          tabBarStyle: {backgroundColor: '#065099'},
+          // headerStyle: {backgroundColor: '#010A14'},
+          // tabBarStyle: {backgroundColor: '#065099'},
         }} />
       <Tab.Screen
         name="Playlist"
@@ -27,8 +36,8 @@ export default function TabApp() {
         options={{
           tabBarIcon: () => <MaterialIcons name="playlist-add" size={24} color="white" />,
           headerShown: false,
-          headerStyle: {backgroundColor: '#010A14'},
-          tabBarStyle: {backgroundColor: '#065099'},
+          // headerStyle: {backgroundColor: '#010A14'},
+          // tabBarStyle: {backgroundColor: '#065099'},
         }} />
       <Tab.Screen
         name="Share"
@@ -37,8 +46,8 @@ export default function TabApp() {
           title: 'Compartilhar',
           tabBarIcon: () => <Entypo name="share" size={24} color="white" />,
           headerShown: false,
-          headerStyle: {backgroundColor: '#010A14'},
-          tabBarStyle: {backgroundColor: '#065099'},
+          // headerStyle: {backgroundColor: '#010A14'},
+          // tabBarStyle: {backgroundColor: '#065099'},
         }} />
       <Tab.Screen
         name="Config"
@@ -47,8 +56,8 @@ export default function TabApp() {
           title: 'Configurações',
           tabBarIcon: () => <Feather name="settings" size={24} color="white" />,
           headerShown: false,
-          headerStyle: {backgroundColor: '#010A14'},
-          tabBarStyle: {backgroundColor: '#065099'},
+          // headerStyle: {backgroundColor: '#010A14'},
+          // tabBarStyle: {backgroundColor: '#065099'},
         }} />
     </Tab.Navigator>
   );
