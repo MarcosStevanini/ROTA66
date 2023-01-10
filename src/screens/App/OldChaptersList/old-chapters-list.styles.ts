@@ -24,7 +24,7 @@ padding-bottom: 200px;
 `;
 
 
-export const CardChapter = styled.View`
+export const CardChapter = styled.TouchableOpacity`
 width: 180px;
 height: 50px;
 

@@ -5,7 +5,9 @@ export declare global{
         SignIn:undefined;
         SignUp:undefined;
         ForgotPassword:undefined;
-        ChaptersList:undefined;
+        OldChaptersList:undefined;
+        Genesis:undefined;
+        Gn1A:undefined;
     }
   }
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 
-import * as S from './playlist.styles'
-import * as T from './playlist.types'
 
-const Playlist: React.FC<T.PlaylistProps> = () => {
+import * as S from './gn1A.styles'
+import * as T from './gn1A.types'
+
+const Gn1A: React.FC<T.Gn1AProps> = () => {
   return (
     <LinearGradient
       colors={['#010A14', '#065099', '#065099']}
@@ -16,10 +17,12 @@ const Playlist: React.FC<T.PlaylistProps> = () => {
       }}
     >
       <S.Container>
-        <S.Text>Playlist</S.Text>
+
+
+
       </S.Container>
     </LinearGradient>
   )
 }
 
-export default Playlist
+export default Gn1A

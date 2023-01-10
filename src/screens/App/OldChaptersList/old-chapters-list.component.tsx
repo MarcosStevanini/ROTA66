@@ -1,12 +1,17 @@
 import React from 'react'
-import { ScrollView } from 'react-native'
+import { ScrollView, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { SvgAst } from 'react-native-svg'
 
-import * as S from './chapters-list.styles'
-import * as T from './chapters-list.types'
+import { useNavigation } from '@react-navigation/native'
 
-const ChaptersList: React.FC<T.ChaptersListProps> = () => {
+import * as S from './old-chapters-list.styles'
+import * as T from './old-chapters-list.types'
+
+const OldChaptersList: React.FC<T.OldChaptersListProps> = () => {
+
+  const navigator = useNavigation()
+
   return (
     <LinearGradient
       colors={['#010A14', '#065099', '#065099']}
@@ -23,10 +28,13 @@ const ChaptersList: React.FC<T.ChaptersListProps> = () => {
         </S.Header>
         <ScrollView showsVerticalScrollIndicator={false}>
           <S.ContainerList>
-            <S.CardChapter>
-              <S.IconChatper></S.IconChatper>
-              <S.TitleChapter>Gênesis</S.TitleChapter>
-            </S.CardChapter>
+
+              <S.CardChapter    onPress={() => navigator.navigate('Genesis')} >
+                <S.IconChatper></S.IconChatper>
+                <S.TitleChapter>Gênesis</S.TitleChapter>
+              </S.CardChapter>
+
+
             <S.CardChapter>
               <S.IconChatper></S.IconChatper>
               <S.TitleChapter>Êxodos</S.TitleChapter>
@@ -196,4 +204,4 @@ const ChaptersList: React.FC<T.ChaptersListProps> = () => {
   )
 }
 
-export default ChaptersList
+export default OldChaptersList
