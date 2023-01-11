@@ -27,7 +27,7 @@ const Genesis: React.FC<T.GenesisProps> = () => {
         <S.Title>Gênesis</S.Title>
       </S.Header>
       <S.Container>
-        <S.CardChapter onPress={() => navigator.navigate('Gn1A')}>
+        <S.CardChapter onPress={() => navigator.navigate('Gn1')}>
           <S.Number>1</S.Number>
         </S.CardChapter>
 

@@ -7,7 +7,7 @@ export declare global{
         ForgotPassword:undefined;
         OldChaptersList:undefined;
         Genesis:undefined;
-        Gn1A:undefined;
+        Gn1:undefined;
     }
   }
 }

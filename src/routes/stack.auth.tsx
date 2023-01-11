@@ -5,7 +5,7 @@ import { GroupAuth } from './group.auth'
 import TabNavigation from './tab.app'
 import OldChaptersList from '../screens/App/OldChaptersList/old-chapters-list.component'
 import Genesis from '../screens/App/OldChaptersList/Genesis/genesis.component'
-import Gn1A from '../screens/App/OldChaptersList/Genesis/Gn-1A/gn1A.component'
+import  Gn1  from '../screens/App/OldChaptersList/Genesis/Gn1/gn1.component'
 
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
@@ -14,7 +14,7 @@ export const StackAuth = () => {
       <Stack.Screen name="TabNavigation" component={TabNavigation} />
       <Stack.Screen name="OldChaptersList" component={OldChaptersList} />
       <Stack.Screen name="Genesis" component={Genesis} />
-      <Stack.Screen name="Gn1A" component={Gn1A} />
+      <Stack.Screen name="Gn1" component={Gn1} />
 
       {GroupAuth()}
     </Stack.Navigator>
