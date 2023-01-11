@@ -7,7 +7,7 @@ import * as T from './share.types';
 const Share: React.FC<T.ShareProps> = () => {
   return (
     <LinearGradient
-      colors={['#065099', '#065099', '#010A14']}
+      colors={['#010A14', '#065099', '#065099']}
       style={{
         flex: 1,
         paddingHorizontal: 20,

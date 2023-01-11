@@ -14,6 +14,8 @@ import Toast from 'react-native-toast-message'
 
 import * as S from './sign-up.styles'
 import * as T from './sign-up.types'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { StackAuth } from '../../../routes/stack.auth'
 
 const SignUp: React.FC<T.SignUpProps> = () => {
   const [email, setEmail] = useState('')
@@ -21,6 +23,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
   const [confirmPassword, setconfirmPassword] = useState('')
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth)
+  const Stack = createNativeStackNavigator()
   const navigator = useNavigation()
 
   if (error) {
@@ -50,9 +53,9 @@ const SignUp: React.FC<T.SignUpProps> = () => {
     })
   }
 
-  if(user) navigator.navigate('SignIn')
+  if (user) return <Stack.Screen name="CreateProfile" component={StackAuth} />
 
-  const createAuth = () => {
+  const createUser = () => {
     createUserWithEmailAndPassword(email, password);
   }
 
@@ -115,7 +118,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               onChangeText={e => setconfirmPassword(e)}
             />
 
-            <S.ButtonInput onPress={() => createAuth()} >
+            <S.ButtonInput onPress={() => createUser()} >
               {(loading && (
                 <S.TextButton>Cadastrando usuário...</S.TextButton>
               )) || <S.TextButton>Cadastre-se</S.TextButton>}

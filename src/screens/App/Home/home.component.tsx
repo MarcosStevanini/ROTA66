@@ -19,7 +19,7 @@ const Home: React.FC<T.HomeProps> = () => {
   const auth = useHome()
   const userName = auth.users.name
 
-  const navigator = useNavigation()
+  const navigator = useNavigation();
 
   return (
     <LinearGradient
