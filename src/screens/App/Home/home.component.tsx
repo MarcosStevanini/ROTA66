@@ -19,7 +19,7 @@ const Home: React.FC<T.HomeProps> = () => {
   const auth = useHome()
   const userName = auth.users.name
 
-  const navigator = useNavigation();
+  const navigator = useNavigation()
 
   return (
     <LinearGradient
@@ -73,7 +73,7 @@ const Home: React.FC<T.HomeProps> = () => {
           </S.ButtonExplore>
         </S.ContainerExploreBook>
         <S.ContainerButtonAllChapter
-          onPress={() => navigator.navigate('OldChaptersList')}
+          onPress={() => navigator.navigate('OldBooks')}
         >
           <S.TextButtonAllChapter>Ver todos</S.TextButtonAllChapter>
           <AntDesign name="arrowright" size={15} color="#BDBDBD" />

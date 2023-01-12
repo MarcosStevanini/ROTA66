@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FlatList } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
-import firestore from '@react-native-firebase/firestore'
+
 
 import * as S from './gn1.styles'
 import * as T from './gn1.types'
@@ -13,48 +13,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [audio, setAudio] = useState<T.Gn1Props[]>([])
 
-  useEffect(() => {
-    setIsLoading(true)
-
-    const subscribe = firestore()
-      .collection<T.Gn1Props>('audios')
-      .where('livro', '==', 'Gn')
-      .where('capitulo', '==', '1')
-      .onSnapshot(snapshot => {
-        const data = snapshot.docs.map(doc => {
-          const {
-            titulo,
-            livro,
-            capitulo,
-            descricao,
-            playlist,
-            tema,
-            time,
-            url
-          } = doc.data()
-
-          return {
-            id: doc.id,
-            titulo,
-            livro,
-            capitulo,
-            descricao,
-            playlist,
-            tema,
-            time,
-            url
-          }
-        })
-        setAudio(data)
-        setIsLoading(false)
-      })
-    return subscribe
-  }, [])
-
-  if (isLoading) {
-    return <Loading />
-  }
-
+ 
   return (
     <LinearGradient
       colors={['#010A14', '#065099', '#065099']}

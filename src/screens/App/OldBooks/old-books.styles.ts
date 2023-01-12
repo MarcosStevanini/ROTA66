@@ -4,8 +4,10 @@ export const Container = styled.View``;
 
 
 export const Header = styled.View`
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
 margin-bottom: 64px;
-
 `;
 
 export const TitleHeader = styled.Text`
@@ -40,12 +42,21 @@ margin-bottom: 24px;
 `;
 
 
-export const IconChatper = styled.View``;
+export const IconChatper = styled.View`
+margin-left: 8px;
+margin-right: 8px;
+
+`;
 
 
 export const TitleChapter = styled.Text`
 font-size: 18px;
 font-weight: 500;
 color:${({theme})=>theme.colors.white200};
+
+`;
+
+export const ButtonBack = styled.TouchableOpacity`
+margin-right: 100px;
 
 `;
