@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View``;
 
+
 export const ButtonBack = styled.TouchableOpacity`
 margin-bottom: 48px;
 
@@ -23,6 +24,7 @@ justify-content: space-between;
 padding-bottom: 200px;
 
 `;
+
 
 export const CardChapter = styled.TouchableOpacity`
 width: 180px;
@@ -53,5 +55,4 @@ font-weight: 500;
 color:${({theme})=>theme.colors.white200};
 
 `;
-
 

@@ -7,10 +7,10 @@ import { useNavigation } from '@react-navigation/native'
 import Biblia from '../../../assets/biblia.svg'
 import { AntDesign } from '@expo/vector-icons'
 
-import * as S from './old-books.styles'
-import * as T from './old-books.types'
+import * as S from './new-books.styles'
+import * as T from './new-books.types'
 
-const OldBooks: React.FC<T.OldBooksProps> = () => {
+const NewBooks: React.FC<T.NewBooksProps> = () => {
   const navigator = useNavigation()
 
   return (
@@ -27,259 +27,190 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
         <S.ButtonBack onPress={() => navigator.goBack()}>
           <AntDesign name="left" size={30} color="#ffff" />
         </S.ButtonBack>
-        <S.TitleHeader>Velho testamento</S.TitleHeader>
+        <S.TitleHeader>Novo testamento</S.TitleHeader>
 
         <ScrollView showsVerticalScrollIndicator={false}>
           <S.ContainerList>
-            <S.CardChapter onPress={() => navigator.navigate('Genesis')}>
+            <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Gênesis</S.TitleChapter>
+              <S.TitleChapter>Mateus</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Êxodos</S.TitleChapter>
+              <S.TitleChapter>Marcos</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Levítico</S.TitleChapter>
+              <S.TitleChapter>Lucas</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Números</S.TitleChapter>
+              <S.TitleChapter>João</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Deuteronômio</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Josué</S.TitleChapter>
+              <S.TitleChapter>Atos.Apóstolos</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Juízes</S.TitleChapter>
+              <S.TitleChapter>Romanos</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Rute</S.TitleChapter>
+              <S.TitleChapter>Coríntios I</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Samuel I</S.TitleChapter>
+              <S.TitleChapter>Coríntios II</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Samuel II</S.TitleChapter>
-            </S.CardChapter>
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Reis I</S.TitleChapter>
+              <S.TitleChapter>Gálatas</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Reis II</S.TitleChapter>
+              <S.TitleChapter>Efésios</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Crônicas I</S.TitleChapter>
+              <S.TitleChapter>Filipenses</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Crônicas II</S.TitleChapter>
+              <S.TitleChapter>Colossenses</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Esdras</S.TitleChapter>
+              <S.TitleChapter>Tessalonicen.I</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Neemias</S.TitleChapter>
+              <S.TitleChapter>Tessalonicen.II</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Ester</S.TitleChapter>
+              <S.TitleChapter>Timóteo I</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Jó</S.TitleChapter>
+              <S.TitleChapter>Timóteo II</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Salmos</S.TitleChapter>
+              <S.TitleChapter>Tito</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Provérbios</S.TitleChapter>
+              <S.TitleChapter>Filemom</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Eclesiastes</S.TitleChapter>
+              <S.TitleChapter>Hebreus</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Cantares</S.TitleChapter>
+              <S.TitleChapter>Tiago</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Isaías</S.TitleChapter>
+              <S.TitleChapter>Pedro I</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Jeremias</S.TitleChapter>
+              <S.TitleChapter>Pedro II</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Ezequiel</S.TitleChapter>
+              <S.TitleChapter>João I</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Lamentações</S.TitleChapter>
+              <S.TitleChapter>João II</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Daniel</S.TitleChapter>
+              <S.TitleChapter>João III</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Oséias</S.TitleChapter>
+              <S.TitleChapter>Judas</S.TitleChapter>
             </S.CardChapter>
 
             <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={16} height={21} />
               </S.IconChatper>
-              <S.TitleChapter>Joel</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Amós</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Jonas</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Miqueias</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Naum</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Habacuque</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Ageu</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Zacarias</S.TitleChapter>
-            </S.CardChapter>
-
-            <S.CardChapter>
-              <S.IconChatper>
-                <Biblia width={16} height={21} />
-              </S.IconChatper>
-              <S.TitleChapter>Malaquias</S.TitleChapter>
+              <S.TitleChapter>Apocalipse</S.TitleChapter>
             </S.CardChapter>
           </S.ContainerList>
         </ScrollView>
@@ -288,4 +219,4 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
   )
 }
 
-export default OldBooks
+export default NewBooks

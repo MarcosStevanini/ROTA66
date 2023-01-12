@@ -5,6 +5,8 @@ export declare global{
         SignIn:undefined;
         SignUp:undefined;
         ForgotPassword:undefined;
+        Books:undefined;
+        NewBooks:undefined;
         OldBooks:undefined;
         Genesis:undefined;
         Gn1:undefined;

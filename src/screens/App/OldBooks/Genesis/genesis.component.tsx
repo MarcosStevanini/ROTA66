@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 import * as S from './genesis.styles'
 import * as T from './genesis.types'
 
-import { AntDesign } from '@expo/vector-icons'
+import { AntDesign, Feather } from '@expo/vector-icons'
 
 const Genesis: React.FC<T.GenesisProps> = () => {
   const navigator = useNavigation()
@@ -20,12 +20,17 @@ const Genesis: React.FC<T.GenesisProps> = () => {
         paddingTop: 100
       }}
     >
+      <S.ButtonBack onPress={() => navigator.goBack()}>
+        <AntDesign name="left" size={30} color="#ffff" />
+      </S.ButtonBack>
+
       <S.Header>
-        <S.ButtonBack onPress={() => navigator.goBack()}>
-          <AntDesign name="left" size={25} color="#ffff" />
-        </S.ButtonBack>
-        <S.Title>Gênesis</S.Title>
+        <S.TitleHeader>Gênesis</S.TitleHeader>
+        <S.Favorite>
+          <Feather name="heart" size={23} color="#ffff" />
+        </S.Favorite>
       </S.Header>
+
       <S.Container>
         <S.CardChapter onPress={() => navigator.navigate('Gn1')}>
           <S.Number>1</S.Number>

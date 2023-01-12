@@ -73,7 +73,7 @@ const Home: React.FC<T.HomeProps> = () => {
           </S.ButtonExplore>
         </S.ContainerExploreBook>
         <S.ContainerButtonAllChapter
-          onPress={() => navigator.navigate('OldBooks')}
+          onPress={() => navigator.navigate('Books')}
         >
           <S.TextButtonAllChapter>Ver todos</S.TextButtonAllChapter>
           <AntDesign name="arrowright" size={15} color="#BDBDBD" />
