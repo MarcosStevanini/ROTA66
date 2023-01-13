@@ -42,7 +42,6 @@ justify-content: center;
 `;
 
 
-
 export const CardChapter = styled.TouchableOpacity`
 width: 50px;
 height: 50px;
@@ -56,6 +55,9 @@ justify-content: center;
 margin-bottom: 8px;
 margin-left: 8px;
 margin-top: 8PX;
+
+
+box-shadow: 2px 2px 0px  white;
 `;
 
 export const Number = styled.Text`

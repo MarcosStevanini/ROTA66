@@ -19,13 +19,15 @@ export const ContainerList = styled.View`
 flex-direction: row;
 flex-wrap: wrap;
 
-justify-content: space-between;
+justify-content: space-around;
 padding-bottom: 200px;
+
+
 
 `;
 
 export const CardChapter = styled.TouchableOpacity`
-width: 180px;
+width: 170px;
 height: 50px;
 
 border-width: 2px;
@@ -37,6 +39,11 @@ flex-direction: row;
 align-items: center;
 
 margin-bottom: 24px;
+
+background-color: ${({theme})=>theme.colors.blue300};
+
+box-shadow: 2px 2px 0px  white;
+
 `;
 
 
