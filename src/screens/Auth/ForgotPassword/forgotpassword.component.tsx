@@ -50,6 +50,7 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
               placeholderTextColor={theme.colors.white400}
               value={email}
               onChangeText={e => setEmail(e)}
+              style={{fontSize:16}}
             />
 
             <S.ButtonInput

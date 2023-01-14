@@ -75,6 +75,10 @@ const Genesis: React.FC<T.GenesisProps> = () => {
         </S.CardChapter>
 
         <S.CardChapter>
+          <S.Number>11</S.Number>
+        </S.CardChapter>
+
+        <S.CardChapter>
           <S.Number>12</S.Number>
         </S.CardChapter>
 
@@ -158,9 +162,6 @@ const Genesis: React.FC<T.GenesisProps> = () => {
           <S.Number>32</S.Number>
         </S.CardChapter>
 
-        <S.CardChapter>
-          <S.Number>1</S.Number>
-        </S.CardChapter>
 
         <S.CardChapter>
           <S.Number>33</S.Number>

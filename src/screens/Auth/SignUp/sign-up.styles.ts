@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
     flex: 1;
@@ -11,41 +11,12 @@ export const Container = styled.View`
 export const TextButton = styled.Text`
     font-family: ${({theme})=>theme.fonts.medium};  
     color: ${({theme})=>theme.colors.white100};
-    font-size: 17px;
-    font-weight: 500;
-`;
+    font-size: ${RFValue(17)}px;
+   `;
 
-export const AccountText = styled.Text`
-    font-family: ${({theme})=>theme.fonts.bold};
-    color: ${({theme})=>theme.colors.white400};
-    margin: 15px 0 8px 0;
-`;
-export const CreateAccountText = styled.Text`
-    font-family: ${({theme})=>theme.fonts.bold};
-    color: ${({theme})=>theme.colors.yellow400};
-    margin: 15px 0;
-`;
-
-export const CreateAccount = styled.TouchableOpacity``;
-
-export const submitText = styled.Text`
-    color: ${({theme})=>theme.colors.white400};
-
-`;
 export const changePassword = styled.TouchableOpacity`
     margin: 20px 0;
     align-self: flex-end;
-`;
-
-export const Image = styled.Image`
-    width: 200px;
-    height: 200px;
-    margin-top: 70px;
-`;
-
-export const Loading = styled.Image`
-    width: 10px;
-    height: 10px;
 `;
 
 export const Input = styled.TextInput`
@@ -79,17 +50,18 @@ export const ButtonAccess = styled.TouchableOpacity`
 
 export const TextQuestAccess = styled.Text`
     font-family: ${({theme})=>theme.fonts.bold}; 
+    font-size: ${RFValue(12)}px;
     color: ${({theme})=>theme.colors.white400};
     text-align: center;
-    margin-top: 15px;
+    margin-top: 48px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 `
 export const TextAccess = styled.Text`
     font-family: ${({theme})=>theme.fonts.bold};  
+    font-size: ${RFValue(12)}px;
     color: ${({theme})=>theme.colors.white100};
-    font-weight: 600;
     margin-left: 7px;
 `
 
@@ -106,9 +78,10 @@ export const CreateAccountSocial = styled.TouchableOpacity`
 `
 export const CreateAccountTextSocial = styled.Text`
     font-family: ${({theme})=>theme.fonts.regular};
+    font-size: ${RFValue(14)}px;
     color: ${({theme})=>theme.colors.gray300};
     text-align: center;
-    font-weight: 500;
+   
 `
 
 export const TextOr = styled.Text`

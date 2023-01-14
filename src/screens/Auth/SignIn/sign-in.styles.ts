@@ -8,18 +8,20 @@ export const Container = styled.View`
 
 export const TextButton = styled.Text`
     font-family: ${({theme})=>theme.fonts.medium};
-    color: ${({theme})=>theme.colors.white100};
     font-size:  ${RFValue(17)}px;
+    color: ${({theme})=>theme.colors.white100};
     font-weight: 500;
 `;
 
 export const AccountText = styled.Text`
   font-family: ${({theme})=>theme.fonts.bold};
+  font-size:  ${RFValue(12)}px;
   color: ${({theme})=>theme.colors.white400};
     
 `;
 export const CreateAccountText = styled.Text`
   font-family: ${({theme})=>theme.fonts.bold};
+  font-size:  ${RFValue(12)}px;
   color: ${({theme})=>theme.colors.white100};
     
 `;
@@ -34,17 +36,12 @@ export const CreateAccount = styled.TouchableOpacity`
 
 export const submitText = styled.Text`
      font-family: ${({theme})=>theme.fonts.medium};
+     font-size:  ${RFValue(12)}px;
      color: ${({theme})=>theme.colors.white400};
 `;
 export const changePassword = styled.TouchableOpacity`
     margin-bottom: 36px;
     align-self: flex-end;
-`;
-
-export const Image = styled.Image`
-    width:  ${RFValue(150)}px;
-    height: ${RFValue(150)}px;
-    /* margin-top: 70px; */
 `;
 
 export const Loading = styled.Image`
@@ -59,8 +56,7 @@ export const Input = styled.TextInput`
     border: 1px solid ${({theme})=>theme.colors.white400};
     margin-bottom: 16px;
     border-radius: 4px;
-    
-    
+        
 `;
 
 export const ContainerInput = styled.View`
@@ -90,8 +86,9 @@ export const CreateAccountSocial = styled.TouchableOpacity`
 `
 export const CreateAccountTextSocial = styled.Text`
     font-family: ${({theme})=>theme.fonts.regular};
-    text-align: center;
+    font-size:  ${RFValue(14)}px;
     color: ${({theme})=>theme.colors.gray300};
+    text-align: center;
     font-weight: 500;
 `
 

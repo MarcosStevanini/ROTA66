@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 interface backgroundCards {
   background: string;
@@ -13,8 +14,9 @@ export const ContainerProfile = styled.View`
 
 export const TextProfile = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
+  font-size: ${RFValue(24)}px;
   color: ${({theme})=>theme.colors.white100};
-  font-size: 24px;
+  
 `;
 export const ProfileButton = styled.TouchableOpacity``;
 
@@ -25,8 +27,8 @@ export const ContainerExplore = styled.View`
 
 export const TextExplore = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
+  font-size: ${RFValue(17)}px;
   color: ${({theme})=>theme.colors.white100};
-  font-size: 17px;
 `;
 
 export const ContainerExploreBook = styled.ScrollView`
@@ -34,6 +36,8 @@ export const ContainerExploreBook = styled.ScrollView`
 `;
 
 export const TextExploreBook = styled.Text`
+   font-family: ${({theme})=>theme.fonts.medium};
+  font-size: ${RFValue(12)}px;
   color: ${({theme})=>theme.colors.gray500};
 `;
 
@@ -54,7 +58,7 @@ export const ContainerButtonAllChapter = styled.TouchableOpacity`
 export const TextButtonAllChapter = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
   color: ${({theme})=>theme.colors.white400};
-  font-size: 12px;
+  font-size: ${RFValue(10)}px;
   margin-right: 8px;
 `;
 
@@ -73,7 +77,7 @@ export const ContainerCardsTheme = styled.View`
 export const TextTheme = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
   color: ${({theme})=>theme.colors.white100};
-  font-size: 17px;
+  font-size: ${RFValue(16)}px;
 `;
 
 export const CardsTheme = styled.View<backgroundCards>`

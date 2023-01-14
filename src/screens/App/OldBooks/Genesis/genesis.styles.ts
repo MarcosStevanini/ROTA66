@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
 flex-direction: row;
@@ -23,8 +24,8 @@ margin-bottom: 43px;
 
 export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(22)}px;
 color: ${({theme})=>theme.colors.white200};
-font-size: 24px;
 
 `;
 
@@ -61,8 +62,9 @@ box-shadow: 2px 2px 0px  white;
 
 export const Number = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(14)}px;
 color:${({theme})=>theme.colors.white200};
-font-size: 18px;
+
 
 `;
 

@@ -133,15 +133,17 @@ const SignIn: React.FC<T.SignInProps> = () => {
                 placeholderTextColor={theme.colors.white400}
                 value={email}
                 onChangeText={e => setEmail(e)}
+                style={{fontSize:16}}
               />
               <S.Input
                 secureTextEntry={true}
-                keyboardType="numeric"
+                keyboardType="default"
                 returnKeyType="join"
                 placeholder="Senha"
                 placeholderTextColor={theme.colors.white400}
                 value={password}
                 onChangeText={e => setPassword(e)}
+                style={{fontSize:16}}
               />
               <S.changePassword
                 onPress={() => navigator.navigate('ForgotPassword')}

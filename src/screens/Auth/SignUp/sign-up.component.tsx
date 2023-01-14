@@ -104,6 +104,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               placeholderTextColor={theme.colors.white400}
               value={email}
               onChangeText={e => setEmail(e)}
+              style={{fontSize:16}}
             />
             <S.Input
               secureTextEntry={true}
@@ -112,6 +113,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               placeholderTextColor={theme.colors.white400}
               value={password}
               onChangeText={e => setPassword(e)}
+              style={{fontSize:16}}
             />
             <S.Input
               secureTextEntry={true}
@@ -120,6 +122,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               placeholderTextColor={theme.colors.white400}
               value={confirmPassword}
               onChangeText={e => setconfirmPassword(e)}
+              style={{fontSize:16}}
             />
 
             <S.ButtonInput onPress={() => createUser()}>
