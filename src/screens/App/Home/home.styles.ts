@@ -12,8 +12,9 @@ export const ContainerProfile = styled.View`
 `;
 
 export const TextProfile = styled.Text`
-  color: #FFF;
-  font-size: 22px;
+  font-family: ${({theme})=>theme.fonts.medium};
+  color: ${({theme})=>theme.colors.white100};
+  font-size: 24px;
 `;
 export const ProfileButton = styled.TouchableOpacity``;
 
@@ -21,9 +22,10 @@ export const ProfileButton = styled.TouchableOpacity``;
 export const ContainerExplore = styled.View`
   padding-top: 30px;
 `;
+
 export const TextExplore = styled.Text`
-  color: #DADADA;
-  font-weight: 500;
+  font-family: ${({theme})=>theme.fonts.medium};
+  color: ${({theme})=>theme.colors.white100};
   font-size: 17px;
 `;
 
@@ -32,11 +34,11 @@ export const ContainerExploreBook = styled.ScrollView`
 `;
 
 export const TextExploreBook = styled.Text`
-  color: #101010;
+  color: ${({theme})=>theme.colors.gray500};
 `;
 
 export const ButtonExplore = styled.TouchableOpacity`
-  background-color: #DADADA;
+  background-color:  ${({theme})=>theme.colors.white300};
   border-radius: 25px;
   padding: 10px 30px;
   margin-left: 10px;
@@ -44,17 +46,16 @@ export const ButtonExplore = styled.TouchableOpacity`
 
 //Button All Chapter
 export const ContainerButtonAllChapter = styled.TouchableOpacity`
-margin-top: 24px;
-margin-bottom: 25px;
-flex-direction: row;
-justify-content: flex-end;
+ margin-top: 24px;
+ margin-bottom: 25px;
+ flex-direction: row;
+ justify-content: flex-end;
 `;
 export const TextButtonAllChapter = styled.Text`
-font-size: 12px;
-font-weight: 500;
-color: ${({theme})=>theme.colors.white400};
-
-margin-right: 8px;
+  font-family: ${({theme})=>theme.fonts.medium};
+  color: ${({theme})=>theme.colors.white400};
+  font-size: 12px;
+  margin-right: 8px;
 `;
 
 // Search Theme
@@ -70,8 +71,8 @@ export const ContainerCardsTheme = styled.View`
 `;
 
 export const TextTheme = styled.Text`
-  color: #DADADA;
-  font-weight: 500;
+  font-family: ${({theme})=>theme.fonts.medium};
+  color: ${({theme})=>theme.colors.white100};
   font-size: 17px;
 `;
 
@@ -88,7 +89,7 @@ export const CardsTheme = styled.View<backgroundCards>`
 `;
 
 export const TextCardsTheme = styled.Text`
-  color: #101010;
-  font-weight: 500;
+  font-family: ${({theme})=>theme.fonts.medium};
+  color: ${({theme})=>theme.colors.gray500};
   max-width: 70%;
 `;

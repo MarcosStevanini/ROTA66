@@ -15,13 +15,13 @@ margin-bottom: 48px;
 `;
 
 export const TitleHeader = styled.Text`
-font-size: 24px;
+font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
+font-size: 24px;
 
 margin-bottom: 36px;
 
 `;
-
 
 
 export const OptionsBooks = styled.View`
@@ -49,8 +49,9 @@ align-items: center;
 `;
 
 export const TitleCard = styled.Text`
-font-size: 20px;
+font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.gray500};
+font-size: 20px;
 
 text-align: center;
 `;
@@ -63,8 +64,9 @@ margin-bottom: 10px;
 `;
 
 export const FavoritesTitle = styled.Text`
-font-size: 24px;
+font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
+font-size: 24px;
 
 margin-right: 13px;
 `;

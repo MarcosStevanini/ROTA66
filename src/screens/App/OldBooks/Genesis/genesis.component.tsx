@@ -1,6 +1,7 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
+import { useTheme } from 'styled-components/native'
 
 import * as S from './genesis.styles'
 import * as T from './genesis.types'
@@ -9,10 +10,11 @@ import { AntDesign, Feather } from '@expo/vector-icons'
 
 const Genesis: React.FC<T.GenesisProps> = () => {
   const navigator = useNavigation()
+  const theme = useTheme()
 
   return (
     <LinearGradient
-      colors={['#010A14', '#065099', '#065099']}
+      colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
         paddingHorizontal: 20,
@@ -21,13 +23,13 @@ const Genesis: React.FC<T.GenesisProps> = () => {
       }}
     >
       <S.ButtonBack onPress={() => navigator.goBack()}>
-        <AntDesign name="left" size={30} color="#ffff" />
+        <AntDesign name="left" size={30} color={theme.colors.white300} />
       </S.ButtonBack>
 
       <S.Header>
         <S.TitleHeader>Gênesis</S.TitleHeader>
         <S.Favorite>
-          <Feather name="heart" size={23} color="#ffff" />
+          <Feather name="heart" size={23} color={theme.colors.white300} />
         </S.Favorite>
       </S.Header>
 

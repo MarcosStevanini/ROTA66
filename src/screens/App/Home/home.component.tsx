@@ -12,18 +12,22 @@ import { useNavigation } from '@react-navigation/native'
 
 import * as S from './home.styles'
 import * as T from './home.types'
+
 import useHome from './home.hook'
 import Toast from 'react-native-toast-message'
+
+import { useTheme } from 'styled-components/native'
 
 const Home: React.FC<T.HomeProps> = () => {
   const auth = useHome()
   const userName = auth.users.name
 
   const navigator = useNavigation()
+  const theme = useTheme()
 
   return (
     <LinearGradient
-      colors={['#010A14', '#065099', '#065099']}
+      colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
         paddingHorizontal: 20,
@@ -45,7 +49,7 @@ const Home: React.FC<T.HomeProps> = () => {
             })
           }
         >
-          <FontAwesome5 name="user-circle" size={24} color="#DADADA" />
+          <FontAwesome5 name="user-circle" size={24} color={theme.colors.white300} />
         </S.ProfileButton>
       </S.ContainerProfile>
 
@@ -76,7 +80,7 @@ const Home: React.FC<T.HomeProps> = () => {
           onPress={() => navigator.navigate('Books')}
         >
           <S.TextButtonAllChapter>Ver todos</S.TextButtonAllChapter>
-          <AntDesign name="arrowright" size={15} color="#BDBDBD" />
+          <AntDesign name="arrowright" size={15} color={theme.colors.white400} />
         </S.ContainerButtonAllChapter>
 
         {/* Search Theme */}

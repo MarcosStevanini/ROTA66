@@ -5,15 +5,18 @@ import { useNavigation } from '@react-navigation/native'
 
 import { AntDesign, Feather } from '@expo/vector-icons'
 
+import { useTheme } from 'styled-components/native'
+
 import * as S from './books.styles'
 import * as T from './books.types'
 
 const Books: React.FC<T.BooksProps> = () => {
   const navigator = useNavigation()
+  const theme = useTheme()
 
   return (
     <LinearGradient
-      colors={['#010A14', '#065099', '#065099']}
+      colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
         paddingHorizontal: 32,
@@ -23,7 +26,7 @@ const Books: React.FC<T.BooksProps> = () => {
     >
       <S.Container>
         <S.ButtonBack onPress={() => navigator.goBack()}>
-          <AntDesign name="left" size={30} color="#ffff" />
+          <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
 
         <S.TitleHeader>Livros</S.TitleHeader>
@@ -39,7 +42,7 @@ const Books: React.FC<T.BooksProps> = () => {
 
         <S.FavoritesHeader>
           <S.FavoritesTitle>Favoritos</S.FavoritesTitle>
-          <Feather name="heart" size={25} color="#ffff" />
+          <Feather name="heart" size={25} color={theme.colors.white300} />
         </S.FavoritesHeader>
 
         <S.FavoritesList></S.FavoritesList>

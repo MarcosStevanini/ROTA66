@@ -14,8 +14,11 @@ import Toast from 'react-native-toast-message'
 
 import * as S from './sign-up.styles'
 import * as T from './sign-up.types'
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StackAuth } from '../../../routes/stack.auth'
+
+import { useTheme } from 'styled-components'
 
 const SignUp: React.FC<T.SignUpProps> = () => {
   const [email, setEmail] = useState('')
@@ -24,7 +27,9 @@ const SignUp: React.FC<T.SignUpProps> = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth)
   const Stack = createNativeStackNavigator()
+
   const navigator = useNavigation()
+  const theme = useTheme()
 
   if (error) {
     if (error.code === 'auth/email-already-in-use') {
@@ -56,20 +61,19 @@ const SignUp: React.FC<T.SignUpProps> = () => {
   if (user) return <Stack.Screen name="CreateProfile" component={StackAuth} />
 
   const createUser = () => {
-    createUserWithEmailAndPassword(email, password);
+    createUserWithEmailAndPassword(email, password)
   }
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <LinearGradient
-        colors={['#065099', '#065099', '#010A14']}
+        colors={theme.colors.gradientBlueOne}
         style={{
           flex: 1,
           paddingTop: 100
         }}
       >
         <S.Container>
-
           <S.ContainerInput>
             <S.CreateAccountSocial>
               <SvgUri
@@ -97,7 +101,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
             <S.Input
               keyboardType="email-address"
               placeholder="E-mail"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={theme.colors.white400}
               value={email}
               onChangeText={e => setEmail(e)}
             />
@@ -105,7 +109,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               secureTextEntry={true}
               keyboardType="numeric"
               placeholder="Senha"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={theme.colors.white400}
               value={password}
               onChangeText={e => setPassword(e)}
             />
@@ -113,12 +117,12 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               secureTextEntry={true}
               keyboardType="numeric"
               placeholder="Confirmar Senha"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={theme.colors.white400}
               value={confirmPassword}
               onChangeText={e => setconfirmPassword(e)}
             />
 
-            <S.ButtonInput onPress={() => createUser()} >
+            <S.ButtonInput onPress={() => createUser()}>
               {(loading && (
                 <S.TextButton>Cadastrando usuário...</S.TextButton>
               )) || <S.TextButton>Cadastre-se</S.TextButton>}

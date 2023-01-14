@@ -22,8 +22,9 @@ margin-bottom: 43px;
 `;
 
 export const TitleHeader = styled.Text`
-font-size: 24px;
+font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
+font-size: 24px;
 
 `;
 
@@ -37,7 +38,6 @@ background-color: ${({theme})=>theme.colors.blue400};
 
 align-items: center;
 justify-content: center;
-
 
 `;
 
@@ -56,14 +56,14 @@ margin-bottom: 8px;
 margin-left: 8px;
 margin-top: 8PX;
 
-
 box-shadow: 2px 2px 0px  white;
 `;
 
 export const Number = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+color:${({theme})=>theme.colors.white200};
 font-size: 18px;
 
-color:${({theme})=>theme.colors.white200};
 `;
 
 

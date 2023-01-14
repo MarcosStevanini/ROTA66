@@ -47,7 +47,11 @@ export default {
     },
   
     fonts: {
-          D1:'Poppins_400Regular',
+        regular:'Montserrat_400Regular',
+  
+        medium:'Montserrat_500Medium',
+
+        bold:'Montserrat_600SemiBold',
         
   
     }

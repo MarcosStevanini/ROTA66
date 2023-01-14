@@ -7,10 +7,14 @@ import { LinearGradient } from 'expo-linear-gradient'
 import * as S from './loading.styles'
 import * as T from './loading.types'
 
+import { useTheme } from 'styled-components'
+
 const Loading: React.FC<T.LoadingProps> = () => {
+const theme = useTheme()
+
   return (
     <LinearGradient
-      colors={['#065099', '#065099', '#010A14']}
+      colors={theme.colors.gradientBlueOne}
       style={{
         flex: 1,
         paddingTop: 70

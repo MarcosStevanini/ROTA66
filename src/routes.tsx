@@ -9,8 +9,6 @@ import { StackAuth } from './routes/stack.auth'
 import { StackApp } from './routes/stack.app'
 import { StatusBar } from 'expo-status-bar'
 
-import * as S from '../theme.styles'
-
 export default function Routes() {
   const Stack = createNativeStackNavigator()
   const [user] = useAuthState(auth)
@@ -26,9 +24,7 @@ export default function Routes() {
   return (
     <NavigationContainer>
       <StatusBar style="light" />
-      <Stack.Navigator
-        screenOptions={{ headerShown: false}}
-      >
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         {AppScreen()}
       </Stack.Navigator>
     </NavigationContainer>

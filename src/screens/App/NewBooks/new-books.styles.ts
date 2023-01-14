@@ -9,8 +9,9 @@ margin-bottom: 48px;
 `;
 
 export const TitleHeader = styled.Text`
-font-size: 24px;
+font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
+font-size: 24px;
 
 margin-bottom: 36px;
 `;
@@ -54,9 +55,10 @@ margin-right: 8px;
 
 
 export const TitleChapter = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+color:${({theme})=>theme.colors.white200};
 font-size: 18px;
 font-weight: 500;
-color:${({theme})=>theme.colors.white200};
 
 `;
 

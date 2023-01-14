@@ -13,10 +13,13 @@ import Toast from 'react-native-toast-message'
 import * as S from './forgotpassword.styles'
 import * as T from './forgotpassword.types'
 
+import { useTheme } from 'styled-components'
+
 const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
   const [email, setEmail] = useState('')
 
   const navigator = useNavigation()
+  const theme = useTheme()
 
   function handleGoback() {
     navigator.goBack()
@@ -25,14 +28,14 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <LinearGradient
-        colors={['#065099', '#065099', '#010A14']}
+        colors={theme.colors.gradientBlueOne}
         style={{
           flex: 1,
           paddingTop: 70
         }}
       >
         <S.Icon onPress={handleGoback}>
-          <AntDesign name="left" size={25} color="#ffff" />
+          <AntDesign name="left" size={25} color={theme.colors.white100} />
         </S.Icon>
         <S.Container>
           <S.Image
@@ -44,7 +47,7 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
             <S.Input
               keyboardType="email-address"
               placeholder="Digite seu E-mail"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={theme.colors.white400}
               value={email}
               onChangeText={e => setEmail(e)}
             />

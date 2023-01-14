@@ -7,15 +7,18 @@ import { useNavigation } from '@react-navigation/native'
 import Biblia from '../../../assets/biblia.svg'
 import { AntDesign } from '@expo/vector-icons'
 
+import { useTheme } from 'styled-components/native'
+
 import * as S from './old-books.styles'
 import * as T from './old-books.types'
 
 const OldBooks: React.FC<T.OldBooksProps> = () => {
   const navigator = useNavigation()
+  const theme = useTheme()
 
   return (
     <LinearGradient
-      colors={['#010A14', '#065099', '#065099']}
+      colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
         paddingHorizontal: 20,
@@ -25,7 +28,7 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
     >
       <S.Container>
         <S.ButtonBack onPress={() => navigator.goBack()}>
-          <AntDesign name="left" size={30} color="#ffff" />
+          <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
         <S.TitleHeader>Velho testamento</S.TitleHeader>
 

@@ -1,36 +1,42 @@
-import { useNavigation } from '@react-navigation/native';
-import React, { useState, useMemo } from 'react';
-import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native'
+import React, { useState, useMemo } from 'react'
+import { LinearGradient } from 'expo-linear-gradient'
 
-import { TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView, View, Text } from 'react-native';
+import {
+  TouchableWithoutFeedback,
+  Keyboard,
+  KeyboardAvoidingView,
+  View,
+  Text
+} from 'react-native'
 import Toast from 'react-native-toast-message'
 
-import { AntDesign } from '@expo/vector-icons';
-import { SvgUri } from 'react-native-svg';
+import { AntDesign } from '@expo/vector-icons'
+import { SvgUri } from 'react-native-svg'
 
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { auth } from '../../../services/firebaseConfig';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { auth } from '../../../services/firebaseConfig'
 
-import * as S from './sign-in.styles';
-import * as T from './sign-in.types';
+import * as S from './sign-in.styles'
+import * as T from './sign-in.types'
+
+import { useTheme } from 'styled-components'
 
 const SignIn: React.FC<T.SignInProps> = () => {
   // const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth)
-  const [
-    signInWithEmailAndPassword,
-    user,
-    loading,
-    error,
-  ] = useSignInWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
   const navigator = useNavigation()
+  const theme = useTheme()
 
   if (error) {
     Toast.show({
       type: 'error',
       visibilityTime: 3000,
-      text1: 'Você precisa checar seu e-mail e senha',
+      text1: 'Você precisa checar seu e-mail e senha'
     })
     if (error.code === 'auth/email-already-in-use') {
       Toast.show({
@@ -55,7 +61,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
       visibilityTime: 3000,
       text1: 'Verificando dados...',
       text2: 'Mas calma, isso só levará alguns segundos'
-    });
+    })
   }
 
   // useMemo(() => {
@@ -76,14 +82,12 @@ const SignIn: React.FC<T.SignInProps> = () => {
   //   });
   // }
 
-
-
   const authGoogle = () => {
     Toast.show({
       type: 'info',
       visibilityTime: 3000,
       text1: 'Funcionalidade inativa',
-      text2: 'Estamos em constante evolução',
+      text2: 'Estamos em constante evolução'
     })
   }
 
@@ -91,7 +95,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
         <LinearGradient
-          colors={['#065099', '#065099', '#010A14']}
+          colors={theme.colors.gradientBlueOne}
           style={{
             flex: 1,
             paddingTop: 100
@@ -125,23 +129,22 @@ const SignIn: React.FC<T.SignInProps> = () => {
               <S.Input
                 placeholder="E-mail"
                 keyboardType="email-address"
-                returnKeyType='join'
-                placeholderTextColor="#BDBDBD"
+                returnKeyType="join"
+                placeholderTextColor={theme.colors.white400}
                 value={email}
                 onChangeText={e => setEmail(e)}
-
               />
               <S.Input
                 secureTextEntry={true}
                 keyboardType="numeric"
-                returnKeyType='join'
+                returnKeyType="join"
                 placeholder="Senha"
-                placeholderTextColor="#BDBDBD"
+                placeholderTextColor={theme.colors.white400}
                 value={password}
                 onChangeText={e => setPassword(e)}
               />
               <S.changePassword
-              // onPress={() => navigator.navigate('ForgotPassword')}
+                onPress={() => navigator.navigate('ForgotPassword')}
               >
                 <S.submitText>Esqueceu a senha?</S.submitText>
               </S.changePassword>
@@ -149,9 +152,9 @@ const SignIn: React.FC<T.SignInProps> = () => {
               <S.ButtonInput
                 onPress={() => signInWithEmailAndPassword(email, password)}
               >
-                {(loading && <S.TextButton>Buscando dados...</S.TextButton>) || (
-                  <S.TextButton>Entrar</S.TextButton>
-                )}
+                {(loading && (
+                  <S.TextButton>Buscando dados...</S.TextButton>
+                )) || <S.TextButton>Entrar</S.TextButton>}
               </S.ButtonInput>
               <S.CreateAccount onPress={() => navigator.navigate('SignUp')}>
                 <S.AccountText>Ainda nao tem acesso? </S.AccountText>
