@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Modal, Alert } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
@@ -9,6 +10,8 @@ import * as T from './genesis.types'
 import { AntDesign, Feather } from '@expo/vector-icons'
 
 const Genesis: React.FC<T.GenesisProps> = () => {
+
+
   const navigator = useNavigation()
   const theme = useTheme()
 
@@ -22,6 +25,8 @@ const Genesis: React.FC<T.GenesisProps> = () => {
         paddingTop: 100
       }}
     >
+     
+
       <S.ButtonBack onPress={() => navigator.goBack()}>
         <AntDesign name="left" size={30} color={theme.colors.white300} />
       </S.ButtonBack>
@@ -38,9 +43,10 @@ const Genesis: React.FC<T.GenesisProps> = () => {
           <S.Number>1</S.Number>
         </S.CardChapter>
 
-        <S.CardChapter>
+        <S.CardChapter >
           <S.Number>2</S.Number>
         </S.CardChapter>
+    
 
         <S.CardChapter>
           <S.Number>3</S.Number>

@@ -17,7 +17,7 @@ const theme = useTheme()
       colors={theme.colors.gradientBlueOne}
       style={{
         flex: 1,
-        paddingTop: 70
+        paddingTop: 100
       }}
     >
       <S.Container>

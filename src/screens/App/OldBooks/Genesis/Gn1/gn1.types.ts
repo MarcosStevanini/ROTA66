@@ -5,6 +5,7 @@ export interface Gn1Props {
   capitulo: string;
   descricao: string;
   playlist:string;
+  estudo:string;
   tema: string;
   time: string;
   url: string;
