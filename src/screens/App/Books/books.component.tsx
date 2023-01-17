@@ -1,5 +1,6 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
+import { RFPercentage } from 'react-native-responsive-fontsize'
 
 import { useNavigation } from '@react-navigation/native'
 
@@ -19,9 +20,9 @@ const Books: React.FC<T.BooksProps> = () => {
       colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
-        paddingHorizontal: 32,
-        paddingVertical: 32,
-        paddingTop: 100
+        paddingHorizontal: RFPercentage(3.2),
+        paddingVertical: RFPercentage(3.2),
+        paddingTop: RFPercentage(10)
       }}
     >
       <S.Container>

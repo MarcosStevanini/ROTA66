@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { RFValue,RFPercentage } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
     flex: 1;
@@ -7,16 +7,17 @@ export const Container = styled.View`
 `;
 
 export const TextButton = styled.Text`
-font-family: ${({theme})=>theme.fonts.medium};
+    font-family: ${({theme})=>theme.fonts.medium};
     color: ${({theme})=>theme.colors.white100};
-    font-size: 17px;
-    font-weight: 500;
+    font-size: ${RFValue(17)}px;
+
 `;
 
 export const AccountText = styled.Text`
     color: ${({theme})=>theme.colors.white400};
     margin: 15px 0 8px 0;
 `;
+
 export const CreateAccountText = styled.Text`
     margin: 15px 0;
     color: ${({theme})=>theme.colors.yellow400};
@@ -24,9 +25,6 @@ export const CreateAccountText = styled.Text`
 
 export const CreateAccount = styled.TouchableOpacity``;
 
-export const submitText = styled.Text`
-    color: ${({theme})=>theme.colors.white400};
-`;
 export const changePassword = styled.TouchableOpacity`
     margin: 20px 0;
     align-self: flex-end;
@@ -35,7 +33,7 @@ export const changePassword = styled.TouchableOpacity`
 export const Image = styled.Image`
     width:  ${RFValue(150)}px;
     height: ${RFValue(150)}px;
-    margin-top: 65px;
+    margin-top: ${RFPercentage(6.5)}px;
 `;
 
 export const Loading = styled.Image`
@@ -46,14 +44,13 @@ export const Loading = styled.Image`
 export const Input = styled.TextInput`
     background: transparent;
     color: ${({theme})=>theme.colors.white100};
-    padding: 13px 16px;
+    padding: 16px 16px;
     border: solid 1px ${({theme})=>theme.colors.white100};
-    margin-bottom: 48px;
+    margin-bottom: ${RFPercentage(4.8)}px;
     border-radius: 4px;
 `;
 
 export const ContainerInput = styled.View`
-    flex: 1;
     width: 100%;
     padding: 48px 10%;
 `;

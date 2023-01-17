@@ -1,6 +1,7 @@
 import { useNavigation } from '@react-navigation/native'
 import React, { useState, useMemo } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import {
   TouchableWithoutFeedback,
@@ -93,14 +94,14 @@ const SignIn: React.FC<T.SignInProps> = () => {
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
-        <LinearGradient
-          colors={theme.colors.gradientBlueOne}
-          style={{
-            flex: 1,
-            paddingTop: 100
-          }}
-        >
+      <LinearGradient
+        colors={theme.colors.gradientBlueOne}
+        style={{
+          flex: 1,
+          paddingTop: RFPercentage(10)
+        }}
+      >
+        <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
           <S.Container>
             <S.ContainerInput>
               <S.CreateAccountSocial onPress={() => authGoogle()}>
@@ -136,7 +137,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
               />
               <S.Input
                 secureTextEntry={true}
-                keyboardType="numeric"
+                keyboardType="default"
                 returnKeyType="join"
                 placeholder="Senha"
                 placeholderTextColor={theme.colors.white400}
@@ -157,14 +158,14 @@ const SignIn: React.FC<T.SignInProps> = () => {
                 )) || <S.TextButton>Entrar</S.TextButton>}
               </S.ButtonInput>
               <S.CreateAccount onPress={() => navigator.navigate('SignUp')}>
-                <S.AccountText>Ainda nao tem acesso? </S.AccountText>
+                <S.AccountText>Ainda não tem acesso? </S.AccountText>
                 <S.CreateAccountText>Cadastre-se</S.CreateAccountText>
               </S.CreateAccount>
             </S.ContainerInput>
           </S.Container>
           <Toast position="top" />
-        </LinearGradient>
-      </KeyboardAvoidingView>
+        </KeyboardAvoidingView>
+      </LinearGradient>
     </TouchableWithoutFeedback>
   )
 }

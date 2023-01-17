@@ -17,7 +17,7 @@ const theme = useTheme()
       colors={theme.colors.gradientBlueOne}
       style={{
         flex: 1,
-        paddingTop: 100
+        paddingTop: 60
       }}
     >
       <S.Container>
@@ -25,7 +25,7 @@ const theme = useTheme()
           source={require('../../assets/logo-white.png')}
           resizeMode="contain"
         />
-        <ActivityIndicator color={'#fff'} size={50} />
+        <ActivityIndicator color={'#fff'} size={25} />
       </S.Container>
     </LinearGradient>
   )

@@ -1,6 +1,8 @@
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
-import React, { useState } from 'react'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
+
 
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
@@ -31,7 +33,7 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
         colors={theme.colors.gradientBlueOne}
         style={{
           flex: 1,
-          paddingTop: 70
+          paddingTop: RFPercentage(10)
         }}
       >
         <S.Icon onPress={handleGoback}>

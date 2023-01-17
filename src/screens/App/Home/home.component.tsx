@@ -1,5 +1,7 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
+import { RFPercentage } from 'react-native-responsive-fontsize'
+
 import {
   FontAwesome5,
   MaterialIcons,
@@ -17,6 +19,7 @@ import useHome from './home.hook'
 import Toast from 'react-native-toast-message'
 
 import { useTheme } from 'styled-components/native'
+import { ScrollView } from 'react-native'
 
 const Home: React.FC<T.HomeProps> = () => {
   const auth = useHome()
@@ -30,9 +33,9 @@ const Home: React.FC<T.HomeProps> = () => {
       colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
-        paddingHorizontal: 20,
-        paddingVertical: 30,
-        paddingTop: 100
+        paddingHorizontal: RFPercentage(3.2),
+        paddingVertical: RFPercentage(3.2),
+        paddingTop: RFPercentage(10)
       }}
     >
       {/* PROFILE CONTENT */}
@@ -49,7 +52,11 @@ const Home: React.FC<T.HomeProps> = () => {
             })
           }
         >
-          <FontAwesome5 name="user-circle" size={24} color={theme.colors.white300} />
+          <FontAwesome5
+            name="user-circle"
+            size={24}
+            color={theme.colors.white300}
+          />
         </S.ProfileButton>
       </S.ContainerProfile>
 
@@ -80,53 +87,69 @@ const Home: React.FC<T.HomeProps> = () => {
           onPress={() => navigator.navigate('Books')}
         >
           <S.TextButtonAllChapter>Ver todos</S.TextButtonAllChapter>
-          <AntDesign name="arrowright" size={15} color={theme.colors.white400} />
+          <AntDesign
+            name="arrowright"
+            size={15}
+            color={theme.colors.white400}
+          />
         </S.ContainerButtonAllChapter>
 
         {/* Search Theme */}
         <S.ContainerTheme>
           <S.TextTheme>Encontre seu tema favorito</S.TextTheme>
 
-          <S.ContainerCardsTheme>
-            <S.CardsTheme background="#FFF066">
-              <S.TextCardsTheme>Dízimos e Ofertas</S.TextCardsTheme>
-              {/* Icon */}
-              <FontAwesome5 name="church" size={24} color="#101010" />
-            </S.CardsTheme>
-            <S.CardsTheme background="#5F78FF">
-              <S.TextCardsTheme>Gratidão e Felicidade</S.TextCardsTheme>
-              {/* Icon */}
-              <FontAwesome5 name="praying-hands" size={24} color="black" />
-            </S.CardsTheme>
-          </S.ContainerCardsTheme>
-          <S.ContainerCardsTheme>
-            <S.CardsTheme background="#67FE7F">
-              <S.TextCardsTheme>Sobre a Família</S.TextCardsTheme>
-              {/* Icon */}
-              <MaterialIcons name="family-restroom" size={24} color="#101010" />
-            </S.CardsTheme>
-            <S.CardsTheme background="#FF9E57">
-              <S.TextCardsTheme>Palavras de Conforto</S.TextCardsTheme>
-              {/* Icon */}
-              <Entypo name="chat" size={24} color="#101010" />
-            </S.CardsTheme>
-          </S.ContainerCardsTheme>
-          <S.ContainerCardsTheme>
-            <S.CardsTheme background="#E1E1E1">
-              <S.TextCardsTheme>União e Casamento</S.TextCardsTheme>
-              {/* Icon */}
-              <MaterialCommunityIcons name="church" size={24} color="#101010" />
-            </S.CardsTheme>
-            <S.CardsTheme background="#FF6464">
-              <S.TextCardsTheme>Sobre Cura e Vida</S.TextCardsTheme>
-              {/* Icon */}
-              <MaterialCommunityIcons
-                name="heart-pulse"
-                size={24}
-                color="#101010"
-              />
-            </S.CardsTheme>
-          </S.ContainerCardsTheme>
+        
+            <S.ContainerCardsTheme>
+              <S.CardsTheme background="#FFF066">
+                <S.TextCardsTheme>Dízimos e Ofertas</S.TextCardsTheme>
+                {/* Icon */}
+                <FontAwesome5 name="church" size={25} color="#101010" />
+              </S.CardsTheme>
+              <S.CardsTheme background="#5F78FF">
+                <S.TextCardsTheme>Gratidão e Felicidade</S.TextCardsTheme>
+                {/* Icon */}
+                <FontAwesome5 name="praying-hands" size={25} color="black" />
+              </S.CardsTheme>
+            </S.ContainerCardsTheme>
+            <S.ContainerCardsTheme>
+              <S.CardsTheme background="#67FE7F">
+                <S.TextCardsTheme>Sobre a{'\n'}Família</S.TextCardsTheme>
+                {/* Icon */}
+                <MaterialIcons
+                  name="family-restroom"
+                  size={25}
+                  color="#101010"
+                />
+              </S.CardsTheme>
+              <S.CardsTheme background="#FF9E57">
+                <S.TextCardsTheme>Palavras de Conforto</S.TextCardsTheme>
+                {/* Icon */}
+                <Entypo name="chat" size={25} color="#101010" />
+              </S.CardsTheme>
+            </S.ContainerCardsTheme>
+            <S.ContainerCardsTheme>
+              <S.CardsTheme background="#E1E1E1">
+                <S.TextCardsTheme>União e Casamento</S.TextCardsTheme>
+                {/* Icon */}
+                <MaterialCommunityIcons
+                  name="church"
+                  size={25}
+                  color="#101010"
+                />
+              </S.CardsTheme>
+              <S.CardsTheme background="#FF6464">
+                <S.TextCardsTheme>Sobre Cura{'\n'}e Vida</S.TextCardsTheme>
+                {/* Icon */}
+                <MaterialCommunityIcons
+                  name="heart-pulse"
+                  size={25}
+                  color="#101010"
+                />
+              </S.CardsTheme>
+            </S.ContainerCardsTheme>
+
+     
+
         </S.ContainerTheme>
       </S.ContainerExplore>
 
