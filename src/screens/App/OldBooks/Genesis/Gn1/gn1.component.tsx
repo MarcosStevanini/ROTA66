@@ -12,7 +12,8 @@ import {
 import { FlatList, Image } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import Loading from '../../../../../components/Loading/loading.component'
-import ImagemLivro from '../../../../../assets/img-livro-genesis.png'
+
+import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
 
 import { useTheme } from 'styled-components/native'
 import { Feather } from '@expo/vector-icons'
@@ -80,12 +81,12 @@ const Gn1: React.FC<T.Gn1Props> = () => {
         <Loading />
       ) : (
         <LinearGradient
-          colors={['#010A14', '#065099', '#065099']}
+        colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
-            paddingHorizontal: 20,
-            paddingVertical: 30,
-            paddingTop: 100
+            paddingHorizontal: RFPercentage(2),
+            paddingVertical: RFPercentage(3),
+            paddingTop: RFPercentage(10)
           }}
         >
           <FlatList

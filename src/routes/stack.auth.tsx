@@ -10,6 +10,8 @@ import Genesis from '../screens/App/OldBooks/Genesis/genesis.component'
 import Gn1 from '../screens/App/OldBooks/Genesis/Gn1/gn1.component'
 import CreateProfile from '../components/CreateProfile/CreateProfile.component'
 
+import PlayerAudio from '../screens/App/PlayerAudio/player-audio.component'
+
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
   return (
@@ -27,7 +29,7 @@ export const StackAuth = () => {
       <Stack.Screen name="NewBooks" component={NewBooks} />
       <Stack.Screen name="OldBooks" component={OldBooks} />
       <Stack.Screen name="Genesis" component={Genesis} />
-      <Stack.Screen name="Gn1" component={Gn1} />
+        <Stack.Screen name="Gn1" component={Gn1} />
 
       {GroupAuth()}
     </Stack.Navigator>

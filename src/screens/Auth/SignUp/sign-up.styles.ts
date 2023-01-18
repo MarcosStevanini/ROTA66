@@ -50,6 +50,7 @@ export const ButtonAccess = styled.TouchableOpacity`
 
 export const TextQuestAccess = styled.Text`
     font-family: ${({theme})=>theme.fonts.bold}; 
+    font-size:${RFValue(14)}px;
     color: ${({theme})=>theme.colors.white400};
     text-align: center;
     margin-top: ${RFPercentage(2)}px;
@@ -59,6 +60,7 @@ export const TextQuestAccess = styled.Text`
 `
 export const TextAccess = styled.Text`
     font-family: ${({theme})=>theme.fonts.bold};  
+    font-size:${RFValue(14)}px;
     color: ${({theme})=>theme.colors.white100};
     margin-left: ${RFPercentage(2)}px;
 `

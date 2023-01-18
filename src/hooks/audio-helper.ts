@@ -33,7 +33,7 @@ export function useAudioHelper(request:IUseAudioHelper){
   const [errorMassage, setErrorMessage] = React.useState('');
 
    const [duration, setDuration] = React.useState(0);
-   const [player, setPlayer] = React.useState<SoundPlayer>(null);
+   const [player, setPlayer] = React.useState<SoundPlayer|null>(null);
 
    function playWithPlayer(player: SoundPlayer) {
        if (player) {

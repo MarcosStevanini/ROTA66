@@ -4,11 +4,11 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { auth } from '../../../services/firebaseConfig';
 import { MaterialIcons } from '@expo/vector-icons';
 
-import * as S from './config.styles';
-import * as T from './config.types';
+import * as S from './favorite.styles';
+import * as T from './favorite.types';
 import Toast from 'react-native-toast-message';
 
-const Config: React.FC<T.ConfigProps> = () => {
+const Favorite: React.FC<T.FavoriteProps> = () => {
   const Logout  = () => {
     Toast.show({
       type: 'info',
@@ -42,4 +42,4 @@ const Config: React.FC<T.ConfigProps> = () => {
   );
 };
 
-export default Config;
+export default Favorite;

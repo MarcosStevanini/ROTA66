@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './src/global/styles/theme'
 import Loading from './src/components/Loading/loading.component'
 
+
 import {
   useFonts,
   Montserrat_400Regular,

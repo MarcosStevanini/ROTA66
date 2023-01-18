@@ -34,7 +34,7 @@ const Books: React.FC<T.BooksProps> = () => {
 
         <S.OptionsBooks>
           <S.CardOption onPress={() => navigator.navigate('OldBooks')}>
-            <S.TitleCard>Velho Testamento</S.TitleCard>
+            <S.TitleCard>Antigo Testamento</S.TitleCard>
           </S.CardOption>
           <S.CardOption onPress={() => navigator.navigate('NewBooks')}>
             <S.TitleCard>Novo Testamento</S.TitleCard>

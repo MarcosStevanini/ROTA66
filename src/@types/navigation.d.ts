@@ -10,6 +10,7 @@ export declare global{
         OldBooks:undefined;
         Genesis:undefined;
         Gn1:undefined;
+        PlayerAudio:undefined;
     }
   }
 }

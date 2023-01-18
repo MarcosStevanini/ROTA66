@@ -94,7 +94,8 @@ export const CardsTheme = styled.View<backgroundCards>`
   width: ${RFPercentage(20)}px;
   height: ${RFPercentage(10)}px;
   //margin-bottom: ${RFPercentage(1)}px;
-  padding: 14px 8px;
+  padding: 14px 10px;
+  
   border-radius: 4px;
 
 `;

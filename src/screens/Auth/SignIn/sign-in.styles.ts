@@ -15,13 +15,13 @@ export const TextButton = styled.Text`
 
 export const AccountText = styled.Text`
   font-family: ${({theme})=>theme.fonts.bold};
-  font-size:  ${RFValue(12)}px;
+  font-size:  ${RFValue(14)}px;
   color: ${({theme})=>theme.colors.white400};
     
 `;
 export const CreateAccountText = styled.Text`
   font-family: ${({theme})=>theme.fonts.bold};
-  font-size:  ${RFValue(12)}px;
+  font-size:  ${RFValue(14)}px;
   color: ${({theme})=>theme.colors.white100};
     
 `;
@@ -36,7 +36,7 @@ export const CreateAccount = styled.TouchableOpacity`
 
 export const submitText = styled.Text`
      font-family: ${({theme})=>theme.fonts.medium};
-     font-size:  ${RFValue(10)}px;
+     font-size:  ${RFValue(14)}px;
      color: ${({theme})=>theme.colors.white400};
 `;
 export const changePassword = styled.TouchableOpacity`
