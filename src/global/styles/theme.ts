@@ -42,7 +42,7 @@ export default {
     //Gradients
     gradientBlueOne:['#065099', '#065099', '#010A14'],
     gradientBlueTwo:['#010A14','#065099', '#065099'],
-    gradientButton:[ '#0070FF' ,'#132440']
+    gradientButton:['#0070FF' ,'#132440']
                
   
     },

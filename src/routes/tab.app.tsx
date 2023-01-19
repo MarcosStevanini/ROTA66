@@ -16,19 +16,18 @@ const Tab = createBottomTabNavigator()
 
 type PropsButton = {
   children: any
-  onPress: () => void
+  onPress: () =>  void
 }
 
 const CustomTabBarButton = ({ children, onPress }: PropsButton) => (
-  <TouchableOpacity
-    style={{
-      top: -24,
-      justifyContent: 'center',
-      alignContent: 'center'
-    }}
-    onPress={onPress}
-  >
-    <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+  <TouchableOpacity onPress={onPress}>
+    <View
+      style={{
+        top: -24,
+        justifyContent: 'center',
+        alignContent: 'center'
+      }}
+    >
       <LinearGradient
         colors={theme.colors.gradientButton}
         style={{
@@ -72,6 +71,7 @@ export default function TabApp() {
         name="Home"
         component={Home}
         options={{
+          tabBarLabel: 'Inicio',
           tabBarIcon: ({ color }) => (
             <Feather name="home" size={26} color={color} />
           ),
@@ -86,7 +86,7 @@ export default function TabApp() {
           tabBarIcon: () => (
             <Feather
               name="headphones"
-              size={28}
+              size={35}
               color={theme.colors.white100}
             />
           ),
