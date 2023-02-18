@@ -1,47 +1,48 @@
 import styled from 'styled-components/native';
+import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-    padding-top: 50px;
+    padding-top: ${RFPercentage(5)}px;
 `;
 
 export const ContainerUser = styled.View`
-    padding-top: 30px;
+    padding-top: ${RFPercentage(3)}px;
 `;
 
 export const TextUser = styled.Text`
-    color: #fff;
+    color: ${({theme})=>theme.colors.white100};
     font-weight: 600;
-    font-size: 16px;
+    font-size: ${RFValue(16)}px;
 `;
 
 export const TextHeaderPrifile = styled.Text`
-    color: #fff;
+    color: ${({theme})=>theme.colors.white100};
     font-weight: 800;
-    font-size: 28px;
+    font-size: ${RFValue(28)}px;
 `;
 
 export const TextSubHeaderPrifile = styled.Text`
-    color: #fff;
-    font-size: 16px;
+    color: ${({theme})=>theme.colors.white100};
+    font-size: ${RFValue(16)}px;
 `;
 
 export const Text = styled.Text`
-    color: #fff;
+    color: ${({theme})=>theme.colors.white100};
 `;
 
 export const Input = styled.TextInput`
-    background: #ffffff40;
+    background: ${({theme})=>theme.colors.gray100};
     text-transform: capitalize !important;
-    color: #fff;
+    color: ${({theme})=>theme.colors.white100};
     padding: 13px 16px;
     border: none;
-    margin-bottom: 16px;
+    margin-bottom: ${RFPercentage(1.6)}px;
     border-radius: 4px;
-    margin-top: 10px;
+    margin-top: ${RFPercentage(1)}px;
 `;
 
 export const Button = styled.TouchableOpacity`
-    background: #0C64BB;
+    background: ${({theme})=>theme.colors.blue200};
     padding: 12px 0;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
