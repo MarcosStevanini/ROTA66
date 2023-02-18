@@ -1,6 +1,7 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 
+
 import * as S from './playlist.styles'
 import * as T from './playlist.types'
 
