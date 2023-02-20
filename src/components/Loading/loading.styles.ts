@@ -8,8 +8,8 @@ align-items: center;
 `;
 
 export const Image = styled.Image`
-    width: ${RFValue(200)}px;
-    height: ${RFValue(200)}px;
+    width: ${RFValue(100)}px;
+    height: ${RFValue(100)}px;
     margin-top: 70px;
     margin-bottom: 192px;
 `;

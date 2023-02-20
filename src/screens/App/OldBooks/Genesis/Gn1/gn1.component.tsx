@@ -13,7 +13,7 @@ import { FlatList, Image } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import Loading from '../../../../../components/Loading/loading.component'
 
-import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 import { useTheme } from 'styled-components/native'
 import { Feather } from '@expo/vector-icons'
@@ -81,7 +81,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
         <Loading />
       ) : (
         <LinearGradient
-        colors={theme.colors.gradientBlueTwo}
+          colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
             paddingHorizontal: RFPercentage(2),
@@ -96,7 +96,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
               <S.AudioItem>
                 <S.ContainerAudioItem>
                   <Image
-                    source={{uri:item.imageBook}}
+                    source={{ uri: item.imageBook }}
                     style={{ width: 56, height: 56 }}
                   />
 
@@ -107,10 +107,10 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                     <S.Time>{item.time}m</S.Time>
                   </S.ContainerInf>
                 </S.ContainerAudioItem>
-                
+
                 <S.Favorite>
 
-                <Feather name="heart" size={25} color={theme.colors.white300} />
+                  <Feather name="heart" size={25} color={theme.colors.white300} />
 
                 </S.Favorite>
 
