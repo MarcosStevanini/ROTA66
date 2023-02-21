@@ -1,6 +1,7 @@
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
-import React, { useState } from 'react'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import { SvgUri } from 'react-native-svg'
 import { AntDesign } from '@expo/vector-icons'
@@ -70,7 +71,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
         colors={theme.colors.gradientBlueOne}
         style={{
           flex: 1,
-          paddingTop: 100
+          paddingTop: RFPercentage(10)
         }}
       >
         <S.Container>
@@ -108,7 +109,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
             />
             <S.Input
               secureTextEntry={true}
-              keyboardType="numeric"
+              keyboardType="default"
               placeholder="Senha"
               placeholderTextColor={theme.colors.white400}
               value={password}
@@ -117,7 +118,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
             />
             <S.Input
               secureTextEntry={true}
-              keyboardType="numeric"
+              keyboardType="default"
               placeholder="Confirmar Senha"
               placeholderTextColor={theme.colors.white400}
               value={confirmPassword}

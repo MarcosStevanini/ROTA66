@@ -1,8 +1,10 @@
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
-import React, { useState } from 'react'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth'
+import { sendPasswordResetEmail } from 'firebase/auth'
 import { auth } from '../../../services/firebaseConfig'
 
 import { TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
@@ -18,11 +20,58 @@ import { useTheme } from 'styled-components'
 const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
   const [email, setEmail] = useState('')
 
-  const navigator = useNavigation()
+  const navigation = useNavigation()
   const theme = useTheme()
 
   function handleGoback() {
-    navigator.goBack()
+    navigation.goBack()
+  }
+
+  async function forgotPassword() {
+    if (!email) {
+      return Toast.show({
+        type: 'error',
+        visibilityTime: 3000,
+        text1: 'Redefinir Senha',
+        text2: 'Informe o e-mail...'
+      })
+    }
+
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        Alert.alert(
+          'Redefinir Senha',
+          'Enviamos um link no seu E-mail para você redefinir sua senha.'
+        )
+
+        navigation.goBack()
+      })
+      .catch(error => {
+        Toast.show({
+          type: 'error',
+          visibilityTime: 3000,
+          text1: 'Redefinir Senha',
+          text2: 'Não foi possível enviar o e-mail para redefinição da senha.'
+        })
+
+        if (error.code === 'auth/invalid-email') {
+          Toast.show({
+            type: 'error',
+            visibilityTime: 3000,
+            text1: 'E-mail inválido',
+            text2: 'Informe um E-mail válido...'
+          })
+        }
+
+        if (error.code === 'auth/user-not-found') {
+          Toast.show({
+            type: 'error',
+            visibilityTime: 3000,
+            text1: 'Usuário não cadastrado',
+            text2: 'Informe um E-mail cadastrado...'
+          })
+        }
+      })
   }
 
   return (
@@ -31,7 +80,7 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
         colors={theme.colors.gradientBlueOne}
         style={{
           flex: 1,
-          paddingTop: 70
+          paddingTop: RFPercentage(10)
         }}
       >
         <S.Icon onPress={handleGoback}>
@@ -53,9 +102,7 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
               style={{fontSize:16}}
             />
 
-            <S.ButtonInput
-              onPress={() => { }}
-            >
+            <S.ButtonInput onPress={forgotPassword}>
               <S.TextButton>Enviar</S.TextButton>
             </S.ButtonInput>
           </S.ContainerInput>

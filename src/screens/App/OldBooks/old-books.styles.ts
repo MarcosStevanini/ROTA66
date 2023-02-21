@@ -1,19 +1,30 @@
 import styled from 'styled-components/native';
+<<<<<<< HEAD
 import { RFValue } from 'react-native-responsive-fontsize';
+=======
+import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
+>>>>>>> dev
 
-export const Container = styled.View``;
+
+export const Container = styled.View`
+flex: 1;
+`;
 
 export const ButtonBack = styled.TouchableOpacity`
-margin-bottom: 48px;
+margin-bottom: ${RFPercentage(5)}px;
 
 `;
 
 export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
+<<<<<<< HEAD
 font-size: ${RFValue(22)}px;
+=======
+font-size: ${RFValue(24)}px;
+>>>>>>> dev
 
-margin-bottom: 36px;
+margin-bottom: ${RFPercentage(5)}px;
 `;
 
 
@@ -22,13 +33,13 @@ flex-direction: row;
 flex-wrap: wrap;
 
 justify-content: space-around;
-padding-bottom: 200px;
+padding-bottom: 100px;
 
 `;
 
 export const CardChapter = styled.TouchableOpacity`
-width: 170px;
-height: 50px;
+width: ${RFPercentage(21.8)}px;
+height: ${RFPercentage(6.5)}px;
 
 border-width: 2px;
 border-radius: 4px;
@@ -38,7 +49,7 @@ border-color: ${({theme})=>theme.colors.blue200};
 flex-direction: row;
 align-items: center;
 
-margin-bottom: 24px;
+margin-bottom: ${RFPercentage(2.5)}px;
 
 background-color: ${({theme})=>theme.colors.blue300};
 
@@ -58,6 +69,10 @@ export const TitleChapter = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(14)}px;
 color:${({theme})=>theme.colors.white200};
+<<<<<<< HEAD
+=======
+font-size: ${RFValue(13)}px;
+>>>>>>> dev
 
 `;
 

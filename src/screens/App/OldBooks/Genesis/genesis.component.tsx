@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Modal, Alert } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'

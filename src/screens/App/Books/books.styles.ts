@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View``;
 
@@ -17,7 +18,7 @@ margin-bottom: 48px;
 export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
-font-size: 24px;
+font-size: ${RFValue(24)}px;
 
 margin-bottom: 36px;
 
@@ -34,15 +35,15 @@ margin-bottom: 64px;
 
 
 export const CardOption = styled.TouchableOpacity`
-padding: 14px 16px;
-width: 160px;
-height: 80px;
-
+padding: 13px 16px;
+width:${RFPercentage(21)}px;
+height:${RFPercentage(10)}px; ;
 background-color: ${({theme})=>theme.colors.white300};
 
 border-radius: 4px;
 
-justify-content: center;
+justify-content: space-between;
+
 align-items: center;
 
 
@@ -51,7 +52,7 @@ align-items: center;
 export const TitleCard = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.gray500};
-font-size: 20px;
+font-size: ${RFValue(16)}px;
 
 text-align: center;
 `;
@@ -60,13 +61,14 @@ export const FavoritesHeader = styled.View`
 flex-direction: row;
 
 margin-bottom: 10px;
+align-items: center;
 
 `;
 
 export const FavoritesTitle = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
-font-size: 24px;
+font-size: ${RFValue(24)}px;
 
 margin-right: 13px;
 `;

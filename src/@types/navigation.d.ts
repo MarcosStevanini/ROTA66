@@ -10,6 +10,10 @@ export declare global{
         OldBooks:undefined;
         Genesis:undefined;
         Gn1:undefined;
+        PlayerAudio:{audioId:string};
+        Profile:undefined;
+        Config:undefined;
+        Credits:undefined;
     }
   }
 }

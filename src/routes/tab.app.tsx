@@ -1,64 +1,111 @@
-import * as React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Entypo, MaterialIcons, Feather } from '@expo/vector-icons';
+import * as React from 'react'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Feather } from '@expo/vector-icons'
+
+import { useTheme } from 'styled-components'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import Home from '../screens/App/Home/home.component'
-import Share from '../components/Share/share.component';
-import Config from '../screens/App/Config/config.component';
-import Playlist from '../screens/App/Playlist/playlist.component';
+import Favorite from '../screens/App/Favorite/favorite.component'
+import Books from '../screens/App/Books/books.component'
+import { TouchableOpacity, View } from 'react-native'
+import { LinearGradient } from 'expo-linear-gradient'
+import theme from '../global/styles/theme'
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
+
+type PropsButton = {
+  children: any
+  onPress: () =>  void
+}
+
+const CustomTabBarButton = ({ children, onPress }: PropsButton) => (
+  <TouchableOpacity onPress={onPress}>
+    <View
+      style={{
+        top: -24,
+        justifyContent: 'center',
+        alignContent: 'center'
+      }}
+    >
+      <LinearGradient
+        colors={theme.colors.gradientButton}
+        style={{
+          width: 57,
+          height: 57,
+          borderRadius: 57
+        }}
+      >
+        {children}
+      </LinearGradient>
+    </View>
+  </TouchableOpacity>
+)
 
 export default function TabApp() {
+  const theme = useTheme()
+
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarInactiveTintColor: '#FFF',
-        tabBarActiveTintColor: '#1F8FFD',
+        tabBarInactiveTintColor: theme.colors.gray200,
+        tabBarActiveTintColor: theme.colors.blue300,
         tabBarStyle: {
-          backgroundColor: '#000',
+          backgroundColor: theme.colors.white100,
           borderTopColor: 'transparent',
+          position: 'absolute',
+          height: RFPercentage(7),
+          bottom: RFPercentage(5),
+          left: RFPercentage(3.2),
+          right: RFPercentage(3.2),
+          borderRadius: RFPercentage(3),
+          paddingBottom: RFPercentage(0.5)
         },
+        tabBarLabelStyle: {
+          fontSize: RFValue(10),
+          fontFamily: theme.fonts.medium
+        }
       }}
     >
       <Tab.Screen
         name="Home"
         component={Home}
-        options={{ 
-          tabBarIcon: () => <Entypo name="home" size={24} color="white" />,
-          headerShown: false,
-          // headerStyle: {backgroundColor: '#010A14'},
-          // tabBarStyle: {backgroundColor: '#065099'},
-        }} />
-      <Tab.Screen
-        name="Playlist"
-        component={Playlist}
         options={{
-          tabBarIcon: () => <MaterialIcons name="playlist-add" size={24} color="white" />,
-          headerShown: false,
-          // headerStyle: {backgroundColor: '#010A14'},
-          // tabBarStyle: {backgroundColor: '#065099'},
-        }} />
+          tabBarLabel: 'Inicio',
+          tabBarIcon: ({ color }) => (
+            <Feather name="home" size={26} color={color} />
+          ),
+          headerShown: false
+        }}
+      />
       <Tab.Screen
-        name="Share"
-        component={Share}
+        name="Books"
+        component={Books}
         options={{
-          title: 'Compartilhar',
-          tabBarIcon: () => <Entypo name="share" size={24} color="white" />,
+          tabBarLabel: '',
+          tabBarIcon: () => (
+            <Feather
+              name="headphones"
+              size={35}
+              color={theme.colors.white100}
+            />
+          ),
           headerShown: false,
-          // headerStyle: {backgroundColor: '#010A14'},
-          // tabBarStyle: {backgroundColor: '#065099'},
-        }} />
+          tabBarButton: props => <CustomTabBarButton {...props} />
+        }}
+      />
+
       <Tab.Screen
-        name="Config"
-        component={Config}
+        name="Favoritos"
+        component={Favorite}
         options={{
-          title: 'Configurações',
-          tabBarIcon: () => <Feather name="settings" size={24} color="white" />,
-          headerShown: false,
-          // headerStyle: {backgroundColor: '#010A14'},
-          // tabBarStyle: {backgroundColor: '#065099'},
-        }} />
+          title: 'Favoritos',
+          tabBarIcon: ({ color }) => (
+            <Feather name="heart" size={28} color={color} />
+          ),
+          headerShown: false
+        }}
+      />
     </Tab.Navigator>
-  );
+  )
 }
