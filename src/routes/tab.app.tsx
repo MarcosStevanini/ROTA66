@@ -7,7 +7,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import Home from '../screens/App/Home/home.component'
 import Favorite from '../screens/App/Favorite/favorite.component'
-import Playlist from '../screens/App/Playlist/playlist.component'
+import Books from '../screens/App/Books/books.component'
 import { TouchableOpacity, View } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import theme from '../global/styles/theme'
@@ -79,8 +79,8 @@ export default function TabApp() {
         }}
       />
       <Tab.Screen
-        name="Playlist"
-        component={Playlist}
+        name="Books"
+        component={Books}
         options={{
           tabBarLabel: '',
           tabBarIcon: () => (

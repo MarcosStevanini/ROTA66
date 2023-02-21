@@ -1,5 +1,7 @@
-export interface PlayerAudioProps {
-  id: string;
+
+
+export type AudiosFirestoreDTO={
+
   titulo: string;
   livro: string;
   capitulo: string;
@@ -10,4 +12,5 @@ export interface PlayerAudioProps {
   tema: string;
   time: string;
   url: string;
+   
 }

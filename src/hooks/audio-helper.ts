@@ -9,7 +9,7 @@ type SoundFileType = {
   basePath: string;
 } | {
   type: 'network';
-  name: string;
+  name?: string;
   path: string;
 } | {
   type: 'directory';
