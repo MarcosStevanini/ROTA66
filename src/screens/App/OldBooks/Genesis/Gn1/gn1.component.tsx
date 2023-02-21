@@ -9,13 +9,16 @@ import {
   onSnapshot
 } from 'firebase/firestore'
 
+import firestore from '@react-native-firebase/firestore'
+
 import { FlatList, Image } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import Loading from '../../../../../components/Loading/loading.component'
 
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import { useTheme } from 'styled-components/native'
+import { useNavigation } from '@react-navigation/native'
 import { Feather } from '@expo/vector-icons'
 
 import * as S from './gn1.styles'
@@ -26,6 +29,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
   const [audio, setAudio] = useState<T.Gn1Props[]>([])
 
   const theme = useTheme()
+  const navigator = useNavigation()
 
   const conexAudioRef = query(
     collection(db, 'audios'),
@@ -33,42 +37,49 @@ const Gn1: React.FC<T.Gn1Props> = () => {
     where('capitulo', '==', '1A')
   )
 
+  function handleOpenDetails(audioId: string) {
+    navigator.navigate('PlayerAudio', { audioId })
+  }
+
   useEffect(() => {
     setIsLoading(true)
 
-    const Read = async () => {
-      const audioSnapshot = await getDocs(conexAudioRef)
-      const data = audioSnapshot.docs.map(doc => {
-        const {
-          titulo,
-          livro,
-          capitulo,
-          descricao,
-          playlist,
-          estudo,
-          imageBook,
-          tema,
-          time,
-          url
-        } = doc.data()
-        return {
-          id: doc.id,
-          titulo,
-          livro,
-          capitulo,
-          descricao,
-          playlist,
-          estudo,
-          imageBook,
-          tema,
-          time,
-          url
-        }
+    const subscribe = firestore()
+      .collection<T.Gn1Props>('audios')
+      .where('livro', '==', 'Gn')
+      .where('capitulo', '==', '1A')
+      .onSnapshot(snapshot => {
+        const data = snapshot.docs.map(doc => {
+          const {
+            titulo,
+            livro,
+            capitulo,
+            descricao,
+            playlist,
+            estudo,
+            imageBook,
+            tema,
+            time,
+            url
+          } = doc.data()
+          return {
+            id: doc.id,
+            titulo,
+            livro,
+            capitulo,
+            descricao,
+            playlist,
+            estudo,
+            imageBook,
+            tema,
+            time,
+            url
+          }
+        })
+        setAudio(data)
+        setIsLoading(false)
       })
-      setAudio(data)
-      setIsLoading(false)
-    }
-    Read()
+    return subscribe
   }, [])
 
   if (isLoading) {
@@ -94,7 +105,9 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             keyExtractor={item => item.id}
             renderItem={({ item }) => (
               <S.AudioItem>
-                <S.ContainerAudioItem>
+                <S.ContainerAudioItem
+                  onPress={() => handleOpenDetails(item.id)}
+                >
                   <Image
                     source={{ uri: item.imageBook }}
                     style={{ width: 56, height: 56 }}
@@ -109,11 +122,12 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                 </S.ContainerAudioItem>
 
                 <S.Favorite>
-
-                  <Feather name="heart" size={25} color={theme.colors.white300} />
-
+                  <Feather
+                    name="heart"
+                    size={25}
+                    color={theme.colors.white300}
+                  />
                 </S.Favorite>
-
               </S.AudioItem>
             )}
             showsVerticalScrollIndicator={false}

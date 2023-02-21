@@ -42,16 +42,7 @@ const Home: React.FC<T.HomeProps> = () => {
       <S.ContainerProfile>
         <S.TextProfile>Olá, {userName}</S.TextProfile>
 
-        <S.ProfileButton
-          onPress={() =>
-            Toast.show({
-              type: 'info',
-              visibilityTime: 2000,
-              text1: 'Tela de Perfil em construção',
-              text2: 'Tenha paciencia, estamos fazendo o melhor para você'
-            })
-          }
-        >
+        <S.ProfileButton onPress={() => navigator.navigate('Profile')}>
           <FontAwesome5
             name="user-circle"
             size={24}
@@ -98,12 +89,9 @@ const Home: React.FC<T.HomeProps> = () => {
         <S.ContainerTheme>
           <S.TextTheme>Encontre seu tema favorito</S.TextTheme>
 
-
           <S.ContainerCardsTheme>
             <S.CardsTheme background="#FFF066">
-              <S.TextCardsTheme
-                onPress={() => navigator.navigate('SignUp')}
-              >Dízimos e Ofertas</S.TextCardsTheme>
+              <S.TextCardsTheme>Dízimos e Ofertas</S.TextCardsTheme>
               {/* Icon */}
               <FontAwesome5 name="church" size={25} color="#101010" />
             </S.CardsTheme>
@@ -117,11 +105,7 @@ const Home: React.FC<T.HomeProps> = () => {
             <S.CardsTheme background="#67FE7F">
               <S.TextCardsTheme>Sobre a{'\n'}Família</S.TextCardsTheme>
               {/* Icon */}
-              <MaterialIcons
-                name="family-restroom"
-                size={25}
-                color="#101010"
-              />
+              <MaterialIcons name="family-restroom" size={25} color="#101010" />
             </S.CardsTheme>
             <S.CardsTheme background="#FF9E57">
               <S.TextCardsTheme>Palavras de Conforto</S.TextCardsTheme>
@@ -133,11 +117,7 @@ const Home: React.FC<T.HomeProps> = () => {
             <S.CardsTheme background="#E1E1E1">
               <S.TextCardsTheme>União e Casamento</S.TextCardsTheme>
               {/* Icon */}
-              <MaterialCommunityIcons
-                name="church"
-                size={25}
-                color="#101010"
-              />
+              <MaterialCommunityIcons name="church" size={25} color="#101010" />
             </S.CardsTheme>
             <S.CardsTheme background="#FF6464">
               <S.TextCardsTheme>Sobre Cura{'\n'}e Vida</S.TextCardsTheme>
@@ -149,9 +129,6 @@ const Home: React.FC<T.HomeProps> = () => {
               />
             </S.CardsTheme>
           </S.ContainerCardsTheme>
-
-
-
         </S.ContainerTheme>
       </S.ContainerExplore>
 
