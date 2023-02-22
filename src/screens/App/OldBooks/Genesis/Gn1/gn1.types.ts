@@ -6,7 +6,8 @@ export interface Gn1Props {
   descricao: string;
   playlist:string;
   estudo:string;
-  imageBook:string;
+  imagBookItem:string;
+  imagBookPlayer:string;
   tema: string;
   time: string;
   url: string;

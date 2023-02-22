@@ -79,7 +79,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
               const update = {
                 displayName: name,
                 // phoneNumber: phone,
-                photoURL: 'https://i.pravatar.cc/150'
+                //photoURL: 'https://i.pravatar.cc/150'
               }
               const success = await updateProfile(update)
               success && navigator.navigate('Home')

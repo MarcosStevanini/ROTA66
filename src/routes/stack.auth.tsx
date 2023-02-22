@@ -13,6 +13,8 @@ import PlayerAudio from '../screens/App/PlayerAudio/player-audio.component'
 import Profile from '../screens/App/Profile/profile.component'
 import Credits from '../screens/App/Credits/credits.component'
 import Config from '../screens/App/Config/config.component'
+import UpdateName from '../components/UpdateName/update-name.component'
+import UpdateEmail from '../components/UpdateEmail/update-email.component'
 
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
@@ -36,6 +38,8 @@ export const StackAuth = () => {
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Config" component={Config} />
       <Stack.Screen name="Credits" component={Credits} />
+      <Stack.Screen name="UpdateName" component={UpdateName} />
+      <Stack.Screen name="UpdateEmail" component={UpdateEmail} />
 
       {GroupAuth()}
     </Stack.Navigator>

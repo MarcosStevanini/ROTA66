@@ -18,7 +18,7 @@ export default function Routes() {
       return <Stack.Screen name="StackAuth" component={StackAuth} />
     }
 
-    return <Stack.Screen name="SignIn" component={StackApp} />
+    return <Stack.Screen name="StackApp" component={StackApp} />
   }
 
   return (

@@ -57,7 +57,8 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             descricao,
             playlist,
             estudo,
-            imageBook,
+            imagBookItem,
+            imagBookPlayer,
             tema,
             time,
             url
@@ -70,7 +71,8 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             descricao,
             playlist,
             estudo,
-            imageBook,
+            imagBookItem,
+            imagBookPlayer,
             tema,
             time,
             url
@@ -109,7 +111,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                   onPress={() => handleOpenDetails(item.id)}
                 >
                   <Image
-                    source={{ uri: item.imageBook }}
+                    source={{ uri: item.imagBookPlayer }}
                     style={{ width: 56, height: 56 }}
                   />
 

@@ -5,6 +5,8 @@ export declare global{
         SignIn:undefined;
         SignUp:undefined;
         ForgotPassword:undefined;
+        CreateProfile:undefined;
+        TabNavigation:undefined;
         Books:undefined;
         NewBooks:undefined;
         OldBooks:undefined;
@@ -14,6 +16,9 @@ export declare global{
         Profile:undefined;
         Config:undefined;
         Credits:undefined;
+        UpdateName:undefined;
+        UpdateEmail:undefined;
+      
     }
   }
 }

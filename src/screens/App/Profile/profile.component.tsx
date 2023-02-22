@@ -51,9 +51,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
           <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
         <S.ContainerContent>
-          <S.IconUser>
-            <Feather name="user" size={100} color="black" />
-          </S.IconUser>
+          <S.ImageUser source={User} />
 
           <S.ButtonConfig onPress={() => navigator.navigate('Config')}>
             <Ionicons

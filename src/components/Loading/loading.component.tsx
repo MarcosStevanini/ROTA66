@@ -10,7 +10,7 @@ import * as T from './loading.types'
 import { useTheme } from 'styled-components'
 
 const Loading: React.FC<T.LoadingProps> = () => {
-const theme = useTheme()
+  const theme = useTheme()
 
   return (
     <LinearGradient
