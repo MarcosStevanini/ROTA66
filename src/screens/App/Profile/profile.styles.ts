@@ -13,14 +13,9 @@ margin-bottom: ${RFPercentage(3)}px;
 
 `;
 
-export const IconUser = styled.View`
-width: ${RFPercentage(20)}px;
-height: ${RFPercentage(20)}px;
-
-border-radius: ${RFPercentage(20)}px;
-
-background-color:${({theme})=>theme.colors.white300}; ;
-
+export const ImageUser = styled.Image`
+width: ${RFPercentage(22)}px;
+height: ${RFPercentage(22)}px;
 align-items: center;
 justify-content: center;
 

@@ -5,7 +5,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth'
 import { sendPasswordResetEmail } from 'firebase/auth'
-import { auth } from '../../../services/firebaseConfig'
+import { auth } from '../../services/firebaseConfig'
 
 import { TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
@@ -14,11 +14,10 @@ import Toast from 'react-native-toast-message'
 
 import { useTheme } from 'styled-components'
 
-import * as S from './forgotpassword.styles'
-import * as T from './forgotpassword.types'
+import * as S from './update-email.styles';
+import * as T from './update-email.types';
 
-
-const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
+const UpdateEmail: React.FC<T.UpdateEmailProps> = () => {
   const [email, setEmail] = useState('')
 
   const navigation = useNavigation()
@@ -89,7 +88,7 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
         </S.Icon>
         <S.Container>
           <S.Image
-            source={require('../../../assets/logo-white.png')}
+            source={require('../../assets/logo-white.png')}
             resizeMode="contain"
           />
 
@@ -113,4 +112,5 @@ const ForgotPassword: React.FC<T.ForgotPasswordProps> = () => {
   )
 }
 
-export default ForgotPassword
+
+export default UpdateEmail;
