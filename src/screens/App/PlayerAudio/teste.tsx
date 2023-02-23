@@ -7,7 +7,7 @@ const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [position, setPosition] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [currentTime, setCurrentTime] = useState(null);
+
 
   async function playSound() {
     if (sound) {
@@ -80,9 +80,17 @@ function formatDuration(durationInSeconds) {
 }
 
 
+  
 
+  useEffect(() => {
+   const updatePosition = async () => {
+  const status = await sound.getStatusAsync();
+  setPosition(status.positionMillis);
+};
+setInterval(updatePosition, 1000); // atualiza a posição a cada segundo
 
-
+  }, [sound]);
+ 
 
   return (
     <>
@@ -92,6 +100,7 @@ function formatDuration(durationInSeconds) {
         value={position / duration}
         onValueChange={onSliderValueChange}
       />
+      
       
   <Text>{formatDuration(position/1000)}</Text>
     <Text>{formatDuration(duration/1000)}</Text>
