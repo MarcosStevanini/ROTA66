@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import { Audio } from 'expo-av';
 import Slider from '@react-native-community/slider'
-import {Text} from 'react-native'
+import { Text } from 'react-native';
 const AudioPlayer = () => {
   const [sound, setSound] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
