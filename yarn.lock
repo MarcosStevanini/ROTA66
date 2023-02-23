@@ -2231,6 +2231,11 @@
     prompts "^2.4.0"
     semver "^6.3.0"
 
+"@react-native-community/netinfo@9.3.5":
+  version "9.3.5"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-9.3.5.tgz#0c60c798b5e0e14dd3b3fbab629a6e9609f709fd"
+  integrity sha512-Mqbh/J8YCfc+EqSjq5OJn2USmcD8On4048pKEfyCsCDty3lQs1SNcmHqJdu9idNU2v//aM73T8F+re59cf78Ig==
+
 "@react-native-community/slider@4.2.4":
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-4.2.4.tgz#8d88adceeb32f7997a122feba48d7186fca80346"
@@ -4131,6 +4136,11 @@ expo-asset@~8.7.0:
     md5-file "^3.2.3"
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
+
+expo-av@~13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-13.0.2.tgz#06c2c5140b334319ed2844823181f7b88092da13"
+  integrity sha512-u+y9wUBodp08UjRZYckNWzr9zEQHK6eScRBkhdTd9Rq48SEZ7eN6xXn79hubvk0P5nj7lFS+hdKjmx9T5XHGww==
 
 expo-constants@~14.0.0, expo-constants@~14.0.2:
   version "14.0.2"

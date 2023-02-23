@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import { useRoute, useIsFocused } from '@react-navigation/native'
 
 import { TouchableOpacity } from 'react-native'
 
 import { LinearGradient } from 'expo-linear-gradient'
-import Slider from '@react-native-community/slider'
+
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import { useTheme } from 'styled-components/native'
@@ -13,7 +14,9 @@ import firestore from '@react-native-firebase/firestore'
 
 import Loading from '../../../components/Loading/loading.component'
 
-import { useRoute, useIsFocused } from '@react-navigation/native'
+import Sound from 'react-native-sound'
+import Slider from '@react-native-community/slider'
+import { Audio } from 'expo-av'
 
 type RouteParams = {
   audioId: string
@@ -28,6 +31,62 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
   const [audio, setAudio] = useState<T.PlayerAudioProps>(
     {} as T.PlayerAudioProps
   )
+
+  //====================test
+  const [sound, setSound] = useState<any>()
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [position, setPosition] = useState(0)
+  const [duration, setDuration] = useState(0)
+
+  async function playSound() {
+    if (sound) {
+      await sound.playAsync()
+      setIsPlaying(true)
+    }
+  }
+
+  async function pauseSound() {
+    if (sound) {
+      await sound.pauseAsync()
+      setIsPlaying(false)
+    }
+  }
+
+ 
+
+  async function unloadSound() {
+    if (sound) {
+      await sound.unloadAsync()
+      setSound(null)
+      setIsPlaying(false)
+      setPosition(0)
+      setDuration(0)
+    }
+  }
+
+  async function increaseTime() {
+    if (sound) {
+      const newPosition = position + 5000 // increase 5 seconds
+      await sound.setPositionAsync(Math.min(newPosition, duration))
+    }
+  }
+
+  async function decreaseTime() {
+    if (sound) {
+      const newPosition = position - 5000 // decrease 5 seconds
+      await sound.setPositionAsync(Math.max(newPosition, 0))
+    }
+  }
+
+  const onSliderValueChange = value => {
+    if (sound) {
+      const newPosition = value * duration
+      setPosition(newPosition)
+      sound.setPositionAsync(newPosition)
+    }
+  }
+
+  //=====================test
 
   const theme = useTheme()
   const route = useRoute()
@@ -68,23 +127,40 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
           url
         })
         setIsLoading(false)
+
+        async function loadSound() {
+          const { sound } = await Audio.Sound.createAsync(
+            { uri: url },
+            { shouldPlay: false }
+          )
+          setSound(sound)
+          sound.setOnPlaybackStatusUpdate(status => {
+            setPosition(status.positionMillis)
+            setDuration(status.durationMillis)
+            if (status.didJustFinish && !status.isLooping) {
+              setIsPlaying(false)
+              setPosition(0)
+            }
+          })
+        }
+        loadSound()
       })
   }, [])
 
-  const player = useAudioHelper({
-    listSounds: [
-      {
-        type: 'network',
-        path: 'url aqui',
-        name: 'nome'
-      }
-    ],
-    timeRate: 15
-  })
-
-  useEffect(() => {
-    player.status === 'play' ? setControlButton(true) : setControlButton(false)
-  }, [player.status])
+  //  const player = useAudioHelper({
+  //    listSounds: [
+  //      {
+  //        type: 'network',
+  //        path: 'url aqui',
+  //        name: 'nome'
+  //      }
+  //    ],
+  //    timeRate: 15
+  //  })
+  //
+  //  useEffect(() => {
+  //    player.status === 'play' ? setControlButton(true) : setControlButton(false)
+  //  }, [player.status])
 
   if (isLoading) {
     return <Loading />
@@ -104,43 +180,37 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         <S.ContainerPlayer>
           <S.Image source={{ uri: audio.imagBookPlayer }} />
           <S.TitlePlayer>{audio.titulo}</S.TitlePlayer>
-
           <S.ContainerSlider>
             <Slider
               style={{ width: 350 }}
               minimumValue={0}
-              maximumValue={player.duration}
-              value={player.currentTime}
-              thumbTintColor={theme.colors.gray100}
-              minimumTrackTintColor={theme.colors.gray100}
-              maximumTrackTintColor={theme.colors.gray100}
-              onTouchStart={player.pause}
-              onTouchEnd={player.play}
-              onSlidingComplete={seconds => player.seekToTime(seconds)}
+                       maximumValue={1}
+              value={position / duration}
+              onValueChange={onSliderValueChange}
             />
           </S.ContainerSlider>
 
           <S.ContainerDuration>
-            <S.FirstTime>{player.currentTimeString}</S.FirstTime>
-            <S.FinalTime>{player.durationString}</S.FinalTime>
+            <S.FirstTime></S.FirstTime>
+            <S.FinalTime></S.FinalTime>
           </S.ContainerDuration>
 
           <S.ContainerButton>
-            <TouchableOpacity onPress={player.decreaseTime}>
+            <TouchableOpacity onPress={decreaseTime}>
               <S.ButtonBack name="rotate-ccw" />
             </TouchableOpacity>
 
-            {controlButton ? (
-              <TouchableOpacity onPress={player.pause}>
+            {isPlaying  ? (
+              <TouchableOpacity onPress={pauseSound}>
                 <S.ButtonPause name="pause-circle" />
               </TouchableOpacity>
             ) : (
-              <TouchableOpacity onPress={player.play}>
+              <TouchableOpacity onPress={playSound}>
                 <S.ButtonPlay name="playcircleo" />
               </TouchableOpacity>
             )}
 
-            <TouchableOpacity onPress={player.increaseTime}>
+            <TouchableOpacity onPress={increaseTime}>
               <S.ButtonPass name="rotate-cw" />
             </TouchableOpacity>
           </S.ContainerButton>
