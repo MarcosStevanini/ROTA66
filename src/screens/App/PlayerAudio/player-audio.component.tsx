@@ -4,10 +4,12 @@ import { TouchableOpacity } from 'react-native'
 
 import { LinearGradient } from 'expo-linear-gradient'
 import Slider from '@react-native-community/slider'
+import Sound from 'react-native-sound';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import { useTheme } from 'styled-components/native'
 import { useAudioHelper } from '../../../hooks/audio-helper'
+import { Audio } from 'expo-av';
 
 import firestore from '@react-native-firebase/firestore'
 
@@ -32,7 +34,6 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
   const theme = useTheme()
   const route = useRoute()
   const { audioId } = route.params as RouteParams
-
 
   useEffect(() => {
     firestore()
@@ -68,10 +69,16 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
           time,
           url
         })
+    
         setIsLoading(false)
       })
+
+      
+      
   }, [])
 
+   
+  
   const player = useAudioHelper({
     listSounds: [
       {
@@ -87,6 +94,8 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
     player.status === 'play' ? setControlButton(true) : setControlButton(false)
   }, [player.status])
  
+
+
 
   if (isLoading) {
     return <Loading />
@@ -110,6 +119,7 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
 
 
           <S.ContainerSlider>
+            
             <Slider
               style={{ width: 350 }}
               minimumValue={0}
@@ -122,6 +132,7 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
               onTouchEnd={player.play}
               onSlidingComplete={seconds => player.seekToTime(seconds)}
             />
+            
           </S.ContainerSlider>
 
           <S.ContainerDuration>
