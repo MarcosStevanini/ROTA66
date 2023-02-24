@@ -1,4 +1,4 @@
-import  React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { TouchableOpacity } from 'react-native'
 
@@ -29,7 +29,7 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
   const theme = useTheme()
 
 <<<<<<< HEAD
-  
+
 
   useEffect(() => {
     firestore()
@@ -75,7 +75,7 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
       {
         type: 'network',
         path: `${urlAudio}`,
-        name:"nome"
+        name: "nome"
       }
     ],
     timeRate: 15
@@ -84,7 +84,7 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
   useEffect(() => {
     player.status === 'play' ? setControlButton(true) : setControlButton(false)
   }, [player.status])
- 
+
 
 =======
   const player = useAudioHelper({
@@ -123,63 +123,63 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         <S.TitlePlayer>{audio.titulo}</S.TitlePlayer>
 =======
     <S.Container>
-      <LinearGradient
-        colors={theme.colors.gradientBlueTwo}
-        style={{
-          flex: 1,
-          paddingHorizontal: RFPercentage(2),
-          paddingVertical: RFPercentage(3),
-          paddingTop: RFPercentage(10)
-        }}
-      >
-        <S.ContainerPlayer>
-          <S.Image source={Image} />
-          <S.TitlePlayer>Estudo 1- titulo aqui</S.TitlePlayer>
+          <LinearGradient
+            colors={theme.colors.gradientBlueTwo}
+            style={{
+              flex: 1,
+              paddingHorizontal: RFPercentage(2),
+              paddingVertical: RFPercentage(3),
+              paddingTop: RFPercentage(10)
+            }}
+          >
+            <S.ContainerPlayer>
+              <S.Image source={Image} />
+              <S.TitlePlayer>Estudo 1- titulo aqui</S.TitlePlayer>
 >>>>>>> 059e1ecd14c40bf817cec02bd2bf785da3d3a4ad
 
-          <S.ContainerSlider>
-            <Slider
-              style={{ width: 350 }}
-              minimumValue={0}
-              maximumValue={player.duration}
-              value={player.currentTime}
-              thumbTintColor={theme.colors.gray100}
-              minimumTrackTintColor={theme.colors.gray100}
-              maximumTrackTintColor={theme.colors.gray100}
-              onTouchStart={player.pause}
-              onTouchEnd={player.play}
-              onSlidingComplete={seconds => player.seekToTime(seconds)}
-            />
-          </S.ContainerSlider>
+              <S.ContainerSlider>
+                <Slider
+                  style={{ width: 350 }}
+                  minimumValue={0}
+                  maximumValue={player.duration}
+                  value={player.currentTime}
+                  thumbTintColor={theme.colors.gray100}
+                  minimumTrackTintColor={theme.colors.gray100}
+                  maximumTrackTintColor={theme.colors.gray100}
+                  onTouchStart={player.pause}
+                  onTouchEnd={player.play}
+                  onSlidingComplete={seconds => player.seekToTime(seconds)}
+                />
+              </S.ContainerSlider>
 
-          <S.ContainerDuration>
-            <S.FirstTime>{player.currentTimeString}</S.FirstTime>
-            <S.FinalTime>{player.durationString}</S.FinalTime>
-          </S.ContainerDuration>
+              <S.ContainerDuration>
+                <S.FirstTime>{player.currentTimeString}</S.FirstTime>
+                <S.FinalTime>{player.durationString}</S.FinalTime>
+              </S.ContainerDuration>
 
-          <S.ContainerButton>
-            <TouchableOpacity onPress={player.decreaseTime}>
-              <S.ButtonBack name="rotate-ccw" />
-            </TouchableOpacity>
+              <S.ContainerButton>
+                <TouchableOpacity onPress={player.decreaseTime}>
+                  <S.ButtonBack name="rotate-ccw" />
+                </TouchableOpacity>
 
-            {controlButton ? (
-              <TouchableOpacity onPress={player.pause}>
-                <S.ButtonPause name="pause-circle" />
-              </TouchableOpacity>
-            ) : (
-              <TouchableOpacity onPress={player.play}>
-                <S.ButtonPlay name="playcircleo" />
-              </TouchableOpacity>
-            )}
+                {controlButton ? (
+                  <TouchableOpacity onPress={player.pause}>
+                    <S.ButtonPause name="pause-circle" />
+                  </TouchableOpacity>
+                ) : (
+                  <TouchableOpacity onPress={player.play}>
+                    <S.ButtonPlay name="playcircleo" />
+                  </TouchableOpacity>
+                )}
 
-            <TouchableOpacity onPress={player.increaseTime}>
-              <S.ButtonPass name="rotate-cw" />
-            </TouchableOpacity>
-          </S.ContainerButton>
-        </S.ContainerPlayer>
-      </LinearGradient>
-    </S.Container>
-  )
+                <TouchableOpacity onPress={player.increaseTime}>
+                  <S.ButtonPass name="rotate-cw" />
+                </TouchableOpacity>
+              </S.ContainerButton>
+            </S.ContainerPlayer>
+          </LinearGradient>
+        </S.Container>
+        )
 }
 
-export default PlayerAudio
+        export default PlayerAudio
