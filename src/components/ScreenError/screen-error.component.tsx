@@ -1,65 +1,63 @@
-import React,{useState} from 'react'
-import NetInfo from '@react-native-community/netinfo';
+import React, { useState, useEffect } from 'react'
+import NetInfo from '@react-native-community/netinfo'
 import { ActivityIndicator } from 'react-native'
 
 import { LinearGradient } from 'expo-linear-gradient'
 import { useTheme } from 'styled-components'
-import LottieView from 'lottie-react-native';
+import LottieView from 'lottie-react-native'
 
-import { Text,TouchableOpacity } from 'react-native';
-import * as S from './screen-error.styles';
-import * as T from './screen-error.types';
+import { RFValue, RFPercentage } from 'react-native-responsive-fontsize'
+
+import * as S from './screen-error.styles'
+import * as T from './screen-error.types'
 
 const ScreenError: React.FC<T.ScreenErrorProps> = () => {
-  const [isRefreshing, setIsRefreshing] = useState(false);
-  const [isConnected, setIsConnected] = useState(true);
+  const [isRefreshing, setIsRefreshing] = useState(false)
+  const [isConnected, setIsConnected] = useState(true)
   const theme = useTheme()
-
 
   //função para atualizar a pagina
   const refreshConnection = () => {
-    setIsRefreshing(true);
+    setIsRefreshing(true)
     NetInfo.fetch().then(state => {
-      setIsConnected(state.isConnected);
-      setIsRefreshing(false);
-    });
-  };
+      setIsConnected(state.isConnected)
+    })
+
+    setTimeout(() => {
+      setIsRefreshing(false)
+    }, 8000)
+  }
 
   return (
     <LinearGradient
       colors={theme.colors.gradientBlueOne}
       style={{
         flex: 1,
-        paddingTop: 60
+        paddingTop: RFPercentage(10)
       }}
     >
       <S.Container>
-      <LottieView
-        source={require('../../assets/error.json')}
-        autoPlay
-        loop
-        style={{ width: 300 }}
-      />
+        <S.ContainerAnimation>
+          <LottieView
+            source={require('../../assets/error.json')}
+            autoPlay
+            loop
+            style={{ width: 300 }}
+          />
+        </S.ContainerAnimation>
 
-   <Text >Sem conexão com a internet.</Text>
+        <S.Title>Verifique sua conexão com a internet.</S.Title>
 
-      {isRefreshing ? (
-         <ActivityIndicator color={'#fff'} size={25} />
-      ) : (
-        <TouchableOpacity  onPress={refreshConnection}>
-          <Text>Tentar novamente</Text>
-        </TouchableOpacity>
-      )}
-
-
-
-
-
-
-       
+        {isRefreshing ? (
+          <ActivityIndicator color={'#fff'} size={30} />
+        ) : (
+          <S.ButtonRefresh onPress={refreshConnection}>
+            <S.TitleButton>Tente novamente!</S.TitleButton>
+          </S.ButtonRefresh>
+        )}
       </S.Container>
     </LinearGradient>
   )
-};
+}
 
-export default ScreenError;
+export default ScreenError
