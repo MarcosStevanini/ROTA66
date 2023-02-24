@@ -24,8 +24,13 @@ export default function App() {
 
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener(state => {
+<<<<<<< HEAD
       setIsConnected(state.isConnected)
     })
+=======
+      setIsConnected(state.isConnected);
+    });
+>>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
 
     return () => {
       unsubscribe()
@@ -34,7 +39,15 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+<<<<<<< HEAD
       {isConnected ? fontsLoaded ? <Router /> : <Loading /> : <ScreenError />}
+=======
+
+      {isConnected ? fontsLoaded ? <Router /> : <Loading /> :
+        <ScreenError />
+      }
+
+>>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
     </ThemeProvider>
   )
 }

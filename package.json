@@ -1,5 +1,7 @@
 {
   "name": "rota66",
+  "slug": "Rota66",
+  "scheme": "Rota66",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,9 +24,14 @@
     "@react-navigation/native-stack": "^6.9.7",
     "@react-navigation/stack": "^6.3.10",
     "expo": "^47.0.13",
+<<<<<<< HEAD
+=======
+    "expo-auth-session": "~3.8.0",
+>>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
     "expo-av": "~13.0.2",
     "expo-font": "~11.0.1",
     "expo-linear-gradient": "^12.0.1",
+    "expo-random": "~13.0.0",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
     "firebase": "9.15.0",
