@@ -4159,7 +4159,6 @@ expo-asset@~8.7.0:
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
 
-<<<<<<< HEAD
 expo-auth-session@~3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/expo-auth-session/-/expo-auth-session-3.8.0.tgz#ad929f1bcc2e1dc9d0b265f9555d3f967bda6bcc"
@@ -4171,12 +4170,11 @@ expo-auth-session@~3.8.0:
     expo-web-browser "~12.0.0"
     invariant "^2.2.4"
     qs "6.9.1"
-=======
+
 expo-av@~13.0.2:
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-13.0.2.tgz#06c2c5140b334319ed2844823181f7b88092da13"
   integrity sha512-u+y9wUBodp08UjRZYckNWzr9zEQHK6eScRBkhdTd9Rq48SEZ7eN6xXn79hubvk0P5nj7lFS+hdKjmx9T5XHGww==
->>>>>>> e454a5226c918834c2756a87234e84195dc01dc6
 
 expo-constants@~14.0.0, expo-constants@~14.0.2:
   version "14.0.2"
