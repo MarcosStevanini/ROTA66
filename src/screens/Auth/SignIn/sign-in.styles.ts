@@ -10,30 +10,18 @@ export const TextButton = styled.Text`
     font-family: ${({theme})=>theme.fonts.medium};
     font-size:  ${RFValue(17)}px;
     color: ${({theme})=>theme.colors.white100};
-<<<<<<< HEAD
-    font-weight: 500;
-=======
   
->>>>>>> dev
 `;
 
 export const AccountText = styled.Text`
   font-family: ${({theme})=>theme.fonts.bold};
-<<<<<<< HEAD
-  font-size:  ${RFValue(12)}px;
-=======
   font-size:  ${RFValue(14)}px;
->>>>>>> dev
   color: ${({theme})=>theme.colors.white400};
     
 `;
 export const CreateAccountText = styled.Text`
   font-family: ${({theme})=>theme.fonts.bold};
-<<<<<<< HEAD
-  font-size:  ${RFValue(12)}px;
-=======
   font-size:  ${RFValue(14)}px;
->>>>>>> dev
   color: ${({theme})=>theme.colors.white100};
     
 `;
@@ -48,11 +36,7 @@ export const CreateAccount = styled.TouchableOpacity`
 
 export const submitText = styled.Text`
      font-family: ${({theme})=>theme.fonts.medium};
-<<<<<<< HEAD
-     font-size:  ${RFValue(12)}px;
-=======
      font-size:  ${RFValue(14)}px;
->>>>>>> dev
      color: ${({theme})=>theme.colors.white400};
 `;
 export const changePassword = styled.TouchableOpacity`
@@ -72,11 +56,7 @@ export const Input = styled.TextInput`
     border: 1px solid ${({theme})=>theme.colors.white400};
     margin-bottom: ${RFPercentage(1.6)}px;
     border-radius: 4px;
-<<<<<<< HEAD
-        
-=======
     
->>>>>>> dev
 `;
 
 export const ContainerInput = styled.View`
@@ -106,17 +86,10 @@ export const CreateAccountSocial = styled.TouchableOpacity`
 `
 export const CreateAccountTextSocial = styled.Text`
     font-family: ${({theme})=>theme.fonts.regular};
-<<<<<<< HEAD
-    font-size:  ${RFValue(14)}px;
-    color: ${({theme})=>theme.colors.gray300};
-    text-align: center;
-    font-weight: 500;
-=======
     font-size:  ${RFValue(16)}px;
     color: ${({theme})=>theme.colors.gray300};
     text-align: center;
 
->>>>>>> dev
 `
 
 export const TextOr = styled.Text`

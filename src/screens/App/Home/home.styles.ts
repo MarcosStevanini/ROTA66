@@ -1,9 +1,5 @@
 import styled from 'styled-components/native';
-<<<<<<< HEAD
-import { RFValue } from 'react-native-responsive-fontsize';
-=======
 import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
->>>>>>> dev
 
 interface backgroundCards {
   background: string;
@@ -20,11 +16,7 @@ export const TextProfile = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
   font-size: ${RFValue(24)}px;
   color: ${({theme})=>theme.colors.white100};
-<<<<<<< HEAD
-  
-=======
   font-size: ${RFValue(24)}px;
->>>>>>> dev
 `;
 export const ProfileButton = styled.TouchableOpacity``;
 
@@ -37,10 +29,7 @@ export const TextExplore = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
   font-size: ${RFValue(17)}px;
   color: ${({theme})=>theme.colors.white100};
-<<<<<<< HEAD
-=======
   font-size: ${RFValue(17)}px;
->>>>>>> dev
 `;
 
 export const ContainerExploreBook = styled.ScrollView`
@@ -48,13 +37,8 @@ export const ContainerExploreBook = styled.ScrollView`
 `;
 
 export const TextExploreBook = styled.Text`
-<<<<<<< HEAD
-   font-family: ${({theme})=>theme.fonts.medium};
-  font-size: ${RFValue(12)}px;
-=======
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(12)}px;
->>>>>>> dev
   color: ${({theme})=>theme.colors.gray500};
 `;
 
@@ -81,11 +65,7 @@ export const ContainerButtonAllChapter = styled.TouchableOpacity`
 export const TextButtonAllChapter = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
   color: ${({theme})=>theme.colors.white400};
-<<<<<<< HEAD
-  font-size: ${RFValue(10)}px;
-=======
   font-size: ${RFValue(12)}px;
->>>>>>> dev
   margin-right: 8px;
 `;
 
@@ -104,12 +84,8 @@ export const ContainerCardsTheme = styled.View`
 export const TextTheme = styled.Text`
   font-family: ${({theme})=>theme.fonts.medium};
   color: ${({theme})=>theme.colors.white100};
-<<<<<<< HEAD
-  font-size: ${RFValue(16)}px;
-=======
   font-size: ${RFValue(17)}px;
   text-align: left;
->>>>>>> dev
 `;
 
 export const CardsTheme = styled.View<backgroundCards>`
