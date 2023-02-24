@@ -48,7 +48,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
     >
       <S.Container>
         <S.ButtonBack onPress={() => navigator.goBack()}>
-          <AntDesign name="left" size={30} color={theme.colors.white300} />
+          <AntDesign name="left" size={25} color={theme.colors.white300} />
         </S.ButtonBack>
         <S.ContainerContent>
           <S.ImageUser source={User} />

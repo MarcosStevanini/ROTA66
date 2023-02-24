@@ -57,7 +57,7 @@ const Config: React.FC<T.ConfigProps> = () => {
       <S.Container>
         <S.Header>
           <S.ButtonBack onPress={() => navigator.goBack()}>
-            <AntDesign name="left" size={30} color={theme.colors.white300} />
+            <AntDesign name="left" size={25} color={theme.colors.white300} />
           </S.ButtonBack>
           <S.TitleHeader>Configurações</S.TitleHeader>
         </S.Header>
