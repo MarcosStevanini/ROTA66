@@ -48,9 +48,9 @@ margin-bottom:  ${RFPercentage(4)}px;
 export const BoxDeve = styled.View`
 flex-direction: row;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 
-width: ${RFPercentage(22)}px;
+width: ${RFPercentage(23)}px;
 height: ${RFPercentage(10)}px;
 
 background-color: ${({theme})=>theme.colors.blue200};
@@ -60,6 +60,9 @@ border-radius: 12px;
 
 margin-bottom: ${RFPercentage(1)}px;
 
+
+
+
 `;
 
 export const ImgPeople = styled.Image`
@@ -67,25 +70,33 @@ width: ${RFPercentage(6)}px;
 height: ${RFPercentage(6)}px;
 
 border-radius: ${RFPercentage(6)}px;
+
+margin-left:  ${RFPercentage(1)}px;
 `;
 
 export const ContentInf = styled.View`
-align-items: flex-end;
+align-items:  flex-end;
+margin-right: 1px;
+
+margin-right:  ${RFPercentage(1)}px;
 
 `;
 
 export const Name = styled.Text`
 font-family: ${({theme})=>theme.fonts.bold};
-font-size: ${RFValue(12)}px;
+font-size: ${RFValue(11)}px;
 color: ${({theme})=>theme.colors.white100};
 
-
+margin-bottom:  ${RFPercentage(0.8)}px;
 `;
 
 export const Office = styled.Text`
 font-family: ${({theme})=>theme.fonts.regular};
-font-size: ${RFValue(10)}px;
+font-size: ${RFValue(9)}px;
 color: ${({theme})=>theme.colors.white100};
+
+
+
 
 `;
 
@@ -101,10 +112,11 @@ margin-bottom:  ${RFPercentage(3)}px;
 
 export const ContainerDev = styled.View`
 flex-direction: row;
-flex-wrap: wrap;
+
 justify-content: space-between;
 
 
-margin-bottom:  ${RFPercentage(4)}px;
+margin-bottom:  ${RFPercentage(1)}px;
+
 
 `;

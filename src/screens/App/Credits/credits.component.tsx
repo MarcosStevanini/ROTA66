@@ -8,6 +8,7 @@ import { useTheme } from 'styled-components/native'
 import { AntDesign } from '@expo/vector-icons'
 
 import Toast from 'react-native-toast-message'
+import { Linking, TouchableOpacity } from 'react-native'
 
 import ImgVitorHugo from '../../../assets/ImgVitorHugo.png'
 import ImgVictor from '../../../assets/ImgVictor.png'
@@ -27,7 +28,7 @@ const Credits: React.FC<T.CreditsProps> = () => {
       colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
-        paddingHorizontal: RFPercentage(3.2),
+        paddingHorizontal: RFPercentage(2),
         paddingVertical: RFPercentage(3.2),
         paddingTop: RFPercentage(10)
       }}
@@ -35,7 +36,7 @@ const Credits: React.FC<T.CreditsProps> = () => {
       <S.Container>
         <S.Header>
           <S.ButtonBack onPress={() => navigator.goBack()}>
-            <AntDesign name="left" size={30} color={theme.colors.white300} />
+            <AntDesign name="left" size={25} color={theme.colors.white300} />
           </S.ButtonBack>
           <S.TitleHeader>Créditos</S.TitleHeader>
         </S.Header>
@@ -45,49 +46,92 @@ const Credits: React.FC<T.CreditsProps> = () => {
 
         <S.ContainerDesign>
           <S.TitleProfession>Design</S.TitleProfession>
-          <S.BoxDeve>
-            <S.ImgPeople source={ImgVitorHugo} />
-            <S.ContentInf>
-              <S.Name>Vitor Hugo</S.Name>
-              <S.Office>UI UX Designer</S.Office>
-            </S.ContentInf>
-          </S.BoxDeve>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL('https://www.linkedin.com/in/vitor-hugo-dev/')
+            }}
+          >
+            <S.BoxDeve>
+              <S.ImgPeople source={ImgVitorHugo} />
+              <S.ContentInf>
+                <S.Name>Vitor Hugo</S.Name>
+                <S.Office>UI UX Designer</S.Office>
+              </S.ContentInf>
+            </S.BoxDeve>
+          </TouchableOpacity>
         </S.ContainerDesign>
+
         <S.Line />
 
-          <S.TitleProfession>Desenvolvedores</S.TitleProfession>
+        <S.TitleProfession>Desenvolvedores</S.TitleProfession>
+
         <S.ContainerDev>
-          <S.BoxDeve>
-            <S.ImgPeople source={ImgMarcos} />
-            <S.ContentInf>
-              <S.Name>Marcos Stevanini</S.Name>
-              <S.Office>Desenvolvedor Mobile</S.Office>
-            </S.ContentInf>
-          </S.BoxDeve>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                'https://www.linkedin.com/in/marcos-stevanini-30308b195/'
+              )
+            }}
+          >
+            <S.BoxDeve>
+              <S.ImgPeople source={ImgMarcos} />
+              <S.ContentInf>
+                <S.Name>Marcos Stevanini</S.Name>
+                <S.Office>Desenvolvedor</S.Office>
+                <S.Office>Mobile</S.Office>
+              </S.ContentInf>
+            </S.BoxDeve>
+          </TouchableOpacity>
 
-          <S.BoxDeve>
-            <S.ImgPeople source={ImgVictor} />
-            <S.ContentInf>
-              <S.Name>Victor Ciechovicz</S.Name>
-              <S.Office>Desenvolvedor Mobile</S.Office>
-            </S.ContentInf>
-          </S.BoxDeve>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                'https://www.linkedin.com/in/victor-avila-ciechovicz-55a172106/'
+              )
+            }}
+          >
+            <S.BoxDeve>
+              <S.ImgPeople source={ImgVictor} />
+              <S.ContentInf>
+                <S.Name>Victor Ciechovicz</S.Name>
+                <S.Office>Desenvolvedor</S.Office>
+                <S.Office>Mobile</S.Office>
+              </S.ContentInf>
+            </S.BoxDeve>
+          </TouchableOpacity>
+        </S.ContainerDev>
+        <S.ContainerDev>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL('https://www.linkedin.com/in/annyconfessor/')
+            }}
+          >
+            <S.BoxDeve>
+              <S.ImgPeople source={ImgAnny} />
+              <S.ContentInf>
+                <S.Name>Anny Confessor</S.Name>
+                <S.Office>Desenvolvedor</S.Office>
+                <S.Office>Mobile</S.Office>
+              </S.ContentInf>
+            </S.BoxDeve>
+          </TouchableOpacity>
 
-          <S.BoxDeve>
-            <S.ImgPeople source={ImgAnny} />
-            <S.ContentInf>
-              <S.Name>Anny Confessor</S.Name>
-              <S.Office>Desenvolvedor Mobile</S.Office>
-            </S.ContentInf>
-          </S.BoxDeve>
-
-          <S.BoxDeve>
-            <S.ImgPeople source={ImgAnderson} />
-            <S.ContentInf>
-              <S.Name>Anderson Barros</S.Name>
-              <S.Office>Desenvolvedor Mobile</S.Office>
-            </S.ContentInf>
-          </S.BoxDeve>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                'https://www.linkedin.com/in/anderson-barros-5a4475182/'
+              )
+            }}
+          >
+            <S.BoxDeve>
+              <S.ImgPeople source={ImgAnderson} />
+              <S.ContentInf>
+                <S.Name>Anderson Barros</S.Name>
+                <S.Office>Desenvolvedor</S.Office>
+                <S.Office>Mobile</S.Office>
+              </S.ContentInf>
+            </S.BoxDeve>
+          </TouchableOpacity>
         </S.ContainerDev>
       </S.Container>
     </LinearGradient>
