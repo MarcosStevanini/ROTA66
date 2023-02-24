@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+<<<<<<<
+/*
+HEAD
 import React, { useState, useEffect } from 'react'
 =======
 <<<<<<< HEAD
@@ -369,3 +371,4 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
 }
 
         export default PlayerAudio
+*/

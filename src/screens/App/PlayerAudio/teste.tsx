@@ -1,4 +1,5 @@
-import React, { useState,useEffect } from 'react';
+
+/*import React, { useState,useEffect } from 'react';
 import { Audio } from 'expo-av';
 import Slider from '@react-native-community/slider'
 import { Text } from 'react-native';
@@ -120,3 +121,4 @@ setInterval(updatePosition, 1000); // atualiza a posição a cada segundo
 };
 
 export default AudioPlayer;
+*/
