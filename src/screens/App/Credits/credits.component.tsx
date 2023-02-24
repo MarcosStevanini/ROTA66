@@ -1,25 +1,22 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
+import { RFPercentage } from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
-
 import { useTheme } from 'styled-components/native'
-
 import { AntDesign } from '@expo/vector-icons'
-
-import Toast from 'react-native-toast-message'
 import { Linking, TouchableOpacity } from 'react-native'
-
 import ImgVitorHugo from '../../../assets/ImgVitorHugo.png'
 import ImgVictor from '../../../assets/ImgVictor.png'
 import ImgMarcos from '../../../assets/ImgMarcos.png'
 import ImgAnny from '../../../assets/ImgAnny.png'
 import ImgAnderson from '../../../assets/ImgAnderson.png'
 
+
 import * as S from './credits.styles'
 import * as T from './credits.types'
 
 const Credits: React.FC<T.CreditsProps> = () => {
+  
   const navigator = useNavigation()
   const theme = useTheme()
 
@@ -36,7 +33,7 @@ const Credits: React.FC<T.CreditsProps> = () => {
       <S.Container>
         <S.Header>
           <S.ButtonBack onPress={() => navigator.goBack()}>
-            <AntDesign name="left" size={25} color={theme.colors.white300} />
+            <AntDesign name="left" size={30} color={theme.colors.white300} />
           </S.ButtonBack>
           <S.TitleHeader>Créditos</S.TitleHeader>
         </S.Header>

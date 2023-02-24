@@ -1,7 +1,10 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
-
+import { useNavigation } from '@react-navigation/native'
+import { useTheme } from 'styled-components/native'
+import useHome from './home.hook'
+import Toast from 'react-native-toast-message'
 import {
   FontAwesome5,
   MaterialIcons,
@@ -10,18 +13,13 @@ import {
   AntDesign
 } from '@expo/vector-icons'
 
-import { useNavigation } from '@react-navigation/native'
 
 import * as S from './home.styles'
 import * as T from './home.types'
 
-import useHome from './home.hook'
-import Toast from 'react-native-toast-message'
-
-import { useTheme } from 'styled-components/native'
-import { ScrollView } from 'react-native'
 
 const Home: React.FC<T.HomeProps> = () => {
+  
   const auth = useHome()
   const userName = auth.users.name
 

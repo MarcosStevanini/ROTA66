@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
-import { Modal, Alert } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
+import { RFPercentage,RFValue} from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
+import { AntDesign, Feather } from '@expo/vector-icons'
 
 import * as S from './genesis.styles'
 import * as T from './genesis.types'
 
-import { AntDesign, Feather } from '@expo/vector-icons'
 
 const Genesis: React.FC<T.GenesisProps> = () => {
+  
   const navigator = useNavigation()
   const theme = useTheme()
 
@@ -18,9 +19,9 @@ const Genesis: React.FC<T.GenesisProps> = () => {
       colors={theme.colors.gradientBlueTwo}
       style={{
         flex: 1,
-        paddingHorizontal: 20,
-        paddingVertical: 30,
-        paddingTop: 100
+        paddingHorizontal: RFPercentage(2),
+        paddingVertical: RFPercentage(3),
+        paddingTop: RFPercentage(10)
       }}
     >
       <S.ButtonBack onPress={() => navigator.goBack()}>

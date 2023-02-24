@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
+import { RFPercentage} from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
-
 import { auth } from '../../../services/firebaseConfig'
-
-
-
 import Loading from '../../../components/Loading/loading.component'
-
 import {
   AntDesign,
   FontAwesome,
   Zocial,
   MaterialCommunityIcons
 } from '@expo/vector-icons'
+
 
 import * as S from './config.styles'
 import * as T from './config.types'
@@ -57,7 +53,7 @@ const Config: React.FC<T.ConfigProps> = () => {
       <S.Container>
         <S.Header>
           <S.ButtonBack onPress={() => navigator.goBack()}>
-            <AntDesign name="left" size={25} color={theme.colors.white300} />
+            <AntDesign name="left" size={30} color={theme.colors.white300} />
           </S.ButtonBack>
           <S.TitleHeader>Configurações</S.TitleHeader>
         </S.Header>

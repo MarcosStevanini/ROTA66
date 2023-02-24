@@ -34,8 +34,6 @@ justify-content: center;
 
 `;
 
-
-
 export const TitleButton =styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(22)}px;

@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import { LinearGradient } from 'expo-linear-gradient'
+import { useNavigation } from '@react-navigation/native'
+import { useTheme } from 'styled-components'
+import { useUpdateProfile, useAuthState } from 'react-firebase-hooks/auth'
+import { auth } from '../../services/firebaseConfig'
 import {
   TouchableWithoutFeedback,
   Keyboard,
-  KeyboardAvoidingView,
-  Platform
 } from 'react-native'
 
-import { useUpdateProfile, useAuthState } from 'react-firebase-hooks/auth'
-import { auth } from '../../services/firebaseConfig'
-import { useNavigation } from '@react-navigation/native'
-import Toast from 'react-native-toast-message'
-import { useTheme } from 'styled-components'
+import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
+import Toast from 'react-native-toast-message'
+
+
 import * as S from './createProfile.styles'
 import * as T from './createProfile.types'
 
@@ -22,6 +22,8 @@ const Profile: React.FC<T.ProfileProps> = () => {
   // const [photoURL, setPhotoURL] = useState('')
   const [user] = useAuthState(auth)
   const [updateProfile, updating, error] = useUpdateProfile(auth)
+
+  
   const navigator = useNavigation()
   const theme = useTheme()
 

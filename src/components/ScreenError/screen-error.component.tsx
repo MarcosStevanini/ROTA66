@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import NetInfo from '@react-native-community/netinfo'
 import { ActivityIndicator } from 'react-native'
-
-import { LinearGradient } from 'expo-linear-gradient'
 import { useTheme } from 'styled-components'
+import { LinearGradient } from 'expo-linear-gradient'
 import LottieView from 'lottie-react-native'
+import { RFPercentage } from 'react-native-responsive-fontsize'
 
-import { RFValue, RFPercentage } from 'react-native-responsive-fontsize'
 
 import * as S from './screen-error.styles'
 import * as T from './screen-error.types'
+
 
 const ScreenError: React.FC<T.ScreenErrorProps> = () => {
   const [isRefreshing, setIsRefreshing] = useState(false)

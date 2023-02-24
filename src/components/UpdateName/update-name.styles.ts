@@ -36,10 +36,6 @@ export const Image = styled.Image`
     margin-top: ${RFPercentage(6.5)}px;
 `;
 
-export const Loading = styled.Image`
-    width: 10px;
-    height: 10px;
-`;
 
 export const Input = styled.TextInput`
     background: transparent;
@@ -70,6 +66,5 @@ justify-content: flex-start;
 
 padding-left: 32px;
 padding-top: 16px;
-
 
 `;
