@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import { useRoute, useIsFocused } from '@react-navigation/native'
 
 import { TouchableOpacity } from 'react-native'
 
 import { LinearGradient } from 'expo-linear-gradient'
-import Slider from '@react-native-community/slider'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 
 import { useTheme } from 'styled-components/native'
@@ -13,7 +13,9 @@ import firestore from '@react-native-firebase/firestore'
 
 import Loading from '../../../components/Loading/loading.component'
 
-import { useRoute, useIsFocused } from '@react-navigation/native'
+import Sound from 'react-native-sound'
+import Slider from '@react-native-community/slider'
+import { Audio } from 'expo-av'
 
 type RouteParams = {
   audioId: string
@@ -67,16 +69,39 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
           time,
           url
         })
+    
         setIsLoading(false)
+
+        async function loadSound() {
+          const { sound } = await Audio.Sound.createAsync(
+            { uri: url },
+            { shouldPlay: false }
+          )
+          setSound(sound)
+          sound.setOnPlaybackStatusUpdate(status => {
+            setPosition(status.positionMillis)
+            setDuration(status.durationMillis)
+            if (status.didJustFinish && !status.isLooping) {
+              setIsPlaying(false)
+              setPosition(0)
+            }
+          })
+        }
+        loadSound()
       })
+
+      
+      
   }, [])
 
+   
+  
   const player = useAudioHelper({
     listSounds: [
       {
         type: 'network',
         path: 'url aqui',
-        name: 'nome'
+        name:"nome"
       }
     ],
     timeRate: 15
@@ -85,6 +110,9 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
   useEffect(() => {
     player.status === 'play' ? setControlButton(true) : setControlButton(false)
   }, [player.status])
+ 
+
+
 
   if (isLoading) {
     return <Loading />
@@ -100,53 +128,51 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         paddingTop: RFPercentage(10)
       }}
     >
-      <S.Container>
-        <S.ContainerPlayer>
-          <S.Image source={{ uri: audio.imagBookPlayer }} />
-          <S.TitlePlayer>{audio.titulo}</S.TitlePlayer>
+        <S.Container>
+      <S.ContainerPlayer>
+        <S.Image source={{ uri: audio.imagBookPlayer }} />
+        <S.TitlePlayer>{audio.titulo}</S.TitlePlayer>
+
 
           <S.ContainerSlider>
+            
             <Slider
               style={{ width: 350 }}
               minimumValue={0}
-              maximumValue={player.duration}
-              value={player.currentTime}
-              thumbTintColor={theme.colors.gray100}
-              minimumTrackTintColor={theme.colors.gray100}
-              maximumTrackTintColor={theme.colors.gray100}
-              onTouchStart={player.pause}
-              onTouchEnd={player.play}
-              onSlidingComplete={seconds => player.seekToTime(seconds)}
+                       maximumValue={1}
+              value={position / duration}
+              onValueChange={onSliderValueChange}
             />
+            
           </S.ContainerSlider>
 
           <S.ContainerDuration>
-            <S.FirstTime>{player.currentTimeString}</S.FirstTime>
-            <S.FinalTime>{player.durationString}</S.FinalTime>
+            <S.FirstTime></S.FirstTime>
+            <S.FinalTime></S.FinalTime>
           </S.ContainerDuration>
 
           <S.ContainerButton>
-            <TouchableOpacity onPress={player.decreaseTime}>
+            <TouchableOpacity onPress={decreaseTime}>
               <S.ButtonBack name="rotate-ccw" />
             </TouchableOpacity>
 
-            {controlButton ? (
-              <TouchableOpacity onPress={player.pause}>
+            {isPlaying  ? (
+              <TouchableOpacity onPress={pauseSound}>
                 <S.ButtonPause name="pause-circle" />
               </TouchableOpacity>
             ) : (
-              <TouchableOpacity onPress={player.play}>
+              <TouchableOpacity onPress={playSound}>
                 <S.ButtonPlay name="playcircleo" />
               </TouchableOpacity>
             )}
 
-            <TouchableOpacity onPress={player.increaseTime}>
+            <TouchableOpacity onPress={increaseTime}>
               <S.ButtonPass name="rotate-cw" />
             </TouchableOpacity>
           </S.ContainerButton>
         </S.ContainerPlayer>
-      </S.Container>
-    </LinearGradient>
+        </S.Container>
+      </LinearGradient>
   )
 }
 
