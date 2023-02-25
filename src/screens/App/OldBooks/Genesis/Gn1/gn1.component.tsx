@@ -39,9 +39,8 @@ const Gn1: React.FC<T.Gn1Props> = () => {
 
     const subscribe = firestore()
       .collection<T.Gn1Props>('audios')
-      .where('livro', '==', 'Gn')
-      .where('capitulo', '==', '1A')
-      .onSnapshot(snapshot => {
+      .where('estudo', '==', 'Estudo 1')
+        .onSnapshot(snapshot => {
         const data = snapshot.docs.map(doc => {
           const {
             titulo,
