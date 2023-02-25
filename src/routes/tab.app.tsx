@@ -1,23 +1,21 @@
 import * as React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Feather } from '@expo/vector-icons'
-
 import { useTheme } from 'styled-components'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-
-import Home from '../screens/App/Home/home.component'
-import Favorite from '../screens/App/Favorite/favorite.component'
-import Books from '../screens/App/Books/books.component'
 import { TouchableOpacity, View } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
+import { Feather } from '@expo/vector-icons'
 import theme from '../global/styles/theme'
+import Home from '../screens/App/Home/home.component'
+import Books from '../screens/App/Books/books.component'
+import Favorite from '../screens/App/Favorite/favorite.component'
 
-const Tab = createBottomTabNavigator()
 
 type PropsButton = {
   children: any
   onPress: () =>  void
 }
+const Tab = createBottomTabNavigator()
 
 const CustomTabBarButton = ({ children, onPress }: PropsButton) => (
   <TouchableOpacity onPress={onPress}>

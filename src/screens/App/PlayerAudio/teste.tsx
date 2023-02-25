@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react'
 import { Audio } from 'expo-av'
+=======
+
+/*import React, { useState,useEffect } from 'react';
+import { Audio } from 'expo-av';
+>>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
 import Slider from '@react-native-community/slider'
 import { Text } from 'react-native'
 const AudioPlayer = () => {
@@ -105,4 +111,9 @@ const AudioPlayer = () => {
   )
 }
 
+<<<<<<< HEAD
 export default AudioPlayer
+=======
+export default AudioPlayer;
+*/
+>>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5

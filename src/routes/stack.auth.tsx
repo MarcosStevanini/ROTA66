@@ -1,6 +1,5 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
 import { GroupAuth } from './group.auth'
 import TabNavigation from './tab.app'
 import Books from '../screens/App/Books/books.component'
@@ -15,6 +14,7 @@ import Credits from '../screens/App/Credits/credits.component'
 import Config from '../screens/App/Config/config.component'
 import UpdateName from '../components/UpdateName/update-name.component'
 import UpdateEmail from '../components/UpdateEmail/update-email.component'
+
 
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()

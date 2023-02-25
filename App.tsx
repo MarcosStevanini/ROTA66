@@ -24,8 +24,8 @@ export default function App() {
 
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener(state => {
-      setIsConnected(state.isConnected)
-    })
+      setIsConnected(state.isConnected);
+    });
 
     return () => {
       unsubscribe()
@@ -34,7 +34,11 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {isConnected ? fontsLoaded ? <Router /> : <Loading /> : <ScreenError />}
+
+      {isConnected ? fontsLoaded ? <Router /> : <Loading /> :
+        <ScreenError />
+      }
+
     </ThemeProvider>
   )
 }

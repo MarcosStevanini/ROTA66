@@ -4,7 +4,8 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { auth } from '../../../services/firebaseConfig'
 import { useTheme } from 'styled-components/native'
-
+import Toast from 'react-native-toast-message'
+import User from '../../../assets/user.png'
 import {
   AntDesign,
   Ionicons,
@@ -13,14 +14,12 @@ import {
   Feather
 } from '@expo/vector-icons'
 
-import Toast from 'react-native-toast-message'
-
-import User from '../../../assets/user.png'
 
 import * as S from './profile.styles'
 import * as T from './profile.types'
 
 const Profile: React.FC<T.ProfileProps> = () => {
+
   const navigator = useNavigation()
   const theme = useTheme()
 
@@ -48,7 +47,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
     >
       <S.Container>
         <S.ButtonBack onPress={() => navigator.goBack()}>
-          <AntDesign name="left" size={25} color={theme.colors.white300} />
+          <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
         <S.ContainerContent>
           <S.ImageUser source={User} />

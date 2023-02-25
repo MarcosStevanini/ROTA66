@@ -1,16 +1,25 @@
 import styled from 'styled-components/native';
+import { RFPercentage,RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View``;
 
-export const Text = styled.Text`
-    color: #333;
-    font-weight: 700;
-    margin: 0 10px;
+export const Header = styled.View`
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+
 `;
-export const LogOut = styled.TouchableOpacity`
-    background-color: #fff;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+
+export const ButtonBack = styled.TouchableOpacity`
+margin-bottom: 48px;
+
+`;
+
+export const TitleHeader = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+color: ${({theme})=>theme.colors.white200};
+font-size: ${RFValue(24)}px;
+
+margin-bottom: 36px;
+
 `;

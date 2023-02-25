@@ -49,13 +49,11 @@ box-shadow: 2px 2px 0px  white;
 
 `;
 
-
 export const IconChatper = styled.View`
 margin-left: 8px;
 margin-right: 8px;
 
 `;
-
 
 export const TitleChapter = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};

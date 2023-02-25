@@ -5,7 +5,6 @@ export const Container = styled.View`
 flex: 1;
 `;
 
-
 export const ButtonBack = styled.TouchableOpacity`
 margin-bottom: ${RFPercentage(5)}px;
 
@@ -19,7 +18,6 @@ font-size: ${RFValue(24)}px;
 margin-bottom: ${RFPercentage(5)}px;
 `;
 
-
 export const ContainerList = styled.View`
 flex-direction: row;
 flex-wrap: wrap;
@@ -28,7 +26,6 @@ justify-content: space-around;
 padding-bottom: 100px;
 
 `;
-
 
 export const CardChapter = styled.TouchableOpacity`
 width: ${RFPercentage(21.8)}px;
@@ -49,13 +46,11 @@ background-color: ${({theme})=>theme.colors.blue300};
 box-shadow: 2px 2px 0px  white;
 `;
 
-
 export const IconChatper = styled.View`
 margin-left: 8px;
 margin-right: 8px;
 
 `;
-
 
 export const TitleChapter = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};

@@ -1,17 +1,15 @@
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
-
 import { useNavigation } from '@react-navigation/native'
-
 import { AntDesign, Feather } from '@expo/vector-icons'
-
 import { useTheme } from 'styled-components/native'
 
 import * as S from './books.styles'
 import * as T from './books.types'
 
 const Books: React.FC<T.BooksProps> = () => {
+
   const navigator = useNavigation()
   const theme = useTheme()
 

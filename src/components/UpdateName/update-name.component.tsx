@@ -1,23 +1,21 @@
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
+import { useTheme } from 'styled-components'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-
+import { RFPercentage} from 'react-native-responsive-fontsize'
 import { useUpdateProfile} from 'react-firebase-hooks/auth'
 import { auth } from '../../services/firebaseConfig'
-
-import { TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
+import { TouchableWithoutFeedback, Keyboard } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
-
-import { useTheme } from 'styled-components'
-
 import Toast from 'react-native-toast-message'
+
 
 import * as S from './update-name.styles'
 import * as T from './update-name.types'
 
 const UpdateName: React.FC<T.UpdateNameProps> = () => {
   const [name, setName] = useState('')
+  const [updateProfile, updating, error] = useUpdateProfile(auth)
 
   const navigator = useNavigation()
   const theme = useTheme()
@@ -26,7 +24,6 @@ const UpdateName: React.FC<T.UpdateNameProps> = () => {
     navigator.goBack()
   }
 
-  const [updateProfile, updating, error] = useUpdateProfile(auth)
 
   if (error) {
     Toast.show({

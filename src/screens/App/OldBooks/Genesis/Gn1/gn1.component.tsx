@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react'
-
 import { db } from '../../../../../services/firebaseConfig'
+import firestore from '@react-native-firebase/firestore'
+import { useTheme } from 'styled-components/native'
+import { useNavigation } from '@react-navigation/native'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
+import { LinearGradient } from 'expo-linear-gradient'
+import { FlatList, Image } from 'react-native'
+import { Feather } from '@expo/vector-icons'
+import Loading from '../../../../../components/Loading/loading.component'
+
 import {
   collection,
   getDocs,
@@ -9,33 +17,18 @@ import {
   onSnapshot
 } from 'firebase/firestore'
 
-import firestore from '@react-native-firebase/firestore'
-
-import { FlatList, Image } from 'react-native'
-import { LinearGradient } from 'expo-linear-gradient'
-import Loading from '../../../../../components/Loading/loading.component'
-
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-
-import { useTheme } from 'styled-components/native'
-import { useNavigation } from '@react-navigation/native'
-import { Feather } from '@expo/vector-icons'
 
 import * as S from './gn1.styles'
 import * as T from './gn1.types'
 
 const Gn1: React.FC<T.Gn1Props> = () => {
+
   const [isLoading, setIsLoading] = useState(false)
   const [audio, setAudio] = useState<T.Gn1Props[]>([])
 
   const theme = useTheme()
   const navigator = useNavigation()
 
-  const conexAudioRef = query(
-    collection(db, 'audios'),
-    where('livro', '==', 'Gn'),
-    where('capitulo', '==', '1A')
-  )
 
   function handleOpenDetails(audioId: string) {
     navigator.navigate('PlayerAudio', { audioId })
@@ -46,9 +39,8 @@ const Gn1: React.FC<T.Gn1Props> = () => {
 
     const subscribe = firestore()
       .collection<T.Gn1Props>('audios')
-      .where('livro', '==', 'Gn')
-      .where('capitulo', '==', '1A')
-      .onSnapshot(snapshot => {
+      .where('estudo', '==', 'Estudo 1')
+        .onSnapshot(snapshot => {
         const data = snapshot.docs.map(doc => {
           const {
             titulo,

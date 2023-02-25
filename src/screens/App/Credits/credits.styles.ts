@@ -25,7 +25,7 @@ margin-left:${RFPercentage(4.8)}px;
 
 export const TitleInf = styled.Text`
 font-family: ${({theme})=>theme.fonts.regular};
-font-size: ${RFValue(15)}px;
+font-size: ${RFValue(14)}px;
 color: ${({theme})=>theme.colors.white100};
 
 margin-bottom: ${RFPercentage(4)}px;;
@@ -57,11 +57,7 @@ background-color: ${({theme})=>theme.colors.blue200};
 
 border-radius: 12px;
 
-
 margin-bottom: ${RFPercentage(1)}px;
-
-
-
 
 `;
 
@@ -95,9 +91,6 @@ font-family: ${({theme})=>theme.fonts.regular};
 font-size: ${RFValue(9)}px;
 color: ${({theme})=>theme.colors.white100};
 
-
-
-
 `;
 
 export const Line = styled.View`
@@ -115,8 +108,6 @@ flex-direction: row;
 
 justify-content: space-between;
 
-
 margin-bottom:  ${RFPercentage(1)}px;
-
 
 `;

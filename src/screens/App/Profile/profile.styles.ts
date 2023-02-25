@@ -30,7 +30,6 @@ height: ${RFPercentage(7)}px;
 flex-direction: row;
 align-items: center;
 
-
 border-radius: 4px;
 
 background-color: ${({theme})=>theme.colors.white100};
@@ -91,7 +90,6 @@ background-color: ${({theme})=>theme.colors.white500};
 margin-bottom:  ${RFPercentage(4)}px;
 
 `;
-
 
 export const TitleLogout = styled.Text`
 font-family: ${({theme})=>theme.fonts.bold};

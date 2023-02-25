@@ -24,7 +24,6 @@ margin-bottom: 36px;
 
 `;
 
-
 export const OptionsBooks = styled.View`
 flex-direction: row;
 align-items: center;
@@ -32,7 +31,6 @@ justify-content: space-between;
 
 margin-bottom: 64px;
 `;
-
 
 export const CardOption = styled.TouchableOpacity`
 padding: 13px 16px;
@@ -45,7 +43,6 @@ border-radius: 4px;
 justify-content: space-between;
 
 align-items: center;
-
 
 `;
 

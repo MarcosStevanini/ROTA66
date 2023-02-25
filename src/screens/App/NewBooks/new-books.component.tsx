@@ -2,18 +2,17 @@ import React from 'react'
 import { ScrollView } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-
-import { useNavigation } from '@react-navigation/native'
-
-import Biblia from '../../../assets/biblia.svg'
-import { AntDesign } from '@expo/vector-icons'
-
 import { useTheme } from 'styled-components/native'
+import { useNavigation } from '@react-navigation/native'
+import { AntDesign } from '@expo/vector-icons'
+import Biblia from '../../../assets/biblia.svg'
+
 
 import * as S from './new-books.styles'
 import * as T from './new-books.types'
 
 const NewBooks: React.FC<T.NewBooksProps> = () => {
+  
   const navigator = useNavigation()
   const theme = useTheme()
 

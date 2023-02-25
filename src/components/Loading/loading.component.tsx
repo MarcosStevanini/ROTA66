@@ -1,15 +1,16 @@
 import React from 'react'
-
+import { useTheme } from 'styled-components'
+import { LinearGradient } from 'expo-linear-gradient'
 import { ActivityIndicator } from 'react-native'
 
-import { LinearGradient } from 'expo-linear-gradient'
-import { useTheme } from 'styled-components'
+
 
 import * as S from './loading.styles'
 import * as T from './loading.types'
 
 
 const Loading: React.FC<T.LoadingProps> = () => {
+
   const theme = useTheme()
 
   return (
