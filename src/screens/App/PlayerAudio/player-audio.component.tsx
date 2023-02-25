@@ -1,5 +1,22 @@
+<<<<<<< HEAD
 import React, { useState, useEffect, useRef } from 'react'
 import { useRoute } from '@react-navigation/native'
+=======
+/*
+import React, { useState, useEffect, useRef } from 'react'
+import { useRoute, useIsFocused } from '@react-navigation/native'
+=======
+
+/*
+HEAD
+import React, { useState, useEffect } from 'react'
+=======
+import React, { useState, useEffect } from 'react'
+>>>>>>> e454a5226c918834c2756a87234e84195dc01dc6
+>>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
+
+import { TouchableOpacity } from 'react-native'
+>>>>>>> 6d99697571d65047b52d4248e369e7814a508e9d
 
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
