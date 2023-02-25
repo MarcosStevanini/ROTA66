@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*
 import React, { useState, useEffect, useRef } from 'react'
 import { useRoute, useIsFocused } from '@react-navigation/native'
 =======
@@ -7,12 +7,7 @@ import { useRoute, useIsFocused } from '@react-navigation/native'
 HEAD
 import React, { useState, useEffect } from 'react'
 =======
-<<<<<<< HEAD
-import React, { useState, useEffect, useRef } from 'react'
-import { useRoute, useIsFocused } from '@react-navigation/native'
-=======
 import React, { useState, useEffect } from 'react'
->>>>>>> 7741ddae2adbd0986947d6e350276a1ce0837e81
 >>>>>>> e454a5226c918834c2756a87234e84195dc01dc6
 >>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
 

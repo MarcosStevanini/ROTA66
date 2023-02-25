@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Router from './src/routes'
 import { ThemeProvider } from 'styled-components'
 import theme from './src/global/styles/theme'
@@ -21,33 +21,33 @@ export default function App() {
     Montserrat_500Medium,
     Montserrat_600SemiBold
   })
-
-  useEffect(() => {
-    const unsubscribe = NetInfo.addEventListener(state => {
-<<<<<<< HEAD
-      setIsConnected(state.isConnected)
-    })
-=======
-      setIsConnected(state.isConnected);
-    });
->>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
-
-    return () => {
-      unsubscribe()
-    }
-  }, [])
-
-  return (
-    <ThemeProvider theme={theme}>
-<<<<<<< HEAD
-      {isConnected ? fontsLoaded ? <Router /> : <Loading /> : <ScreenError />}
-=======
-
-      {isConnected ? fontsLoaded ? <Router /> : <Loading /> :
-        <ScreenError />
-      }
-
->>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
-    </ThemeProvider>
-  )
 }
+
+useEffect(() => {
+  const unsubscribe = NetInfo.addEventListener(state => {
+    // <<<<<<< HEAD
+    //   setIsConnected(state.isConnected)
+  })
+  // =======
+  setIsConnected(state.isConnected);
+});
+// >>>>>>> b7bead196140885997aeb8561e1c5e29f4ad12a5
+
+return () => {
+  <Text> " deveria ser essa funçao unsubscribe()"</Text>
+}
+
+
+return (
+  <ThemeProvider theme={theme}>
+
+    {isConnected ? fontsLoaded ? <Router /> : <Loading /> : <ScreenError />}
+
+
+    {isConnected ? fontsLoaded ? <Router /> : <Loading /> :
+      <ScreenError />
+    }
+
+  </ThemeProvider>
+)
+} 
