@@ -23,8 +23,35 @@ import * as T from './sign-in.types'
 
 import { useTheme } from 'styled-components'
 
+import * as AuthSession from 'expo-auth-session';
+
+type AuthResponse = {
+  params: {
+    access_token: string;
+  };
+  type: string;
+}
+
 const SignIn: React.FC<T.SignInProps> = () => {
   // const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth)
+
+  async function handleGoogleSignIn() {
+    try {
+      const CLIENT_ID = "514784960772-bc6p7upmcc9bllhlsbkqci3150lvdmsf.apps.googleusercontent.com";
+      const REDIRECT_URI = "https://auth.expo.io/@andersonbarros123/Rota66";
+      const SCOPE = encodeURI("profile email"); // encodeURI serve para decodificar na linguagem que o servidor entenda.
+      const RESPONSE_TYPE = "token"; // token do usuários
+      const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=${RESPONSE_TYPE}&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}`;
+
+      // o fluxo de autenticação sera iniciado pelo start async
+      const { type, params } = await AuthSession.startAsync({ authUrl }) as AuthResponse;
+      console.log(type, params);
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth)
   const [email, setEmail] = useState('')
@@ -104,7 +131,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
           <S.Container>
             <S.ContainerInput>
-              <S.CreateAccountSocial onPress={() => authGoogle()}>
+              <S.CreateAccountSocial onPress={() => { handleGoogleSignIn }}>
                 <SvgUri
                   style={{ position: 'absolute', left: 15 }}
                   width="23px"

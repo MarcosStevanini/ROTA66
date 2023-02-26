@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRoute } from '@react-navigation/native'
-
+import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
-
 import { useTheme } from 'styled-components/native'
-
 import firestore from '@react-native-firebase/firestore'
-
+import { AntDesign } from '@expo/vector-icons'
 import Loading from '../../../components/Loading/loading.component'
 import Player from '../../../components/Player/player.component'
 
@@ -26,6 +24,7 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
 
   const theme = useTheme()
   const route = useRoute()
+  const navigator = useNavigation()
   const { audioId } = route.params as RouteParams
 
   useEffect(() => {
@@ -82,6 +81,9 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         paddingTop: RFPercentage(10)
       }}
     >
+      <S.ButtonBack onPress={() => navigator.goBack()}>
+            <AntDesign name="left" size={30} color={theme.colors.white300} />
+          </S.ButtonBack>
       <S.Container>
         <Player
           Estudo={audio.estudo}
