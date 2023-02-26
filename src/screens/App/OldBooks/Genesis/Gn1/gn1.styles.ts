@@ -12,7 +12,6 @@ margin-bottom:${RFPercentage(4.2)}px;
 export const ContainerAudioItem = styled.TouchableOpacity`
 flex-direction: row;
 
-
 `;
 
 export const AudioItem = styled.View`

@@ -7,6 +7,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { FlatList, Image } from 'react-native'
 import { Feather, AntDesign } from '@expo/vector-icons'
 import Loading from '../../../../../components/Loading/loading.component'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import * as S from './gn1.styles'
 import * as T from './gn1.types'
@@ -14,6 +15,9 @@ import * as T from './gn1.types'
 const Gn1: React.FC<T.Gn1Props> = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [audio, setAudio] = useState<T.Gn1Props[]>([])
+  const [favoriteAudioIds, setFavoriteAudioIds] = useState<string[]>([])
+
+  const favoriteAudio = audio.filter(item => favoriteAudioIds.includes(item.id))
 
   const theme = useTheme()
   const navigator = useNavigation()
@@ -43,6 +47,9 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             time,
             url
           } = doc.data()
+
+          const isFavorite = favoriteAudioIds.includes(doc.id)
+
           return {
             id: doc.id,
             titulo,
@@ -55,13 +62,41 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             imagBookPlayer,
             tema,
             time,
-            url
+            url,
+            isFavorite
           }
         })
         setAudio(data)
         setIsLoading(false)
       })
     return subscribe
+  }, [favoriteAudioIds])
+
+  //função para favoritar e persistir os audios
+  const toggleFavorite = async (audioId: string) => {
+    let newFavoriteAudioIds = [...favoriteAudioIds]
+
+    if (favoriteAudioIds.includes(audioId)) {
+      newFavoriteAudioIds = favoriteAudioIds.filter(id => id !== audioId)
+    } else {
+      newFavoriteAudioIds.push(audioId)
+    }
+
+    setFavoriteAudioIds(newFavoriteAudioIds)
+
+    await AsyncStorage.setItem(
+      '@favoriteAudioIds',
+      JSON.stringify(newFavoriteAudioIds)
+    )
+  }
+  useEffect(() => {
+    const loadFavoriteAudioIds = async () => {
+      const storedIds = await AsyncStorage.getItem('@favoriteAudioIds')
+      if (storedIds) {
+        setFavoriteAudioIds(JSON.parse(storedIds))
+      }
+    }
+    loadFavoriteAudioIds()
   }, [])
 
   if (isLoading) {
@@ -96,7 +131,12 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                 >
                   <Image
                     source={{ uri: item.imagBookPlayer }}
-                    style={{ width:RFPercentage(10), height:RFPercentage(10),marginLeft:5,marginTop:10 }}
+                    style={{
+                      width: RFPercentage(10),
+                      height: RFPercentage(10),
+                      marginLeft: 5,
+                      marginTop: 10
+                    }}
                   />
 
                   <S.ContainerInf>
@@ -107,12 +147,20 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                   </S.ContainerInf>
                 </S.ContainerAudioItem>
 
-                <S.Favorite>
-                  <Feather
-                    name="heart"
-                    size={25}
-                    color={theme.colors.white300}
-                  />
+                <S.Favorite onPress={() => toggleFavorite(item.id)}>
+                  {item.isFavorite ? (
+                    <AntDesign
+                      name="heart"
+                      size={25}
+                      color={theme.colors.blue100}
+                    />
+                  ) : (
+                    <Feather
+                      name="heart"
+                      size={25}
+                      color={theme.colors.blue100}
+                    />
+                  )}
                 </S.Favorite>
               </S.AudioItem>
             )}
