@@ -16,7 +16,6 @@ const Player: React.FC<T.PlayerProps> = ({
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
-  const [sliderValue, setSliderValue] = useState(0)
 
   async function loadAudio() {
     try {
@@ -54,11 +53,14 @@ const Player: React.FC<T.PlayerProps> = ({
   }
 
   // Efeito colateral que irá carregar o áudio quando o componente for montado
+
   useEffect(() => {
-    loadAudio()
-    return () => {
-      if (sound) {
-        sound.unloadAsync()
+    if (!isPlaying) {
+      loadAudio()
+      return () => {
+        if (sound) {
+          sound.unloadAsync()
+        }
       }
     }
   }, [audioUrl])

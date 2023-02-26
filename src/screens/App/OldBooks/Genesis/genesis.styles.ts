@@ -1,15 +1,17 @@
 import styled from 'styled-components/native';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
 flex-direction: row;
 flex-wrap: wrap;
 
-justify-content:space-between;
+justify-content:flex-start;
+//align-items: flex-start;
 
 `;
 
 export const ButtonBack = styled.TouchableOpacity`
-margin-bottom: 48px;
+margin-bottom:${RFPercentage(4.2)}px;
 `;
 
 export const Header = styled.View`
@@ -17,22 +19,22 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 
-margin-bottom: 43px;
+margin-bottom:${RFPercentage(4.3)}px;
 
 `;
 
 export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
-font-size: 24px;
+font-size: ${RFValue(24)}px;
 
 `;
 
 export const Favorite = styled.TouchableOpacity`
-width: 30px;
-height: 30px;
+width: ${RFPercentage(3)}px;
+height: ${RFPercentage(3)}px;
 
-border-radius: 30px;
+border-radius: ${RFPercentage(3)}px;
 
 background-color: ${({theme})=>theme.colors.blue400};
 
@@ -43,18 +45,18 @@ justify-content: center;
 
 
 export const CardChapter = styled.TouchableOpacity`
-width: 50px;
-height: 50px;
+width: ${RFPercentage(7)}px;
+height: ${RFPercentage(7)}px;
 
-border-radius: 50px;
+border-radius: ${RFPercentage(5)}px;
 background-color: ${({theme})=>theme.colors.blue300};
 
 align-items: center;
 justify-content: center;
 
-margin-bottom: 8px;
-margin-left: 8px;
-margin-top: 8PX;
+margin-bottom: ${RFPercentage(0.8)}px;
+margin-left: ${RFPercentage(0.8)}px;
+margin-top: ${RFPercentage(0.8)}px;
 
 box-shadow: 2px 2px 0px  white;
 `;
@@ -62,7 +64,7 @@ box-shadow: 2px 2px 0px  white;
 export const Number = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 color:${({theme})=>theme.colors.white200};
-font-size: 18px;
+font-size: ${RFValue(18)}px;
 
 `;
 
