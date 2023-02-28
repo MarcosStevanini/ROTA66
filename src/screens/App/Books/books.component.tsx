@@ -4,6 +4,7 @@ import { RFPercentage } from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { AntDesign, Feather } from '@expo/vector-icons'
 import { useTheme } from 'styled-components/native'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import * as S from './books.styles'
 import * as T from './books.types'
@@ -41,7 +42,7 @@ const Books: React.FC<T.BooksProps> = () => {
 
         <S.FavoritesHeader>
           <S.FavoritesTitle>Favoritos</S.FavoritesTitle>
-          <Feather name="heart" size={25} color={theme.colors.white300} />
+        
         </S.FavoritesHeader>
 
         <S.FavoritesList></S.FavoritesList>

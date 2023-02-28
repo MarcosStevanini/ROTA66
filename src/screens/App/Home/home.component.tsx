@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useCallback,useState} from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
-import { useNavigation } from '@react-navigation/native'
+import { useNavigation,useFocusEffect} from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
 import useHome from './home.hook'
 import Toast from 'react-native-toast-message'
@@ -12,19 +12,35 @@ import {
   MaterialCommunityIcons,
   AntDesign
 } from '@expo/vector-icons'
-
+import  Loading  from '../../../components/Loading/loading.component'
 
 import * as S from './home.styles'
 import * as T from './home.types'
 
 
 const Home: React.FC<T.HomeProps> = () => {
+  const [isLoading, setIsLoading] = useState(false)
   
   const auth = useHome()
   const userName = auth.users.name
 
   const navigator = useNavigation()
   const theme = useTheme()
+
+
+  const updateHomeData = useCallback(() => {
+    setIsLoading(true)
+     setTimeout(() => {
+      setIsLoading(false)
+    }, 100)
+  }, []);
+
+useFocusEffect(updateHomeData);
+
+if (isLoading) {
+  return <Loading />
+}
+
 
   return (
     <LinearGradient

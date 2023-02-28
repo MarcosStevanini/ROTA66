@@ -70,5 +70,32 @@ margin-bottom: 8px;
 export const Time = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(12)}px;
-color: ${({theme})=>theme.colors.gray100}
+color: ${({theme})=>theme.colors.gray100};
+`;
+
+
+export const ContainerAnimationFavorite = styled.View`
+flex: 1;
+align-items: center;
+justify-content: center;
+
+background-color: ${({theme})=>theme.colors.blue200};
+
+`;
+
+export const TitleEmptyList = styled.Text`
+font-family: ${({theme})=>theme.fonts.regular};
+font-size: ${RFValue(12)}px;
+color: ${({theme})=>theme.colors.white400};
+
+margin-top: ${RFPercentage(1)}px;
+
+
+`;
+
+export const EmptyContainer = styled.View`
+align-items: center;
+justify-content: flex-start;
+
+
 `;

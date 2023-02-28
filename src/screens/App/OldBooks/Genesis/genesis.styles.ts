@@ -1,9 +1,5 @@
 import styled from 'styled-components/native';
-<<<<<<< HEAD
-import { RFValue } from 'react-native-responsive-fontsize';
-=======
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
->>>>>>> dev
 
 export const Container = styled.View`
 flex-direction: row;
@@ -16,6 +12,10 @@ justify-content:flex-start;
 
 export const ButtonBack = styled.TouchableOpacity`
 margin-bottom:${RFPercentage(4.2)}px;
+`;
+
+export const ButtonFavorite = styled.TouchableOpacity`
+
 `;
 
 export const Header = styled.View`
@@ -31,10 +31,7 @@ export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(22)}px;
 color: ${({theme})=>theme.colors.white200};
-<<<<<<< HEAD
-=======
 font-size: ${RFValue(24)}px;
->>>>>>> dev
 
 `;
 
@@ -73,11 +70,7 @@ export const Number = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(14)}px;
 color:${({theme})=>theme.colors.white200};
-<<<<<<< HEAD
-
-=======
 font-size: ${RFValue(18)}px;
->>>>>>> dev
 
 `;
 

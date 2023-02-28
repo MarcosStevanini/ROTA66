@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage} from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
-import { AntDesign } from '@expo/vector-icons'
+import { AntDesign,Feather } from '@expo/vector-icons'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import * as S from './genesis.styles'
 import * as T from './genesis.types'
 
 const Genesis: React.FC<T.GenesisProps> = () => {
+ 
   const navigator = useNavigation()
   const theme = useTheme()
 
+ 
   return (
     <LinearGradient
       colors={theme.colors.gradientBlueTwo}
@@ -28,6 +31,11 @@ const Genesis: React.FC<T.GenesisProps> = () => {
 
       <S.Header>
         <S.TitleHeader>Gênesis</S.TitleHeader>
+
+        <S.ButtonFavorite >
+
+        <Feather name="heart" size={25} color={theme.colors.white300} />
+        </S.ButtonFavorite>
       </S.Header>
 
       <S.Container>
@@ -75,16 +83,8 @@ const Genesis: React.FC<T.GenesisProps> = () => {
           <S.Number>11</S.Number>
         </S.CardChapter>
 
-<<<<<<< HEAD
-        <S.CardChapter>
-          <S.Number>11</S.Number>
-        </S.CardChapter>
-
-        <S.CardChapter>
-=======
         
         <S.CardChapter onPress={() => navigator.navigate('Gn12')}>
->>>>>>> dev
           <S.Number>12</S.Number>
         </S.CardChapter>
 
@@ -167,14 +167,8 @@ const Genesis: React.FC<T.GenesisProps> = () => {
         <S.CardChapter onPress={() => navigator.navigate('Gn32')}>
           <S.Number>32</S.Number>
         </S.CardChapter>
-<<<<<<< HEAD
-
-
-        <S.CardChapter>
-=======
         
         <S.CardChapter onPress={() => navigator.navigate('Gn33')}>
->>>>>>> dev
           <S.Number>33</S.Number>
         </S.CardChapter>
 

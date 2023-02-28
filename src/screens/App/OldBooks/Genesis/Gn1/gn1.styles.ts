@@ -53,5 +53,15 @@ margin-bottom: 8px;
 export const Time = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(12)}px;
-color: ${({theme})=>theme.colors.gray100}
+color: ${({theme})=>theme.colors.gray100};
+`;
+
+export const ContainerAnimationFavorite = styled.View`
+flex: 1;
+align-items: center;
+justify-content: center;
+
+background-color: ${({theme})=>theme.colors.blue200};
+
+
 `;

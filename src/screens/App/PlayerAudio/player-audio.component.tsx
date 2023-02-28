@@ -8,6 +8,7 @@ import firestore from '@react-native-firebase/firestore'
 import { AntDesign } from '@expo/vector-icons'
 import Loading from '../../../components/Loading/loading.component'
 import Player from '../../../components/Player/player.component'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 type RouteParams = {
   audioId: string
@@ -66,6 +67,21 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         setIsLoading(false)
       })
   }, [])
+  
+  useEffect(() => {
+    AsyncStorage.getItem('storedAudio').then((storedAudio) => {
+      if (storedAudio) {
+        setAudio(JSON.parse(storedAudio))
+      }
+    })
+  }, [])
+
+  useEffect(() => {
+    if (audio) {
+      AsyncStorage.setItem('storedAudio', JSON.stringify(audio))
+    }
+  }, [audio])
+  
 
   if (isLoading) {
     return <Loading />
@@ -82,12 +98,12 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
       }}
     >
       <S.ButtonBack onPress={() => navigator.goBack()}>
-            <AntDesign name="left" size={30} color={theme.colors.white300} />
-          </S.ButtonBack>
+        <AntDesign name="left" size={30} color={theme.colors.white300} />
+      </S.ButtonBack>
       <S.Container>
         <Player
           Estudo={audio.estudo}
-          ImagBookPlayer={audio.imagBookPlayer}
+          ImagBookPlayer={ audio.imagBookPlayer}
           Titulo={audio.titulo}
           audioUrl={audio.url}
         />

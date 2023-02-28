@@ -6,8 +6,8 @@ import { RFPercentage } from 'react-native-responsive-fontsize'
 import { LinearGradient } from 'expo-linear-gradient'
 import { FlatList, Image } from 'react-native'
 import { Feather, AntDesign } from '@expo/vector-icons'
-import Loading from '../../../../../components/Loading/loading.component'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import LottieView from 'lottie-react-native'
 
 import * as S from './gn1.styles'
 import * as T from './gn1.types'
@@ -16,8 +16,10 @@ const Gn1: React.FC<T.Gn1Props> = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [audio, setAudio] = useState<T.Gn1Props[]>([])
   const [favoriteAudioIds, setFavoriteAudioIds] = useState<string[]>([])
+  const [animationDuration, setAnimationDuration] = useState(0);
 
-  const favoriteAudio = audio.filter(item => favoriteAudioIds.includes(item.id))
+
+ 
 
   const theme = useTheme()
   const navigator = useNavigation()
@@ -80,6 +82,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
       newFavoriteAudioIds = favoriteAudioIds.filter(id => id !== audioId)
     } else {
       newFavoriteAudioIds.push(audioId)
+      setAnimationDuration(1500);
     }
 
     setFavoriteAudioIds(newFavoriteAudioIds)
@@ -99,14 +102,28 @@ const Gn1: React.FC<T.Gn1Props> = () => {
     loadFavoriteAudioIds()
   }, [])
 
-  if (isLoading) {
-    return <Loading />
-  }
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      // atualiza a duração da animação para 0 após o tempo especificado
+      setAnimationDuration(0);
+    }, animationDuration);
+
+    // retorna uma função para limpar o timeout se o componente for desmontado antes da animação terminar
+    return () => clearTimeout(timeoutId);
+  }, [animationDuration]);
 
   return (
     <S.Container>
-      {isLoading ? (
-        <Loading />
+      {animationDuration ? (
+        <S.ContainerAnimationFavorite>
+          <LottieView
+            source={require('../../../../../assets/ok.json')}
+            autoPlay
+            loop
+            style={{ width: 500 }}
+            duration={animationDuration}
+          />
+        </S.ContainerAnimationFavorite>
       ) : (
         <LinearGradient
           colors={theme.colors.gradientBlueTwo}

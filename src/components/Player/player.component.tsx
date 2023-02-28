@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Audio } from 'expo-av'
 import { TouchableOpacity, View } from 'react-native'
 import Slider from '@react-native-community/slider'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import * as S from './player.styles'
 import * as T from './player.types'

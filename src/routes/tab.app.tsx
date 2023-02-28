@@ -10,10 +10,9 @@ import Home from '../screens/App/Home/home.component'
 import Books from '../screens/App/Books/books.component'
 import Favorite from '../screens/App/Favorite/favorite.component'
 
-
 type PropsButton = {
   children: any
-  onPress: () =>  void
+  onPress: () => void
 }
 const Tab = createBottomTabNavigator()
 
@@ -31,7 +30,8 @@ const CustomTabBarButton = ({ children, onPress }: PropsButton) => (
         style={{
           width: 57,
           height: 57,
-          borderRadius: 57
+          borderRadius: 57,
+          paddingTop: 8
         }}
       >
         {children}
@@ -81,6 +81,7 @@ export default function TabApp() {
         component={Books}
         options={{
           tabBarLabel: '',
+          tabBarLabelPosition: 'below-icon',
           tabBarIcon: () => (
             <Feather
               name="headphones"
