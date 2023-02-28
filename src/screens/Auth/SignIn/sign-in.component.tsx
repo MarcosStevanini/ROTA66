@@ -32,8 +32,15 @@ type AuthResponse = {
   type: string;
 }
 
+type userProps = {
+  name: string;
+  email: string;
+  picture: string;
+}
+
 const SignIn: React.FC<T.SignInProps> = () => {
   // const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth)
+  //const [userGoogle, setUserGoogle] = userGoogle();
 
   async function handleGoogleSignIn() {
     try {
@@ -45,7 +52,13 @@ const SignIn: React.FC<T.SignInProps> = () => {
 
       // o fluxo de autenticação sera iniciado pelo start async
       const { type, params } = await AuthSession.startAsync({ authUrl }) as AuthResponse;
-      console.log(type, params);
+      //  console.log(type, params, user);
+
+      if (type === 'success') {
+        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
+        const user = await response.json();
+        console.log(user);
+      }
 
     } catch (error) {
       console.log(error);
@@ -131,14 +144,15 @@ const SignIn: React.FC<T.SignInProps> = () => {
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
           <S.Container>
             <S.ContainerInput>
-              <S.CreateAccountSocial onPress={() => { handleGoogleSignIn }}>
+              <S.CreateAccountSocial onPress={() => handleGoogleSignIn()
+              } >
                 <SvgUri
                   style={{ position: 'absolute', left: 15 }}
                   width="23px"
                   height="23px"
                   uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
                 />
-                <S.CreateAccountTextSocial>
+                <S.CreateAccountTextSocial >
                   Continue com Google
                 </S.CreateAccountTextSocial>
               </S.CreateAccountSocial>
@@ -161,7 +175,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
                 placeholderTextColor={theme.colors.white400}
                 value={email}
                 onChangeText={e => setEmail(e)}
-                style={{fontSize:16}}
+                style={{ fontSize: 16 }}
               />
               <S.Input
                 secureTextEntry={true}
@@ -171,7 +185,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
                 placeholderTextColor={theme.colors.white400}
                 value={password}
                 onChangeText={e => setPassword(e)}
-                style={{fontSize:16}}
+                style={{ fontSize: 16 }}
               />
               <S.changePassword
                 onPress={() => navigator.navigate('ForgotPassword')}
