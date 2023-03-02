@@ -16,10 +16,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [audio, setAudio] = useState<T.Gn1Props[]>([])
   const [favoriteAudioIds, setFavoriteAudioIds] = useState<string[]>([])
-  const [animationDuration, setAnimationDuration] = useState(0);
-
-
- 
+  const [animationDuration, setAnimationDuration] = useState(0)
 
   const theme = useTheme()
   const navigator = useNavigation()
@@ -82,7 +79,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
       newFavoriteAudioIds = favoriteAudioIds.filter(id => id !== audioId)
     } else {
       newFavoriteAudioIds.push(audioId)
-      setAnimationDuration(1500);
+      setAnimationDuration(1500)
     }
 
     setFavoriteAudioIds(newFavoriteAudioIds)
@@ -105,12 +102,12 @@ const Gn1: React.FC<T.Gn1Props> = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       // atualiza a duração da animação para 0 após o tempo especificado
-      setAnimationDuration(0);
-    }, animationDuration);
+      setAnimationDuration(0)
+    }, animationDuration)
 
     // retorna uma função para limpar o timeout se o componente for desmontado antes da animação terminar
-    return () => clearTimeout(timeoutId);
-  }, [animationDuration]);
+    return () => clearTimeout(timeoutId)
+  }, [animationDuration])
 
   return (
     <S.Container>
@@ -149,10 +146,11 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                   <Image
                     source={{ uri: item.imagBookPlayer }}
                     style={{
-                      width: RFPercentage(10),
-                      height: RFPercentage(10),
-                      marginLeft: 5,
-                      marginTop: 10
+                      width: RFPercentage(8),
+                      height: RFPercentage(8),
+                      marginLeft: 8,
+                      marginRight: 16,
+                      marginTop: 5
                     }}
                   />
 

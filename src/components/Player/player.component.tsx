@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Audio } from 'expo-av'
-import { TouchableOpacity, View } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import Slider from '@react-native-community/slider'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { useNavigation } from '@react-navigation/native'
+import { AntDesign } from '@expo/vector-icons'
+import { useTheme } from 'styled-components/native'
 
 import * as S from './player.styles'
 import * as T from './player.types'
@@ -18,6 +20,11 @@ const Player: React.FC<T.PlayerProps> = ({
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
 
+  const navigation = useNavigation()
+  const theme = useTheme()
+
+  //função para carregar o audio apartir da URL
+
   async function loadAudio() {
     try {
       if (!audioUrl) {
@@ -25,8 +32,9 @@ const Player: React.FC<T.PlayerProps> = ({
       }
       const { sound } = await Audio.Sound.createAsync(
         { uri: audioUrl },
-        { shouldPlay: false }
+        { shouldPlay: true }
       )
+      setIsPlaying(true)
       setSound(sound)
       sound.setOnPlaybackStatusUpdate(status => {
         setCurrentTime(status.positionMillis)
@@ -54,7 +62,6 @@ const Player: React.FC<T.PlayerProps> = ({
   }
 
   // Efeito colateral que irá carregar o áudio quando o componente for montado
-
   useEffect(() => {
     if (!isPlaying) {
       loadAudio()
@@ -66,6 +73,13 @@ const Player: React.FC<T.PlayerProps> = ({
     }
   }, [audioUrl])
 
+  //Função para sair da tela e parar o audio
+  async function goBackAndUnload() {
+    sound.unloadAsync()
+    navigation.goBack()
+  }
+
+  //função de encremento no tempo
   async function increaseTime() {
     if (sound) {
       const newPosition = currentTime + 15000 // increase 15 seconds
@@ -73,6 +87,7 @@ const Player: React.FC<T.PlayerProps> = ({
     }
   }
 
+  //função de decremento no tempo
   async function decreaseTime() {
     if (sound) {
       const newPosition = currentTime - 15000 // decrease 15 seconds
@@ -80,6 +95,7 @@ const Player: React.FC<T.PlayerProps> = ({
     }
   }
 
+  //função para que o usuario possa arrastar e colocar o slider em outra posição
   const onSliderValueChange = value => {
     if (sound) {
       const newPosition = value * duration
@@ -88,6 +104,7 @@ const Player: React.FC<T.PlayerProps> = ({
     }
   }
 
+  //função para formatar o time de Mils para Seg/Min
   function formatTime(time) {
     const minutes = Math.floor(time / 60000)
     const seconds = ((time % 60000) / 1000).toFixed(0)
@@ -95,45 +112,66 @@ const Player: React.FC<T.PlayerProps> = ({
   }
 
   return (
-    <S.ContainerPlayer>
-      <S.Image source={{ uri: ImagBookPlayer }} />
-      <S.TitlePlayer>
-        {Estudo} - {Titulo}
-      </S.TitlePlayer>
+    <S.Container>
+      <S.Header>
+        <S.ButtonBackUp onPress={goBackAndUnload}>
+          <AntDesign name="left" size={30} color={theme.colors.white300} />
+        </S.ButtonBackUp>
+        <S.Title>Gênesis</S.Title>
+      </S.Header>
+      <S.ContainerPlayer>
+        <S.ContainerImage>
+          <S.Image source={{ uri: ImagBookPlayer }} />
+        </S.ContainerImage>
+        <S.ContainerTitle>
+          <S.Study>{Estudo}</S.Study>
+          <S.TitlePlayer>{Titulo}</S.TitlePlayer>
+        </S.ContainerTitle>
 
-      <S.ContainerSlider>
-        <Slider
-          style={{ width: 350 }}
-          minimumValue={0}
-          maximumValue={1}
-          value={isNaN(currentTime / duration) ? 0 : currentTime / duration}
-          onValueChange={onSliderValueChange}
-        />
-      </S.ContainerSlider>
+        <S.ContainerSlider>
+          <Slider
+            style={{ width:350}}
+            minimumValue={0}
+            maximumValue={1}
+            value={
+              isNaN(currentTime / duration) || !isFinite(currentTime / duration)
+                ? 0
+                : currentTime / duration
+            }
+      
+            minimumTrackTintColor={theme.colors.white100}
+            maximumTrackTintColor={theme.colors.white300}
+            thumbTintColor="transparent"
 
-      <S.ContainerDuration>
-        <S.FirstTime>{formatTime(currentTime)}</S.FirstTime>
-        <S.FinalTime>{formatTime(duration)}</S.FinalTime>
-      </S.ContainerDuration>
+          />
+        </S.ContainerSlider>
 
-      <S.ContainerButton>
-        <TouchableOpacity onPress={decreaseTime}>
-          <S.ButtonBack name="rotate-ccw" />
-        </TouchableOpacity>
+        <S.ContainerDuration>
+          <S.FirstTime>{formatTime(currentTime)}</S.FirstTime>
+          <S.FinalTime>{formatTime(duration)}</S.FinalTime>
+        </S.ContainerDuration>
 
-        <TouchableOpacity onPress={playPauseAudio}>
-          {isPlaying ? (
-            <S.ButtonPause name="pause-circle" />
-          ) : (
-            <S.ButtonPlay name="playcircleo" />
-          )}
-        </TouchableOpacity>
+        <S.ContainerButton>
+          <TouchableOpacity onPress={decreaseTime}>
+            <S.ButtonBack name="rotate-left" />
+          </TouchableOpacity>
 
-        <TouchableOpacity onPress={increaseTime}>
-          <S.ButtonPass name="rotate-cw" />
-        </TouchableOpacity>
-      </S.ContainerButton>
-    </S.ContainerPlayer>
+          <S.ShapeButtonCenter onPress={playPauseAudio}>
+            
+              {isPlaying ? (
+                <S.ButtonPause name="pause" />
+              ) : (
+                <S.ButtonPlay name="md-play" />
+              )}
+            
+          </S.ShapeButtonCenter>
+
+          <TouchableOpacity onPress={increaseTime}>
+            <S.ButtonPass name="rotate-right" />
+          </TouchableOpacity>
+        </S.ContainerButton>
+      </S.ContainerPlayer>
+    </S.Container>
   )
 }
 

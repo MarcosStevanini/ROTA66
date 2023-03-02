@@ -9,6 +9,7 @@ export const ContainerPlayer = styled.View`
 align-items: center;
 `;
 
+
 export const Image = styled.ImageBackground`
 width: ${RFValue(300)}px;
 height: ${RFValue(300)}px;

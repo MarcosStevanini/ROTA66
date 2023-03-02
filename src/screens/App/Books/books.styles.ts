@@ -70,4 +70,21 @@ font-size: ${RFValue(24)}px;
 margin-right: 13px;
 `;
 
-export const FavoritesList = styled.View``; 
+export const FavoritesList = styled.View``;
+
+export const TitleEmptyList = styled.Text`
+font-family: ${({theme})=>theme.fonts.regular};
+font-size: ${RFValue(12)}px;
+color: ${({theme})=>theme.colors.white400};
+
+margin-top: ${RFPercentage(1)}px;
+
+
+`;
+
+export const EmptyContainer = styled.View`
+align-items: center;
+justify-content: flex-start;
+
+
+`; 

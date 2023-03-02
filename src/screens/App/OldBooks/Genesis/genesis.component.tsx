@@ -1,20 +1,44 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage} from 'react-native-responsive-fontsize'
-import { useNavigation } from '@react-navigation/native'
+import { RFPercentage } from 'react-native-responsive-fontsize'
+import { useNavigation, useFocusEffect } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
-import { AntDesign,Feather } from '@expo/vector-icons'
+import { AntDesign, Feather } from '@expo/vector-icons'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import * as S from './genesis.styles'
 import * as T from './genesis.types'
 
 const Genesis: React.FC<T.GenesisProps> = () => {
- 
+  const [isFavorite, setIsFavorite] = useState(false)
+
   const navigator = useNavigation()
   const theme = useTheme()
 
- 
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      const storedFavorites = await AsyncStorage.getItem('favorites')
+      if (storedFavorites !== null) {
+        setIsFavorite(JSON.parse(storedFavorites).includes('Genesis'))
+      }
+    }
+
+    fetchFavorites()
+  }, [])
+
+  const handleFavoritePress = async () => {
+    const favorites = (await AsyncStorage.getItem('favorites')) || '[]'
+    const parsedFavorites = JSON.parse(favorites)
+
+    const isCurrentlyFavorite = parsedFavorites.includes('Genesis')
+    const newFavorites = isCurrentlyFavorite
+      ? parsedFavorites.filter(item => item !== 'Genesis')
+      : [...parsedFavorites, 'Genesis']
+
+    await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites))
+    setIsFavorite(!isCurrentlyFavorite)
+  }
+
   return (
     <LinearGradient
       colors={theme.colors.gradientBlueTwo}
@@ -32,9 +56,12 @@ const Genesis: React.FC<T.GenesisProps> = () => {
       <S.Header>
         <S.TitleHeader>Gênesis</S.TitleHeader>
 
-        <S.ButtonFavorite >
-
-        <Feather name="heart" size={25} color={theme.colors.white300} />
+        <S.ButtonFavorite onPress={() => handleFavoritePress()}>
+          {isFavorite ? (
+            <AntDesign name="heart" size={25} color={theme.colors.blue100} />
+          ) : (
+            <Feather name="heart" size={25} color={theme.colors.blue100} />
+          )}
         </S.ButtonFavorite>
       </S.Header>
 
@@ -63,7 +90,7 @@ const Genesis: React.FC<T.GenesisProps> = () => {
           <S.Number>6</S.Number>
         </S.CardChapter>
 
-        <S.CardChapter onPress={() => navigator.navigate('Gn7')}> 
+        <S.CardChapter onPress={() => navigator.navigate('Gn7')}>
           <S.Number>7</S.Number>
         </S.CardChapter>
 
@@ -71,19 +98,18 @@ const Genesis: React.FC<T.GenesisProps> = () => {
           <S.Number>8</S.Number>
         </S.CardChapter>
 
-        <S.CardChapter onPress={() => navigator.navigate('Gn9')}> 
+        <S.CardChapter onPress={() => navigator.navigate('Gn9')}>
           <S.Number>9</S.Number>
         </S.CardChapter>
 
         <S.CardChapter onPress={() => navigator.navigate('Gn10')}>
           <S.Number>10</S.Number>
-        </S.CardChapter >
+        </S.CardChapter>
 
         <S.CardChapter onPress={() => navigator.navigate('Gn11')}>
           <S.Number>11</S.Number>
         </S.CardChapter>
 
-        
         <S.CardChapter onPress={() => navigator.navigate('Gn12')}>
           <S.Number>12</S.Number>
         </S.CardChapter>
@@ -167,7 +193,7 @@ const Genesis: React.FC<T.GenesisProps> = () => {
         <S.CardChapter onPress={() => navigator.navigate('Gn32')}>
           <S.Number>32</S.Number>
         </S.CardChapter>
-        
+
         <S.CardChapter onPress={() => navigator.navigate('Gn33')}>
           <S.Number>33</S.Number>
         </S.CardChapter>
@@ -188,7 +214,7 @@ const Genesis: React.FC<T.GenesisProps> = () => {
           <S.Number>37</S.Number>
         </S.CardChapter>
 
-        <S.CardChapter onPress={() => navigator.navigate('Gn38')}> 
+        <S.CardChapter onPress={() => navigator.navigate('Gn38')}>
           <S.Number>38</S.Number>
         </S.CardChapter>
 

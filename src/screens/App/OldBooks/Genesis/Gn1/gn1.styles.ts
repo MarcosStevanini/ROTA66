@@ -19,6 +19,7 @@ width: ${RFPercentage(48.2)}px;
 height: ${RFPercentage(10)}px;
 
 background-color: ${({theme})=>theme.colors.gray200};
+opacity: 0.8;
 
 border-radius: 6px;
 
@@ -48,6 +49,7 @@ font-size: ${RFValue(12)}px;
 color: ${({theme})=>theme.colors.white200};
 
 margin-bottom: 8px;
+
 `;
 
 export const Time = styled.Text`

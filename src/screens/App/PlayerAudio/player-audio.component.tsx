@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRoute } from '@react-navigation/native'
-import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
 import { useTheme } from 'styled-components/native'
 import firestore from '@react-native-firebase/firestore'
-import { AntDesign } from '@expo/vector-icons'
+
 import Loading from '../../../components/Loading/loading.component'
 import Player from '../../../components/Player/player.component'
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -25,7 +24,6 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
 
   const theme = useTheme()
   const route = useRoute()
-  const navigator = useNavigation()
   const { audioId } = route.params as RouteParams
 
   useEffect(() => {
@@ -67,21 +65,6 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         setIsLoading(false)
       })
   }, [])
-  
-  useEffect(() => {
-    AsyncStorage.getItem('storedAudio').then((storedAudio) => {
-      if (storedAudio) {
-        setAudio(JSON.parse(storedAudio))
-      }
-    })
-  }, [])
-
-  useEffect(() => {
-    if (audio) {
-      AsyncStorage.setItem('storedAudio', JSON.stringify(audio))
-    }
-  }, [audio])
-  
 
   if (isLoading) {
     return <Loading />
@@ -89,21 +72,19 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
 
   return (
     <LinearGradient
-      colors={theme.colors.gradientBlueTwo}
+      colors={theme.colors.gradientBlueOne}
       style={{
         flex: 1,
-        paddingHorizontal: RFPercentage(2),
+        paddingHorizontal: RFPercentage(3.2),
         paddingVertical: RFPercentage(3),
         paddingTop: RFPercentage(10)
       }}
     >
-      <S.ButtonBack onPress={() => navigator.goBack()}>
-        <AntDesign name="left" size={30} color={theme.colors.white300} />
-      </S.ButtonBack>
+    
       <S.Container>
         <Player
           Estudo={audio.estudo}
-          ImagBookPlayer={ audio.imagBookPlayer}
+          ImagBookPlayer={audio.imagBookPlayer}
           Titulo={audio.titulo}
           audioUrl={audio.url}
         />
