@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { FlatList, TouchableOpacity, Text } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
-import { useNavigation,useFocusEffect } from '@react-navigation/native'
+import { useNavigation, useFocusEffect } from '@react-navigation/native'
 import { AntDesign, Feather } from '@expo/vector-icons'
 import { useTheme } from 'styled-components/native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import LottieView from 'lottie-react-native'
+import ImageBook from '../../../assets/img-livro.png'
 
 import * as S from './books.styles'
 import * as T from './books.types'
@@ -21,31 +22,32 @@ const Books: React.FC<T.BooksProps> = () => {
   useFocusEffect(
     React.useCallback(() => {
       const fetchFavorites = async () => {
-        const storedFavorites = (await AsyncStorage.getItem('favorites')) || '[]'
+        const storedFavorites =
+          (await AsyncStorage.getItem('favorites')) || '[]'
         setFavorites(JSON.parse(storedFavorites))
       }
-  
+
       fetchFavorites()
     }, [])
   )
 
-
   //funcão para remover dos favoritos o item
-  const removeFavorite = async (itemToRemove) => {
+  const removeFavorite = async itemToRemove => {
     try {
-      const storedFavorites = await AsyncStorage.getItem('favorites');
+      const storedFavorites = await AsyncStorage.getItem('favorites')
       if (storedFavorites !== null) {
-        const favoritesArray = JSON.parse(storedFavorites);
-        const newFavorites = favoritesArray.filter((item) => item !== itemToRemove);
-        await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites));
-        setFavorites(newFavorites);
+        const favoritesArray = JSON.parse(storedFavorites)
+        const newFavorites = favoritesArray.filter(
+          item => item !== itemToRemove
+        )
+        await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites))
+        setFavorites(newFavorites)
       }
     } catch (error) {
-      console.log('Error removing favorite: ', error);
+      console.log('Error removing favorite: ', error)
     }
   }
 
-  
   return (
     <LinearGradient
       colors={theme.colors.gradientBlueTwo}
@@ -81,28 +83,40 @@ const Books: React.FC<T.BooksProps> = () => {
             data={favorites}
             keyExtractor={item => item}
             renderItem={({ item }) => (
-              <>
-                <TouchableOpacity onPress={() => navigator.navigate(item)}>
-                  <Text>{item}</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => removeFavorite(item)}>
-                  <Text>Apagar</Text>
-                </TouchableOpacity>
-              </>
+              <S.ContainerBookfavorite>
+                <S.ButtonIntro onPress={() => navigator.navigate(item)}>
+                  <S.BookInf>
+                    <S.ImageBookFavorite source={ImageBook} />
+                    <S.ContentTexts>
+                      <S.TextBooks>Livro</S.TextBooks>
+                      <S.TextBook>{item}</S.TextBook>
+                    </S.ContentTexts>
+                  </S.BookInf>
+                </S.ButtonIntro>
+
+                <S.ButtonRemove onPress={() => removeFavorite(item)}>
+                  <AntDesign
+                    name="heart"
+                    size={22}
+                    color={theme.colors.blue100}
+                  />
+                </S.ButtonRemove>
+              </S.ContainerBookfavorite>
             )}
             showsVerticalScrollIndicator={false}
             ListEmptyComponent={
               <S.EmptyContainer>
-                  <LottieView
-              source={require('../../../assets/animationFavoriteScreen.json')}
-              autoPlay
-              loop
-              style={{ width:200 }}/>
+                <LottieView
+                  source={require('../../../assets/animationFavoriteScreen.json')}
+                  autoPlay
+                  loop
+                  style={{ width: 200 }}
+                />
                 <S.TitleEmptyList>
                   Ops, você não tem nenhum Livro favoritado!
                 </S.TitleEmptyList>
               </S.EmptyContainer>
-              }
+            }
           />
         </S.FavoritesList>
       </S.Container>

@@ -156,13 +156,16 @@ const Player: React.FC<T.PlayerProps> = ({
             <S.ButtonBack name="rotate-left" />
           </TouchableOpacity>
 
-          <S.ShapeButtonCenter onPress={playPauseAudio}>
-            
-              {isPlaying ? (
+          <S.ShapeButtonCenter >
+            <TouchableOpacity onPress={playPauseAudio}>
+            {isPlaying ? (
                 <S.ButtonPause name="pause" />
               ) : (
                 <S.ButtonPlay name="md-play" />
               )}
+            </TouchableOpacity>
+            
+           
             
           </S.ShapeButtonCenter>
 

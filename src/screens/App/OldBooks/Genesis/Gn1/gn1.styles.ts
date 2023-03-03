@@ -15,10 +15,10 @@ flex-direction: row;
 `;
 
 export const AudioItem = styled.View`
-width: ${RFPercentage(48.2)}px;
-height: ${RFPercentage(10)}px;
+width: ${RFPercentage(48)}px;
+height: ${RFPercentage(8)}px;
 
-background-color: ${({theme})=>theme.colors.gray200};
+background-color: ${({theme})=>theme.colors.gray300};
 opacity: 0.8;
 
 border-radius: 6px;
@@ -34,12 +34,22 @@ export const ContainerInf = styled.View`
 width:${RFPercentage(30)}px;
 height: ${RFPercentage(5)}px;
 justify-content: flex-start;
-margin-top: ${RFPercentage(2)}px;
+
+flex-direction: row;
 
 `;
 
 export const Favorite = styled.TouchableOpacity`
 margin-right: ${RFPercentage(1.6)}px;
+
+`;
+
+export const TitleStudy = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(13)}px;
+color: ${({theme})=>theme.colors.white200};
+
+margin-bottom: 4px;
 
 `;
 
@@ -54,7 +64,7 @@ margin-bottom: 8px;
 
 export const Time = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(12)}px;
+font-size: ${RFValue(11)}px;
 color: ${({theme})=>theme.colors.gray100};
 `;
 
@@ -64,6 +74,16 @@ align-items: center;
 justify-content: center;
 
 background-color: ${({theme})=>theme.colors.blue200};
+
+
+`;
+
+export const ConteinerText1 = styled.View``;
+
+export const ConteinerText2 = styled.View`
+width:${RFPercentage(25)}px;
+height: ${RFPercentage(15)}px;
+
 
 
 `;

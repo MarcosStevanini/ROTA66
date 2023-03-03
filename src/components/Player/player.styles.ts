@@ -104,7 +104,7 @@ align-items: center;
 
 `;
 
-export const ShapeButtonCenter = styled.TouchableOpacity`
+export const ShapeButtonCenter = styled.View`
 width:${RFPercentage(8)}px;
 height: ${RFPercentage(8)}px;
 
@@ -118,6 +118,7 @@ margin-right: ${RFPercentage(3.2)}px;
 align-items: center;
 justify-content: center;
 
+opacity: 0.7;
 
 `;
 

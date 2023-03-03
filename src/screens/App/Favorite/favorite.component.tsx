@@ -135,25 +135,29 @@ const Favorite: React.FC<T.FavoriteProps> = () => {
                 <Image
                   source={{ uri: item.imagBookPlayer }}
                   style={{
-                    width: RFPercentage(10),
-                    height: RFPercentage(10),
-                    marginLeft: 5,
-                    marginTop: 10
+                    width: RFPercentage(6),
+                    height: RFPercentage(6),
+                    marginLeft: RFPercentage(0.8),
+                    marginRight: RFPercentage(1.6)
                   }}
                 />
 
                 <S.ContainerInf>
-                  <S.Title>
-                    {item.estudo} - {item.titulo}
-                  </S.Title>
-                  <S.Time>{item.time}m</S.Time>
+                  <S.ConteinerText1>
+                    <S.TitleStudy>{item.estudo} - </S.TitleStudy>
+                    <S.Time>{item.time}m</S.Time>
+                  </S.ConteinerText1>
+
+                  <S.ConteinerText2>
+                    <S.Title>{item.titulo}</S.Title>
+                  </S.ConteinerText2>
                 </S.ContainerInf>
               </S.ContainerAudioItem>
 
               <S.Favorite onPress={() => toggleFavorite(item.id)}>
-                <Feather
-                  name="trash-2"
-                  size={25}
+                <AntDesign
+                  name="minuscircleo"
+                  size={22}
                   color={
                     item.isFavorite
                       ? theme.colors.danger
@@ -167,11 +171,12 @@ const Favorite: React.FC<T.FavoriteProps> = () => {
           contentContainerStyle={{ paddingBottom: 100 }}
           ListEmptyComponent={
             <S.EmptyContainer>
-                <LottieView
-            source={require('../../../assets/animationFavoriteScreen.json')}
-            autoPlay
-            loop
-            style={{ width:300 }}/>
+              <LottieView
+                source={require('../../../assets/animationFavoriteScreen.json')}
+                autoPlay
+                loop
+                style={{ width: 300 }}
+              />
               <S.TitleEmptyList>
                 Ops, você não tem nenhum Estudo favoritado!
               </S.TitleEmptyList>

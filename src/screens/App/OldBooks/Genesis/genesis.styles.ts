@@ -74,6 +74,16 @@ font-size: ${RFValue(18)}px;
 
 `;
 
+export const ContainerAnimationFavorite = styled.View`
+flex: 1;
+align-items: center;
+justify-content: center;
+
+background-color: ${({theme})=>theme.colors.blue200};
+
+
+`;
+
 
 
 

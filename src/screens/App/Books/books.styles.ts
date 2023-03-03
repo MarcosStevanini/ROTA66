@@ -88,3 +88,63 @@ justify-content: flex-start;
 
 
 `; 
+
+export const ContainerBookfavorite = styled.View`
+width: ${RFPercentage(46)}px;
+height: ${RFPercentage(8)}px;
+background-color: ${({theme})=>theme.colors.gray300};
+
+border-radius: 6px;
+
+flex-direction: row;
+
+justify-content: space-between;
+align-items: center;
+
+opacity: 0.8;
+
+`;
+
+export const ImageBookFavorite = styled.Image`
+width: ${RFValue(36)}px;
+height: ${RFValue(36)}px;
+
+margin-left: ${RFPercentage(0.8)}px;
+margin-right: ${RFPercentage(1.6)}px;
+
+
+`;
+
+export const BookInf = styled.View`
+flex-direction: row;
+
+
+`;
+
+export const ButtonRemove =styled.TouchableOpacity`
+margin-right:${RFPercentage(1.6)}px;
+
+`;
+
+export const ButtonIntro =styled.TouchableOpacity``;
+
+export const TextBooks = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+color: ${({theme})=>theme.colors.white200};
+font-size: ${RFValue(15)}px;
+
+
+`;
+
+export const TextBook = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+color: ${({theme})=>theme.colors.white500};
+font-size: ${RFValue(11)}px;
+
+
+`;
+
+export const ContentTexts = styled.View`
+
+
+`;

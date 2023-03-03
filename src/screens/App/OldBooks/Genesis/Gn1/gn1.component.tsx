@@ -89,6 +89,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
       JSON.stringify(newFavoriteAudioIds)
     )
   }
+
   useEffect(() => {
     const loadFavoriteAudioIds = async () => {
       const storedIds = await AsyncStorage.getItem('@favoriteAudioIds')
@@ -117,7 +118,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             source={require('../../../../../assets/ok.json')}
             autoPlay
             loop
-            style={{ width: 500 }}
+            style={{ width: 500, backgroundColor: 'transparent' }}
             duration={animationDuration}
           />
         </S.ContainerAnimationFavorite>
@@ -146,19 +147,22 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                   <Image
                     source={{ uri: item.imagBookPlayer }}
                     style={{
-                      width: RFPercentage(8),
-                      height: RFPercentage(8),
-                      marginLeft: 8,
-                      marginRight: 16,
-                      marginTop: 5
+                      width: RFPercentage(6),
+                      height: RFPercentage(6),
+                      marginLeft: RFPercentage(0.8),
+                      marginRight: RFPercentage(1.6)
                     }}
                   />
 
                   <S.ContainerInf>
-                    <S.Title>
-                      {item.estudo} - {item.titulo}
-                    </S.Title>
-                    <S.Time>{item.time}m</S.Time>
+                    <S.ConteinerText1>
+                      <S.TitleStudy>{item.estudo} - </S.TitleStudy>
+                      <S.Time>{item.time}m</S.Time>
+                    </S.ConteinerText1>
+
+                    <S.ConteinerText2>
+                      <S.Title>{item.titulo}</S.Title>
+                    </S.ConteinerText2>
                   </S.ContainerInf>
                 </S.ContainerAudioItem>
 
@@ -166,13 +170,13 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                   {item.isFavorite ? (
                     <AntDesign
                       name="heart"
-                      size={25}
+                      size={22}
                       color={theme.colors.blue100}
                     />
                   ) : (
                     <Feather
                       name="heart"
-                      size={25}
+                      size={22}
                       color={theme.colors.blue100}
                     />
                   )}

@@ -13,7 +13,7 @@ align-items: center;
 `;
 
 export const ButtonBack = styled.TouchableOpacity`
-margin-bottom: 48px;
+margin-bottom: ${RFPercentage(5)}px;
 
 `;
 
@@ -22,15 +22,14 @@ font-family: ${({theme})=>theme.fonts.medium};
 color: ${({theme})=>theme.colors.white200};
 font-size: ${RFValue(24)}px;
 
-margin-bottom: 36px;
+margin-bottom: ${RFPercentage(3.6)}px;
 
 `;
 
 export const AudioItem = styled.View`
-width: ${RFPercentage(48.2)}px;
-height: ${RFPercentage(10)}px;
-
-background-color: ${({theme})=>theme.colors.gray200};
+width: ${RFPercentage(48)}px;
+height: ${RFPercentage(9)}px;
+background-color: ${({theme})=>theme.colors.gray300};
 
 border-radius: 6px;
 
@@ -39,6 +38,8 @@ flex-direction: row;
 
 justify-content: space-between;
 align-items: center;
+
+opacity: 0.9;
 `;
 
 export const ContainerAudioItem = styled.TouchableOpacity`
@@ -50,7 +51,8 @@ export const ContainerInf = styled.View`
 width:${RFPercentage(30)}px;
 height: ${RFPercentage(5)}px;
 justify-content: flex-start;
-margin-top: ${RFPercentage(2)}px;
+
+flex-direction: row;
 
 `;
 
@@ -59,12 +61,21 @@ margin-right: ${RFPercentage(1.6)}px;
 
 `;
 
+export const TitleStudy = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(13)}px;
+color: ${({theme})=>theme.colors.white200};
+
+margin-bottom: 4px;
+
+`;
 export const Title = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(12)}px;
 color: ${({theme})=>theme.colors.white200};
 
 margin-bottom: 8px;
+
 `;
 
 export const Time = styled.Text`
@@ -96,6 +107,15 @@ margin-top: ${RFPercentage(1)}px;
 export const EmptyContainer = styled.View`
 align-items: center;
 justify-content: flex-start;
+
+
+`;
+export const ConteinerText1 = styled.View``;
+
+export const ConteinerText2 = styled.View`
+width:${RFPercentage(25)}px;
+height: ${RFPercentage(15)}px;
+
 
 
 `;

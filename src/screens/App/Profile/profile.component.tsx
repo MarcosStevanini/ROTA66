@@ -14,7 +14,6 @@ import {
   Feather
 } from '@expo/vector-icons'
 
-
 import * as S from './profile.styles'
 import * as T from './profile.types'
 
