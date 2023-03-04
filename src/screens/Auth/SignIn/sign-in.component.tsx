@@ -8,7 +8,8 @@ import {
   Keyboard,
   KeyboardAvoidingView,
   View,
-  Text
+  Text,
+  TextProps
 } from 'react-native'
 import Toast from 'react-native-toast-message'
 
@@ -32,15 +33,19 @@ type AuthResponse = {
   type: string;
 }
 
-type userProps = {
+export type UserProps = {
   name: string;
   email: string;
   picture: string;
 }
 
+type Props = {
+  user: UserProps;
+}
+
 const SignIn: React.FC<T.SignInProps> = () => {
   // const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth)
-  //const [userGoogle, setUserGoogle] = userGoogle();
+  const [userGoogle, setUserGoogle] = useState<UserProps>({} as UserProps);
 
   async function handleGoogleSignIn() {
     try {
@@ -58,7 +63,11 @@ const SignIn: React.FC<T.SignInProps> = () => {
         const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
         const user = await response.json();
         console.log(user);
+        setUserGoogle(user);
+        // navigator.navigate('CreateProfile');
+        navigator.navigate('Books')
       }
+
 
     } catch (error) {
       console.log(error);
