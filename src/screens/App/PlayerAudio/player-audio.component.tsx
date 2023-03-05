@@ -15,6 +15,7 @@ type RouteParams = {
 
 import * as S from './player-audio.styles'
 import * as T from './player-audio.types'
+import { ScrollView } from 'react-native'
 
 const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -80,15 +81,17 @@ const PlayerAudio: React.FC<T.PlayerAudioProps> = () => {
         paddingTop: RFPercentage(10)
       }}
     >
-    
-      <S.Container>
-        <Player
-          Estudo={audio.estudo}
-          ImagBookPlayer={audio.imagBookPlayer}
-          Titulo={audio.titulo}
-          audioUrl={audio.url}
-        />
-      </S.Container>
+      <S.ContainerScroll showsVerticalScrollIndicator={false}>
+        <S.Container>
+          <Player
+            Estudo={audio.estudo}
+            ImagBookPlayer={audio.imagBookPlayer}
+            Titulo={audio.titulo}
+            audioUrl={audio.url}
+            Description={audio.descricao}
+          />
+        </S.Container>
+      </S.ContainerScroll>
     </LinearGradient>
   )
 }

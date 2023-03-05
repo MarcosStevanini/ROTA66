@@ -29,7 +29,7 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
         <S.ButtonBack onPress={() => navigator.goBack()}>
           <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
-        <S.TitleHeader>Velho testamento</S.TitleHeader>
+        <S.TitleHeader>Antigo testamento</S.TitleHeader>
 
         <ScrollView showsVerticalScrollIndicator={false}>
           <S.ContainerList>
@@ -40,44 +40,44 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
               <S.TitleChapter>Gênesis</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Exodo')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Êxodos</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
-              <S.IconChatper>
+            <S.CardChapter onPress={() => navigator.navigate('Levitico')}>
+              <S.IconChatper >
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Levítico</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
-              <S.IconChatper>
+            <S.CardChapter onPress={() => navigator.navigate('Numeros')}>
+              <S.IconChatper >
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Números</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
-              <S.IconChatper>
+            <S.CardChapter onPress={() => navigator.navigate('Deuteronomio')}>
+              <S.IconChatper >
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Deuteronômio</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Josue')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Josué</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
-              <S.IconChatper>
+            <S.CardChapter >
+              <S.IconChatper >
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Juízes</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter >
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
@@ -89,7 +89,7 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
               </S.IconChatper>
               <S.TitleChapter>Samuel I</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter >
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>

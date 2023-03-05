@@ -13,7 +13,8 @@ const Player: React.FC<T.PlayerProps> = ({
   audioUrl,
   Estudo,
   Titulo,
-  ImagBookPlayer
+  ImagBookPlayer,
+  Description
 }) => {
   const [sound, setSound] = useState()
   const [isPlaying, setIsPlaying] = useState(false)
@@ -173,6 +174,10 @@ const Player: React.FC<T.PlayerProps> = ({
             <S.ButtonPass name="rotate-right" />
           </TouchableOpacity>
         </S.ContainerButton>
+     <S.ContainerDescription>
+      <S.TitleDescription>Descrição</S.TitleDescription>
+      <S.Description>{Description}</S.Description>
+     </S.ContainerDescription>
       </S.ContainerPlayer>
     </S.Container>
   )

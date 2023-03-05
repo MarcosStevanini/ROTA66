@@ -73,18 +73,18 @@ if (isLoading) {
           horizontal={true}
           showsHorizontalScrollIndicator={false}
         >
-          <S.ButtonExplore onPress={() => console.log('BOOK CHAPTER OPEN')}>
+          <S.ButtonExplore onPress={() => navigator.navigate('Genesis')}>
             <S.TextExploreBook>Gênesis</S.TextExploreBook>
           </S.ButtonExplore>
 
-          <S.ButtonExplore onPress={() => console.log('BOOK CHAPTER OPEN')}>
+          <S.ButtonExplore onPress={() => navigator.navigate('Exodo')}>
             <S.TextExploreBook>Êxodo</S.TextExploreBook>
           </S.ButtonExplore>
 
-          <S.ButtonExplore onPress={() => console.log('BOOK CHAPTER OPEN')}>
+          <S.ButtonExplore onPress={() => navigator.navigate('Levitico')}>
             <S.TextExploreBook>Levítico</S.TextExploreBook>
           </S.ButtonExplore>
-          <S.ButtonExplore onPress={() => console.log('BOOK CHAPTER OPEN')}>
+          <S.ButtonExplore onPress={() => navigator.navigate('Numeros')}>
             <S.TextExploreBook>Números</S.TextExploreBook>
           </S.ButtonExplore>
         </S.ContainerExploreBook>

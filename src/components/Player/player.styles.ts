@@ -57,10 +57,9 @@ margin-bottom: ${RFPercentage(1)}px;
 
 export const TitlePlayer = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(10)}px;
-
+font-size: ${RFValue(11)}px;
 color: ${({theme})=>theme.colors.white100};
-
+opacity: 0.7;
 `;
 
 export const ContainerSlider = styled.View`
@@ -100,7 +99,7 @@ export const ContainerButton = styled.View`
 flex-direction: row;
 justify-content: center;
 align-items: center;
-
+margin-bottom: ${RFPercentage(3)}px;
 
 `;
 
@@ -143,4 +142,25 @@ color: ${({theme})=>theme.colors.white100};
 export const ButtonBack  = styled(FontAwesome)`
 font-size: ${RFValue(30)}px;
 color: ${({theme})=>theme.colors.white100};
+`;
+export const ContainerDescription = styled.View``;
+
+export const TitleDescription = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(16)}px;
+
+color: ${({theme})=>theme.colors.white100};
+
+margin-bottom: ${RFPercentage(3)}px;
+
+`;
+
+export const Description = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(12)}px;
+text-align: justify;
+color: ${({theme})=>theme.colors.white100};
+padding-bottom:${RFPercentage(8)}px;
+opacity: 0.7;
+
 `;

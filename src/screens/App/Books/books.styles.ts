@@ -89,7 +89,7 @@ justify-content: flex-start;
 
 `; 
 
-export const ContainerBookfavorite = styled.View`
+export const ContainerBookfavorite = styled.TouchableOpacity`
 width: ${RFPercentage(46)}px;
 height: ${RFPercentage(8)}px;
 background-color: ${({theme})=>theme.colors.gray300};
@@ -102,6 +102,7 @@ justify-content: space-between;
 align-items: center;
 
 opacity: 0.8;
+margin-bottom:${RFPercentage(1)}px;
 
 `;
 
@@ -126,7 +127,7 @@ margin-right:${RFPercentage(1.6)}px;
 
 `;
 
-export const ButtonIntro =styled.TouchableOpacity``;
+export const ButtonIntro =styled.View``;
 
 export const TextBooks = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};

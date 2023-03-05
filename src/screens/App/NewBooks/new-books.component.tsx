@@ -65,7 +65,7 @@ const NewBooks: React.FC<T.NewBooksProps> = () => {
               </S.IconChatper>
               <S.TitleChapter>Atos.Apóstolos</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Romanos')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
@@ -83,7 +83,7 @@ const NewBooks: React.FC<T.NewBooksProps> = () => {
               </S.IconChatper>
               <S.TitleChapter>Coríntios II</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Galatas')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
@@ -153,14 +153,14 @@ const NewBooks: React.FC<T.NewBooksProps> = () => {
               <S.TitleChapter>Filemom</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Hebreus')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Hebreus</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Tiago')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>

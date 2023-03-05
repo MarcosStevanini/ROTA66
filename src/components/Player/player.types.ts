@@ -3,8 +3,6 @@ export interface PlayerProps {
   Estudo:string;
   Titulo:string;
   ImagBookPlayer:string;
-
-
-
+  Description:string;
 
 }

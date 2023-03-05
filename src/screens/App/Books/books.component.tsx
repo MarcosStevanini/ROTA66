@@ -83,8 +83,8 @@ const Books: React.FC<T.BooksProps> = () => {
             data={favorites}
             keyExtractor={item => item}
             renderItem={({ item }) => (
-              <S.ContainerBookfavorite>
-                <S.ButtonIntro onPress={() => navigator.navigate(item)}>
+              <S.ContainerBookfavorite onPress={() => navigator.navigate(item)}>
+                <S.ButtonIntro >
                   <S.BookInf>
                     <S.ImageBookFavorite source={ImageBook} />
                     <S.ContentTexts>

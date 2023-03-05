@@ -77,21 +77,21 @@ import Ex58  from '../screens/App/OldBooks/Exodos/Ex58/ex58.component'
 import Ex59  from '../screens/App/OldBooks/Exodos/Ex59/ex59.component'
 import Ex60  from '../screens/App/OldBooks/Exodos/Ex60/ex60.component'
 
-import Romanos from '../screens/App/OldBooks/Romanos/romanos.component'
-import  Rom61 from '../screens/App/OldBooks/Romanos/Rom61/rom61.component'
-import  Rom62 from '../screens/App/OldBooks/Romanos/Rom62/rom62.component'
-import  Rom63 from '../screens/App/OldBooks/Romanos/Rom63/rom63.component'
-import  Rom64 from '../screens/App/OldBooks/Romanos/Rom64/rom64.component'
-import  Rom65 from '../screens/App/OldBooks/Romanos/Rom65/rom65.component'
-import  Rom66 from '../screens/App/OldBooks/Romanos/Rom66/rom66.component'
-import  Rom67 from '../screens/App/OldBooks/Romanos/Rom67/rom67.component'
-import  Rom68 from '../screens/App/OldBooks/Romanos/Rom68/rom68.component'
-import  Rom69 from '../screens/App/OldBooks/Romanos/Rom69/rom69.component'
-import  Rom70 from '../screens/App/OldBooks/Romanos/Rom70/rom70.component'
-import  Rom71 from '../screens/App/OldBooks/Romanos/Rom71/rom71.component'
-import  Rom72 from '../screens/App/OldBooks/Romanos/Rom72/rom72.component'
-import  Rom73 from '../screens/App/OldBooks/Romanos/Rom73/rom73.component'
-import  Rom74 from '../screens/App/OldBooks/Romanos/Rom74/rom74.component'
+import Romanos from '../screens/App/NewBooks/Romanos/romanos.component'
+import  Rom61 from '../screens/App/NewBooks/Romanos/Rom61/rom61.component'
+import  Rom62 from '../screens/App/NewBooks/Romanos/Rom62/rom62.component'
+import  Rom63 from '../screens/App/NewBooks/Romanos/Rom63/rom63.component'
+import  Rom64 from '../screens/App/NewBooks/Romanos/Rom64/rom64.component'
+import  Rom65 from '../screens/App/NewBooks/Romanos/Rom65/rom65.component'
+import  Rom66 from '../screens/App/NewBooks/Romanos/Rom66/rom66.component'
+import  Rom67 from '../screens/App/NewBooks/Romanos/Rom67/rom67.component'
+import  Rom68 from '../screens/App/NewBooks/Romanos/Rom68/rom68.component'
+import  Rom69 from '../screens/App/NewBooks/Romanos/Rom69/rom69.component'
+import  Rom70 from '../screens/App/NewBooks/Romanos/Rom70/rom70.component'
+import  Rom71 from '../screens/App/NewBooks/Romanos/Rom71/rom71.component'
+import  Rom72 from '../screens/App/NewBooks/Romanos/Rom72/rom72.component'
+import  Rom73 from '../screens/App/NewBooks/Romanos/Rom73/rom73.component'
+import  Rom74 from '../screens/App/NewBooks/Romanos/Rom74/rom74.component'
 
 import Levitico from '../screens/App/OldBooks/Leviticos/leviticos.component'
 import Lv75 from '../screens/App/OldBooks/Leviticos/Lv75/lv75.component'
@@ -107,20 +107,19 @@ import Lv84 from '../screens/App/OldBooks/Leviticos/Lv84/lv84.component'
 import Lv85 from '../screens/App/OldBooks/Leviticos/Lv85/lv85.component'
 import Lv86 from '../screens/App/OldBooks/Leviticos/Lv86/lv86.component'
 
-import Hebreus  from '../screens/App/OldBooks/Hebreus/hebreus.component'
-import Hb87 from '../screens/App/OldBooks/Hebreus/Hb87/hb87.component'
-import Hb88 from '../screens/App/OldBooks/Hebreus/Hb88/hb88.component'
-import Hb89 from '../screens/App/OldBooks/Hebreus/Hb89/hb89.component'
-import Hb90 from '../screens/App/OldBooks/Hebreus/Hb90/hb90.component'
-import Hb91 from '../screens/App/OldBooks/Hebreus/Hb91/hb91.component'
-import Hb92 from '../screens/App/OldBooks/Hebreus/Hb92/hb92.component'
-import Hb93 from '../screens/App/OldBooks/Hebreus/Hb93/hb93.component'
-import Hb94 from '../screens/App/OldBooks/Hebreus/Hb94/hb94.component'
-import Hb95 from '../screens/App/OldBooks/Hebreus/Hb95/hb95.component'
-import Hb96 from '../screens/App/OldBooks/Hebreus/Hb96/hb96.component'
-import Hb97 from '../screens/App/OldBooks/Hebreus/Hb97/hb97.component'
-import Hb98 from '../screens/App/OldBooks/Hebreus/Hb98/hb98.component'
-
+import Hebreus  from '../screens/App/NewBooks/Hebreus/hebreus.component'
+import Hb87 from '../screens/App/NewBooks/Hebreus/Hb87/hb87.component'
+import Hb88 from '../screens/App/NewBooks/Hebreus/Hb88/hb88.component'
+import Hb89 from '../screens/App/NewBooks/Hebreus/Hb89/hb89.component'
+import Hb90 from '../screens/App/NewBooks/Hebreus/Hb90/hb90.component'
+import Hb91 from '../screens/App/NewBooks/Hebreus/Hb91/hb91.component'
+import Hb92 from '../screens/App/NewBooks/Hebreus/Hb92/hb92.component'
+import Hb93 from '../screens/App/NewBooks/Hebreus/Hb93/hb93.component'
+import Hb94 from '../screens/App/NewBooks/Hebreus/Hb94/hb94.component'
+import Hb95 from '../screens/App/NewBooks/Hebreus/Hb95/hb95.component'
+import Hb96 from '../screens/App/NewBooks/Hebreus/Hb96/hb96.component'
+import Hb97 from '../screens/App/NewBooks/Hebreus/Hb97/hb97.component'
+import Hb98 from '../screens/App/NewBooks/Hebreus/Hb98/hb98.component'
 
 import Numeros from '../screens/App/OldBooks/Numeros/numeros.component'
 import Num99 from  '../screens/App/OldBooks/Numeros/Num99/num99.component'
@@ -140,13 +139,13 @@ import Num112 from '../screens/App/OldBooks/Numeros/Num112/num112.component'
 import Num113 from '../screens/App/OldBooks/Numeros/Num113/num113.component'
 import Num114 from '../screens/App/OldBooks/Numeros/Num114/num114.component'
 
-import Galatas from '../screens/App/OldBooks/Galatas/galatas.component'
-import Gl115 from '../screens/App/OldBooks/Galatas/Gl115/gl115.component'
-import Gl116 from '../screens/App/OldBooks/Galatas/Gl116/gl116.component'
-import Gl117 from '../screens/App/OldBooks/Galatas/Gl117/gl117.component'
-import Gl118 from '../screens/App/OldBooks/Galatas/Gl118/gl118.component'
-import Gl119 from '../screens/App/OldBooks/Galatas/Gl119/gl119.component'
-import Gl120 from '../screens/App/OldBooks/Galatas/Gl120/gl120.component'
+import Galatas from '../screens/App/NewBooks/Galatas/galatas.component'
+import Gl115 from '../screens/App/NewBooks/Galatas/Gl115/gl115.component'
+import Gl116 from '../screens/App/NewBooks/Galatas/Gl116/gl116.component'
+import Gl117 from '../screens/App/NewBooks/Galatas/Gl117/gl117.component'
+import Gl118 from '../screens/App/NewBooks/Galatas/Gl118/gl118.component'
+import Gl119 from '../screens/App/NewBooks/Galatas/Gl119/gl119.component'
+import Gl120 from '../screens/App/NewBooks/Galatas/Gl120/gl120.component'
 
 
 import Deuteronomio from '../screens/App/OldBooks/Deuteronomio/deuteronomio.component'
@@ -170,11 +169,11 @@ import Deut137 from '../screens/App/OldBooks/Deuteronomio/Deut137/deut137.compon
 import Deut138 from '../screens/App/OldBooks/Deuteronomio/Deut138/deut138.component'
 import Deut139 from '../screens/App/OldBooks/Deuteronomio/Deut139/deut139.component'
 
-import Tiago from '../screens/App/OldBooks/Tiago/tiago.component'
-import Tg140 from '../screens/App/OldBooks/Tiago/Tg140/tg140.component'
-import Tg141 from '../screens/App/OldBooks/Tiago/Tg141/tg141.component'
-import Tg142 from '../screens/App/OldBooks/Tiago/Tg142/tg142.component'
-import Tg143 from '../screens/App/OldBooks/Tiago/Tg143/tg143.component'
+import Tiago from '../screens/App/NewBooks/Tiago/tiago.component'
+import Tg140 from '../screens/App/NewBooks/Tiago/Tg140/tg140.component'
+import Tg141 from '../screens/App/NewBooks/Tiago/Tg141/tg141.component'
+import Tg142 from '../screens/App/NewBooks/Tiago/Tg142/tg142.component'
+import Tg143 from '../screens/App/NewBooks/Tiago/Tg143/tg143.component'
 
 import Josue from '../screens/App/OldBooks/Josue/josue.component'
 import Jos144 from '../screens/App/OldBooks/Josue/Jos144/jos144.component'
@@ -282,20 +281,20 @@ export const StackAuth = () => {
       <Stack.Screen name="Ex60" component={Ex60} />
 
       <Stack.Screen name="Romanos" component={Romanos} />
-      <Stack.Screen name="Rom" component={Rom61} />
-      <Stack.Screen name="Rom" component={Rom62} />
-      <Stack.Screen name="Rom" component={Rom63} />
-      <Stack.Screen name="Rom" component={Rom64} />
-      <Stack.Screen name="Rom" component={Rom65} />
-      <Stack.Screen name="Rom" component={Rom66} />
-      <Stack.Screen name="Rom" component={Rom67} />
-      <Stack.Screen name="Rom" component={Rom68} />
-      <Stack.Screen name="Rom" component={Rom69} />
-      <Stack.Screen name="Rom" component={Rom70} />
-      <Stack.Screen name="Rom" component={Rom71} />
-      <Stack.Screen name="Rom" component={Rom72} />
-      <Stack.Screen name="Rom" component={Rom73} />
-      <Stack.Screen name="Rom" component={Rom74} />
+      <Stack.Screen name="Rom61" component={Rom61} />
+      <Stack.Screen name="Rom62" component={Rom62} />
+      <Stack.Screen name="Rom63" component={Rom63} />
+      <Stack.Screen name="Rom64" component={Rom64} />
+      <Stack.Screen name="Rom65" component={Rom65} />
+      <Stack.Screen name="Rom66" component={Rom66} />
+      <Stack.Screen name="Rom67" component={Rom67} />
+      <Stack.Screen name="Rom68" component={Rom68} />
+      <Stack.Screen name="Rom69" component={Rom69} />
+      <Stack.Screen name="Rom70" component={Rom70} />
+      <Stack.Screen name="Rom71" component={Rom71} />
+      <Stack.Screen name="Rom72" component={Rom72} />
+      <Stack.Screen name="Rom73" component={Rom73} />
+      <Stack.Screen name="Rom74" component={Rom74} />
 
       <Stack.Screen name="Levitico" component={Levitico} />
       <Stack.Screen name="Lv75" component={Lv75} />

@@ -4,6 +4,7 @@ import { AntDesign,Feather } from '@expo/vector-icons';
 
 export const Container = styled.View``;
 
+export const ContainerScroll = styled.ScrollView``;
 
 export const ContainerPlayer = styled.View`
 align-items: center;

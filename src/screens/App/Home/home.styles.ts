@@ -17,6 +17,7 @@ export const TextProfile = styled.Text`
   font-size: ${RFValue(24)}px;
   color: ${({theme})=>theme.colors.white100};
   font-size: ${RFValue(24)}px;
+  text-transform: capitalize;
 `;
 export const ProfileButton = styled.TouchableOpacity``;
 
