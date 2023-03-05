@@ -1,5 +1,4 @@
 export interface Gn28Props {
-
   id: string;
   titulo: string;
   livro: string;
@@ -12,4 +11,5 @@ export interface Gn28Props {
   tema: string;
   time: string;
   url: string;
+  isFavorite:string;
 }

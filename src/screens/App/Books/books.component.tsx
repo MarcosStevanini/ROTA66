@@ -104,6 +104,7 @@ const Books: React.FC<T.BooksProps> = () => {
               </S.ContainerBookfavorite>
             )}
             showsVerticalScrollIndicator={false}
+            contentContainerStyle={{ paddingBottom: 200 }}
             ListEmptyComponent={
               <S.EmptyContainer>
                 <LottieView

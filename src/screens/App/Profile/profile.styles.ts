@@ -13,13 +13,34 @@ margin-bottom: ${RFPercentage(3)}px;
 
 `;
 
-export const ImageUser = styled.Image`
-width: ${RFPercentage(22)}px;
-height: ${RFPercentage(22)}px;
+export const ImageUser = styled.View`
 align-items: center;
 justify-content: center;
 
 margin-bottom: ${RFPercentage(10)}px;
+
+
+opacity: 0.8;
+`;
+
+export const ButtonTheme= styled.TouchableOpacity`
+width:${RFPercentage(43)}px;
+height: ${RFPercentage(7)}px;
+
+flex-direction: row;
+align-items: center;
+
+border-radius: 4px;
+
+background-color: ${({theme})=>theme.colors.white100};
+
+margin-bottom: ${RFPercentage(4)}px;
+`;
+
+export const TitleTheme = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(14)}px;
+color: ${({theme})=>theme.colors.gray300};
 
 `;
 

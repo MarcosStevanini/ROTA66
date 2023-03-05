@@ -8,6 +8,7 @@ import { FlatList, Image } from 'react-native'
 import { Feather, AntDesign } from '@expo/vector-icons'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import LottieView from 'lottie-react-native'
+import  Loading  from '../../../../../components/Loading/loading.component'
 
 import * as S from './gn1.styles'
 import * as T from './gn1.types'
@@ -110,6 +111,10 @@ const Gn1: React.FC<T.Gn1Props> = () => {
     return () => clearTimeout(timeoutId)
   }, [animationDuration])
 
+  if (isLoading) {
+    return <Loading />
+  }
+  
   return (
     <S.Container>
       {animationDuration ? (
@@ -118,7 +123,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             source={require('../../../../../assets/ok.json')}
             autoPlay
             loop
-            style={{ width: 500, backgroundColor: 'transparent' }}
+            style={{ width: 500}}
             duration={animationDuration}
           />
         </S.ContainerAnimationFavorite>

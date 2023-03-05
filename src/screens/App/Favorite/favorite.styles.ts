@@ -34,12 +34,10 @@ background-color: ${({theme})=>theme.colors.gray300};
 border-radius: 6px;
 
 flex-direction: row;
-
-
 justify-content: space-between;
 align-items: center;
-
 opacity: 0.9;
+margin-bottom:${RFPercentage(2.4)}px;
 `;
 
 export const ContainerAudioItem = styled.TouchableOpacity`
@@ -74,7 +72,7 @@ font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(12)}px;
 color: ${({theme})=>theme.colors.white200};
 
-margin-bottom: 8px;
+margin-bottom: ${RFPercentage(0.8)}px;
 
 `;
 
@@ -113,7 +111,7 @@ justify-content: flex-start;
 export const ConteinerText1 = styled.View``;
 
 export const ConteinerText2 = styled.View`
-width:${RFPercentage(25)}px;
+width:${RFPercentage(24)}px;
 height: ${RFPercentage(15)}px;
 
 

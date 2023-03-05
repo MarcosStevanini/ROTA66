@@ -11,4 +11,5 @@ export interface Gn42Props {
   tema: string;
   time: string;
   url: string;
+  isFavorite:string;
 }

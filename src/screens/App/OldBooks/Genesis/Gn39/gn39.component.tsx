@@ -6,14 +6,18 @@ import { RFPercentage } from 'react-native-responsive-fontsize'
 import { LinearGradient } from 'expo-linear-gradient'
 import { FlatList, Image } from 'react-native'
 import { Feather, AntDesign } from '@expo/vector-icons'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import LottieView from 'lottie-react-native'
 import Loading from '../../../../../components/Loading/loading.component'
 
-import * as S from './gn39.styles';
-import * as T from './gn39.types';
+import * as S from './gn39.styles'
+import * as T from './gn39.types'
 
 const Gn39: React.FC<T.Gn39Props> = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [audio, setAudio] = useState<T.Gn39Props[]>([])
+  const [favoriteAudioIds, setFavoriteAudioIds] = useState<string[]>([])
+  const [animationDuration, setAnimationDuration] = useState(0)
 
   const theme = useTheme()
   const navigator = useNavigation()
@@ -43,6 +47,9 @@ const Gn39: React.FC<T.Gn39Props> = () => {
             time,
             url
           } = doc.data()
+
+          const isFavorite = favoriteAudioIds.includes(doc.id)
+
           return {
             id: doc.id,
             titulo,
@@ -55,14 +62,54 @@ const Gn39: React.FC<T.Gn39Props> = () => {
             imagBookPlayer,
             tema,
             time,
-            url
+            url,
+            isFavorite
           }
         })
         setAudio(data)
         setIsLoading(false)
       })
     return subscribe
+  }, [favoriteAudioIds])
+
+  //função para favoritar e persistir os audios
+  const toggleFavorite = async (audioId: string) => {
+    let newFavoriteAudioIds = [...favoriteAudioIds]
+
+    if (favoriteAudioIds.includes(audioId)) {
+      newFavoriteAudioIds = favoriteAudioIds.filter(id => id !== audioId)
+    } else {
+      newFavoriteAudioIds.push(audioId)
+      setAnimationDuration(1500)
+    }
+
+    setFavoriteAudioIds(newFavoriteAudioIds)
+
+    await AsyncStorage.setItem(
+      '@favoriteAudioIds',
+      JSON.stringify(newFavoriteAudioIds)
+    )
+  }
+
+  useEffect(() => {
+    const loadFavoriteAudioIds = async () => {
+      const storedIds = await AsyncStorage.getItem('@favoriteAudioIds')
+      if (storedIds) {
+        setFavoriteAudioIds(JSON.parse(storedIds))
+      }
+    }
+    loadFavoriteAudioIds()
   }, [])
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      // atualiza a duração da animação para 0 após o tempo especificado
+      setAnimationDuration(0)
+    }, animationDuration)
+
+    // retorna uma função para limpar o timeout se o componente for desmontado antes da animação terminar
+    return () => clearTimeout(timeoutId)
+  }, [animationDuration])
 
   if (isLoading) {
     return <Loading />
@@ -70,8 +117,16 @@ const Gn39: React.FC<T.Gn39Props> = () => {
 
   return (
     <S.Container>
-      {isLoading ? (
-        <Loading />
+      {animationDuration ? (
+        <S.ContainerAnimationFavorite>
+          <LottieView
+            source={require('../../../../../assets/ok.json')}
+            autoPlay
+            loop
+            style={{ width: 500 }}
+            duration={animationDuration}
+          />
+        </S.ContainerAnimationFavorite>
       ) : (
         <LinearGradient
           colors={theme.colors.gradientBlueTwo}
@@ -96,23 +151,40 @@ const Gn39: React.FC<T.Gn39Props> = () => {
                 >
                   <Image
                     source={{ uri: item.imagBookPlayer }}
-                    style={{ width:RFPercentage(10), height:RFPercentage(10),marginLeft:5,marginTop:10 }}
+                    style={{
+                      width: RFPercentage(6),
+                      height: RFPercentage(6),
+                      marginLeft: RFPercentage(0.8),
+                      marginRight: RFPercentage(1.6)
+                    }}
                   />
 
                   <S.ContainerInf>
-                    <S.Title>
-                      {item.estudo} - {item.titulo}
-                    </S.Title>
-                    <S.Time>{item.time}m</S.Time>
+                    <S.ConteinerText1>
+                      <S.TitleStudy>{item.estudo} - </S.TitleStudy>
+                      <S.Time>{item.time}m</S.Time>
+                    </S.ConteinerText1>
+
+                    <S.ConteinerText2>
+                      <S.Title>{item.titulo}</S.Title>
+                    </S.ConteinerText2>
                   </S.ContainerInf>
                 </S.ContainerAudioItem>
 
-                <S.Favorite>
-                  <Feather
-                    name="heart"
-                    size={25}
-                    color={theme.colors.white300}
-                  />
+                <S.Favorite onPress={() => toggleFavorite(item.id)}>
+                  {item.isFavorite ? (
+                    <AntDesign
+                      name="heart"
+                      size={22}
+                      color={theme.colors.blue100}
+                    />
+                  ) : (
+                    <Feather
+                      name="heart"
+                      size={22}
+                      color={theme.colors.blue100}
+                    />
+                  )}
                 </S.Favorite>
               </S.AudioItem>
             )}
@@ -125,4 +197,4 @@ const Gn39: React.FC<T.Gn39Props> = () => {
   )
 }
 
-export default Gn39;
+export default Gn39

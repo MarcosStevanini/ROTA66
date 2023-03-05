@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-import { useNavigation } from '@react-navigation/native'
+import { useNavigation, useFocusEffect } from '@react-navigation/native'
 import { auth } from '../../../services/firebaseConfig'
 import { useTheme } from 'styled-components/native'
 import Toast from 'react-native-toast-message'
-import User from '../../../assets/user.png'
+import Loading from '../../../components/Loading/loading.component'
 import {
   AntDesign,
   Ionicons,
@@ -14,10 +14,33 @@ import {
   Feather
 } from '@expo/vector-icons'
 
+import UserAvatar from 'react-native-user-avatar'
+
 import * as S from './profile.styles'
 import * as T from './profile.types'
 
 const Profile: React.FC<T.ProfileProps> = () => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [name, setName] = useState()
+
+  const updateHomeData = useCallback(() => {
+    setIsLoading(true)
+    setTimeout(() => {
+      const user = auth.currentUser
+      if (user !== null) {
+        const dislayName = user.displayName
+
+        setName(dislayName)
+        setIsLoading(false)
+      }
+    }, 100)
+  }, [])
+
+  useFocusEffect(updateHomeData)
+
+  if (isLoading) {
+    return <Loading />
+  }
 
   const navigator = useNavigation()
   const theme = useTheme()
@@ -49,7 +72,23 @@ const Profile: React.FC<T.ProfileProps> = () => {
           <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
         <S.ContainerContent>
-          <S.ImageUser source={User} />
+          <S.ImageUser>
+            <UserAvatar
+              size={RFPercentage(20)}
+              name={name}
+              bgColor={theme.colors.white300}
+            />
+          </S.ImageUser>
+
+          <S.ButtonTheme onPress={() => navigator.navigate('Themes')}>
+            <Ionicons
+              name="bookmark"
+              size={24}
+              color={theme.colors.gray300}
+              style={{ marginHorizontal: 16 }}
+            />
+            <S.TitleTheme>Temas</S.TitleTheme>
+          </S.ButtonTheme>
 
           <S.ButtonConfig onPress={() => navigator.navigate('Config')}>
             <Ionicons

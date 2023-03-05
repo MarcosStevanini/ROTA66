@@ -168,7 +168,7 @@ const Favorite: React.FC<T.FavoriteProps> = () => {
             </S.AudioItem>
           )}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingBottom: 100 }}
+          contentContainerStyle={{ paddingBottom: 200 }}
           ListEmptyComponent={
             <S.EmptyContainer>
               <LottieView

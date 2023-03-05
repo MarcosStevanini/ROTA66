@@ -11,4 +11,6 @@ export interface Gn3Props {
   tema: string;
   time: string;
   url: string;
+  isFavorite:string;
+
 }
