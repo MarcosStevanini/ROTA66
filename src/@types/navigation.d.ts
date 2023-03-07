@@ -182,6 +182,48 @@ export declare global{
         Jos153:undefined;
         Jos154:undefined;
         Jos155:undefined;
+
+        Juizes:undefined;
+        Jz156:undefined;
+        Jz157:undefined;
+        Jz158:undefined;
+        Jz159:undefined;
+        Jz160:undefined;
+        Jz161:undefined;
+        Jz162:undefined;
+        Jz163:undefined;
+        Jz164:undefined;
+        Jz165:undefined;
+        Jz166:undefined;
+        Jz167:undefined;
+
+        Rute:undefined;
+        Rut168:undefined;
+        Rut169:undefined;
+        Rut170:undefined;
+        Rut171:undefined;
+
+       PrimeiroSamuel:undefined;
+        PrimeiroSam172:undefined;
+        PrimeiroSam173:undefined;
+        PrimeiroSam174:undefined;
+        PrimeiroSam175:undefined;
+        PrimeiroSam176:undefined;
+        PrimeiroSam177:undefined;
+        PrimeiroSam178:undefined;
+        PrimeiroSam179:undefined;
+        PrimeiroSam180:undefined;
+        PrimeiroSam181:undefined;
+        PrimeiroSam182:undefined;
+        PrimeiroSam183:undefined;
+        PrimeiroSam184:undefined;
+        PrimeiroSam185:undefined;
+        PrimeiroSam186:undefined;
+        PrimeiroSam187:undefined;
+        PrimeiroSam188:undefined;
+        PrimeiroSam189:undefined;
+        PrimeiroSam190:undefined;
+        PrimeiroSam191:undefined;
       
     }
   }

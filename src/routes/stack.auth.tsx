@@ -58,40 +58,40 @@ import UpdateEmail from '../components/UpdateEmail/update-email.component'
 import Themes from '../screens/App/Themes/themes.component'
 
 import Exodo from '../screens/App/OldBooks/Exodos/exodo.component'
-import Ex43  from '../screens/App/OldBooks/Exodos/Ex43/ex43.component'
-import Ex44  from '../screens/App/OldBooks/Exodos/Ex44/ex44.component'
-import Ex45  from '../screens/App/OldBooks/Exodos/Ex45/ex45.component'
-import Ex46  from '../screens/App/OldBooks/Exodos/Ex46/ex46.component'
-import Ex47  from '../screens/App/OldBooks/Exodos/Ex47/ex47.component'
-import Ex48  from '../screens/App/OldBooks/Exodos/Ex48/ex48.component'
-import Ex49  from '../screens/App/OldBooks/Exodos/Ex49/ex49.component'
-import Ex50  from '../screens/App/OldBooks/Exodos/Ex50/ex50.component'
-import Ex51  from '../screens/App/OldBooks/Exodos/Ex51/ex51.component'
-import Ex52  from '../screens/App/OldBooks/Exodos/Ex52/ex52.component'
-import Ex53  from '../screens/App/OldBooks/Exodos/Ex53/ex53.component'
-import Ex54  from '../screens/App/OldBooks/Exodos/Ex54/ex54.component'
-import Ex55  from '../screens/App/OldBooks/Exodos/Ex55/ex55.component'
-import Ex56  from '../screens/App/OldBooks/Exodos/Ex56/ex56.component'
-import Ex57  from '../screens/App/OldBooks/Exodos/Ex57/ex57.component'
-import Ex58  from '../screens/App/OldBooks/Exodos/Ex58/ex58.component'
-import Ex59  from '../screens/App/OldBooks/Exodos/Ex59/ex59.component'
-import Ex60  from '../screens/App/OldBooks/Exodos/Ex60/ex60.component'
+import Ex43 from '../screens/App/OldBooks/Exodos/Ex43/ex43.component'
+import Ex44 from '../screens/App/OldBooks/Exodos/Ex44/ex44.component'
+import Ex45 from '../screens/App/OldBooks/Exodos/Ex45/ex45.component'
+import Ex46 from '../screens/App/OldBooks/Exodos/Ex46/ex46.component'
+import Ex47 from '../screens/App/OldBooks/Exodos/Ex47/ex47.component'
+import Ex48 from '../screens/App/OldBooks/Exodos/Ex48/ex48.component'
+import Ex49 from '../screens/App/OldBooks/Exodos/Ex49/ex49.component'
+import Ex50 from '../screens/App/OldBooks/Exodos/Ex50/ex50.component'
+import Ex51 from '../screens/App/OldBooks/Exodos/Ex51/ex51.component'
+import Ex52 from '../screens/App/OldBooks/Exodos/Ex52/ex52.component'
+import Ex53 from '../screens/App/OldBooks/Exodos/Ex53/ex53.component'
+import Ex54 from '../screens/App/OldBooks/Exodos/Ex54/ex54.component'
+import Ex55 from '../screens/App/OldBooks/Exodos/Ex55/ex55.component'
+import Ex56 from '../screens/App/OldBooks/Exodos/Ex56/ex56.component'
+import Ex57 from '../screens/App/OldBooks/Exodos/Ex57/ex57.component'
+import Ex58 from '../screens/App/OldBooks/Exodos/Ex58/ex58.component'
+import Ex59 from '../screens/App/OldBooks/Exodos/Ex59/ex59.component'
+import Ex60 from '../screens/App/OldBooks/Exodos/Ex60/ex60.component'
 
 import Romanos from '../screens/App/NewBooks/Romanos/romanos.component'
-import  Rom61 from '../screens/App/NewBooks/Romanos/Rom61/rom61.component'
-import  Rom62 from '../screens/App/NewBooks/Romanos/Rom62/rom62.component'
-import  Rom63 from '../screens/App/NewBooks/Romanos/Rom63/rom63.component'
-import  Rom64 from '../screens/App/NewBooks/Romanos/Rom64/rom64.component'
-import  Rom65 from '../screens/App/NewBooks/Romanos/Rom65/rom65.component'
-import  Rom66 from '../screens/App/NewBooks/Romanos/Rom66/rom66.component'
-import  Rom67 from '../screens/App/NewBooks/Romanos/Rom67/rom67.component'
-import  Rom68 from '../screens/App/NewBooks/Romanos/Rom68/rom68.component'
-import  Rom69 from '../screens/App/NewBooks/Romanos/Rom69/rom69.component'
-import  Rom70 from '../screens/App/NewBooks/Romanos/Rom70/rom70.component'
-import  Rom71 from '../screens/App/NewBooks/Romanos/Rom71/rom71.component'
-import  Rom72 from '../screens/App/NewBooks/Romanos/Rom72/rom72.component'
-import  Rom73 from '../screens/App/NewBooks/Romanos/Rom73/rom73.component'
-import  Rom74 from '../screens/App/NewBooks/Romanos/Rom74/rom74.component'
+import Rom61 from '../screens/App/NewBooks/Romanos/Rom61/rom61.component'
+import Rom62 from '../screens/App/NewBooks/Romanos/Rom62/rom62.component'
+import Rom63 from '../screens/App/NewBooks/Romanos/Rom63/rom63.component'
+import Rom64 from '../screens/App/NewBooks/Romanos/Rom64/rom64.component'
+import Rom65 from '../screens/App/NewBooks/Romanos/Rom65/rom65.component'
+import Rom66 from '../screens/App/NewBooks/Romanos/Rom66/rom66.component'
+import Rom67 from '../screens/App/NewBooks/Romanos/Rom67/rom67.component'
+import Rom68 from '../screens/App/NewBooks/Romanos/Rom68/rom68.component'
+import Rom69 from '../screens/App/NewBooks/Romanos/Rom69/rom69.component'
+import Rom70 from '../screens/App/NewBooks/Romanos/Rom70/rom70.component'
+import Rom71 from '../screens/App/NewBooks/Romanos/Rom71/rom71.component'
+import Rom72 from '../screens/App/NewBooks/Romanos/Rom72/rom72.component'
+import Rom73 from '../screens/App/NewBooks/Romanos/Rom73/rom73.component'
+import Rom74 from '../screens/App/NewBooks/Romanos/Rom74/rom74.component'
 
 import Levitico from '../screens/App/OldBooks/Leviticos/leviticos.component'
 import Lv75 from '../screens/App/OldBooks/Leviticos/Lv75/lv75.component'
@@ -107,7 +107,7 @@ import Lv84 from '../screens/App/OldBooks/Leviticos/Lv84/lv84.component'
 import Lv85 from '../screens/App/OldBooks/Leviticos/Lv85/lv85.component'
 import Lv86 from '../screens/App/OldBooks/Leviticos/Lv86/lv86.component'
 
-import Hebreus  from '../screens/App/NewBooks/Hebreus/hebreus.component'
+import Hebreus from '../screens/App/NewBooks/Hebreus/hebreus.component'
 import Hb87 from '../screens/App/NewBooks/Hebreus/Hb87/hb87.component'
 import Hb88 from '../screens/App/NewBooks/Hebreus/Hb88/hb88.component'
 import Hb89 from '../screens/App/NewBooks/Hebreus/Hb89/hb89.component'
@@ -122,7 +122,7 @@ import Hb97 from '../screens/App/NewBooks/Hebreus/Hb97/hb97.component'
 import Hb98 from '../screens/App/NewBooks/Hebreus/Hb98/hb98.component'
 
 import Numeros from '../screens/App/OldBooks/Numeros/numeros.component'
-import Num99 from  '../screens/App/OldBooks/Numeros/Num99/num99.component'
+import Num99 from '../screens/App/OldBooks/Numeros/Num99/num99.component'
 import Num100 from '../screens/App/OldBooks/Numeros/Num100/num100.component'
 import Num101 from '../screens/App/OldBooks/Numeros/Num101/num101.component'
 import Num102 from '../screens/App/OldBooks/Numeros/Num102/num102.component'
@@ -146,7 +146,6 @@ import Gl117 from '../screens/App/NewBooks/Galatas/Gl117/gl117.component'
 import Gl118 from '../screens/App/NewBooks/Galatas/Gl118/gl118.component'
 import Gl119 from '../screens/App/NewBooks/Galatas/Gl119/gl119.component'
 import Gl120 from '../screens/App/NewBooks/Galatas/Gl120/gl120.component'
-
 
 import Deuteronomio from '../screens/App/OldBooks/Deuteronomio/deuteronomio.component'
 import Deut121 from '../screens/App/OldBooks/Deuteronomio/Deut121/deut121.component'
@@ -189,8 +188,47 @@ import Jos153 from '../screens/App/OldBooks/Josue/Jos153/jos153.component'
 import Jos154 from '../screens/App/OldBooks/Josue/Jos154/jos154.component'
 import Jos155 from '../screens/App/OldBooks/Josue/Jos155/jos155.component'
 
+import Juizes from '../screens/App/OldBooks/Juizes/juizes.component'
+import Jz156 from '../screens/App/OldBooks/Juizes/Jz156/jz156.component'
+import Jz157 from '../screens/App/OldBooks/Juizes/Jz157/jz157.component'
+import Jz158 from '../screens/App/OldBooks/Juizes/Jz158/jz158.component'
+import Jz159 from '../screens/App/OldBooks/Juizes/Jz159/jz159.component'
+import Jz160 from '../screens/App/OldBooks/Juizes/Jz160/jz160.component'
+import Jz161 from '../screens/App/OldBooks/Juizes/Jz161/jz161.component'
+import Jz162 from '../screens/App/OldBooks/Juizes/Jz162/jz162.component'
+import Jz163 from '../screens/App/OldBooks/Juizes/Jz163/jz163.component'
+import Jz164 from '../screens/App/OldBooks/Juizes/Jz164/jz164.component'
+import Jz165 from '../screens/App/OldBooks/Juizes/Jz165/jz165.component'
+import Jz166 from '../screens/App/OldBooks/Juizes/Jz166/jz166.component'
+import Jz167 from '../screens/App/OldBooks/Juizes/Jz167/jz167.component'
 
+import Rute from '../screens/App/OldBooks/Rute/rute.component'
+import Rut168 from '../screens/App/OldBooks/Rute/Rut168/rut168.component'
+import Rut169 from '../screens/App/OldBooks/Rute/Rut169/rut169.component'
+import Rut170 from '../screens/App/OldBooks/Rute/Rut170/rut170.component'
+import Rut171 from '../screens/App/OldBooks/Rute/Rut171/rut171.component'
 
+import Primeirosamuel from '../screens/App/OldBooks/PrimeiroSamuel/primeiro-samuel.component'
+import PrimeiroSam172 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam172/primeiro-sam172.component'
+import PrimeiroSam173 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam173/primeiro-sam173.component'
+import PrimeiroSam174 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam174/primeiro-sam174.component'
+import PrimeiroSam175 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam175/primeiro-sam175.component'
+import PrimeiroSam176 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam176/primeiro-sam176.component'
+import PrimeiroSam177 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam177/primeiro-sam177.component'
+import PrimeiroSam178 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam178/primeiro-sam178.component'
+import PrimeiroSam179 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam179/primeiro-sam179.component'
+import PrimeiroSam180 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam180/primeiro-sam180.component'
+import PrimeiroSam181 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam181/primeiro-sam181.component'
+import PrimeiroSam182 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam182/primeiro-sam182.component'
+import PrimeiroSam183 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam183/primeiro-sam183.component'
+import PrimeiroSam184 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam184/primeiro-sam184.component'
+import PrimeiroSam185 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam185/primeiro-sam185.component'
+import PrimeiroSam186 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam186/primeiro-sam186.component'
+import PrimeiroSam187 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam187/primeiro-sam187.component'
+import PrimeiroSam188 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam188/primeiro-sam188.component'
+import PrimeiroSam189 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam189/primeiro-sam189.component'
+import PrimeiroSam190 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam190/primeiro-sam190.component'
+import PrimeiroSam191 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam191/primeiro-sam191.component'
 
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
@@ -259,7 +297,6 @@ export const StackAuth = () => {
       <Stack.Screen name="UpdateEmail" component={UpdateEmail} />
       <Stack.Screen name="Themes" component={Themes} />
 
-
       <Stack.Screen name="Exodo" component={Exodo} />
       <Stack.Screen name="Ex43" component={Ex43} />
       <Stack.Screen name="Ex44" component={Ex44} />
@@ -277,7 +314,7 @@ export const StackAuth = () => {
       <Stack.Screen name="Ex56" component={Ex56} />
       <Stack.Screen name="Ex57" component={Ex57} />
       <Stack.Screen name="Ex58" component={Ex58} />
-      <Stack.Screen name="Ex59" component={Ex59} />  
+      <Stack.Screen name="Ex59" component={Ex59} />
       <Stack.Screen name="Ex60" component={Ex60} />
 
       <Stack.Screen name="Romanos" component={Romanos} />
@@ -342,7 +379,6 @@ export const StackAuth = () => {
       <Stack.Screen name="Num113" component={Num113} />
       <Stack.Screen name="Num114" component={Num114} />
 
-
       <Stack.Screen name="Galatas" component={Galatas} />
       <Stack.Screen name="Gl115" component={Gl115} />
       <Stack.Screen name="Gl116" component={Gl116} />
@@ -350,7 +386,6 @@ export const StackAuth = () => {
       <Stack.Screen name="Gl118" component={Gl118} />
       <Stack.Screen name="Gl119" component={Gl119} />
       <Stack.Screen name="Gl120" component={Gl120} />
-
 
       <Stack.Screen name="Deuteronomio" component={Deuteronomio} />
       <Stack.Screen name="Deut121" component={Deut121} />
@@ -379,7 +414,6 @@ export const StackAuth = () => {
       <Stack.Screen name="Tg142" component={Tg142} />
       <Stack.Screen name="Tg143" component={Tg143} />
 
-
       <Stack.Screen name="Josue" component={Josue} />
       <Stack.Screen name="Jos144" component={Jos144} />
       <Stack.Screen name="Jos145" component={Jos145} />
@@ -393,11 +427,50 @@ export const StackAuth = () => {
       <Stack.Screen name="Jos153" component={Jos153} />
       <Stack.Screen name="Jos154" component={Jos154} />
       <Stack.Screen name="Jos155" component={Jos155} />
-     
 
+      <Stack.Screen name="Juizes" component={Juizes} />
+      <Stack.Screen name="Jz156" component={Jz156} />
+      <Stack.Screen name="Jz157" component={Jz157} />
+      <Stack.Screen name="Jz158" component={Jz158} />
+      <Stack.Screen name="Jz159" component={Jz159} />
+      <Stack.Screen name="Jz160" component={Jz160} />
+      <Stack.Screen name="Jz161" component={Jz161} />
+      <Stack.Screen name="Jz162" component={Jz162} />
+      <Stack.Screen name="Jz163" component={Jz163} />
+      <Stack.Screen name="Jz164" component={Jz164} />
+      <Stack.Screen name="Jz165" component={Jz165} />
+      <Stack.Screen name="Jz166" component={Jz166} />
+      <Stack.Screen name="Jz167" component={Jz167} />
 
+      <Stack.Screen name="Rute" component={Rute} />
+      <Stack.Screen name="Rut168" component={Rut168} />
+      <Stack.Screen name="Rut169" component={Rut169} />
+      <Stack.Screen name="Rut170" component={Rut170} />
+      <Stack.Screen name="Rut171" component={Rut171} />
 
-          {GroupAuth()}
+      <Stack.Screen name="Primeiro Samuel" component={Primeirosamuel} />
+      <Stack.Screen name="PrimeiroSam172" component={PrimeiroSam172} />
+      <Stack.Screen name="PrimeiroSam173" component={PrimeiroSam173} />
+      <Stack.Screen name="PrimeiroSam174" component={PrimeiroSam174} />
+      <Stack.Screen name="PrimeiroSam175" component={PrimeiroSam175} />
+      <Stack.Screen name="PrimeiroSam176" component={PrimeiroSam176} />
+      <Stack.Screen name="PrimeiroSam177" component={PrimeiroSam177} />
+      <Stack.Screen name="PrimeiroSam178" component={PrimeiroSam178} />
+      <Stack.Screen name="PrimeiroSam179" component={PrimeiroSam179} />
+      <Stack.Screen name="PrimeiroSam180" component={PrimeiroSam180} />
+      <Stack.Screen name="PrimeiroSam181" component={PrimeiroSam181} />
+      <Stack.Screen name="PrimeiroSam182" component={PrimeiroSam182} />
+      <Stack.Screen name="PrimeiroSam183" component={PrimeiroSam183} />
+      <Stack.Screen name="PrimeiroSam184" component={PrimeiroSam184} />
+      <Stack.Screen name="PrimeiroSam185" component={PrimeiroSam185} />
+      <Stack.Screen name="PrimeiroSam186" component={PrimeiroSam186} />
+      <Stack.Screen name="PrimeiroSam187" component={PrimeiroSam187} />
+      <Stack.Screen name="PrimeiroSam188" component={PrimeiroSam188} />
+      <Stack.Screen name="PrimeiroSam189" component={PrimeiroSam189} />
+      <Stack.Screen name="PrimeiroSam190" component={PrimeiroSam190} />
+      <Stack.Screen name="PrimeiroSam191" component={PrimeiroSam191} />
+
+      {GroupAuth()}
     </Stack.Navigator>
   )
 }
