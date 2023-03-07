@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage,RFValue} from 'react-native-responsive-fontsize'
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
 import { AntDesign } from '@expo/vector-icons'
@@ -11,7 +11,6 @@ import * as S from './old-books.styles'
 import * as T from './old-books.types'
 
 const OldBooks: React.FC<T.OldBooksProps> = () => {
-  
   const navigator = useNavigation()
   const theme = useTheme()
 
@@ -47,19 +46,19 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
               <S.TitleChapter>Êxodos</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter onPress={() => navigator.navigate('Levitico')}>
-              <S.IconChatper >
+              <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Levítico</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter onPress={() => navigator.navigate('Numeros')}>
-              <S.IconChatper >
+              <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Números</S.TitleChapter>
             </S.CardChapter>
             <S.CardChapter onPress={() => navigator.navigate('Deuteronomio')}>
-              <S.IconChatper >
+              <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Deuteronômio</S.TitleChapter>
@@ -71,13 +70,13 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
               </S.IconChatper>
               <S.TitleChapter>Josué</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter >
-              <S.IconChatper >
+            <S.CardChapter>
+              <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Juízes</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter >
+            <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
@@ -89,7 +88,7 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
               </S.IconChatper>
               <S.TitleChapter>Samuel I</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter >
+            <S.CardChapter>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
@@ -209,7 +208,7 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
 
             <S.CardChapter>
               <S.IconChatper>
-                <Biblia width={RFValue(16)} height={RFValue(21)}/>
+                <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Daniel</S.TitleChapter>
             </S.CardChapter>
