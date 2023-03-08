@@ -208,7 +208,7 @@ import Rut169 from '../screens/App/OldBooks/Rute/Rut169/rut169.component'
 import Rut170 from '../screens/App/OldBooks/Rute/Rut170/rut170.component'
 import Rut171 from '../screens/App/OldBooks/Rute/Rut171/rut171.component'
 
-import Primeirosamuel from '../screens/App/OldBooks/PrimeiroSamuel/primeiro-samuel.component'
+import PrimeiroSamuel from '../screens/App/OldBooks/PrimeiroSamuel/primeiro-samuel.component'
 import PrimeiroSam172 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam172/primeiro-sam172.component'
 import PrimeiroSam173 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam173/primeiro-sam173.component'
 import PrimeiroSam174 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam174/primeiro-sam174.component'
@@ -229,6 +229,111 @@ import PrimeiroSam188 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam18
 import PrimeiroSam189 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam189/primeiro-sam189.component'
 import PrimeiroSam190 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam190/primeiro-sam190.component'
 import PrimeiroSam191 from '../screens/App/OldBooks/PrimeiroSamuel/PrimeiroSam191/primeiro-sam191.component'
+
+import SegundoSamuel from '../screens/App/OldBooks/SegundoSamuel/segundo-samuel.component'
+import SegundoSam192 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam192/segundo-sam192.component'
+import SegundoSam193 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam193/segundo-sam193.component'
+import SegundoSam194 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam194/segundo-sam194.component'
+import SegundoSam195 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam195/segundo-sam195.component'
+import SegundoSam196 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam196/segundo-sam196.component'
+import SegundoSam197 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam197/segundo-sam197.component'
+import SegundoSam198 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam198/segundo-sam198.component'
+import SegundoSam199 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam199/segundo-sam199.component'
+import SegundoSam200 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam200/segundo-sam200.component'
+import SegundoSam201 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam201/segundo-sam201.component'
+import SegundoSam202 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam202/segundo-sam202.component'
+import SegundoSam203 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam203/segundo-sam203.component'
+import SegundoSam204 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam204/segundo-sam204.component'
+import SegundoSam205 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam205/segundo-sam205.component'
+import SegundoSam206 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam206/segundo-sam206.component'
+import SegundoSam207 from '../screens/App/OldBooks/SegundoSamuel/SegundoSam207/segundo-sam207.component'
+
+import Salmos from '../screens/App/OldBooks/Salmos/salmos.component'
+import Sl208 from '../screens/App/OldBooks/Salmos/Sl208/sl208.component'
+import Sl209 from '../screens/App/OldBooks/Salmos/Sl209/sl209.component'
+import Sl210 from '../screens/App/OldBooks/Salmos/Sl210/sl210.component'
+import Sl211 from '../screens/App/OldBooks/Salmos/Sl211/sl211.component'
+import Sl212 from '../screens/App/OldBooks/Salmos/Sl212/sl212.component'
+import Sl213 from '../screens/App/OldBooks/Salmos/Sl213/sl213.component'
+import Sl214 from '../screens/App/OldBooks/Salmos/Sl214/sl214.component'
+import Sl215 from '../screens/App/OldBooks/Salmos/Sl215/sl215.component'
+import Sl216 from '../screens/App/OldBooks/Salmos/Sl216/sl216.component'
+import Sl217 from '../screens/App/OldBooks/Salmos/Sl217/sl217.component'
+import Sl218 from '../screens/App/OldBooks/Salmos/Sl218/sl218.component'
+import Sl219 from '../screens/App/OldBooks/Salmos/Sl219/sl219.component'
+import Sl220 from '../screens/App/OldBooks/Salmos/Sl220/sl220.component'
+import Sl221 from '../screens/App/OldBooks/Salmos/Sl221/sl221.component'
+import Sl222 from '../screens/App/OldBooks/Salmos/Sl222/sl222.component'
+import Sl223 from '../screens/App/OldBooks/Salmos/Sl223/sl223.component'
+import Sl224 from '../screens/App/OldBooks/Salmos/Sl224/sl224.component'
+import Sl225 from '../screens/App/OldBooks/Salmos/Sl225/sl225.component'
+import Sl226 from '../screens/App/OldBooks/Salmos/Sl226/sl226.component'
+import Sl227 from '../screens/App/OldBooks/Salmos/Sl227/sl227.component'
+import Sl228 from '../screens/App/OldBooks/Salmos/Sl228/sl228.component'
+import Sl229 from '../screens/App/OldBooks/Salmos/Sl229/sl229.component'
+import Sl230 from '../screens/App/OldBooks/Salmos/Sl230/sl230.component'
+import Sl231 from '../screens/App/OldBooks/Salmos/Sl231/sl231.component'
+import Sl232 from '../screens/App/OldBooks/Salmos/Sl232/sl232.component'
+import Sl233 from '../screens/App/OldBooks/Salmos/Sl233/sl233.component'
+import Sl234 from '../screens/App/OldBooks/Salmos/Sl234/sl234.component'
+import Sl235 from '../screens/App/OldBooks/Salmos/Sl235/sl235.component'
+import Sl236 from '../screens/App/OldBooks/Salmos/Sl236/sl236.component'
+import Sl237 from '../screens/App/OldBooks/Salmos/Sl237/sl237.component'
+import Sl238 from '../screens/App/OldBooks/Salmos/Sl238/sl238.component'
+import Sl239 from '../screens/App/OldBooks/Salmos/Sl239/sl239.component'
+import Sl240 from '../screens/App/OldBooks/Salmos/Sl240/sl240.component'
+import Sl241 from '../screens/App/OldBooks/Salmos/Sl241/sl241.component'
+import Sl242 from '../screens/App/OldBooks/Salmos/Sl242/sl242.component'
+import Sl243 from '../screens/App/OldBooks/Salmos/Sl243/sl243.component'
+import Sl244 from '../screens/App/OldBooks/Salmos/Sl244/sl244.component'
+import Sl245 from '../screens/App/OldBooks/Salmos/Sl245/sl245.component'
+import Sl246 from '../screens/App/OldBooks/Salmos/Sl246/sl246.component'
+import Sl247 from '../screens/App/OldBooks/Salmos/Sl247/sl247.component'
+import Sl248 from '../screens/App/OldBooks/Salmos/Sl248/sl248.component'
+import Sl249 from '../screens/App/OldBooks/Salmos/Sl249/sl249.component'
+import Sl250 from '../screens/App/OldBooks/Salmos/Sl250/sl250.component'
+import Sl251 from '../screens/App/OldBooks/Salmos/Sl251/sl251.component'
+import Sl252 from '../screens/App/OldBooks/Salmos/Sl252/sl252.component'
+import Sl253 from '../screens/App/OldBooks/Salmos/Sl253/sl253.component'
+import Sl254 from '../screens/App/OldBooks/Salmos/Sl254/sl254.component'
+import Sl255 from '../screens/App/OldBooks/Salmos/Sl255/sl255.component'
+import Sl256 from '../screens/App/OldBooks/Salmos/Sl256/sl256.component'
+import Sl257 from '../screens/App/OldBooks/Salmos/Sl257/sl257.component'
+import Sl258 from '../screens/App/OldBooks/Salmos/Sl258/sl258.component'
+import Sl259 from '../screens/App/OldBooks/Salmos/Sl259/sl259.component'
+import Sl260 from '../screens/App/OldBooks/Salmos/Sl260/sl260.component'
+import Sl261 from '../screens/App/OldBooks/Salmos/Sl261/sl261.component'
+import Sl262 from '../screens/App/OldBooks/Salmos/Sl262/sl262.component'
+import Sl263 from '../screens/App/OldBooks/Salmos/Sl263/sl263.component'
+import Sl264 from '../screens/App/OldBooks/Salmos/Sl264/sl264.component'
+import Sl265 from '../screens/App/OldBooks/Salmos/Sl265/sl265.component'
+import Sl266 from '../screens/App/OldBooks/Salmos/Sl266/sl266.component'
+
+import PrimeiroReis from '../screens/App/OldBooks/PrimeiroReis/primeiro-reis.component'
+import PrimeiroRe267 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe267/primeiro-re267.component'
+import PrimeiroRe268 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe268/primeiro-re268.component'
+import PrimeiroRe269 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe269/primeiro-re269.component'
+import PrimeiroRe270 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe270/primeiro-re270.component'
+import PrimeiroRe271 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe271/primeiro-re271.component'
+import PrimeiroRe272 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe272/primeiro-re272.component'
+import PrimeiroRe273 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe273/primeiro-re273.component'
+import PrimeiroRe274 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe274/primeiro-re274.component'
+import PrimeiroRe275 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe275/primeiro-re275.component'
+import PrimeiroRe276 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe276/primeiro-re276.component'
+import PrimeiroRe277 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe277/primeiro-re277.component'
+import PrimeiroRe278 from '../screens/App/OldBooks/PrimeiroReis/PrimeiroRe278/primeiro-re278.component'
+
+import SegundoReis from '../screens/App/OldBooks/SegundoReis/segundo-reis.component'
+import SegundoRe279 from '../screens/App/OldBooks/SegundoReis/SegundoRe279/segundo-re279.component'
+import SegundoRe280 from '../screens/App/OldBooks/SegundoReis/SegundoRe280/segundo-re280.component'
+import SegundoRe281 from '../screens/App/OldBooks/SegundoReis/SegundoRe281/segundo-re281.component'
+import SegundoRe282 from '../screens/App/OldBooks/SegundoReis/SegundoRe282/segundo-re282.component'
+import SegundoRe283 from '../screens/App/OldBooks/SegundoReis/SegundoRe283/segundo-re283.component'
+import SegundoRe284 from '../screens/App/OldBooks/SegundoReis/SegundoRe284/segundo-re284.component'
+import SegundoRe285 from '../screens/App/OldBooks/SegundoReis/SegundoRe285/segundo-re285.component'
+import SegundoRe286 from '../screens/App/OldBooks/SegundoReis/SegundoRe286/segundo-re286.component'
+import SegundoRe287 from '../screens/App/OldBooks/SegundoReis/SegundoRe287/segundo-re287.component'
+import SegundoRe288 from '../screens/App/OldBooks/SegundoReis/SegundoRe288/segundo-re288.component'
 
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
@@ -448,7 +553,7 @@ export const StackAuth = () => {
       <Stack.Screen name="Rut170" component={Rut170} />
       <Stack.Screen name="Rut171" component={Rut171} />
 
-      <Stack.Screen name="Primeiro Samuel" component={Primeirosamuel} />
+      <Stack.Screen name="Primeiro Samuel"component={PrimeiroSamuel} />
       <Stack.Screen name="PrimeiroSam172" component={PrimeiroSam172} />
       <Stack.Screen name="PrimeiroSam173" component={PrimeiroSam173} />
       <Stack.Screen name="PrimeiroSam174" component={PrimeiroSam174} />
@@ -469,6 +574,194 @@ export const StackAuth = () => {
       <Stack.Screen name="PrimeiroSam189" component={PrimeiroSam189} />
       <Stack.Screen name="PrimeiroSam190" component={PrimeiroSam190} />
       <Stack.Screen name="PrimeiroSam191" component={PrimeiroSam191} />
+
+      <Stack.Screen name="Segundo Samuel"component={SegundoSamuel} />
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+
+
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+
+      <Stack.Screen name="Salmos" component={ Salmos }/>
+      <Stack.Screen name="Sl208" component={ Sl208 }/>
+      <Stack.Screen name="Sl209" component={ Sl209 }/>
+      <Stack.Screen name="Sl210" component={ Sl210 }/>
+      <Stack.Screen name="Sl211" component={ Sl211 }/>
+      <Stack.Screen name="Sl212" component={ Sl212 }/>
+      <Stack.Screen name="Sl213" component={ Sl213 }/>
+      <Stack.Screen name="Sl214" component={ Sl214 }/>
+      <Stack.Screen name="Sl215" component={ Sl215 }/>
+      <Stack.Screen name="Sl216" component={ Sl216 }/>
+      <Stack.Screen name="Sl217" component={ Sl217 }/>
+      <Stack.Screen name="Sl218" component={ Sl218 }/>
+      <Stack.Screen name="Sl219" component={ Sl219 }/>
+      <Stack.Screen name="Sl220" component={ Sl220 }/>
+      <Stack.Screen name="Sl221" component={ Sl221 }/>
+      <Stack.Screen name="Sl222" component={ Sl222 }/>
+      <Stack.Screen name="Sl223" component={ Sl223 }/>
+      <Stack.Screen name="Sl224" component={ Sl224 }/>
+      <Stack.Screen name="Sl225" component={ Sl225 }/>
+      <Stack.Screen name="Sl226" component={ Sl226 }/>
+      <Stack.Screen name="Sl227" component={ Sl227 }/>
+      <Stack.Screen name="Sl228" component={ Sl228 }/>
+      <Stack.Screen name="Sl229" component={ Sl229 }/>
+      <Stack.Screen name="Sl230" component={ Sl230 }/>
+      <Stack.Screen name="Sl231" component={ Sl231 }/>
+      <Stack.Screen name="Sl232" component={ Sl232 }/>
+      <Stack.Screen name="Sl233" component={ Sl233 }/>
+      <Stack.Screen name="Sl234" component={ Sl234 }/>
+      <Stack.Screen name="Sl235" component={ Sl235 }/>
+      <Stack.Screen name="Sl236" component={ Sl236 }/>
+      <Stack.Screen name="Sl237" component={ Sl237 }/>
+      <Stack.Screen name="Sl238" component={ Sl238 }/>
+      <Stack.Screen name="Sl239" component={ Sl239 }/>
+      <Stack.Screen name="Sl240" component={ Sl240 }/>
+      <Stack.Screen name="Sl241" component={ Sl241 }/>
+      <Stack.Screen name="Sl242" component={ Sl242 }/>
+      <Stack.Screen name="Sl243" component={ Sl243 }/>
+      <Stack.Screen name="Sl244" component={ Sl244 }/>
+      <Stack.Screen name="Sl245" component={ Sl245 }/>
+      <Stack.Screen name="Sl246" component={ Sl246 }/>
+      <Stack.Screen name="Sl247" component={ Sl247 }/>
+      <Stack.Screen name="Sl248" component={ Sl248 }/>
+      <Stack.Screen name="Sl249" component={ Sl249 }/>
+      <Stack.Screen name="Sl250" component={ Sl250 }/>
+      <Stack.Screen name="Sl251" component={ Sl251 }/>
+      <Stack.Screen name="Sl252" component={ Sl252 }/>
+      <Stack.Screen name="Sl253" component={ Sl253 }/>
+      <Stack.Screen name="Sl254" component={ Sl254 }/>
+      <Stack.Screen name="Sl255" component={ Sl255 }/>
+      <Stack.Screen name="Sl256" component={ Sl256 }/>
+      <Stack.Screen name="Sl257" component={ Sl257 }/>
+      <Stack.Screen name="Sl258" component={ Sl258 }/>
+      <Stack.Screen name="Sl259" component={ Sl259 }/>
+      <Stack.Screen name="Sl260" component={ Sl260 }/>
+      <Stack.Screen name="Sl261" component={ Sl261 }/>
+      <Stack.Screen name="Sl262" component={ Sl262 }/>
+      <Stack.Screen name="Sl263" component={ Sl263 }/>
+      <Stack.Screen name="Sl264" component={ Sl264 }/>
+      <Stack.Screen name="Sl265" component={ Sl265 }/>
+      <Stack.Screen name="Sl266" component={ Sl266 }/>
+
+      <Stack.Screen name="Primeiro Reis" component={PrimeiroReis}/>
+      <Stack.Screen name="PrimeiroRe267" component={PrimeiroRe267}/>
+      <Stack.Screen name="PrimeiroRe268" component={PrimeiroRe268}/>
+      <Stack.Screen name="PrimeiroRe269" component={PrimeiroRe269}/>
+      <Stack.Screen name="PrimeiroRe270" component={PrimeiroRe270}/>
+      <Stack.Screen name="PrimeiroRe271" component={PrimeiroRe271}/>
+      <Stack.Screen name="PrimeiroRe272" component={PrimeiroRe272}/>
+      <Stack.Screen name="PrimeiroRe273" component={PrimeiroRe273}/>
+      <Stack.Screen name="PrimeiroRe274" component={PrimeiroRe274}/>
+      <Stack.Screen name="PrimeiroRe275" component={PrimeiroRe275}/>
+      <Stack.Screen name="PrimeiroRe276" component={PrimeiroRe276}/>
+      <Stack.Screen name="PrimeiroRe277" component={PrimeiroRe277}/>
+      <Stack.Screen name="PrimeiroRe278" component={PrimeiroRe278}/>
+
+      <Stack.Screen name="Segundo Reis" component={SegundoReis}/>
+      <Stack.Screen name="SegundoRe279" component={SegundoRe279}/>
+      <Stack.Screen name="SegundoRe280" component={SegundoRe280}/>
+      <Stack.Screen name="SegundoRe281" component={SegundoRe281}/>
+      <Stack.Screen name="SegundoRe282" component={SegundoRe282}/>
+      <Stack.Screen name="SegundoRe283" component={SegundoRe283}/>
+      <Stack.Screen name="SegundoRe284" component={SegundoRe284}/>
+      <Stack.Screen name="SegundoRe285" component={SegundoRe285}/>
+      <Stack.Screen name="SegundoRe286" component={SegundoRe286}/>
+      <Stack.Screen name="SegundoRe287" component={SegundoRe287}/>
+      <Stack.Screen name="SegundoRe288" component={SegundoRe288}/>
+     
 
       {GroupAuth()}
     </Stack.Navigator>
