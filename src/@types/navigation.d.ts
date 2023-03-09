@@ -393,6 +393,26 @@ export declare global{
         SegundoCr332:undefined;
         SegundoCr333:undefined;
         SegundoCr334:undefined;
+
+        Obadias:undefined;
+        Oba338:undefined;
+
+        Oseias:undefined;
+        Ose339:undefined;
+        Ose340:undefined;
+        Ose341:undefined;
+        Ose342:undefined;
+
+        Joel:undefined;
+        Jl343:undefined;
+
+        Jonas:undefined;
+        Jn344:undefined;
+        Jn345:undefined;
+
+        Miqueias:undefined;
+        Miq346:undefined;
+        Miq347:undefined;
      
       
     }

@@ -348,7 +348,6 @@ import Jo297 from '../screens/App/OldBooks/Jo/Jo297/jo297.component'
 import Jo298 from '../screens/App/OldBooks/Jo/Jo298/jo298.component'
 import Jo299 from '../screens/App/OldBooks/Jo/Jo299/jo299.component'
 
-
 import Proverbios from '../screens/App/OldBooks/Proverbios/proverbios.component'
 import Pv300 from '../screens/App/OldBooks/Proverbios/Pv300/pv300.component'
 import Pv301 from '../screens/App/OldBooks/Proverbios/Pv301/pv301.component'
@@ -364,7 +363,7 @@ import Pv310 from '../screens/App/OldBooks/Proverbios/Pv310/pv310.component'
 import Pv311 from '../screens/App/OldBooks/Proverbios/Pv311/pv311.component'
 import Pv312 from '../screens/App/OldBooks/Proverbios/Pv312/pv312.component'
 
-import Eclesiastes  from '../screens/App/OldBooks/Eclesiastes/eclesiastes.component'
+import Eclesiastes from '../screens/App/OldBooks/Eclesiastes/eclesiastes.component'
 import Ec313 from '../screens/App/OldBooks/Eclesiastes/Ec313/ec313.component'
 import Ec314 from '../screens/App/OldBooks/Eclesiastes/Ec314/ec314.component'
 import Ec315 from '../screens/App/OldBooks/Eclesiastes/Ec315/ec315.component'
@@ -373,8 +372,8 @@ import Ec317 from '../screens/App/OldBooks/Eclesiastes/Ec317/ec317.component'
 import Ec318 from '../screens/App/OldBooks/Eclesiastes/Ec318/ec318.component'
 
 import Cantares from '../screens/App/OldBooks/Cantares/cantares.component'
-import Ct319  from '../screens/App/OldBooks/Cantares/Ct319/ct319.component'
-import Ct320  from '../screens/App/OldBooks/Cantares/Ct320/ct320.component'
+import Ct319 from '../screens/App/OldBooks/Cantares/Ct319/ct319.component'
+import Ct320 from '../screens/App/OldBooks/Cantares/Ct320/ct320.component'
 
 import PrimeiroCronicas from '../screens/App/OldBooks/PrimeiroCronicas/primeiro-cronicas.component'
 import PrimeiroCr321 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr321/primeiro-cr321.component'
@@ -399,6 +398,26 @@ import SegundoCr332 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr332/s
 import SegundoCr333 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr333/segundo-cr333.component'
 import SegundoCr334 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr334/segundo-cr334.component'
 
+import Obadias from '../screens/App/NewBooks/Obadias/obadias.component'
+import Oba338 from '../screens/App/NewBooks/Obadias/Oba338/oba338.component'
+
+
+import Oseias from '../screens/App/OldBooks/Oseias/oseias.component'
+import Ose339 from '../screens/App/OldBooks/Oseias/Ose339/ose339.component'
+import Ose340 from '../screens/App/OldBooks/Oseias/Ose340/ose340.component'
+import Ose341 from '../screens/App/OldBooks/Oseias/Ose341/ose341.component'
+import Ose342 from '../screens/App/OldBooks/Oseias/Ose342/ose342.component'
+
+import Joel from '../screens/App/OldBooks/Joel/joel.component'
+import Jl343 from '../screens/App/OldBooks/Joel/Jl343/jl343.component'
+
+import Jonas from '../screens/App/OldBooks/Jonas/jonas.component'
+import Jn344 from '../screens/App/OldBooks/Jonas/Jn344/jn344.component'
+import Jn345 from '../screens/App/OldBooks/Jonas/Jn345/jn345.component'
+
+import Miqueias from '../screens/App/OldBooks/Miqueias/miqueias.component'
+import Miq346 from '../screens/App/OldBooks/Miqueias/Miq346/miq346.component'
+import Miq347 from '../screens/App/OldBooks/Miqueias/Miq347/miq347.component'
 
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
@@ -618,7 +637,7 @@ export const StackAuth = () => {
       <Stack.Screen name="Rut170" component={Rut170} />
       <Stack.Screen name="Rut171" component={Rut171} />
 
-      <Stack.Screen name="Primeiro Samuel"component={PrimeiroSamuel} />
+      <Stack.Screen name="Primeiro Samuel" component={PrimeiroSamuel} />
       <Stack.Screen name="PrimeiroSam172" component={PrimeiroSam172} />
       <Stack.Screen name="PrimeiroSam173" component={PrimeiroSam173} />
       <Stack.Screen name="PrimeiroSam174" component={PrimeiroSam174} />
@@ -640,7 +659,7 @@ export const StackAuth = () => {
       <Stack.Screen name="PrimeiroSam190" component={PrimeiroSam190} />
       <Stack.Screen name="PrimeiroSam191" component={PrimeiroSam191} />
 
-      <Stack.Screen name="Segundo Samuel"component={SegundoSamuel} />
+      <Stack.Screen name="Segundo Samuel" component={SegundoSamuel} />
       <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
       <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
       <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
@@ -658,23 +677,6 @@ export const StackAuth = () => {
       <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
       <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
 
-
-      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
-      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
-      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
-      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
-      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
-      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
-      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
-      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
-      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
-      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
-      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
-      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
-      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
-      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
-      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
-      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
       <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
       <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
       <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
@@ -739,159 +741,192 @@ export const StackAuth = () => {
       <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
       <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
       <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
+      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
+      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
+      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
+      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
+      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
+      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
+      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
+      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
+      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
+      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
+      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
+      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
+      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
+      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
+      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
+      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
 
-      <Stack.Screen name="Salmos" component={ Salmos }/>
-      <Stack.Screen name="Sl208" component={ Sl208 }/>
-      <Stack.Screen name="Sl209" component={ Sl209 }/>
-      <Stack.Screen name="Sl210" component={ Sl210 }/>
-      <Stack.Screen name="Sl211" component={ Sl211 }/>
-      <Stack.Screen name="Sl212" component={ Sl212 }/>
-      <Stack.Screen name="Sl213" component={ Sl213 }/>
-      <Stack.Screen name="Sl214" component={ Sl214 }/>
-      <Stack.Screen name="Sl215" component={ Sl215 }/>
-      <Stack.Screen name="Sl216" component={ Sl216 }/>
-      <Stack.Screen name="Sl217" component={ Sl217 }/>
-      <Stack.Screen name="Sl218" component={ Sl218 }/>
-      <Stack.Screen name="Sl219" component={ Sl219 }/>
-      <Stack.Screen name="Sl220" component={ Sl220 }/>
-      <Stack.Screen name="Sl221" component={ Sl221 }/>
-      <Stack.Screen name="Sl222" component={ Sl222 }/>
-      <Stack.Screen name="Sl223" component={ Sl223 }/>
-      <Stack.Screen name="Sl224" component={ Sl224 }/>
-      <Stack.Screen name="Sl225" component={ Sl225 }/>
-      <Stack.Screen name="Sl226" component={ Sl226 }/>
-      <Stack.Screen name="Sl227" component={ Sl227 }/>
-      <Stack.Screen name="Sl228" component={ Sl228 }/>
-      <Stack.Screen name="Sl229" component={ Sl229 }/>
-      <Stack.Screen name="Sl230" component={ Sl230 }/>
-      <Stack.Screen name="Sl231" component={ Sl231 }/>
-      <Stack.Screen name="Sl232" component={ Sl232 }/>
-      <Stack.Screen name="Sl233" component={ Sl233 }/>
-      <Stack.Screen name="Sl234" component={ Sl234 }/>
-      <Stack.Screen name="Sl235" component={ Sl235 }/>
-      <Stack.Screen name="Sl236" component={ Sl236 }/>
-      <Stack.Screen name="Sl237" component={ Sl237 }/>
-      <Stack.Screen name="Sl238" component={ Sl238 }/>
-      <Stack.Screen name="Sl239" component={ Sl239 }/>
-      <Stack.Screen name="Sl240" component={ Sl240 }/>
-      <Stack.Screen name="Sl241" component={ Sl241 }/>
-      <Stack.Screen name="Sl242" component={ Sl242 }/>
-      <Stack.Screen name="Sl243" component={ Sl243 }/>
-      <Stack.Screen name="Sl244" component={ Sl244 }/>
-      <Stack.Screen name="Sl245" component={ Sl245 }/>
-      <Stack.Screen name="Sl246" component={ Sl246 }/>
-      <Stack.Screen name="Sl247" component={ Sl247 }/>
-      <Stack.Screen name="Sl248" component={ Sl248 }/>
-      <Stack.Screen name="Sl249" component={ Sl249 }/>
-      <Stack.Screen name="Sl250" component={ Sl250 }/>
-      <Stack.Screen name="Sl251" component={ Sl251 }/>
-      <Stack.Screen name="Sl252" component={ Sl252 }/>
-      <Stack.Screen name="Sl253" component={ Sl253 }/>
-      <Stack.Screen name="Sl254" component={ Sl254 }/>
-      <Stack.Screen name="Sl255" component={ Sl255 }/>
-      <Stack.Screen name="Sl256" component={ Sl256 }/>
-      <Stack.Screen name="Sl257" component={ Sl257 }/>
-      <Stack.Screen name="Sl258" component={ Sl258 }/>
-      <Stack.Screen name="Sl259" component={ Sl259 }/>
-      <Stack.Screen name="Sl260" component={ Sl260 }/>
-      <Stack.Screen name="Sl261" component={ Sl261 }/>
-      <Stack.Screen name="Sl262" component={ Sl262 }/>
-      <Stack.Screen name="Sl263" component={ Sl263 }/>
-      <Stack.Screen name="Sl264" component={ Sl264 }/>
-      <Stack.Screen name="Sl265" component={ Sl265 }/>
-      <Stack.Screen name="Sl266" component={ Sl266 }/>
+      <Stack.Screen name="Salmos" component={Salmos} />
+      <Stack.Screen name="Sl208" component={Sl208} />
+      <Stack.Screen name="Sl209" component={Sl209} />
+      <Stack.Screen name="Sl210" component={Sl210} />
+      <Stack.Screen name="Sl211" component={Sl211} />
+      <Stack.Screen name="Sl212" component={Sl212} />
+      <Stack.Screen name="Sl213" component={Sl213} />
+      <Stack.Screen name="Sl214" component={Sl214} />
+      <Stack.Screen name="Sl215" component={Sl215} />
+      <Stack.Screen name="Sl216" component={Sl216} />
+      <Stack.Screen name="Sl217" component={Sl217} />
+      <Stack.Screen name="Sl218" component={Sl218} />
+      <Stack.Screen name="Sl219" component={Sl219} />
+      <Stack.Screen name="Sl220" component={Sl220} />
+      <Stack.Screen name="Sl221" component={Sl221} />
+      <Stack.Screen name="Sl222" component={Sl222} />
+      <Stack.Screen name="Sl223" component={Sl223} />
+      <Stack.Screen name="Sl224" component={Sl224} />
+      <Stack.Screen name="Sl225" component={Sl225} />
+      <Stack.Screen name="Sl226" component={Sl226} />
+      <Stack.Screen name="Sl227" component={Sl227} />
+      <Stack.Screen name="Sl228" component={Sl228} />
+      <Stack.Screen name="Sl229" component={Sl229} />
+      <Stack.Screen name="Sl230" component={Sl230} />
+      <Stack.Screen name="Sl231" component={Sl231} />
+      <Stack.Screen name="Sl232" component={Sl232} />
+      <Stack.Screen name="Sl233" component={Sl233} />
+      <Stack.Screen name="Sl234" component={Sl234} />
+      <Stack.Screen name="Sl235" component={Sl235} />
+      <Stack.Screen name="Sl236" component={Sl236} />
+      <Stack.Screen name="Sl237" component={Sl237} />
+      <Stack.Screen name="Sl238" component={Sl238} />
+      <Stack.Screen name="Sl239" component={Sl239} />
+      <Stack.Screen name="Sl240" component={Sl240} />
+      <Stack.Screen name="Sl241" component={Sl241} />
+      <Stack.Screen name="Sl242" component={Sl242} />
+      <Stack.Screen name="Sl243" component={Sl243} />
+      <Stack.Screen name="Sl244" component={Sl244} />
+      <Stack.Screen name="Sl245" component={Sl245} />
+      <Stack.Screen name="Sl246" component={Sl246} />
+      <Stack.Screen name="Sl247" component={Sl247} />
+      <Stack.Screen name="Sl248" component={Sl248} />
+      <Stack.Screen name="Sl249" component={Sl249} />
+      <Stack.Screen name="Sl250" component={Sl250} />
+      <Stack.Screen name="Sl251" component={Sl251} />
+      <Stack.Screen name="Sl252" component={Sl252} />
+      <Stack.Screen name="Sl253" component={Sl253} />
+      <Stack.Screen name="Sl254" component={Sl254} />
+      <Stack.Screen name="Sl255" component={Sl255} />
+      <Stack.Screen name="Sl256" component={Sl256} />
+      <Stack.Screen name="Sl257" component={Sl257} />
+      <Stack.Screen name="Sl258" component={Sl258} />
+      <Stack.Screen name="Sl259" component={Sl259} />
+      <Stack.Screen name="Sl260" component={Sl260} />
+      <Stack.Screen name="Sl261" component={Sl261} />
+      <Stack.Screen name="Sl262" component={Sl262} />
+      <Stack.Screen name="Sl263" component={Sl263} />
+      <Stack.Screen name="Sl264" component={Sl264} />
+      <Stack.Screen name="Sl265" component={Sl265} />
+      <Stack.Screen name="Sl266" component={Sl266} />
 
-      <Stack.Screen name="Primeiro Reis" component={PrimeiroReis}/>
-      <Stack.Screen name="PrimeiroRe267" component={PrimeiroRe267}/>
-      <Stack.Screen name="PrimeiroRe268" component={PrimeiroRe268}/>
-      <Stack.Screen name="PrimeiroRe269" component={PrimeiroRe269}/>
-      <Stack.Screen name="PrimeiroRe270" component={PrimeiroRe270}/>
-      <Stack.Screen name="PrimeiroRe271" component={PrimeiroRe271}/>
-      <Stack.Screen name="PrimeiroRe272" component={PrimeiroRe272}/>
-      <Stack.Screen name="PrimeiroRe273" component={PrimeiroRe273}/>
-      <Stack.Screen name="PrimeiroRe274" component={PrimeiroRe274}/>
-      <Stack.Screen name="PrimeiroRe275" component={PrimeiroRe275}/>
-      <Stack.Screen name="PrimeiroRe276" component={PrimeiroRe276}/>
-      <Stack.Screen name="PrimeiroRe277" component={PrimeiroRe277}/>
-      <Stack.Screen name="PrimeiroRe278" component={PrimeiroRe278}/>
+      <Stack.Screen name="Primeiro Reis" component={PrimeiroReis} />
+      <Stack.Screen name="PrimeiroRe267" component={PrimeiroRe267} />
+      <Stack.Screen name="PrimeiroRe268" component={PrimeiroRe268} />
+      <Stack.Screen name="PrimeiroRe269" component={PrimeiroRe269} />
+      <Stack.Screen name="PrimeiroRe270" component={PrimeiroRe270} />
+      <Stack.Screen name="PrimeiroRe271" component={PrimeiroRe271} />
+      <Stack.Screen name="PrimeiroRe272" component={PrimeiroRe272} />
+      <Stack.Screen name="PrimeiroRe273" component={PrimeiroRe273} />
+      <Stack.Screen name="PrimeiroRe274" component={PrimeiroRe274} />
+      <Stack.Screen name="PrimeiroRe275" component={PrimeiroRe275} />
+      <Stack.Screen name="PrimeiroRe276" component={PrimeiroRe276} />
+      <Stack.Screen name="PrimeiroRe277" component={PrimeiroRe277} />
+      <Stack.Screen name="PrimeiroRe278" component={PrimeiroRe278} />
 
-      <Stack.Screen name="Segundo Reis" component={SegundoReis}/>
-      <Stack.Screen name="SegundoRe279" component={SegundoRe279}/>
-      <Stack.Screen name="SegundoRe280" component={SegundoRe280}/>
-      <Stack.Screen name="SegundoRe281" component={SegundoRe281}/>
-      <Stack.Screen name="SegundoRe282" component={SegundoRe282}/>
-      <Stack.Screen name="SegundoRe283" component={SegundoRe283}/>
-      <Stack.Screen name="SegundoRe284" component={SegundoRe284}/>
-      <Stack.Screen name="SegundoRe285" component={SegundoRe285}/>
-      <Stack.Screen name="SegundoRe286" component={SegundoRe286}/>
-      <Stack.Screen name="SegundoRe287" component={SegundoRe287}/>
-      <Stack.Screen name="SegundoRe288" component={SegundoRe288}/>
+      <Stack.Screen name="Segundo Reis" component={SegundoReis} />
+      <Stack.Screen name="SegundoRe279" component={SegundoRe279} />
+      <Stack.Screen name="SegundoRe280" component={SegundoRe280} />
+      <Stack.Screen name="SegundoRe281" component={SegundoRe281} />
+      <Stack.Screen name="SegundoRe282" component={SegundoRe282} />
+      <Stack.Screen name="SegundoRe283" component={SegundoRe283} />
+      <Stack.Screen name="SegundoRe284" component={SegundoRe284} />
+      <Stack.Screen name="SegundoRe285" component={SegundoRe285} />
+      <Stack.Screen name="SegundoRe286" component={SegundoRe286} />
+      <Stack.Screen name="SegundoRe287" component={SegundoRe287} />
+      <Stack.Screen name="SegundoRe288" component={SegundoRe288} />
 
-      <Stack.Screen name="Jo" component={Jo}/>
-      <Stack.Screen name="Jo289" component={Jo289}/>
-      <Stack.Screen name="Jo290" component={Jo290}/>
-      <Stack.Screen name="Jo291" component={Jo291}/>
-      <Stack.Screen name="Jo292" component={Jo292}/>
-      <Stack.Screen name="Jo293" component={Jo293}/>
-      <Stack.Screen name="Jo294" component={Jo294}/>
-      <Stack.Screen name="Jo295" component={Jo295}/>
-      <Stack.Screen name="Jo296" component={Jo296}/>
-      <Stack.Screen name="Jo297" component={Jo297}/>
-      <Stack.Screen name="Jo298" component={Jo298}/>
-      <Stack.Screen name="Jo299" component={Jo299}/>
+      <Stack.Screen name="Jo" component={Jo} />
+      <Stack.Screen name="Jo289" component={Jo289} />
+      <Stack.Screen name="Jo290" component={Jo290} />
+      <Stack.Screen name="Jo291" component={Jo291} />
+      <Stack.Screen name="Jo292" component={Jo292} />
+      <Stack.Screen name="Jo293" component={Jo293} />
+      <Stack.Screen name="Jo294" component={Jo294} />
+      <Stack.Screen name="Jo295" component={Jo295} />
+      <Stack.Screen name="Jo296" component={Jo296} />
+      <Stack.Screen name="Jo297" component={Jo297} />
+      <Stack.Screen name="Jo298" component={Jo298} />
+      <Stack.Screen name="Jo299" component={Jo299} />
 
-      <Stack.Screen name='Proverbios' component={Proverbios}/>
-     <Stack.Screen name="Pv300" component={Pv300}/>
-     <Stack.Screen name="Pv301" component={Pv301}/>
-     <Stack.Screen name="Pv302" component={Pv302}/>
-     <Stack.Screen name="Pv303" component={Pv303}/>
-     <Stack.Screen name="Pv304" component={Pv304}/>
-     <Stack.Screen name="Pv305" component={Pv305}/>
-     <Stack.Screen name="Pv306" component={Pv306}/>
-     <Stack.Screen name="Pv307" component={Pv307}/>
-     <Stack.Screen name="Pv308" component={Pv308}/>
-     <Stack.Screen name="Pv309" component={Pv309}/>
-     <Stack.Screen name="Pv310" component={Pv310}/>
-     <Stack.Screen name="Pv311" component={Pv311}/>
-     <Stack.Screen name="Pv312" component={Pv312}/>
+      <Stack.Screen name="Proverbios" component={Proverbios} />
+      <Stack.Screen name="Pv300" component={Pv300} />
+      <Stack.Screen name="Pv301" component={Pv301} />
+      <Stack.Screen name="Pv302" component={Pv302} />
+      <Stack.Screen name="Pv303" component={Pv303} />
+      <Stack.Screen name="Pv304" component={Pv304} />
+      <Stack.Screen name="Pv305" component={Pv305} />
+      <Stack.Screen name="Pv306" component={Pv306} />
+      <Stack.Screen name="Pv307" component={Pv307} />
+      <Stack.Screen name="Pv308" component={Pv308} />
+      <Stack.Screen name="Pv309" component={Pv309} />
+      <Stack.Screen name="Pv310" component={Pv310} />
+      <Stack.Screen name="Pv311" component={Pv311} />
+      <Stack.Screen name="Pv312" component={Pv312} />
 
-    <Stack.Screen name="Eclesiastes" component={Eclesiastes}/>
-    <Stack.Screen name="Ec313" component={Ec313}/>
-    <Stack.Screen name="Ec314" component={Ec314}/>
-    <Stack.Screen name="Ec315" component={Ec315}/>
-    <Stack.Screen name="Ec316" component={Ec316}/>
-    <Stack.Screen name="Ec317" component={Ec317}/>
-    <Stack.Screen name="Ec318" component={Ec318}/>
+      <Stack.Screen name="Eclesiastes" component={Eclesiastes} />
+      <Stack.Screen name="Ec313" component={Ec313} />
+      <Stack.Screen name="Ec314" component={Ec314} />
+      <Stack.Screen name="Ec315" component={Ec315} />
+      <Stack.Screen name="Ec316" component={Ec316} />
+      <Stack.Screen name="Ec317" component={Ec317} />
+      <Stack.Screen name="Ec318" component={Ec318} />
 
-    <Stack.Screen name="Cantares" component={Cantares}/>
-    <Stack.Screen name="Ct319" component={Ct319}/>
-    <Stack.Screen name="Ct320" component={Ct320}/>
+      <Stack.Screen name="Cantares" component={Cantares} />
+      <Stack.Screen name="Ct319" component={Ct319} />
+      <Stack.Screen name="Ct320" component={Ct320} />
 
-    <Stack.Screen name="Primeiro Cronicas" component={PrimeiroCronicas}/>
-    <Stack.Screen name="PrimeiroCr321" component={PrimeiroCr321}/>
-    <Stack.Screen name="PrimeiroCr322" component={PrimeiroCr322}/>
-    <Stack.Screen name="PrimeiroCr323" component={PrimeiroCr323}/>
-    <Stack.Screen name="PrimeiroCr324" component={PrimeiroCr324}/>
-    <Stack.Screen name="PrimeiroCr325" component={PrimeiroCr325}/>
-    <Stack.Screen name="PrimeiroCr326" component={PrimeiroCr326}/>
+      <Stack.Screen name="Primeiro Cronicas" component={PrimeiroCronicas} />
+      <Stack.Screen name="PrimeiroCr321" component={PrimeiroCr321} />
+      <Stack.Screen name="PrimeiroCr322" component={PrimeiroCr322} />
+      <Stack.Screen name="PrimeiroCr323" component={PrimeiroCr323} />
+      <Stack.Screen name="PrimeiroCr324" component={PrimeiroCr324} />
+      <Stack.Screen name="PrimeiroCr325" component={PrimeiroCr325} />
+      <Stack.Screen name="PrimeiroCr326" component={PrimeiroCr326} />
 
+      <Stack.Screen name="Amos " component={Amos} />
+      <Stack.Screen name="Am335" component={Am335} />
+      <Stack.Screen name="Am336" component={Am336} />
+      <Stack.Screen name="Am337" component={Am337} />
 
-     <Stack.Screen name="Amos " component={ Amos }/>
-     <Stack.Screen name="Am335" component={ Am335}/>
-     <Stack.Screen name="Am336" component={ Am336}/>
-     <Stack.Screen name="Am337" component={ Am337}/>
+      <Stack.Screen name="Segundo Cronicas" component={SegundoCronicas} />
+      <Stack.Screen name="SegundoCr327" component={SegundoCr327} />
+      <Stack.Screen name="SegundoCr328" component={SegundoCr328} />
+      <Stack.Screen name="SegundoCr329" component={SegundoCr329} />
+      <Stack.Screen name="SegundoCr330" component={SegundoCr330} />
+      <Stack.Screen name="SegundoCr331" component={SegundoCr331} />
+      <Stack.Screen name="SegundoCr332" component={SegundoCr332} />
+      <Stack.Screen name="SegundoCr333" component={SegundoCr333} />
+      <Stack.Screen name="SegundoCr334" component={SegundoCr334} />
 
-     <Stack.Screen name="Segundo Cronicas" component={SegundoCronicas}/>
-    <Stack.Screen name="SegundoCr327" component={SegundoCr327}/>
-    <Stack.Screen name="SegundoCr328" component={SegundoCr328}/>
-    <Stack.Screen name="SegundoCr329" component={SegundoCr329}/>
-    <Stack.Screen name="SegundoCr330" component={SegundoCr330}/>
-    <Stack.Screen name="SegundoCr331" component={SegundoCr331}/>
-    <Stack.Screen name="SegundoCr332" component={SegundoCr332}/>
-    <Stack.Screen name="SegundoCr333" component={SegundoCr333}/>
-    <Stack.Screen name="SegundoCr334" component={SegundoCr334}/>
+      <Stack.Screen name="Obadias" component={Obadias} />
+      <Stack.Screen name="Oba338" component={Oba338} />
 
-     
+      <Stack.Screen name="Oseias" component={Oseias}/>
+      <Stack.Screen name="Ose339" component={Ose339}/>
+      <Stack.Screen name="Ose340" component={Ose340}/>
+      <Stack.Screen name="Ose341" component={Ose341}/>
+      <Stack.Screen name="Ose342" component={Ose342}/>
+
+      <Stack.Screen name="Joel" component={Joel}/>
+      <Stack.Screen name="Jl343" component={Jl343}/>
+
+      <Stack.Screen name="Jonas" component={Jonas}/>
+      <Stack.Screen name="Jn344" component={Jn344}/>
+      <Stack.Screen name="Jn345" component={Jn345}/>
+
+      <Stack.Screen name="Miqueias" component={Miqueias}/>
+      <Stack.Screen name="Miq346" component={Miq346}/>
+      <Stack.Screen name="Miq347" component={Miq347}/>
 
       {GroupAuth()}
     </Stack.Navigator>
