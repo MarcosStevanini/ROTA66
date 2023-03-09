@@ -1,1 +1,15 @@
-export interface Ec317Props {}
+export interface Ec317Props {
+  id: string;
+  titulo: string;
+  livro: string;
+  capitulo: string;
+  descricao: string;
+  playlist:string;
+  estudo:string;
+  imagBookItem:string;
+  imagBookPlayer:string;
+  tema: string;
+  time: string;
+  url: string;
+  isFavorite:string;
+}

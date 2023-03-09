@@ -1,1 +1,15 @@
-export interface Jo299Props {}
+export interface Jo299Props {
+  id: string;
+  titulo: string;
+  livro: string;
+  capitulo: string;
+  descricao: string;
+  playlist:string;
+  estudo:string;
+  imagBookItem:string;
+  imagBookPlayer:string;
+  tema: string;
+  time: string;
+  url: string;
+  isFavorite:string;
+}

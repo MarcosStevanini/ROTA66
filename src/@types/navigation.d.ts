@@ -329,6 +329,71 @@ export declare global{
         SegundoRe286:undefined;
         SegundoRe287:undefined;
         SegundoRe288:undefined;
+
+
+        Jo:undefined;
+        Jo289:undefined;
+        Jo290:undefined;
+        Jo291:undefined;
+        Jo292:undefined;
+        Jo293:undefined;
+        Jo294:undefined;
+        Jo295:undefined;
+        Jo296:undefined;
+        Jo297:undefined;
+        Jo298:undefined;
+        Jo299:undefined;
+
+        Proverbios:undefined;
+        Pv300:undefined;
+        Pv301:undefined;
+        Pv302:undefined;
+        Pv303:undefined;
+        Pv304:undefined;
+        Pv305:undefined;
+        Pv306:undefined;
+        Pv307:undefined;
+        Pv308:undefined;
+        Pv309:undefined;
+        Pv310:undefined;
+        Pv311:undefined;
+        Pv312:undefined;
+
+        Eclesiastes:undefined;
+        Ec313:undefined;
+        Ec314:undefined;
+        Ec315:undefined;
+        Ec316:undefined;
+        Ec317:undefined;
+        Ec318:undefined;
+         
+        Cantares:undefined;
+        Ct319:undefined;
+        Ct320:undefined;
+
+        PrimeiroCronicas:undefined;
+        PrimeiroCr321:undefined;
+        PrimeiroCr322:undefined;
+        PrimeiroCr323:undefined;
+        PrimeiroCr324:undefined;
+        PrimeiroCr325:undefined;
+        PrimeiroCr326:undefined;
+
+        Amos:undefined;
+        Am335:undefined;
+        Am336:undefined;
+        Am337:undefined;
+
+        SegundoCronicas:undefined;
+        SegundoCr327:undefined;
+        SegundoCr328:undefined;
+        SegundoCr329:undefined;
+        SegundoCr330:undefined;
+        SegundoCr331:undefined;
+        SegundoCr332:undefined;
+        SegundoCr333:undefined;
+        SegundoCr334:undefined;
+     
       
     }
   }

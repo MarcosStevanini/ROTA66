@@ -335,6 +335,71 @@ import SegundoRe286 from '../screens/App/OldBooks/SegundoReis/SegundoRe286/segun
 import SegundoRe287 from '../screens/App/OldBooks/SegundoReis/SegundoRe287/segundo-re287.component'
 import SegundoRe288 from '../screens/App/OldBooks/SegundoReis/SegundoRe288/segundo-re288.component'
 
+import Jo from '../screens/App/OldBooks/Jo/jo.component'
+import Jo289 from '../screens/App/OldBooks/Jo/Jo289/jo289.component'
+import Jo290 from '../screens/App/OldBooks/Jo/Jo290/jo290.component'
+import Jo291 from '../screens/App/OldBooks/Jo/Jo291/jo291.component'
+import Jo292 from '../screens/App/OldBooks/Jo/Jo292/jo292.component'
+import Jo293 from '../screens/App/OldBooks/Jo/Jo293/jo293.component'
+import Jo294 from '../screens/App/OldBooks/Jo/Jo294/jo294.component'
+import Jo295 from '../screens/App/OldBooks/Jo/Jo295/jo295.component'
+import Jo296 from '../screens/App/OldBooks/Jo/Jo296/jo296.component'
+import Jo297 from '../screens/App/OldBooks/Jo/Jo297/jo297.component'
+import Jo298 from '../screens/App/OldBooks/Jo/Jo298/jo298.component'
+import Jo299 from '../screens/App/OldBooks/Jo/Jo299/jo299.component'
+
+
+import Proverbios from '../screens/App/OldBooks/Proverbios/proverbios.component'
+import Pv300 from '../screens/App/OldBooks/Proverbios/Pv300/pv300.component'
+import Pv301 from '../screens/App/OldBooks/Proverbios/Pv301/pv301.component'
+import Pv302 from '../screens/App/OldBooks/Proverbios/Pv302/pv302.component'
+import Pv303 from '../screens/App/OldBooks/Proverbios/Pv303/pv303.component'
+import Pv304 from '../screens/App/OldBooks/Proverbios/Pv304/pv304.component'
+import Pv305 from '../screens/App/OldBooks/Proverbios/Pv305/pv305.component'
+import Pv306 from '../screens/App/OldBooks/Proverbios/Pv306/pv306.component'
+import Pv307 from '../screens/App/OldBooks/Proverbios/Pv307/pv307.component'
+import Pv308 from '../screens/App/OldBooks/Proverbios/Pv308/pv308.component'
+import Pv309 from '../screens/App/OldBooks/Proverbios/Pv309/pv309.component'
+import Pv310 from '../screens/App/OldBooks/Proverbios/Pv310/pv310.component'
+import Pv311 from '../screens/App/OldBooks/Proverbios/Pv311/pv311.component'
+import Pv312 from '../screens/App/OldBooks/Proverbios/Pv312/pv312.component'
+
+import Eclesiastes  from '../screens/App/OldBooks/Eclesiastes/eclesiastes.component'
+import Ec313 from '../screens/App/OldBooks/Eclesiastes/Ec313/ec313.component'
+import Ec314 from '../screens/App/OldBooks/Eclesiastes/Ec314/ec314.component'
+import Ec315 from '../screens/App/OldBooks/Eclesiastes/Ec315/ec315.component'
+import Ec316 from '../screens/App/OldBooks/Eclesiastes/Ec316/ec316.component'
+import Ec317 from '../screens/App/OldBooks/Eclesiastes/Ec317/ec317.component'
+import Ec318 from '../screens/App/OldBooks/Eclesiastes/Ec318/ec318.component'
+
+import Cantares from '../screens/App/OldBooks/Cantares/cantares.component'
+import Ct319  from '../screens/App/OldBooks/Cantares/Ct319/ct319.component'
+import Ct320  from '../screens/App/OldBooks/Cantares/Ct320/ct320.component'
+
+import PrimeiroCronicas from '../screens/App/OldBooks/PrimeiroCronicas/primeiro-cronicas.component'
+import PrimeiroCr321 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr321/primeiro-cr321.component'
+import PrimeiroCr322 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr322/primeiro-cr322.component'
+import PrimeiroCr323 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr323/primeiro-cr323.component'
+import PrimeiroCr324 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr324/primeiro-cr324.component'
+import PrimeiroCr325 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr325/primeiro-cr325.component'
+import PrimeiroCr326 from '../screens/App/OldBooks/PrimeiroCronicas/PrimeiroCr326/primeiro-cr326.component'
+
+import Amos from '../screens/App/OldBooks/Amos/amos.component'
+import Am335 from '../screens/App/OldBooks/Amos/Am335/am335.component'
+import Am336 from '../screens/App/OldBooks/Amos/Am336/am336.component'
+import Am337 from '../screens/App/OldBooks/Amos/Am337/am337.component'
+
+import SegundoCronicas from '../screens/App/OldBooks/SegundoCronicas/segundo-cronicas.component'
+import SegundoCr327 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr327/segundo-cr327.component'
+import SegundoCr328 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr328/segundo-cr328.component'
+import SegundoCr329 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr329/segundo-cr329.component'
+import SegundoCr330 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr330/segundo-cr330.component'
+import SegundoCr331 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr331/segundo-cr331.component'
+import SegundoCr332 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr332/segundo-cr332.component'
+import SegundoCr333 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr333/segundo-cr333.component'
+import SegundoCr334 from '../screens/App/OldBooks/SegundoCronicas/SegundoCr334/segundo-cr334.component'
+
+
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
   return (
@@ -761,6 +826,71 @@ export const StackAuth = () => {
       <Stack.Screen name="SegundoRe286" component={SegundoRe286}/>
       <Stack.Screen name="SegundoRe287" component={SegundoRe287}/>
       <Stack.Screen name="SegundoRe288" component={SegundoRe288}/>
+
+      <Stack.Screen name="Jo" component={Jo}/>
+      <Stack.Screen name="Jo289" component={Jo289}/>
+      <Stack.Screen name="Jo290" component={Jo290}/>
+      <Stack.Screen name="Jo291" component={Jo291}/>
+      <Stack.Screen name="Jo292" component={Jo292}/>
+      <Stack.Screen name="Jo293" component={Jo293}/>
+      <Stack.Screen name="Jo294" component={Jo294}/>
+      <Stack.Screen name="Jo295" component={Jo295}/>
+      <Stack.Screen name="Jo296" component={Jo296}/>
+      <Stack.Screen name="Jo297" component={Jo297}/>
+      <Stack.Screen name="Jo298" component={Jo298}/>
+      <Stack.Screen name="Jo299" component={Jo299}/>
+
+      <Stack.Screen name='Proverbios' component={Proverbios}/>
+     <Stack.Screen name="Pv300" component={Pv300}/>
+     <Stack.Screen name="Pv301" component={Pv301}/>
+     <Stack.Screen name="Pv302" component={Pv302}/>
+     <Stack.Screen name="Pv303" component={Pv303}/>
+     <Stack.Screen name="Pv304" component={Pv304}/>
+     <Stack.Screen name="Pv305" component={Pv305}/>
+     <Stack.Screen name="Pv306" component={Pv306}/>
+     <Stack.Screen name="Pv307" component={Pv307}/>
+     <Stack.Screen name="Pv308" component={Pv308}/>
+     <Stack.Screen name="Pv309" component={Pv309}/>
+     <Stack.Screen name="Pv310" component={Pv310}/>
+     <Stack.Screen name="Pv311" component={Pv311}/>
+     <Stack.Screen name="Pv312" component={Pv312}/>
+
+    <Stack.Screen name="Eclesiastes" component={Eclesiastes}/>
+    <Stack.Screen name="Ec313" component={Ec313}/>
+    <Stack.Screen name="Ec314" component={Ec314}/>
+    <Stack.Screen name="Ec315" component={Ec315}/>
+    <Stack.Screen name="Ec316" component={Ec316}/>
+    <Stack.Screen name="Ec317" component={Ec317}/>
+    <Stack.Screen name="Ec318" component={Ec318}/>
+
+    <Stack.Screen name="Cantares" component={Cantares}/>
+    <Stack.Screen name="Ct319" component={Ct319}/>
+    <Stack.Screen name="Ct320" component={Ct320}/>
+
+    <Stack.Screen name="Primeiro Cronicas" component={PrimeiroCronicas}/>
+    <Stack.Screen name="PrimeiroCr321" component={PrimeiroCr321}/>
+    <Stack.Screen name="PrimeiroCr322" component={PrimeiroCr322}/>
+    <Stack.Screen name="PrimeiroCr323" component={PrimeiroCr323}/>
+    <Stack.Screen name="PrimeiroCr324" component={PrimeiroCr324}/>
+    <Stack.Screen name="PrimeiroCr325" component={PrimeiroCr325}/>
+    <Stack.Screen name="PrimeiroCr326" component={PrimeiroCr326}/>
+
+
+     <Stack.Screen name="Amos " component={ Amos }/>
+     <Stack.Screen name="Am335" component={ Am335}/>
+     <Stack.Screen name="Am336" component={ Am336}/>
+     <Stack.Screen name="Am337" component={ Am337}/>
+
+     <Stack.Screen name="Segundo Cronicas" component={SegundoCronicas}/>
+    <Stack.Screen name="SegundoCr327" component={SegundoCr327}/>
+    <Stack.Screen name="SegundoCr328" component={SegundoCr328}/>
+    <Stack.Screen name="SegundoCr329" component={SegundoCr329}/>
+    <Stack.Screen name="SegundoCr330" component={SegundoCr330}/>
+    <Stack.Screen name="SegundoCr331" component={SegundoCr331}/>
+    <Stack.Screen name="SegundoCr332" component={SegundoCr332}/>
+    <Stack.Screen name="SegundoCr333" component={SegundoCr333}/>
+    <Stack.Screen name="SegundoCr334" component={SegundoCr334}/>
+
      
 
       {GroupAuth()}
