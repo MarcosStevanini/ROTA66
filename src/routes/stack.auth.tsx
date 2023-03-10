@@ -419,6 +419,38 @@ import Miqueias from '../screens/App/OldBooks/Miqueias/miqueias.component'
 import Miq346 from '../screens/App/OldBooks/Miqueias/Miq346/miq346.component'
 import Miq347 from '../screens/App/OldBooks/Miqueias/Miq347/miq347.component'
 
+
+import Isaias from '../screens/App/OldBooks/Isaias/isaias.component'
+import Isa348 from '../screens/App/OldBooks/Isaias/Isa348/isa348.component'
+import Isa349 from '../screens/App/OldBooks/Isaias/Isa349/isa349.component'
+import Isa350 from '../screens/App/OldBooks/Isaias/Isa350/isa350.component'
+import Isa351 from '../screens/App/OldBooks/Isaias/Isa351/isa351.component'
+import Isa352 from '../screens/App/OldBooks/Isaias/Isa352/isa352.component'
+import Isa353 from '../screens/App/OldBooks/Isaias/Isa353/isa353.component'
+import Isa354 from '../screens/App/OldBooks/Isaias/Isa354/isa354.component'
+import Isa355 from '../screens/App/OldBooks/Isaias/Isa355/isa355.component'
+import Isa356 from '../screens/App/OldBooks/Isaias/Isa356/isa356.component'
+import Isa357 from '../screens/App/OldBooks/Isaias/Isa357/isa357.component'
+import Isa358 from '../screens/App/OldBooks/Isaias/Isa358/isa358.component'
+import Isa359 from '../screens/App/OldBooks/Isaias/Isa359/isa359.component'
+import Isa360 from '../screens/App/OldBooks/Isaias/Isa360/isa360.component'
+import Isa361 from '../screens/App/OldBooks/Isaias/Isa361/isa361.component'
+import Isa362 from '../screens/App/OldBooks/Isaias/Isa362/isa362.component'
+import Isa363 from '../screens/App/OldBooks/Isaias/Isa363/isa363.component'
+import Isa364 from '../screens/App/OldBooks/Isaias/Isa364/isa364.component'
+import Isa365 from '../screens/App/OldBooks/Isaias/Isa365/isa365.component'
+
+import Naum from '../screens/App/OldBooks/Naum/naum.component'
+import Na366 from '../screens/App/OldBooks/Naum/Na366/na366.component'
+
+
+import  Habacuque  from '../screens/App/OldBooks/Habacuque/habacuque.component'
+import Hab367 from '../screens/App/OldBooks/Habacuque/Hab367/hab367.component'
+import Hab368 from '../screens/App/OldBooks/Habacuque/Hab368/hab368.component'
+
+import Sofonias from '../screens/App/NewBooks/Sofonias/sofonias.component'
+import Sof369 from '../screens/App/NewBooks/Sofonias/Sof369/sof369.component'
+
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
   return (
@@ -927,6 +959,37 @@ export const StackAuth = () => {
       <Stack.Screen name="Miqueias" component={Miqueias}/>
       <Stack.Screen name="Miq346" component={Miq346}/>
       <Stack.Screen name="Miq347" component={Miq347}/>
+
+      <Stack.Screen name="Isaias" component={Isaias}/>
+      <Stack.Screen name="Isa348" component={Isa348}/>
+      <Stack.Screen name="Isa349" component={Isa349}/>
+      <Stack.Screen name="Isa350" component={Isa350}/>
+      <Stack.Screen name="Isa351" component={Isa351}/>
+      <Stack.Screen name="Isa352" component={Isa352}/>
+      <Stack.Screen name="Isa353" component={Isa353}/>
+      <Stack.Screen name="Isa354" component={Isa354}/>
+      <Stack.Screen name="Isa355" component={Isa355}/>
+      <Stack.Screen name="Isa356" component={Isa356}/>
+      <Stack.Screen name="Isa357" component={Isa357}/>
+      <Stack.Screen name="Isa358" component={Isa358}/>
+      <Stack.Screen name="Isa359" component={Isa359}/>
+      <Stack.Screen name="Isa360" component={Isa360}/>
+      <Stack.Screen name="Isa361" component={Isa361}/>
+      <Stack.Screen name="Isa362" component={Isa362}/>
+      <Stack.Screen name="Isa363" component={Isa363}/>
+      <Stack.Screen name="Isa364" component={Isa364}/>
+      <Stack.Screen name="Isa365" component={Isa365}/>
+
+      <Stack.Screen name="Naum" component={Naum}/>
+      <Stack.Screen name="Na366" component={Na366}/>
+
+
+      <Stack.Screen name="Habacuque" component={Habacuque}/>
+      <Stack.Screen name="Hab367" component={Hab367}/>
+      <Stack.Screen name="Hab368" component={Hab368}/>
+
+      <Stack.Screen name="Sofonias" component={Sofonias}/>
+      <Stack.Screen name="Sof369" component={Sof369}/>
 
       {GroupAuth()}
     </Stack.Navigator>

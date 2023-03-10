@@ -413,7 +413,36 @@ export declare global{
         Miqueias:undefined;
         Miq346:undefined;
         Miq347:undefined;
+
+        Isaias:undefined;
+        Isa348:undefined;
+        Isa349:undefined;
+        Isa350:undefined;
+        Isa351:undefined;
+        Isa352:undefined;
+        Isa353:undefined;
+        Isa354:undefined;
+        Isa355:undefined;
+        Isa356:undefined;
+        Isa357:undefined;
+        Isa358:undefined;
+        Isa359:undefined;
+        Isa360:undefined;
+        Isa361:undefined;
+        Isa362:undefined;
+        Isa363:undefined;
+        Isa364:undefined;
+        Isa365:undefined;
      
+        Naum:undefined;
+        Na366:undefined;
+
+        Habacuque:undefined;
+        Hab367:undefined;
+        Hab368:undefined;
+
+        Sofonias:undefined;
+        Sof369:undefined;
       
     }
   }
