@@ -451,6 +451,238 @@ import Hab368 from '../screens/App/OldBooks/Habacuque/Hab368/hab368.component'
 import Sofonias from '../screens/App/NewBooks/Sofonias/sofonias.component'
 import Sof369 from '../screens/App/NewBooks/Sofonias/Sof369/sof369.component'
 
+import Jeremias from '../screens/App/OldBooks/Jeremias/jeremias.component'
+import Jer370 from '../screens/App/OldBooks/Jeremias/Jer370/jer370.component'
+import Jer371 from '../screens/App/OldBooks/Jeremias/Jer371/jer371.component'
+import Jer372 from '../screens/App/OldBooks/Jeremias/Jer372/jer372.component'
+import Jer373 from '../screens/App/OldBooks/Jeremias/Jer373/jer373.component'
+import Jer374 from '../screens/App/OldBooks/Jeremias/Jer374/jer374.component'
+import Jer375 from '../screens/App/OldBooks/Jeremias/Jer375/jer375.component'
+import Jer376 from '../screens/App/OldBooks/Jeremias/Jer376/jer376.component'
+import Jer377 from '../screens/App/OldBooks/Jeremias/Jer377/jer377.component'
+import Jer378 from '../screens/App/OldBooks/Jeremias/Jer378/jer378.component'
+import Jer379 from '../screens/App/OldBooks/Jeremias/Jer379/jer379.component'
+import Jer380 from '../screens/App/OldBooks/Jeremias/Jer380/jer380.component'
+import Jer381 from '../screens/App/OldBooks/Jeremias/Jer381/jer381.component'
+import Jer382 from '../screens/App/OldBooks/Jeremias/Jer382/jer382.component'
+import Jer383 from '../screens/App/OldBooks/Jeremias/Jer383/jer383.component'
+import Jer384 from '../screens/App/OldBooks/Jeremias/Jer384/jer384.component'
+
+
+import Lamentacoes from '../screens/App/OldBooks/Lamentacoes/lamentacoes.component'
+import Lam385 from '../screens/App/OldBooks/Lamentacoes/Lam385/lam385.component'
+
+import Daniel from '../screens/App/OldBooks/Daniel/daniel.component'
+import Dn386 from '../screens/App/OldBooks/Daniel/Dn386/dn386.component'
+import Dn387 from '../screens/App/OldBooks/Daniel/Dn387/dn387.component'
+import Dn388 from '../screens/App/OldBooks/Daniel/Dn388/dn388.component'
+import Dn389 from '../screens/App/OldBooks/Daniel/Dn389/dn389.component'
+import Dn390 from '../screens/App/OldBooks/Daniel/Dn390/dn390.component'
+import Dn391 from '../screens/App/OldBooks/Daniel/Dn391/dn391.component'
+import Dn392 from '../screens/App/OldBooks/Daniel/Dn392/dn392.component'
+import Dn393 from '../screens/App/OldBooks/Daniel/Dn393/dn393.component'
+import Dn394 from '../screens/App/OldBooks/Daniel/Dn394/dn394.component'
+import Dn395 from '../screens/App/OldBooks/Daniel/Dn395/dn395.component'
+
+import Ezequiel from '../screens/App/OldBooks/Ezequiel/ezequiel.component'
+import Eze396 from '../screens/App/OldBooks/Ezequiel/Eze396/eze396.component'
+import Eze397 from '../screens/App/OldBooks/Ezequiel/Eze397/eze397.component'
+import Eze398 from '../screens/App/OldBooks/Ezequiel/Eze398/eze398.component'
+import Eze399 from '../screens/App/OldBooks/Ezequiel/Eze399/eze399.component'
+import Eze400 from '../screens/App/OldBooks/Ezequiel/Eze400/eze400.component'
+import Eze401 from '../screens/App/OldBooks/Ezequiel/Eze401/eze401.component'
+import Eze402 from '../screens/App/OldBooks/Ezequiel/Eze402/eze402.component'
+import Eze403 from '../screens/App/OldBooks/Ezequiel/Eze403/eze403.component'
+import Eze404 from '../screens/App/OldBooks/Ezequiel/Eze404/eze404.component'
+import Eze405 from '../screens/App/OldBooks/Ezequiel/Eze405/eze405.component'
+import Eze406 from '../screens/App/OldBooks/Ezequiel/Eze406/eze406.component'
+import Eze407 from '../screens/App/OldBooks/Ezequiel/Eze407/eze407.component'
+import Eze408 from '../screens/App/OldBooks/Ezequiel/Eze408/eze408.component'
+
+import Ester from '../screens/App/OldBooks/Ester/ester.component'
+import Et409 from '../screens/App/OldBooks/Ester/Et409/et409.component'
+import Et410 from '../screens/App/OldBooks/Ester/Et410/et410.component'
+import Et411 from '../screens/App/OldBooks/Ester/Et411/et411.component'
+import Et412 from '../screens/App/OldBooks/Ester/Et412/et412.component'
+import Et413 from '../screens/App/OldBooks/Ester/Et413/et413.component'
+
+import Esdras from '../screens/App/OldBooks/Esdras/esdras.component'
+import Esd414 from '../screens/App/OldBooks/Esdras/Esd414/esd414.component'
+import Esd415 from '../screens/App/OldBooks/Esdras/Esd415/esd415.component'
+import Esd416 from '../screens/App/OldBooks/Esdras/Esd416/esd416.component'
+import Esd417 from '../screens/App/OldBooks/Esdras/Esd417/esd417.component'
+
+import Neemias from '../screens/App/OldBooks/Neemias/neemias.component'
+import Ne418 from '../screens/App/OldBooks/Neemias/Ne418/ne418.component'
+import Ne419 from '../screens/App/OldBooks/Neemias/Ne419/ne419.component'
+import Ne420 from '../screens/App/OldBooks/Neemias/Ne420/ne420.component'
+import Ne421 from '../screens/App/OldBooks/Neemias/Ne421/ne421.component'
+import Ne422 from '../screens/App/OldBooks/Neemias/Ne422/ne422.component'
+import Ne423 from '../screens/App/OldBooks/Neemias/Ne423/ne423.component'
+
+import Ageu from '../screens/App/OldBooks/Ageu/ageu.component'
+import Ag424 from '../screens/App/OldBooks/Ageu/Ag424/ag424.component'
+import Ag425 from '../screens/App/OldBooks/Ageu/Ag425/ag425.component' 
+
+import Zacarias from '../screens/App/OldBooks/Zacarias/zacarias.component'
+import Zc426 from '../screens/App/OldBooks/Zacarias/Zc426/zc426.component'
+import Zc427 from '../screens/App/OldBooks/Zacarias/Zc427/zc427.component'
+import Zc428 from '../screens/App/OldBooks/Zacarias/Zc428/zc428.component'
+import Zc429 from '../screens/App/OldBooks/Zacarias/Zc429/zc429.component'
+
+import Malaquias from '../screens/App/OldBooks/Malaquias/malaquias.component'
+import Mal430 from '../screens/App/OldBooks/Malaquias/Mal430/mal430.component'
+import Mal431 from '../screens/App/OldBooks/Malaquias/Mal431/mal431.component'
+import Mal432 from '../screens/App/OldBooks/Malaquias/Mal432/mal432.component'
+
+
+import Mateus from '../screens/App/NewBooks/Mateus/mateus.component'
+import Mt433 from '../screens/App/NewBooks/Mateus/Mt433/mt433.component'
+import Mt434 from '../screens/App/NewBooks/Mateus/Mt434/mt434.component'
+import Mt435 from '../screens/App/NewBooks/Mateus/Mt435/mt435.component'
+import Mt436 from '../screens/App/NewBooks/Mateus/Mt436/mt436.component'
+import Mt437 from '../screens/App/NewBooks/Mateus/Mt437/mt437.component'
+import Mt438 from '../screens/App/NewBooks/Mateus/Mt438/mt438.component'
+import Mt439 from '../screens/App/NewBooks/Mateus/Mt439/mt439.component'
+import Mt440 from '../screens/App/NewBooks/Mateus/Mt440/mt440.component'
+import Mt441 from '../screens/App/NewBooks/Mateus/Mt441/mt441.component'
+import Mt442 from '../screens/App/NewBooks/Mateus/Mt442/mt442.component'
+import Mt443 from '../screens/App/NewBooks/Mateus/Mt443/mt443.component'
+import Mt444 from '../screens/App/NewBooks/Mateus/Mt444/mt444.component'
+import Mt445 from '../screens/App/NewBooks/Mateus/Mt445/mt445.component'
+import Mt446 from '../screens/App/NewBooks/Mateus/Mt446/mt446.component'
+import Mt447 from '../screens/App/NewBooks/Mateus/Mt447/mt447.component'
+import Mt448 from '../screens/App/NewBooks/Mateus/Mt448/mt448.component'
+import Mt449 from '../screens/App/NewBooks/Mateus/Mt449/mt449.component'
+import Mt450 from '../screens/App/NewBooks/Mateus/Mt450/mt450.component'
+import Mt451 from '../screens/App/NewBooks/Mateus/Mt451/mt451.component'
+import Mt452 from '../screens/App/NewBooks/Mateus/Mt452/mt452.component'
+import Mt453 from '../screens/App/NewBooks/Mateus/Mt453/mt453.component'
+import Mt454 from '../screens/App/NewBooks/Mateus/Mt454/mt454.component'
+import Mt455 from '../screens/App/NewBooks/Mateus/Mt455/mt455.component'
+import Mt456 from '../screens/App/NewBooks/Mateus/Mt456/mt456.component'
+import Mt457 from '../screens/App/NewBooks/Mateus/Mt457/mt457.component'
+
+import Marcos from '../screens/App/NewBooks/Marcos/marcos.component'
+import Mc458 from '../screens/App/NewBooks/Marcos/Mc458/mc458.component'
+import Mc459 from '../screens/App/NewBooks/Marcos/Mc459/mc459.component'
+import Mc460 from '../screens/App/NewBooks/Marcos/Mc460/mc460.component'
+import Mc461 from '../screens/App/NewBooks/Marcos/Mc461/mc461.component'
+import Mc462 from '../screens/App/NewBooks/Marcos/Mc462/mc462.component'
+import Mc463 from '../screens/App/NewBooks/Marcos/Mc463/mc463.component'
+import Mc464 from '../screens/App/NewBooks/Marcos/Mc464/mc464.component'
+import Mc465 from '../screens/App/NewBooks/Marcos/Mc465/mc465.component'
+import Mc466 from '../screens/App/NewBooks/Marcos/Mc466/mc466.component'
+import Mc467 from '../screens/App/NewBooks/Marcos/Mc467/mc467.component'
+import Mc468 from '../screens/App/NewBooks/Marcos/Mc468/mc468.component'
+import Mc469 from '../screens/App/NewBooks/Marcos/Mc469/mc469.component'
+import Mc470 from '../screens/App/NewBooks/Marcos/Mc470/mc470.component'
+
+import Joao from '../screens/App/NewBooks/Joao/joao.component'
+import Jo471 from '../screens/App/NewBooks/Joao/Jo471/jo471.component'
+import Jo472 from '../screens/App/NewBooks/Joao/Jo472/jo472.component'
+import Jo473 from '../screens/App/NewBooks/Joao/Jo473/jo473.component'
+import Jo474 from '../screens/App/NewBooks/Joao/Jo474/jo474.component'
+import Jo475 from '../screens/App/NewBooks/Joao/Jo475/jo475.component'
+import Jo476 from '../screens/App/NewBooks/Joao/Jo476/jo476.component'
+import Jo477 from '../screens/App/NewBooks/Joao/Jo477/jo477.component'
+import Jo478 from '../screens/App/NewBooks/Joao/Jo478/jo478.component'
+import Jo479 from '../screens/App/NewBooks/Joao/Jo479/jo479.component'
+import Jo480 from '../screens/App/NewBooks/Joao/Jo480/jo480.component'
+import Jo481 from '../screens/App/NewBooks/Joao/Jo481/jo481.component'
+import Jo482 from '../screens/App/NewBooks/Joao/Jo482/jo482.component'
+import Jo483 from '../screens/App/NewBooks/Joao/Jo483/jo483.component'
+import Jo484 from '../screens/App/NewBooks/Joao/Jo484/jo484.component'
+import Jo485 from '../screens/App/NewBooks/Joao/Jo485/jo485.component'
+import Jo486 from '../screens/App/NewBooks/Joao/Jo486/jo486.component'
+import Jo487 from '../screens/App/NewBooks/Joao/Jo487/jo487.component'
+import Jo488 from '../screens/App/NewBooks/Joao/Jo488/jo488.component'
+import Jo489 from '../screens/App/NewBooks/Joao/Jo489/jo489.component'
+import Jo490 from '../screens/App/NewBooks/Joao/Jo490/jo490.component'
+
+
+
+import PrimeiroCorintios from '../screens/App/NewBooks/PrimeiroCorintios/primeiro-corintios.component'
+import PrimeiroCor491 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor491/primeiro-cor491.component'
+import PrimeiroCor492 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor492/primeiro-cor492.component'
+import PrimeiroCor493 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor493/primeiro-cor493.component'
+import PrimeiroCor494 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor494/primeiro-cor494.component'
+import PrimeiroCor495 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor495/primeiro-cor495.component'
+import PrimeiroCor496 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor496/primeiro-cor496.component'
+import PrimeiroCor497 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor497/primeiro-cor497.component'
+import PrimeiroCor498 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor498/primeiro-cor498.component'
+import PrimeiroCor499 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor499/primeiro-cor499.component'
+import PrimeiroCor500 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor500/primeiro-cor500.component'
+import PrimeiroCor501 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor501/primeiro-cor501.component'
+import PrimeiroCor502 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor502/primeiro-cor502.component'
+import PrimeiroCor503 from '../screens/App/NewBooks/PrimeiroCorintios/PrimeiroCor503/primeiro-cor503.component'
+
+
+import SegundoCorintios from '../screens/App/NewBooks/SegundoCorintios/segundo-corintios.component'
+import SegundoCor504 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor504/segundo-cor504.component'
+import SegundoCor505 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor505/segundo-cor505.component'
+import SegundoCor506 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor506/segundo-cor506.component'
+import SegundoCor507 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor507/segundo-cor507.component'
+import SegundoCor508 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor508/segundo-cor508.component'
+import SegundoCor509 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor509/segundo-cor509.component'
+import SegundoCor510 from '../screens/App/NewBooks/SegundoCorintios/SegundoCor510/segundo-cor510.component'
+
+import PrimeiroTimoteo from '../screens/App/NewBooks/PrimeiroTimoteo/primeiro-timoteo.component'
+import PrimeiroTim511  from '../screens/App/NewBooks/PrimeiroTimoteo/PrimeiroTim511/primeiro-tim511.component'
+import PrimeiroTim512  from '../screens/App/NewBooks/PrimeiroTimoteo/PrimeiroTim512/primeiro-tim512.component'
+import PrimeiroTim513  from '../screens/App/NewBooks/PrimeiroTimoteo/PrimeiroTim513/primeiro-tim513.component'
+import PrimeiroTim514  from '../screens/App/NewBooks/PrimeiroTimoteo/PrimeiroTim514/primeiro-tim514.component'
+import PrimeiroTim515  from '../screens/App/NewBooks/PrimeiroTimoteo/PrimeiroTim515/primeiro-tim515.component'
+import PrimeiroTim516  from '../screens/App/NewBooks/PrimeiroTimoteo/PrimeiroTim516/primeiro-tim516.component'
+
+import SegundoTimoteo from '../screens/App/NewBooks/SegundoTimoteo/segundo-timoteo.component'
+import SegundoTim517 from '../screens/App/NewBooks/SegundoTimoteo/SegundoTim517/segundo-tim517.component'
+import SegundoTim518 from '../screens/App/NewBooks/SegundoTimoteo/SegundoTim518/segundo-tim518.component'
+import SegundoTim519 from '../screens/App/NewBooks/SegundoTimoteo/SegundoTim519/segundo-tim519.component'
+
+import Tito from '../screens/App/NewBooks/Tito/tito.component'
+import Tt520 from '../screens/App/NewBooks/Tito/Tt520/tt520.component'
+import Tt521 from '../screens/App/NewBooks/Tito/Tt521/tt521.component'
+
+
+import PrimeiroTessalonicenses from '../screens/App/NewBooks/PrimeiroTessalonicenses/primeiro-tessalonicenses.component'
+import PrimeiroTess522 from '../screens/App/NewBooks/PrimeiroTessalonicenses/PrimeiroTess522/primeiro-tess522.component'
+import PrimeiroTess523 from '../screens/App/NewBooks/PrimeiroTessalonicenses/PrimeiroTess523/primeiro-tess523.component'
+import PrimeiroTess524 from '../screens/App/NewBooks/PrimeiroTessalonicenses/PrimeiroTess524/primeiro-tess524.component'
+
+
+import SegundoTessalonicenses from '../screens/App/NewBooks/SegundoTessalonicenses/segundo-tessalonicenses.component'
+import SegundoTess525 from '../screens/App/NewBooks/SegundoTessalonicenses/SegundoTess525/segundo-tess525.component'
+import SegundoTess526 from '../screens/App/NewBooks/SegundoTessalonicenses/SegundoTess526/segundo-tess526.component'
+import SegundoTess527 from '../screens/App/NewBooks/SegundoTessalonicenses/SegundoTess527/segundo-tess527.component'
+
+import Efesios from '../screens/App/NewBooks/Efesios/efesios.component'
+import Ef528   from '../screens/App/NewBooks/Efesios/Ef528/ef528.component'
+import Ef529   from '../screens/App/NewBooks/Efesios/Ef529/ef529.component'
+import Ef530   from '../screens/App/NewBooks/Efesios/Ef530/ef530.component'
+import Ef531   from '../screens/App/NewBooks/Efesios/Ef531/ef531.component'
+import Ef532   from '../screens/App/NewBooks/Efesios/Ef532/ef532.component'
+
+import  Colossenses  from '../screens/App/NewBooks/Colossenses/colossenses.component'
+import Col533 from '../screens/App/NewBooks/Colossenses/Col533/col533.component'
+import Col534 from '../screens/App/NewBooks/Colossenses/Col534/col534.component'
+import Col535 from '../screens/App/NewBooks/Colossenses/Col535/col535.component'
+import Col536 from '../screens/App/NewBooks/Colossenses/Col536/col536.component'
+
+
+import Filemom from '../screens/App/NewBooks/Filemom/filemom.component'
+import Fm537 from '../screens/App/NewBooks/Filemom/Fm537/fm537.component'
+
+import Filipenses from '../screens/App/NewBooks/Filipenses/filipenses.component'
+import Filip538 from '../screens/App/NewBooks/Filipenses/Filip538/filip538.component'
+import Filip539 from '../screens/App/NewBooks/Filipenses/Filip539/filip539.component'
+import Filip540 from '../screens/App/NewBooks/Filipenses/Filip540/filip540.component'
+import Filip541 from '../screens/App/NewBooks/Filipenses/Filip541/filip541.component'
+
+
+
+
+
 export const StackAuth = () => {
   const Stack = createNativeStackNavigator()
   return (
@@ -991,6 +1223,241 @@ export const StackAuth = () => {
       <Stack.Screen name="Sofonias" component={Sofonias}/>
       <Stack.Screen name="Sof369" component={Sof369}/>
 
+      <Stack.Screen name="Jeremias" component={Jeremias}/>
+     <Stack.Screen name="Jer370" component={Jer370}/>
+     <Stack.Screen name="Jer371" component={Jer371}/>
+     <Stack.Screen name="Jer372" component={Jer372}/>
+     <Stack.Screen name="Jer373" component={Jer373}/>
+     <Stack.Screen name="Jer374" component={Jer374}/>
+     <Stack.Screen name="Jer375" component={Jer375}/>
+     <Stack.Screen name="Jer376" component={Jer376}/>
+     <Stack.Screen name="Jer377" component={Jer377}/>
+     <Stack.Screen name="Jer378" component={Jer378}/>
+     <Stack.Screen name="Jer379" component={Jer379}/>
+     <Stack.Screen name="Jer380" component={Jer380}/>
+     <Stack.Screen name="Jer381" component={Jer381}/>
+     <Stack.Screen name="Jer382" component={Jer382}/>
+     <Stack.Screen name="Jer383" component={Jer383}/>
+     <Stack.Screen name="Jer384" component={Jer384}/>
+
+     <Stack.Screen name="Lamentações" component={Lamentacoes}/>
+     <Stack.Screen name="Lam385" component={Lam385}/>
+
+     <Stack.Screen name="Daniel" component={Daniel}/>
+     <Stack.Screen name="Dn386 " component={Dn386 }/>
+     <Stack.Screen name="Dn387 " component={Dn387 }/>
+     <Stack.Screen name="Dn388 " component={Dn388 }/>
+     <Stack.Screen name="Dn389 " component={Dn389 }/>
+     <Stack.Screen name="Dn390 " component={Dn390 }/>
+     <Stack.Screen name="Dn391 " component={Dn391 }/>
+     <Stack.Screen name="Dn392 " component={Dn392 }/>
+     <Stack.Screen name="Dn393 " component={Dn393 }/>
+     <Stack.Screen name="Dn394 " component={Dn394 }/>
+     <Stack.Screen name="Dn395 " component={Dn395 }/>
+
+     <Stack.Screen name="Ezequiel" component={Ezequiel}/>
+    <Stack.Screen name="Eze396" component={Eze396}/>
+    <Stack.Screen name="Eze397" component={Eze397}/>
+    <Stack.Screen name="Eze398" component={Eze398}/>
+    <Stack.Screen name="Eze399" component={Eze399}/>
+    <Stack.Screen name="Eze400" component={Eze400}/>
+    <Stack.Screen name="Eze401" component={Eze401}/>
+    <Stack.Screen name="Eze402" component={Eze402}/>
+    <Stack.Screen name="Eze403" component={Eze403}/>
+    <Stack.Screen name="Eze404" component={Eze404}/>
+    <Stack.Screen name="Eze405" component={Eze405}/>
+    <Stack.Screen name="Eze406" component={Eze406}/>
+    <Stack.Screen name="Eze407" component={Eze407}/>
+    <Stack.Screen name="Eze408" component={Eze408}/>
+
+
+    <Stack.Screen name="Ester" component={Ester}/>
+    <Stack.Screen name="Et409" component={Et409}/>
+    <Stack.Screen name="Et410" component={Et410}/>
+    <Stack.Screen name="Et411" component={Et411}/>
+    <Stack.Screen name="Et412" component={Et412}/>
+    <Stack.Screen name="Et413" component={Et413}/>
+
+    <Stack.Screen name="Esdras" component={Esdras}/>
+    <Stack.Screen name="Esd414" component={Esd414}/>
+    <Stack.Screen name="Esd415" component={Esd415}/>
+    <Stack.Screen name="Esd416" component={Esd416}/>
+    <Stack.Screen name="Esd417" component={Esd417}/>
+
+    <Stack.Screen name="Neemias" component={Neemias}/>
+    <Stack.Screen name="Ne418" component={Ne418}/>
+    <Stack.Screen name="Ne419" component={Ne419}/>
+    <Stack.Screen name="Ne420" component={Ne420}/>
+    <Stack.Screen name="Ne421" component={Ne421}/>
+    <Stack.Screen name="Ne422" component={Ne422}/>
+    <Stack.Screen name="Ne423" component={Ne423}/>
+
+    <Stack.Screen name="Ageu" component={Ageu}/>
+    <Stack.Screen name="Ag424" component={Ag424}/>
+    <Stack.Screen name="Ag425" component={Ag425}/>
+
+    <Stack.Screen name="Zacarias" component={Zacarias}/>
+    <Stack.Screen name="Zc426" component={Zc426}/>
+    <Stack.Screen name="Zc427" component={Zc427}/>
+    <Stack.Screen name="Zc428" component={Zc428}/>
+    <Stack.Screen name="Zc429" component={Zc429}/>
+
+
+    <Stack.Screen name="Malaquias" component={Malaquias}/>
+    <Stack.Screen name="Mal430" component={Mal430}/>
+    <Stack.Screen name="Mal431" component={Mal431}/>
+    <Stack.Screen name="Mal432" component={Mal432}/>
+
+    <Stack.Screen name="Mateus" component={Mateus}/>
+    <Stack.Screen name="Mt433" component={Mt433}/>
+    <Stack.Screen name="Mt434" component={Mt434}/>
+    <Stack.Screen name="Mt435" component={Mt435}/>
+    <Stack.Screen name="Mt436" component={Mt436}/>
+    <Stack.Screen name="Mt437" component={Mt437}/>
+    <Stack.Screen name="Mt438" component={Mt438}/>
+    <Stack.Screen name="Mt439" component={Mt439}/>
+    <Stack.Screen name="Mt440" component={Mt440}/>
+    <Stack.Screen name="Mt441" component={Mt441}/>
+    <Stack.Screen name="Mt442" component={Mt442}/>
+    <Stack.Screen name="Mt443" component={Mt443}/>
+    <Stack.Screen name="Mt444" component={Mt444}/>
+    <Stack.Screen name="Mt445" component={Mt445}/>
+    <Stack.Screen name="Mt446" component={Mt446}/>
+    <Stack.Screen name="Mt447" component={Mt447}/>
+    <Stack.Screen name="Mt448" component={Mt448}/>
+    <Stack.Screen name="Mt449" component={Mt449}/>
+    <Stack.Screen name="Mt450" component={Mt450}/>
+    <Stack.Screen name="Mt451" component={Mt451}/>
+    <Stack.Screen name="Mt452" component={Mt452}/>
+    <Stack.Screen name="Mt453" component={Mt453}/>
+    <Stack.Screen name="Mt454" component={Mt454}/>
+    <Stack.Screen name="Mt455" component={Mt455}/>
+    <Stack.Screen name="Mt456" component={Mt456}/>
+    <Stack.Screen name="Mt457" component={Mt457}/>
+
+
+
+
+   <Stack.Screen name="Marcos" component={Marcos}/>
+   <Stack.Screen name="Mc458" component={Mc458 }/>
+   <Stack.Screen name="Mc459" component={Mc459 }/>
+   <Stack.Screen name="Mc460" component={Mc460 }/>
+   <Stack.Screen name="Mc461" component={Mc461 }/>
+   <Stack.Screen name="Mc462" component={Mc462 }/>
+   <Stack.Screen name="Mc463" component={Mc463 }/>
+   <Stack.Screen name="Mc464" component={Mc464 }/>
+   <Stack.Screen name="Mc465" component={Mc465 }/>
+   <Stack.Screen name="Mc466" component={Mc466 }/>
+   <Stack.Screen name="Mc467" component={Mc467 }/>
+   <Stack.Screen name="Mc468" component={Mc468 }/>
+   <Stack.Screen name="Mc469" component={Mc469 }/>
+   <Stack.Screen name="Mc470" component={Mc470 }/>
+
+
+    <Stack.Screen name="João" component={Joao}/>
+   <Stack.Screen name="Jo471" component={Jo471}/>
+   <Stack.Screen name="Jo472" component={Jo472}/>
+   <Stack.Screen name="Jo473" component={Jo473}/>
+   <Stack.Screen name="Jo474" component={Jo474}/>
+   <Stack.Screen name="Jo475" component={Jo475}/>
+   <Stack.Screen name="Jo476" component={Jo476}/>
+   <Stack.Screen name="Jo477" component={Jo477}/>
+   <Stack.Screen name="Jo478" component={Jo478}/>
+   <Stack.Screen name="Jo479" component={Jo479}/>
+   <Stack.Screen name="Jo480" component={Jo480}/>
+   <Stack.Screen name="Jo481" component={Jo481}/>
+   <Stack.Screen name="Jo482" component={Jo482}/>
+   <Stack.Screen name="Jo483" component={Jo483}/>
+   <Stack.Screen name="Jo484" component={Jo484}/>
+   <Stack.Screen name="Jo485" component={Jo485}/>
+   <Stack.Screen name="Jo486" component={Jo486}/>
+   <Stack.Screen name="Jo487" component={Jo487}/>
+   <Stack.Screen name="Jo488" component={Jo488}/>
+   <Stack.Screen name="Jo489" component={Jo489}/>
+   <Stack.Screen name="Jo490" component={Jo490}/>
+
+
+   <Stack.Screen name="Primeiro Coríntios" component={PrimeiroCorintios}/>
+   <Stack.Screen name="PrimeiroCor491" component={ PrimeiroCor491}/>
+   <Stack.Screen name="PrimeiroCor492" component={ PrimeiroCor492}/>
+   <Stack.Screen name="PrimeiroCor493" component={ PrimeiroCor493}/>
+   <Stack.Screen name="PrimeiroCor494" component={ PrimeiroCor494}/>
+   <Stack.Screen name="PrimeiroCor495" component={ PrimeiroCor495}/>
+   <Stack.Screen name="PrimeiroCor496" component={ PrimeiroCor496}/>
+   <Stack.Screen name="PrimeiroCor497" component={ PrimeiroCor497}/>
+   <Stack.Screen name="PrimeiroCor498" component={ PrimeiroCor498}/>
+   <Stack.Screen name="PrimeiroCor499" component={ PrimeiroCor499}/>
+   <Stack.Screen name="PrimeiroCor500" component={ PrimeiroCor500}/>
+   <Stack.Screen name="PrimeiroCor501" component={ PrimeiroCor501}/>
+   <Stack.Screen name="PrimeiroCor502" component={ PrimeiroCor502}/>
+   <Stack.Screen name="PrimeiroCor503" component={ PrimeiroCor503}/>
+
+    <Stack.Screen name="Segundo Conríntios" component={SegundoCorintios}/>
+   <Stack.Screen name="SegundoCor504" component={SegundoCor504}/>
+   <Stack.Screen name="SegundoCor505" component={SegundoCor505}/>
+   <Stack.Screen name="SegundoCor506" component={SegundoCor506}/>
+   <Stack.Screen name="SegundoCor507" component={SegundoCor507}/>
+   <Stack.Screen name="SegundoCor508" component={SegundoCor508}/>
+   <Stack.Screen name="SegundoCor509" component={SegundoCor509}/>
+   <Stack.Screen name="SegundoCor510" component={SegundoCor510}/>
+
+   <Stack.Screen name="Primeiro Timóteo" component={PrimeiroTimoteo}/>
+   <Stack.Screen name="PrimeiroTim511" component={PrimeiroTim511 }/>
+   <Stack.Screen name="PrimeiroTim512" component={PrimeiroTim512 }/>
+   <Stack.Screen name="PrimeiroTim513" component={PrimeiroTim513 }/>
+   <Stack.Screen name="PrimeiroTim514" component={PrimeiroTim514 }/>
+   <Stack.Screen name="PrimeiroTim515" component={PrimeiroTim515 }/>
+   <Stack.Screen name="PrimeiroTim516" component={PrimeiroTim516 }/>
+
+
+   <Stack.Screen name="Segundo Timóteo" component={SegundoTimoteo}/>
+   <Stack.Screen name="SegundoTim517" component={SegundoTim517}/>
+   <Stack.Screen name="SegundoTim518" component={SegundoTim518}/>
+   <Stack.Screen name="SegundoTim519" component={SegundoTim519}/>
+
+
+  <Stack.Screen name="Tito" component={Tito}/>
+  <Stack.Screen name="Tt520" component={Tt520}/>
+  <Stack.Screen name="Tt521" component={Tt521}/>
+
+
+  <Stack.Screen name="Primeiro Tessalonicenses" component={PrimeiroTessalonicenses}/>
+  <Stack.Screen name="PrimeiroTess522" component={PrimeiroTess522}/>
+  <Stack.Screen name="PrimeiroTess523" component={PrimeiroTess523}/>
+  <Stack.Screen name="PrimeiroTess524" component={PrimeiroTess524}/>
+
+  <Stack.Screen name="Segundo Tessalonicenses" component={SegundoTessalonicenses}/>
+  <Stack.Screen name="SegundoTess525" component={PrimeiroTess525}/>
+  <Stack.Screen name="SegundoTess526" component={PrimeiroTess526}/>
+  <Stack.Screen name="SegundoTess527" component={PrimeiroTess527}/>
+
+
+
+  <Stack.Screen name="Efésios" component={Efesios}/>
+  <Stack.Screen name="Ef528" component={Ef528}/>
+  <Stack.Screen name="Ef529" component={Ef529}/>
+  <Stack.Screen name="Ef530" component={Ef530}/>
+  <Stack.Screen name="Ef531" component={Ef531}/>
+  <Stack.Screen name="Ef532" component={Ef532}/>
+
+<Stack.Screen name="Colossenses" component={Colossenses}/>
+  <Stack.Screen name="Col533" component={Col533}/>
+  <Stack.Screen name="Col534" component={Col534}/>
+  <Stack.Screen name="Col535" component={Col535}/>
+  <Stack.Screen name="Col536" component={Col536}/>
+
+  <Stack.Screen name="Filemom" component={Filemom}/>
+  <Stack.Screen name="Fm537" component={Fm537}/>
+
+
+<Stack.Screen name="Filipenses" component={Filipenses}/>
+  <Stack.Screen name="Filip538" component={Filip538}/>
+  <Stack.Screen name="Filip539" component={Filip539}/>
+  <Stack.Screen name="Filip540" component={Filip540}/>
+  <Stack.Screen name="Filip541" component={Filip541}/>
+
+
+    
       {GroupAuth()}
     </Stack.Navigator>
   )

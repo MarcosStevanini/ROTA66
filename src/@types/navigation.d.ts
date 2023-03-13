@@ -443,7 +443,228 @@ export declare global{
 
         Sofonias:undefined;
         Sof369:undefined;
-      
+
+        Jeremias:undefined;
+        Jer370:undefined;
+        Jer371:undefined;
+        Jer372:undefined;
+        Jer373:undefined;
+        Jer374:undefined;
+        Jer375:undefined;
+        Jer376:undefined;
+        Jer377:undefined;
+        Jer378:undefined;
+        Jer379:undefined;
+        Jer380:undefined;
+        Jer381:undefined;
+        Jer382:undefined;
+        Jer383:undefined;
+        Jer384:undefined;
+
+        Lamentações:undefined;
+        Lam385:undefined;
+        
+        Daniel:undefined;
+        Dn386:undefined;
+        Dn387:undefined;
+        Dn388:undefined;
+        Dn389:undefined;
+        Dn390:undefined;
+        Dn391:undefined;
+        Dn392:undefined;
+        Dn393:undefined;
+        Dn394:undefined;
+        Dn395:undefined;
+
+        Ezequiel:undefined;
+        Eze396:undefined;
+        Eze397:undefined;
+        Eze398:undefined;
+        Eze399:undefined;
+        Eze400:undefined;
+        Eze401:undefined;
+        Eze402:undefined;
+        Eze403:undefined;
+        Eze404:undefined;
+        Eze405:undefined;
+        Eze406:undefined;
+        Eze407:undefined;
+        Eze408:undefined;
+
+        Ester:undefined;
+        Et409:undefined;
+        Et410:undefined;
+        Et411:undefined;
+        Et412:undefined;
+        Et413:undefined;
+
+        Esdras:undefined;
+        Esd414:undefined;
+        Esd415:undefined;
+        Esd416:undefined;
+        Esd417:undefined;
+
+        Neemias:undefined;
+        Ne418:undefined;
+        Ne419:undefined;
+        Ne420:undefined;
+        Ne421:undefined;
+        Ne422:undefined;
+        Ne423:undefined;
+
+        Ageu:undefined;
+        Ag424:undefined;
+        Ag425:undefined;
+
+        Zacarias:undefined;
+        Zc426:undefined;
+        Zc427:undefined;
+        Zc428:undefined;
+        Zc429:undefined;
+
+
+        Malaquias:undefined;
+        Mal430:undefined;
+        Mal431:undefined;
+        Mal432:undefined;
+
+        Mateus:undefined;
+        Mt433:undefined;
+        Mt434:undefined;
+        Mt435:undefined;
+        Mt436:undefined;
+        Mt437:undefined;
+        Mt438:undefined;
+        Mt439:undefined;
+        Mt440:undefined;
+        Mt441:undefined;
+        Mt442:undefined;
+        Mt443:undefined;
+        Mt444:undefined;
+        Mt445:undefined;
+        Mt446:undefined;
+        Mt447:undefined;
+        Mt448:undefined;
+        Mt449:undefined;
+        Mt450:undefined;
+        Mt451:undefined;
+        Mt452:undefined;
+        Mt453:undefined;
+        Mt454:undefined;
+        Mt455:undefined;
+        Mt456:undefined;
+        Mt457:undefined;
+
+        Marcos:undefined;
+        Mc458:undefined;
+        Mc459:undefined;
+        Mc460:undefined;
+        Mc461:undefined;
+        Mc462:undefined;
+        Mc463:undefined;
+        Mc464:undefined;
+        Mc465:undefined;
+        Mc466:undefined;
+        Mc467:undefined;
+        Mc468:undefined;
+        Mc469:undefined;
+        Mc470:undefined;
+
+        João:undefined;
+        Jo471:undefined;
+        Jo472:undefined;
+        Jo473:undefined;
+        Jo474:undefined;
+        Jo475:undefined;
+        Jo476:undefined;
+        Jo477:undefined;
+        Jo478:undefined;
+        Jo479:undefined;
+        Jo480:undefined;
+        Jo481:undefined;
+        Jo482:undefined;
+        Jo483:undefined;
+        Jo484:undefined;
+        Jo485:undefined;
+        Jo486:undefined;
+        Jo487:undefined;
+        Jo488:undefined;
+        Jo489:undefined;
+        Jo490:undefined;
+
+        PrimeiroCorintios:undefined;
+        PrimeiroCor491:undefined;
+        PrimeiroCor492:undefined;
+        PrimeiroCor493:undefined;
+        PrimeiroCor494:undefined;
+        PrimeiroCor495:undefined;
+        PrimeiroCor496:undefined;
+        PrimeiroCor497:undefined;
+        PrimeiroCor498:undefined;
+        PrimeiroCor499:undefined;
+        PrimeiroCor500:undefined;
+        PrimeiroCor501:undefined;
+        PrimeiroCor502:undefined;
+        PrimeiroCor503:undefined;
+
+        SegundoCorintios:undefined;
+        SegundoCor504:undefined;
+        SegundoCor505:undefined;
+        SegundoCor506:undefined;
+        SegundoCor507:undefined;
+        SegundoCor508:undefined;
+        SegundoCor509:undefined;
+        SegundoCor510:undefined;
+
+        PrimeiroTimoteo:undefined;
+        PrimeiroTim511:undefined;
+        PrimeiroTim512:undefined;
+        PrimeiroTim513:undefined;
+        PrimeiroTim514:undefined;
+        PrimeiroTim515:undefined;
+        PrimeiroTim516:undefined;
+
+        SegundoTimoteo:undefined;
+        SegundoTim517:undefined;
+        SegundoTim518:undefined;
+        SegundoTim519:undefined;
+
+        Tito :undefined;
+        Tt520:undefined;
+        Tt521:undefined;
+
+        PrimeiroTessalonicenses:undefined;
+        PrimeiroTess522:undefined;
+        PrimeiroTess523:undefined;
+        PrimeiroTess524:undefined;
+
+        SegundoTessalonicenses:undefined;
+        SegundoTess525:undefined;
+        SegundoTess526:undefined;
+        SegundoTess527:undefined;
+
+        Efesios:undefined;
+        Ef528:undefined;
+        Ef529:undefined;
+        Ef530:undefined;
+        Ef531:undefined;
+        Ef532:undefined;
+
+        Colossenses:undefined;
+        Col533:undefined;
+        Col534:undefined;
+        Col535:undefined;
+        Col536:undefined;
+
+        Filemom:undefined;
+        Fm537:undefined;
+
+        Filipenses:undefined;
+        Filip538:undefined;
+        Filip539:undefined;
+        Filip540:undefined;
+        Filip541:undefined;
+              
     }
   }
 }
