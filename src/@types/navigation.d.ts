@@ -664,6 +664,22 @@ export declare global{
         Filip539:undefined;
         Filip540:undefined;
         Filip541:undefined;
+
+
+        PrimeiroPedro:undefined;
+        PrimeiroPed542:undefined;
+        PrimeiroPed543:undefined;
+        PrimeiroPed544:undefined;
+        PrimeiroPed545:undefined;
+
+        SegundoPedro:undefined;
+        SegundoPed546:undefined;
+        SegundoPed547:undefined;
+        SegundoPed548:undefined;
+
+        Judas:undefined;
+        Jud549:undefined;
+ 
               
     }
   }

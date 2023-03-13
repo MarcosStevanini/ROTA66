@@ -679,6 +679,20 @@ import Filip539 from '../screens/App/NewBooks/Filipenses/Filip539/filip539.compo
 import Filip540 from '../screens/App/NewBooks/Filipenses/Filip540/filip540.component'
 import Filip541 from '../screens/App/NewBooks/Filipenses/Filip541/filip541.component'
 
+import PrimeiroPedro from '../screens/App/NewBooks/PrimeiroPedro/primeiro-pedro.component'
+import PrimeiroPed542 from '../screens/App/NewBooks/PrimeiroPedro/PrimeiroPed542/primeiro-ped542.component'
+import PrimeiroPed543 from '../screens/App/NewBooks/PrimeiroPedro/PrimeiroPed543/primeiro-ped543.component'
+import PrimeiroPed544 from '../screens/App/NewBooks/PrimeiroPedro/PrimeiroPed544/primeiro-ped544.component'
+import PrimeiroPed545 from '../screens/App/NewBooks/PrimeiroPedro/PrimeiroPed545/primeiro-ped545.component'
+
+import SegundoPedro from '../screens/App/NewBooks/SegundoPedro/segundo-pedro.component'
+import SegundoPed546 from '../screens/App/NewBooks/SegundoPedro/SegundoPed546/segundo-ped546.component'
+import SegundoPed547 from '../screens/App/NewBooks/SegundoPedro/SegundoPed547/segundo-ped547.component'
+import SegundoPed548 from '../screens/App/NewBooks/SegundoPedro/SegundoPed548/segundo-ped548.component'
+
+import Judas from '../screens/App/NewBooks/Judas/judas.component'
+import Jud549 from '../screens/App/NewBooks/Judas/Jud549/jud549.component'
+
 
 
 
@@ -1455,6 +1469,23 @@ export const StackAuth = () => {
   <Stack.Screen name="Filip539" component={Filip539}/>
   <Stack.Screen name="Filip540" component={Filip540}/>
   <Stack.Screen name="Filip541" component={Filip541}/>
+
+
+
+  <Stack.Screen name="Primeiro Pedro " component={PrimeiroPedro}/>
+  <Stack.Screen name="PrimeiroPed542" component={PrimeiroPed542}/>
+  <Stack.Screen name="PrimeiroPed543" component={PrimeiroPed543}/>
+  <Stack.Screen name="PrimeiroPed544" component={PrimeiroPed544}/>
+  <Stack.Screen name="PrimeiroPed545" component={PrimeiroPed545}/>
+
+
+  <Stack.Screen name="Segundo Pedro" component={SegundoPedro }/>
+  <Stack.Screen name="SegundoPed546" component={SegundoPed546}/>
+  <Stack.Screen name="SegundoPed547" component={SegundoPed547}/>
+  <Stack.Screen name="SegundoPed548" component={SegundoPed548}/>
+
+  <Stack.Screen name="Judas" component={Judas}/>
+  <Stack.Screen name="Jud549" component={Jud549}/>
 
 
     
