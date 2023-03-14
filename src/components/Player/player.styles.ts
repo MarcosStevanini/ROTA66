@@ -130,7 +130,7 @@ color: ${({theme})=>theme.colors.white100};
 export const ButtonPlay = styled(Ionicons)`
 font-size: ${RFValue(35)}px;
 color: ${({theme})=>theme.colors.white100};
-margin-left: 5px;
+margin-left: 3px;
 
 
 `;
@@ -138,7 +138,7 @@ margin-left: 5px;
 export const ButtonPause = styled(Ionicons)`
 font-size: ${RFValue(40)}px;
 color: ${({theme})=>theme.colors.white100};
-margin-left: 5px;
+margin-left: 3px;
 
 `;
 

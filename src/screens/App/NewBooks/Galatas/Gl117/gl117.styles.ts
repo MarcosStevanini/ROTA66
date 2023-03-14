@@ -14,14 +14,15 @@ flex-direction: row;
 `;
 
 export const AudioItem = styled.View`
-width: ${RFPercentage(48)}px;
-height: ${RFPercentage(9)}px;
+width: 100%;
+height: ${RFPercentage(8)}px;
 background-color: ${({theme})=>theme.colors.gray300};
 opacity: 0.8;
 border-radius: 6px;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
+margin-bottom:${RFPercentage(2.4)}px;
 `;
 
 export const ContainerInf = styled.View`

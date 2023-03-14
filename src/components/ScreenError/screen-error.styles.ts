@@ -13,7 +13,7 @@ margin-bottom: ${RFPercentage(2)}px;
 
 export const Title =styled.Text`
 font-family: ${({theme})=>theme.fonts.regular};
-font-size: ${RFValue(14)}px;
+font-size: ${RFValue(13)}px;
 
 color:${({theme})=>theme.colors.white100};
 
@@ -23,7 +23,7 @@ margin-bottom: ${RFPercentage(10)}px;
 
 export const ButtonRefresh =styled.TouchableOpacity`
 width:  ${RFPercentage(45)}px;
-height:  ${RFPercentage(7)}px;
+height:  ${RFPercentage(8)}px;
 
 background-color:${({theme})=>theme.colors.blue300};
 

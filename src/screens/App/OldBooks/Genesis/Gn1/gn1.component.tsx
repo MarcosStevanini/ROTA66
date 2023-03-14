@@ -145,6 +145,7 @@ const Gn1: React.FC<T.Gn1Props> = () => {
             data={audio}
             keyExtractor={item => item.id}
             renderItem={({ item }) => (
+            
               <S.AudioItem>
                 <S.ContainerAudioItem
                   onPress={() => handleOpenDetails(item.id)}
@@ -187,10 +188,12 @@ const Gn1: React.FC<T.Gn1Props> = () => {
                   )}
                 </S.Favorite>
               </S.AudioItem>
+    
             )}
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{ paddingBottom: 100 }}
           />
+         
         </LinearGradient>
       )}
     </S.Container>

@@ -71,7 +71,7 @@ export default function TabApp() {
         options={{
           tabBarLabel: 'Inicio',
           tabBarIcon: ({ color }) => (
-            <Feather name="home" size={26} color={color} />
+            <Feather name="home" size={RFPercentage(4)} color={color} />
           ),
           headerShown: false
         }}
@@ -100,7 +100,7 @@ export default function TabApp() {
         options={{
           title: 'Favoritos',
           tabBarIcon: ({ color }) => (
-            <Feather name="heart" size={28} color={color} />
+            <Feather name="heart" size={RFPercentage(4)} color={color} />
           ),
           headerShown: false
         }}

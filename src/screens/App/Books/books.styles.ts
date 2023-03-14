@@ -92,7 +92,7 @@ justify-content: flex-start;
 `; 
 
 export const ContainerBookfavorite = styled.TouchableOpacity`
-width: ${RFPercentage(43)}px;
+width: 100%;
 height: ${RFPercentage(8)}px;
 background-color: ${({theme})=>theme.colors.gray300};
 

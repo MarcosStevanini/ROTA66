@@ -4,7 +4,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 export const Container = styled.View`
 flex-direction: row;
 flex-wrap: wrap;
-justify-content:flex-start;
+justify-content:space-between;
 //align-items: flex-start;
 `;
 
