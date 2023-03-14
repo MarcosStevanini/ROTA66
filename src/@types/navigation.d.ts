@@ -679,6 +679,85 @@ export declare global{
 
         Judas:undefined;
         Jud549:undefined;
+
+
+        PrimeiroJoao:undefined;
+        PrimeiroJo550:undefined;
+        PrimeiroJo551:undefined;
+        PrimeiroJo552:undefined;
+        PrimeiroJo553:undefined;
+
+        SegundoJoao:undefined;
+        SegundoJo554:undefined;
+
+        TerceiroJoao:undefined;
+        TerceiroJo555:undefined;
+
+        Lucas:undefined;
+        Lc556:undefined;
+        Lc557:undefined;
+        Lc558:undefined;
+        Lc559:undefined;
+        Lc560:undefined;
+        Lc561:undefined;
+        Lc562:undefined;
+        Lc563:undefined;
+        Lc564:undefined;
+        Lc565:undefined;
+        Lc566:undefined;
+        Lc567:undefined;
+        Lc568:undefined;
+        Lc569:undefined;
+        Lc570:undefined;
+        Lc571:undefined;
+        Lc572:undefined;
+        Lc573:undefined;
+        Lc574:undefined;
+        Lc575:undefined;
+        Lc576:undefined;
+
+
+         Atos:undefined;
+        At577:undefined;
+        At578:undefined;
+        At579:undefined;
+        At580:undefined;
+        At581:undefined;
+        At582:undefined;
+        At583:undefined;
+        At584:undefined;
+        At585:undefined;
+        At586:undefined;
+        At587:undefined;
+        At588:undefined;
+        At589:undefined;
+        At590:undefined;
+        At591:undefined;
+        At592:undefined;
+        At593:undefined;
+        At594:undefined;
+        At595:undefined;
+        At596:undefined;
+
+
+        Apocalipse:undefined;
+        Apoc597:undefined;
+        Apoc598:undefined;
+        Apoc599:undefined;
+        Apoc600:undefined;
+        Apoc601:undefined;
+        Apoc602:undefined;
+        Apoc603:undefined;
+        Apoc603:undefined;
+        Apoc605:undefined;
+        Apoc606:undefined;
+        Apoc607:undefined;
+        Apoc608:undefined;
+        Apoc609:undefined;
+        Apoc610:undefined;
+        Apoc611:undefined;
+        Apoc612:undefined;
+        Apoc613:undefined;
  
               
     }

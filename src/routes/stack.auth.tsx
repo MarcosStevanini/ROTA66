@@ -693,6 +693,83 @@ import SegundoPed548 from '../screens/App/NewBooks/SegundoPedro/SegundoPed548/se
 import Judas from '../screens/App/NewBooks/Judas/judas.component'
 import Jud549 from '../screens/App/NewBooks/Judas/Jud549/jud549.component'
 
+import PrimeiroJoao from '../screens/App/NewBooks/PrimeiroJoao/primeiro-joao.component'
+import PrimeiroJo550 from '../screens/App/NewBooks/PrimeiroJoao/PrimeiroJo550/primeiro-jo550.component'
+import PrimeiroJo551 from '../screens/App/NewBooks/PrimeiroJoao/PrimeiroJo551/primeiro-jo551.component'
+import PrimeiroJo552 from '../screens/App/NewBooks/PrimeiroJoao/PrimeiroJo552/primeiro-jo552.component'
+import PrimeiroJo553 from '../screens/App/NewBooks/PrimeiroJoao/PrimeiroJo553/primeiro-jo553.component'
+
+import SegundoJoao  from '../screens/App/NewBooks/SegundoJoao/segundo-joao.component'
+import SegundoJo554 from '../screens/App/NewBooks/SegundoJoao/SegundoJo554/segundo-jo554.component'
+
+import TerceiroJoao  from '../screens/App/NewBooks/TerceiroJoao/terceiro-joao.component'
+import TerceiroJo555 from '../screens/App/NewBooks/TerceiroJoao/TerceiroJo555/terceiro-jo555.component'
+
+import Lucas from '../screens/App/NewBooks/Lucas/lucas.component'
+import Lc556 from '../screens/App/NewBooks/Lucas/Lc556/lc556.component'
+import Lc557 from '../screens/App/NewBooks/Lucas/Lc557/lc557.component'
+import Lc558 from '../screens/App/NewBooks/Lucas/Lc558/lc558.component'
+import Lc559 from '../screens/App/NewBooks/Lucas/Lc559/lc559.component'
+import Lc560 from '../screens/App/NewBooks/Lucas/Lc560/lc560.component'
+import Lc561 from '../screens/App/NewBooks/Lucas/Lc561/lc561.component'
+import Lc562 from '../screens/App/NewBooks/Lucas/Lc562/lc562.component'
+import Lc563 from '../screens/App/NewBooks/Lucas/Lc563/lc563.component'
+import Lc564 from '../screens/App/NewBooks/Lucas/Lc564/lc564.component'
+import Lc565 from '../screens/App/NewBooks/Lucas/Lc565/lc565.component'
+import Lc566 from '../screens/App/NewBooks/Lucas/Lc566/lc566.component'
+import Lc567 from '../screens/App/NewBooks/Lucas/Lc567/lc567.component'
+import Lc568 from '../screens/App/NewBooks/Lucas/Lc568/lc568.component'
+import Lc569 from '../screens/App/NewBooks/Lucas/Lc569/lc569.component'
+import Lc570 from '../screens/App/NewBooks/Lucas/Lc570/lc570.component'
+import Lc571 from '../screens/App/NewBooks/Lucas/Lc571/lc571.component'
+import Lc572 from '../screens/App/NewBooks/Lucas/Lc572/lc572.component'
+import Lc573 from '../screens/App/NewBooks/Lucas/Lc573/lc573.component'
+import Lc574 from '../screens/App/NewBooks/Lucas/Lc574/lc574.component'
+import Lc575 from '../screens/App/NewBooks/Lucas/Lc575/lc575.component'
+import Lc576 from '../screens/App/NewBooks/Lucas/Lc576/lc576.component'
+
+
+import Atos from '../screens/App/NewBooks/Atos/atos.component'
+import At577 from '../screens/App/NewBooks/Atos/At577/at577.component'
+import At578 from '../screens/App/NewBooks/Atos/At578/at578.component'
+import At579 from '../screens/App/NewBooks/Atos/At579/at579.component'
+import At580 from '../screens/App/NewBooks/Atos/At580/at580.component'
+import At581 from '../screens/App/NewBooks/Atos/At581/at581.component'
+import At582 from '../screens/App/NewBooks/Atos/At582/at582.component'
+import At583 from '../screens/App/NewBooks/Atos/At583/at583.component'
+import At584 from '../screens/App/NewBooks/Atos/At584/at584.component'
+import At585 from '../screens/App/NewBooks/Atos/At585/at585.component'
+import At586 from '../screens/App/NewBooks/Atos/At586/at586.component'
+import At587 from '../screens/App/NewBooks/Atos/At587/at587.component'
+import At588 from '../screens/App/NewBooks/Atos/At588/at588.component'
+import At589 from '../screens/App/NewBooks/Atos/At589/at589.component'
+import At590 from '../screens/App/NewBooks/Atos/At590/at590.component'
+import At591 from '../screens/App/NewBooks/Atos/At591/at591.component'
+import At592 from '../screens/App/NewBooks/Atos/At592/at592.component'
+import At593 from '../screens/App/NewBooks/Atos/At593/at593.component'
+import At594 from '../screens/App/NewBooks/Atos/At594/at594.component'
+import At595 from '../screens/App/NewBooks/Atos/At595/at595.component'
+import At596 from '../screens/App/NewBooks/Atos/At596/at596.component'
+
+import Apocalipse from '../screens/App/NewBooks/Apocalipse/apocalipse.component'
+import Apoc597 from '../screens/App/NewBooks/Apocalipse/Apoc597/apoc597.component'
+import Apoc598 from '../screens/App/NewBooks/Apocalipse/Apoc598/apoc598.component'
+import Apoc599 from '../screens/App/NewBooks/Apocalipse/Apoc599/apoc599.component'
+import Apoc600 from '../screens/App/NewBooks/Apocalipse/Apoc600/apoc600.component'
+import Apoc601 from '../screens/App/NewBooks/Apocalipse/Apoc601/apoc601.component'
+import Apoc602 from '../screens/App/NewBooks/Apocalipse/Apoc602/apoc602.component'
+import Apoc603 from '../screens/App/NewBooks/Apocalipse/Apoc603/apoc603.component'
+import Apoc603 from '../screens/App/NewBooks/Apocalipse/Apoc603/apoc603.component'
+import Apoc605 from '../screens/App/NewBooks/Apocalipse/Apoc605/apoc605.component'
+import Apoc606 from '../screens/App/NewBooks/Apocalipse/Apoc606/apoc606.component'
+import Apoc607 from '../screens/App/NewBooks/Apocalipse/Apoc607/apoc607.component'
+import Apoc608 from '../screens/App/NewBooks/Apocalipse/Apoc608/apoc608.component'
+import Apoc609 from '../screens/App/NewBooks/Apocalipse/Apoc609/apoc609.component'
+import Apoc610 from '../screens/App/NewBooks/Apocalipse/Apoc610/apoc610.component'
+import Apoc611 from '../screens/App/NewBooks/Apocalipse/Apoc611/apoc611.component'
+import Apoc612 from '../screens/App/NewBooks/Apocalipse/Apoc612/apoc612.component'
+import Apoc613 from '../screens/App/NewBooks/Apocalipse/Apoc613/apoc613.component'
+
 
 
 
@@ -1486,6 +1563,85 @@ export const StackAuth = () => {
 
   <Stack.Screen name="Judas" component={Judas}/>
   <Stack.Screen name="Jud549" component={Jud549}/>
+
+
+ <Stack.Screen name="Primeiro João" component={PrimeiroJoao}/>
+ <Stack.Screen name="PrimeiroJo550" component={PrimeiroJo550}/>
+ <Stack.Screen name="PrimeiroJo551" component={PrimeiroJo551}/>
+ <Stack.Screen name="PrimeiroJo552" component={PrimeiroJo552}/>
+ <Stack.Screen name="PrimeiroJo553" component={PrimeiroJo553}/>
+
+ <Stack.Screen name="Segundo João" component={SegundoJoao}/>
+ <Stack.Screen name="SegundoJo554 " component={SegundoJo554}/>
+
+ <Stack.Screen name="Terceiro João " component={TerceiroJoao}/>
+ <Stack.Screen name="TerceiroJo555" component={TerceiroJo555}/>
+
+
+ <Stack.Screen name="Lucas" component={Lucas}/>
+ <Stack.Screen name="Lc556" component={Lc556}/>
+ <Stack.Screen name="Lc557" component={Lc557}/>
+ <Stack.Screen name="Lc558" component={Lc558}/>
+ <Stack.Screen name="Lc559" component={Lc559}/>
+ <Stack.Screen name="Lc560" component={Lc560}/>
+ <Stack.Screen name="Lc561" component={Lc561}/>
+ <Stack.Screen name="Lc562" component={Lc562}/>
+ <Stack.Screen name="Lc563" component={Lc563}/>
+ <Stack.Screen name="Lc564" component={Lc564}/>
+ <Stack.Screen name="Lc565" component={Lc565}/>
+ <Stack.Screen name="Lc566" component={Lc566}/>
+ <Stack.Screen name="Lc567" component={Lc567}/>
+ <Stack.Screen name="Lc568" component={Lc568}/>
+ <Stack.Screen name="Lc569" component={Lc569}/>
+ <Stack.Screen name="Lc570" component={Lc570}/>
+ <Stack.Screen name="Lc571" component={Lc571}/>
+ <Stack.Screen name="Lc572" component={Lc572}/>
+ <Stack.Screen name="Lc573" component={Lc573}/>
+ <Stack.Screen name="Lc574" component={Lc574}/>
+ <Stack.Screen name="Lc575" component={Lc575}/>
+ <Stack.Screen name="Lc576" component={Lc576}/>
+
+
+<Stack.Screen name="Atos" component={Atos}/> 
+<Stack.Screen name="At577" component={At577}/>
+<Stack.Screen name="At578" component={At578}/>
+<Stack.Screen name="At579" component={At579}/>
+<Stack.Screen name="At580" component={At580}/>
+<Stack.Screen name="At581" component={At581}/>
+<Stack.Screen name="At582" component={At582}/>
+<Stack.Screen name="At583" component={At583}/>
+<Stack.Screen name="At584" component={At584}/>
+<Stack.Screen name="At585" component={At585}/>
+<Stack.Screen name="At586" component={At586}/>
+<Stack.Screen name="At587" component={At587}/>
+<Stack.Screen name="At588" component={At588}/>
+<Stack.Screen name="At589" component={At589}/>
+<Stack.Screen name="At590" component={At590}/>
+<Stack.Screen name="At591" component={At591}/>
+<Stack.Screen name="At592" component={At592}/>
+<Stack.Screen name="At593" component={At593}/>
+<Stack.Screen name="At594" component={At594}/>
+<Stack.Screen name="At595" component={At595}/>
+<Stack.Screen name="At596" component={At596}/>
+
+<Stack.Screen name="Apocalipse" component={Apocalipse}/>
+<Stack.Screen name="Apoc597" component={Apoc597}/>
+<Stack.Screen name="Apoc598" component={Apoc598}/>
+<Stack.Screen name="Apoc599" component={Apoc599}/>
+<Stack.Screen name="Apoc600" component={Apoc600}/>
+<Stack.Screen name="Apoc601" component={Apoc601}/>
+<Stack.Screen name="Apoc602" component={Apoc602}/>
+<Stack.Screen name="Apoc603" component={Apoc603}/>
+<Stack.Screen name="Apoc603" component={Apoc603}/>
+<Stack.Screen name="Apoc605" component={Apoc605}/>
+<Stack.Screen name="Apoc606" component={Apoc606}/>
+<Stack.Screen name="Apoc607" component={Apoc607}/>
+<Stack.Screen name="Apoc608" component={Apoc608}/>
+<Stack.Screen name="Apoc609" component={Apoc609}/>
+<Stack.Screen name="Apoc610" component={Apoc610}/>
+<Stack.Screen name="Apoc611" component={Apoc611}/>
+<Stack.Screen name="Apoc612" component={Apoc612}/>
+<Stack.Screen name="Apoc613" component={Apoc613}/>
 
 
     
