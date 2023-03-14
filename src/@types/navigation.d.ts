@@ -203,7 +203,7 @@ export declare global{
         Rut170:undefined;
         Rut171:undefined;
 
-       PrimeiroSamuel:undefined;
+        PrimeiroSamuel:undefined;
         PrimeiroSam172:undefined;
         PrimeiroSam173:undefined;
         PrimeiroSam174:undefined;
@@ -331,7 +331,7 @@ export declare global{
         SegundoRe288:undefined;
 
 
-        Jo:undefined;
+        Jó:undefined;
         Jo289:undefined;
         Jo290:undefined;
         Jo291:undefined;
@@ -344,7 +344,7 @@ export declare global{
         Jo298:undefined;
         Jo299:undefined;
 
-        Proverbios:undefined;
+        Provérbios:undefined;
         Pv300:undefined;
         Pv301:undefined;
         Pv302:undefined;
@@ -379,7 +379,7 @@ export declare global{
         PrimeiroCr325:undefined;
         PrimeiroCr326:undefined;
 
-        Amos:undefined;
+        Amós:undefined;
         Am335:undefined;
         Am336:undefined;
         Am337:undefined;
@@ -397,7 +397,7 @@ export declare global{
         Obadias:undefined;
         Oba338:undefined;
 
-        Oseias:undefined;
+        Oséias:undefined;
         Ose339:undefined;
         Ose340:undefined;
         Ose341:undefined;
@@ -414,7 +414,7 @@ export declare global{
         Miq346:undefined;
         Miq347:undefined;
 
-        Isaias:undefined;
+        Isaías:undefined;
         Isa348:undefined;
         Isa349:undefined;
         Isa350:undefined;
@@ -643,7 +643,7 @@ export declare global{
         SegundoTess526:undefined;
         SegundoTess527:undefined;
 
-        Efesios:undefined;
+        Efésios:undefined;
         Ef528:undefined;
         Ef529:undefined;
         Ef530:undefined;
@@ -748,7 +748,7 @@ export declare global{
         Apoc601:undefined;
         Apoc602:undefined;
         Apoc603:undefined;
-        Apoc603:undefined;
+        Apoc604:undefined;
         Apoc605:undefined;
         Apoc606:undefined;
         Apoc607:undefined;

@@ -70,7 +70,9 @@ font-size: ${RFValue(24)}px;
 margin-right: 13px;
 `;
 
-export const FavoritesList = styled.View``;
+export const FavoritesList = styled.View`
+height: ${RFPercentage(40)}px;
+`;
 
 export const TitleEmptyList = styled.Text`
 font-family: ${({theme})=>theme.fonts.regular};
@@ -90,7 +92,7 @@ justify-content: flex-start;
 `; 
 
 export const ContainerBookfavorite = styled.TouchableOpacity`
-width: ${RFPercentage(46)}px;
+width: ${RFPercentage(43)}px;
 height: ${RFPercentage(8)}px;
 background-color: ${({theme})=>theme.colors.gray300};
 

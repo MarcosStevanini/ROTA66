@@ -125,7 +125,7 @@ const Apocalipse: React.FC<T.ApocalipseProps> = () => {
               <S.Number>603</S.Number>
             </S.CardChapter>
 
-            <S.CardChapter onPress={() => navigator.navigate('Apoc603')}>
+            <S.CardChapter onPress={() => navigator.navigate('Apoc604')}>
               <S.Number>604</S.Number>
             </S.CardChapter>
 

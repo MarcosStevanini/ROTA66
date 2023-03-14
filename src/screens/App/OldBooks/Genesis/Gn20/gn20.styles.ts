@@ -14,7 +14,7 @@ flex-direction: row;
 `;
 
 export const AudioItem = styled.View`
-width: ${RFPercentage(48)}px;
+width: ${RFPercentage(45)}px;
 height: ${RFPercentage(9)}px;
 background-color: ${({theme})=>theme.colors.gray300};
 opacity: 0.8;

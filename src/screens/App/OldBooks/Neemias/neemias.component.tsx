@@ -71,7 +71,7 @@ const Neemias: React.FC<T.NeemiasProps> = () => {
           colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
-            paddingHorizontal: RFPercentage(2.5),
+            paddingHorizontal: RFPercentage(2),
             paddingVertical: RFPercentage(3),
             paddingTop: RFPercentage(10)
           }}

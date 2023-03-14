@@ -21,7 +21,7 @@ const Amos: React.FC<T.AmosProps> = () => {
     const fetchFavorites = async () => {
       const storedFavorites = await AsyncStorage.getItem('favorites')
       if (storedFavorites !== null) {
-        setIsFavorite(JSON.parse(storedFavorites).includes('Amos'))
+        setIsFavorite(JSON.parse(storedFavorites).includes('Amós'))
       }
     }
 
@@ -33,11 +33,11 @@ const Amos: React.FC<T.AmosProps> = () => {
     const parsedFavorites = JSON.parse(favorites)
 
 
-    const isCurrentlyFavorite = parsedFavorites.includes('Amos')
+    const isCurrentlyFavorite = parsedFavorites.includes('Amós')
     const newFavorites = isCurrentlyFavorite
-      ? parsedFavorites.filter(item => item !== 'Amos')
+      ? parsedFavorites.filter(item => item !== 'Amós')
       
-      : [...parsedFavorites, 'Amos'] 
+      : [...parsedFavorites, 'Amós'] 
     await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites))
     setIsFavorite(!isCurrentlyFavorite)
    setAnimationDuration(900)
@@ -105,7 +105,7 @@ const Amos: React.FC<T.AmosProps> = () => {
               <S.Number>336</S.Number>
             </S.CardChapter>
 
-            7<S.CardChapter onPress={() => navigator.navigate('Am337')}>
+            <S.CardChapter onPress={() => navigator.navigate('Am337')}>
               <S.Number>337</S.Number>
             </S.CardChapter>
 

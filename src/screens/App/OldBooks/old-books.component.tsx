@@ -70,213 +70,215 @@ const OldBooks: React.FC<T.OldBooksProps> = () => {
               </S.IconChatper>
               <S.TitleChapter>Josué</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+
+            <S.CardChapter onPress={() => navigator.navigate('Juizes')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Juízes</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Rute')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Rute</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Primeiro Samuel')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Samuel I</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+            <S.CardChapter  onPress={() => navigator.navigate('Segundo Samuel')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Samuel II</S.TitleChapter>
             </S.CardChapter>
-            <S.CardChapter>
+
+            <S.CardChapter  onPress={() => navigator.navigate('Primeiro Reis')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Reis I</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter  onPress={() => navigator.navigate('Segundo Reis')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Reis II</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter  onPress={() => navigator.navigate('Primeiro Cronicas')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Crônicas I</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Segundo Cronicas')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Crônicas II</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Esdras')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Esdras</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Neemias')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Neemias</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Ester')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Ester</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Jó')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Jó</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Salmos')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Salmos</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Provérbios')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Provérbios</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Eclesiastes')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Eclesiastes</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Cantares')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Cantares</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Isaías')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Isaías</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Jeremias')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Jeremias</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Ezequiel')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Ezequiel</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Lamentações')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Lamentações</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Daniel')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Daniel</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Oséias')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Oséias</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Joel')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Joel</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Amós')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Amós</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Jonas')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Jonas</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Miqueias')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Miqueias</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Naum')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Naum</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Habacuque')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Habacuque</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Ageu')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Ageu</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Zacarias')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>
               <S.TitleChapter>Zacarias</S.TitleChapter>
             </S.CardChapter>
 
-            <S.CardChapter>
+            <S.CardChapter onPress={() => navigator.navigate('Malaquias')}>
               <S.IconChatper>
                 <Biblia width={RFValue(16)} height={RFValue(21)} />
               </S.IconChatper>

@@ -21,7 +21,7 @@ const Oseias: React.FC<T.OseiasProps> = () => {
     const fetchFavorites = async () => {
       const storedFavorites = await AsyncStorage.getItem('favorites')
       if (storedFavorites !== null) {
-        setIsFavorite(JSON.parse(storedFavorites).includes('Oseias'))
+        setIsFavorite(JSON.parse(storedFavorites).includes('Oséias'))
       }
     }
 
@@ -33,11 +33,11 @@ const Oseias: React.FC<T.OseiasProps> = () => {
     const parsedFavorites = JSON.parse(favorites)
 
 
-    const isCurrentlyFavorite = parsedFavorites.includes('Oseias')
+    const isCurrentlyFavorite = parsedFavorites.includes('Oséias')
     const newFavorites = isCurrentlyFavorite
-      ? parsedFavorites.filter(item => item !== 'Oseias')
+      ? parsedFavorites.filter(item => item !== 'Oséias')
       
-      : [...parsedFavorites, 'Oseias'] 
+      : [...parsedFavorites, 'Oséias'] 
     await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites))
     setIsFavorite(!isCurrentlyFavorite)
    setAnimationDuration(900)

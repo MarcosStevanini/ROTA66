@@ -118,7 +118,7 @@ const Player: React.FC<T.PlayerProps> = ({
         <S.ButtonBackUp onPress={goBackAndUnload}>
           <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBackUp>
-        <S.Title>Gênesis</S.Title>
+     
       </S.Header>
       <S.ContainerPlayer>
         <S.ContainerImage>

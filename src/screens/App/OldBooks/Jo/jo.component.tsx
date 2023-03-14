@@ -21,7 +21,7 @@ const Jo: React.FC<T.JoProps> = () => {
     const fetchFavorites = async () => {
       const storedFavorites = await AsyncStorage.getItem('favorites')
       if (storedFavorites !== null) {
-        setIsFavorite(JSON.parse(storedFavorites).includes('Jo'))
+        setIsFavorite(JSON.parse(storedFavorites).includes('Jó'))
       }
     }
 
@@ -33,11 +33,11 @@ const Jo: React.FC<T.JoProps> = () => {
     const parsedFavorites = JSON.parse(favorites)
 
 
-    const isCurrentlyFavorite = parsedFavorites.includes('Jo')
+    const isCurrentlyFavorite = parsedFavorites.includes('Jó')
     const newFavorites = isCurrentlyFavorite
-      ? parsedFavorites.filter(item => item !== 'Jo')
+      ? parsedFavorites.filter(item => item !== 'Jó')
       
-      : [...parsedFavorites, 'Jo'] 
+      : [...parsedFavorites, 'Jó'] 
     await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites))
     setIsFavorite(!isCurrentlyFavorite)
    setAnimationDuration(900)
@@ -71,7 +71,7 @@ const Jo: React.FC<T.JoProps> = () => {
           colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
-            paddingHorizontal: RFPercentage(2.5),
+            paddingHorizontal: RFPercentage(2),
             paddingVertical: RFPercentage(3),
             paddingTop: RFPercentage(10)
           }}

@@ -9,7 +9,7 @@ flex-direction: row;
 align-items: center;
 justify-content: flex-start;
 
-margin-bottom: ${RFPercentage(7)}px;
+margin-bottom: ${RFPercentage(5)}px;
 `;
 
 export const Title = styled.Text`
@@ -124,11 +124,13 @@ opacity: 0.7;
 export const ButtonPass = styled(FontAwesome)`
 font-size: ${RFValue(30)}px;
 color: ${({theme})=>theme.colors.white100};
+
 `;
 
 export const ButtonPlay = styled(Ionicons)`
-font-size: ${RFValue(40)}px;
+font-size: ${RFValue(35)}px;
 color: ${({theme})=>theme.colors.white100};
+margin-left: 5px;
 
 
 `;
@@ -136,6 +138,7 @@ color: ${({theme})=>theme.colors.white100};
 export const ButtonPause = styled(Ionicons)`
 font-size: ${RFValue(40)}px;
 color: ${({theme})=>theme.colors.white100};
+margin-left: 5px;
 
 `;
 

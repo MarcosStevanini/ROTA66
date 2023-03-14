@@ -21,7 +21,7 @@ const Isaias: React.FC<T.IsaiasProps> = () => {
     const fetchFavorites = async () => {
       const storedFavorites = await AsyncStorage.getItem('favorites')
       if (storedFavorites !== null) {
-        setIsFavorite(JSON.parse(storedFavorites).includes('Isaias'))
+        setIsFavorite(JSON.parse(storedFavorites).includes('Isaías'))
       }
     }
 
@@ -33,11 +33,11 @@ const Isaias: React.FC<T.IsaiasProps> = () => {
     const parsedFavorites = JSON.parse(favorites)
 
 
-    const isCurrentlyFavorite = parsedFavorites.includes('Isaias')
+    const isCurrentlyFavorite = parsedFavorites.includes('Isaías')
     const newFavorites = isCurrentlyFavorite
-      ? parsedFavorites.filter(item => item !== 'Isaias')
+      ? parsedFavorites.filter(item => item !== 'Isaías')
       
-      : [...parsedFavorites, 'Isaias'] 
+      : [...parsedFavorites, 'Isaías'] 
     await AsyncStorage.setItem('favorites', JSON.stringify(newFavorites))
     setIsFavorite(!isCurrentlyFavorite)
    setAnimationDuration(900)
@@ -71,7 +71,7 @@ const Isaias: React.FC<T.IsaiasProps> = () => {
           colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
-            paddingHorizontal: RFPercentage(2.5),
+            paddingHorizontal: RFPercentage(2),
             paddingVertical: RFPercentage(3),
             paddingTop: RFPercentage(10)
           }}

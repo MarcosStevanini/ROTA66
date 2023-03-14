@@ -14,8 +14,8 @@ flex-direction: row;
 `;
 
 export const AudioItem = styled.View`
-width: ${RFPercentage(48)}px;
-height: ${RFPercentage(8)}px;
+width: ${RFPercentage(45)}px;
+height: ${RFPercentage(9)}px;
 background-color: ${({theme})=>theme.colors.gray300};
 opacity: 0.8;
 border-radius: 6px;
@@ -65,6 +65,6 @@ background-color: ${({theme})=>theme.colors.blue200};
 export const ConteinerText1 = styled.View``;
 
 export const ConteinerText2 = styled.View`
-width:${RFPercentage(25)}px;
+width:${RFPercentage(23)}px;
 height: ${RFPercentage(15)}px;
 `;

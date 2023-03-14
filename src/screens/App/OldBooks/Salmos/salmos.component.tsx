@@ -9,6 +9,7 @@ import LottieView from 'lottie-react-native'
 
 import * as S from './salmos.styles';
 import * as T from './salmos.types';
+import { ScrollView } from 'react-native'
 
 const Salmos: React.FC<T.SalmosProps> = () => {
   const [isFavorite, setIsFavorite] = useState(false)
@@ -71,7 +72,7 @@ const Salmos: React.FC<T.SalmosProps> = () => {
           colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
-            paddingHorizontal: RFPercentage(2.5),
+            paddingHorizontal: RFPercentage(2),
             paddingVertical: RFPercentage(3),
             paddingTop: RFPercentage(10)
           }}
@@ -96,6 +97,7 @@ const Salmos: React.FC<T.SalmosProps> = () => {
             </S.ButtonFavorite>
           </S.Header>
 
+            <ScrollView showsVerticalScrollIndicator={false}   contentContainerStyle={{ paddingBottom: 50 }}>
           <S.Container>
             <S.CardChapter onPress={() => navigator.navigate('Sl208')}>
               <S.Number>208</S.Number>
@@ -328,6 +330,7 @@ const Salmos: React.FC<T.SalmosProps> = () => {
               <S.Number>266</S.Number>
             </S.CardChapter>
           </S.Container>
+            </ScrollView>
         </LinearGradient>
       )}
     </>

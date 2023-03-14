@@ -759,7 +759,7 @@ import Apoc600 from '../screens/App/NewBooks/Apocalipse/Apoc600/apoc600.componen
 import Apoc601 from '../screens/App/NewBooks/Apocalipse/Apoc601/apoc601.component'
 import Apoc602 from '../screens/App/NewBooks/Apocalipse/Apoc602/apoc602.component'
 import Apoc603 from '../screens/App/NewBooks/Apocalipse/Apoc603/apoc603.component'
-import Apoc603 from '../screens/App/NewBooks/Apocalipse/Apoc603/apoc603.component'
+import Apoc604 from '../screens/App/NewBooks/Apocalipse/Apoc604/apoc604.component'
 import Apoc605 from '../screens/App/NewBooks/Apocalipse/Apoc605/apoc605.component'
 import Apoc606 from '../screens/App/NewBooks/Apocalipse/Apoc606/apoc606.component'
 import Apoc607 from '../screens/App/NewBooks/Apocalipse/Apoc607/apoc607.component'
@@ -1031,88 +1031,7 @@ export const StackAuth = () => {
       <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
       <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
       <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
-
-      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
-      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
-      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
-      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
-      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
-      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
-      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
-      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
-      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
-      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
-      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
-      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
-      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
-      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
-      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
-      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
-      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
-      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
-      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
-      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
-      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
-      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
-      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
-      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
-      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
-      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
-      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
-      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
-      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
-      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
-      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
-      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
-      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
-      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
-      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
-      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
-      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
-      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
-      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
-      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
-      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
-      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
-      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
-      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
-      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
-      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
-      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
-      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
-      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
-      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
-      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
-      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
-      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
-      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
-      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
-      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
-      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
-      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
-      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
-      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
-      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
-      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
-      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
-      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
-      <Stack.Screen name="SegundoSam192" component={SegundoSam192} />
-      <Stack.Screen name="SegundoSam193" component={SegundoSam193} />
-      <Stack.Screen name="SegundoSam194" component={SegundoSam194} />
-      <Stack.Screen name="SegundoSam195" component={SegundoSam195} />
-      <Stack.Screen name="SegundoSam196" component={SegundoSam196} />
-      <Stack.Screen name="SegundoSam197" component={SegundoSam197} />
-      <Stack.Screen name="SegundoSam198" component={SegundoSam198} />
-      <Stack.Screen name="SegundoSam199" component={SegundoSam199} />
-      <Stack.Screen name="SegundoSam200" component={SegundoSam200} />
-      <Stack.Screen name="SegundoSam201" component={SegundoSam201} />
-      <Stack.Screen name="SegundoSam202" component={SegundoSam202} />
-      <Stack.Screen name="SegundoSam203" component={SegundoSam203} />
-      <Stack.Screen name="SegundoSam204" component={SegundoSam204} />
-      <Stack.Screen name="SegundoSam205" component={SegundoSam205} />
-      <Stack.Screen name="SegundoSam206" component={SegundoSam206} />
-      <Stack.Screen name="SegundoSam207" component={SegundoSam207} />
-
+      
       <Stack.Screen name="Salmos" component={Salmos} />
       <Stack.Screen name="Sl208" component={Sl208} />
       <Stack.Screen name="Sl209" component={Sl209} />
@@ -1200,7 +1119,7 @@ export const StackAuth = () => {
       <Stack.Screen name="SegundoRe287" component={SegundoRe287} />
       <Stack.Screen name="SegundoRe288" component={SegundoRe288} />
 
-      <Stack.Screen name="Jo" component={Jo} />
+      <Stack.Screen name="Jó" component={Jo} />
       <Stack.Screen name="Jo289" component={Jo289} />
       <Stack.Screen name="Jo290" component={Jo290} />
       <Stack.Screen name="Jo291" component={Jo291} />
@@ -1213,7 +1132,7 @@ export const StackAuth = () => {
       <Stack.Screen name="Jo298" component={Jo298} />
       <Stack.Screen name="Jo299" component={Jo299} />
 
-      <Stack.Screen name="Proverbios" component={Proverbios} />
+      <Stack.Screen name="Provérbios" component={Proverbios} />
       <Stack.Screen name="Pv300" component={Pv300} />
       <Stack.Screen name="Pv301" component={Pv301} />
       <Stack.Screen name="Pv302" component={Pv302} />
@@ -1248,7 +1167,7 @@ export const StackAuth = () => {
       <Stack.Screen name="PrimeiroCr325" component={PrimeiroCr325} />
       <Stack.Screen name="PrimeiroCr326" component={PrimeiroCr326} />
 
-      <Stack.Screen name="Amos " component={Amos} />
+      <Stack.Screen name="Amós" component={Amos} />
       <Stack.Screen name="Am335" component={Am335} />
       <Stack.Screen name="Am336" component={Am336} />
       <Stack.Screen name="Am337" component={Am337} />
@@ -1266,7 +1185,7 @@ export const StackAuth = () => {
       <Stack.Screen name="Obadias" component={Obadias} />
       <Stack.Screen name="Oba338" component={Oba338} />
 
-      <Stack.Screen name="Oseias" component={Oseias}/>
+      <Stack.Screen name="Oséias" component={Oseias}/>
       <Stack.Screen name="Ose339" component={Ose339}/>
       <Stack.Screen name="Ose340" component={Ose340}/>
       <Stack.Screen name="Ose341" component={Ose341}/>
@@ -1283,7 +1202,7 @@ export const StackAuth = () => {
       <Stack.Screen name="Miq346" component={Miq346}/>
       <Stack.Screen name="Miq347" component={Miq347}/>
 
-      <Stack.Screen name="Isaias" component={Isaias}/>
+      <Stack.Screen name="Isaías" component={Isaias}/>
       <Stack.Screen name="Isa348" component={Isa348}/>
       <Stack.Screen name="Isa349" component={Isa349}/>
       <Stack.Screen name="Isa350" component={Isa350}/>
@@ -1335,16 +1254,16 @@ export const StackAuth = () => {
      <Stack.Screen name="Lam385" component={Lam385}/>
 
      <Stack.Screen name="Daniel" component={Daniel}/>
-     <Stack.Screen name="Dn386 " component={Dn386 }/>
-     <Stack.Screen name="Dn387 " component={Dn387 }/>
-     <Stack.Screen name="Dn388 " component={Dn388 }/>
-     <Stack.Screen name="Dn389 " component={Dn389 }/>
-     <Stack.Screen name="Dn390 " component={Dn390 }/>
-     <Stack.Screen name="Dn391 " component={Dn391 }/>
-     <Stack.Screen name="Dn392 " component={Dn392 }/>
-     <Stack.Screen name="Dn393 " component={Dn393 }/>
-     <Stack.Screen name="Dn394 " component={Dn394 }/>
-     <Stack.Screen name="Dn395 " component={Dn395 }/>
+     <Stack.Screen name="Dn386" component={Dn386 }/>
+     <Stack.Screen name="Dn387" component={Dn387 }/>
+     <Stack.Screen name="Dn388" component={Dn388 }/>
+     <Stack.Screen name="Dn389" component={Dn389 }/>
+     <Stack.Screen name="Dn390" component={Dn390 }/>
+     <Stack.Screen name="Dn391" component={Dn391 }/>
+     <Stack.Screen name="Dn392" component={Dn392 }/>
+     <Stack.Screen name="Dn393" component={Dn393 }/>
+     <Stack.Screen name="Dn394" component={Dn394 }/>
+     <Stack.Screen name="Dn395" component={Dn395 }/>
 
      <Stack.Screen name="Ezequiel" component={Ezequiel}/>
     <Stack.Screen name="Eze396" component={Eze396}/>
@@ -1483,7 +1402,7 @@ export const StackAuth = () => {
    <Stack.Screen name="PrimeiroCor502" component={ PrimeiroCor502}/>
    <Stack.Screen name="PrimeiroCor503" component={ PrimeiroCor503}/>
 
-    <Stack.Screen name="Segundo Conríntios" component={SegundoCorintios}/>
+    <Stack.Screen name="Segundo Coríntios" component={SegundoCorintios}/>
    <Stack.Screen name="SegundoCor504" component={SegundoCor504}/>
    <Stack.Screen name="SegundoCor505" component={SegundoCor505}/>
    <Stack.Screen name="SegundoCor506" component={SegundoCor506}/>
@@ -1518,9 +1437,9 @@ export const StackAuth = () => {
   <Stack.Screen name="PrimeiroTess524" component={PrimeiroTess524}/>
 
   <Stack.Screen name="Segundo Tessalonicenses" component={SegundoTessalonicenses}/>
-  <Stack.Screen name="SegundoTess525" component={PrimeiroTess525}/>
-  <Stack.Screen name="SegundoTess526" component={PrimeiroTess526}/>
-  <Stack.Screen name="SegundoTess527" component={PrimeiroTess527}/>
+  <Stack.Screen name="SegundoTess525" component={SegundoTess525}/>
+  <Stack.Screen name="SegundoTess526" component={SegundoTess526}/>
+  <Stack.Screen name="SegundoTess527" component={SegundoTess527}/>
 
 
 
@@ -1549,7 +1468,7 @@ export const StackAuth = () => {
 
 
 
-  <Stack.Screen name="Primeiro Pedro " component={PrimeiroPedro}/>
+  <Stack.Screen name="Primeiro Pedro" component={PrimeiroPedro}/>
   <Stack.Screen name="PrimeiroPed542" component={PrimeiroPed542}/>
   <Stack.Screen name="PrimeiroPed543" component={PrimeiroPed543}/>
   <Stack.Screen name="PrimeiroPed544" component={PrimeiroPed544}/>
@@ -1572,9 +1491,9 @@ export const StackAuth = () => {
  <Stack.Screen name="PrimeiroJo553" component={PrimeiroJo553}/>
 
  <Stack.Screen name="Segundo João" component={SegundoJoao}/>
- <Stack.Screen name="SegundoJo554 " component={SegundoJo554}/>
+ <Stack.Screen name="SegundoJo554" component={SegundoJo554}/>
 
- <Stack.Screen name="Terceiro João " component={TerceiroJoao}/>
+ <Stack.Screen name="Terceiro João" component={TerceiroJoao}/>
  <Stack.Screen name="TerceiroJo555" component={TerceiroJo555}/>
 
 
@@ -1632,7 +1551,7 @@ export const StackAuth = () => {
 <Stack.Screen name="Apoc601" component={Apoc601}/>
 <Stack.Screen name="Apoc602" component={Apoc602}/>
 <Stack.Screen name="Apoc603" component={Apoc603}/>
-<Stack.Screen name="Apoc603" component={Apoc603}/>
+<Stack.Screen name="Apoc604" component={Apoc604}/>
 <Stack.Screen name="Apoc605" component={Apoc605}/>
 <Stack.Screen name="Apoc606" component={Apoc606}/>
 <Stack.Screen name="Apoc607" component={Apoc607}/>

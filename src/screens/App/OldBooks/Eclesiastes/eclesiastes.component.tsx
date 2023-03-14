@@ -71,7 +71,7 @@ const Eclesiastes: React.FC<T.EclesiastesProps> = () => {
           colors={theme.colors.gradientBlueTwo}
           style={{
             flex: 1,
-            paddingHorizontal: RFPercentage(2.5),
+            paddingHorizontal: RFPercentage(2),
             paddingVertical: RFPercentage(3),
             paddingTop: RFPercentage(10)
           }}
@@ -121,9 +121,7 @@ const Eclesiastes: React.FC<T.EclesiastesProps> = () => {
               <S.Number>318</S.Number>
             </S.CardChapter>
 
-            <S.CardChapter onPress={() => navigator.navigate('Ec319')}>
-              <S.Number>319</S.Number>
-            </S.CardChapter>
+           
 
          
           </S.Container>
