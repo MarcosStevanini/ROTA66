@@ -48,7 +48,7 @@ margin-bottom:  ${RFPercentage(4)}px;
 export const BoxDeve = styled.View`
 flex-direction: row;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 
 width: ${RFPercentage(23)}px;
 height: ${RFPercentage(10)}px;

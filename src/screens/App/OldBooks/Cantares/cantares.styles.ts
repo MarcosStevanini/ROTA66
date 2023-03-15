@@ -1,59 +1,59 @@
 import styled from 'styled-components/native';
-import { RFValue,RFPercentage } from 'react-native-responsive-fontsize';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-flex:1;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:flex-start;
+//align-items: flex-start;
 `;
 
 export const ButtonBack = styled.TouchableOpacity`
 margin-bottom:${RFPercentage(4.2)}px;
 `;
 
-export const ContainerAudioItem = styled.TouchableOpacity`
-flex-direction: row;
-`;
+export const ButtonFavorite = styled.TouchableOpacity``;
 
-export const AudioItem = styled.View`
-width: 100%;
-height: ${RFPercentage(8)}px;
-background-color: ${({theme})=>theme.colors.gray300};
-opacity: 0.8;
-border-radius: 6px;
+export const Header = styled.View`
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-margin-bottom:${RFPercentage(2.4)}px;
+margin-bottom:${RFPercentage(4.3)}px;
 `;
 
-export const ContainerInf = styled.View`
-width:${RFPercentage(30)}px;
-height: ${RFPercentage(5)}px;
-justify-content: flex-start;
-flex-direction: row;
+export const TitleHeader = styled.Text`
+font-family: ${({theme})=>theme.fonts.medium};
+font-size: ${RFValue(22)}px;
+color: ${({theme})=>theme.colors.white200};
+font-size: ${RFValue(24)}px;
 `;
 
 export const Favorite = styled.TouchableOpacity`
-margin-right: ${RFPercentage(1.6)}px;
+width: ${RFPercentage(3)}px;
+height: ${RFPercentage(3)}px;
+border-radius: ${RFPercentage(3)}px;
+background-color: ${({theme})=>theme.colors.blue400};
+align-items: center;
+justify-content: center;
 `;
 
-export const TitleStudy = styled.Text`
-font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(13)}px;
-color: ${({theme})=>theme.colors.white200};
-margin-bottom: 4px;
+export const CardChapter = styled.TouchableOpacity`
+width: ${RFPercentage(7)}px;
+height: ${RFPercentage(7)}px;
+border-radius: ${RFPercentage(5)}px;
+background-color: ${({theme})=>theme.colors.blue300};
+align-items: center;
+justify-content: center;
+margin-left: ${RFPercentage(1.4)}px;
+margin-top: ${RFPercentage(0.8)}px;
+box-shadow: 2px 2px 0px  white;
 `;
 
-export const Title = styled.Text`
+export const Number = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(12)}px;
-color: ${({theme})=>theme.colors.white200};
-margin-bottom: 8px;
-`;
-
-export const Time = styled.Text`
-font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(11)}px;
-color: ${({theme})=>theme.colors.gray100};
+font-size: ${RFValue(14)}px;
+color:${({theme})=>theme.colors.white200};
+font-size: ${RFValue(18)}px;
 `;
 
 export const ContainerAnimationFavorite = styled.View`
@@ -63,9 +63,6 @@ justify-content: center;
 background-color: ${({theme})=>theme.colors.blue200};
 `;
 
-export const ConteinerText1 = styled.View``;
 
-export const ConteinerText2 = styled.View`
-width:${RFPercentage(25)}px;
-height: ${RFPercentage(15)}px;
-`;
+
+

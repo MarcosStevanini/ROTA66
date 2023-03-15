@@ -45,7 +45,7 @@ margin-bottom: 4px;
 
 export const Title = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(12)}px;
+font-size: ${RFValue(11)}px;
 color: ${({theme})=>theme.colors.white200};
 margin-bottom: 8px;
 `;

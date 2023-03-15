@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage} from 'react-native-responsive-fontsize'
+import { RFPercentage } from 'react-native-responsive-fontsize'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
 import { auth } from '../../../services/firebaseConfig'
@@ -11,7 +11,6 @@ import {
   Zocial,
   MaterialCommunityIcons
 } from '@expo/vector-icons'
-
 
 import * as S from './config.styles'
 import * as T from './config.types'
@@ -59,36 +58,37 @@ const Config: React.FC<T.ConfigProps> = () => {
         </S.Header>
 
         <S.TitleInf>Dados pessoais</S.TitleInf>
+        <S.ContainerButtons>
+          <S.ButtonName onPress={() => navigator.navigate('UpdateName')}>
+            <FontAwesome
+              name="pencil-square-o"
+              size={23}
+              color={theme.colors.gray300}
+              style={{ marginHorizontal: 16 }}
+            />
+            <S.Title>Alterar nome</S.Title>
+          </S.ButtonName>
 
-        <S.ButtonName onPress={() => navigator.navigate('UpdateName')} >
-          <FontAwesome
-            name="pencil-square-o"
-            size={23}
-            color={theme.colors.gray300}
-            style={{ marginHorizontal: 16 }}
-          />
-          <S.Title>Alterar nome</S.Title>
-        </S.ButtonName>
+          <S.ButtonEmail>
+            <Zocial
+              name="email"
+              size={24}
+              color={theme.colors.gray300}
+              style={{ marginHorizontal: 16 }}
+            />
+            <S.Title>{email}</S.Title>
+          </S.ButtonEmail>
 
-        <S.ButtonEmail>
-          <Zocial
-            name="email"
-            size={24}
-            color={theme.colors.gray300}
-            style={{ marginHorizontal: 16 }}
-          />
-          <S.Title>{email}</S.Title>
-        </S.ButtonEmail>
-
-        <S.ButtonPassword onPress={() => navigator.navigate('UpdateEmail')}>
-          <MaterialCommunityIcons
-            name="account-key"
-            size={24}
-            color={theme.colors.gray300}
-            style={{ marginHorizontal: 16 }}
-          />
-          <S.Title>Alterar senha</S.Title>
-        </S.ButtonPassword>
+          <S.ButtonPassword onPress={() => navigator.navigate('UpdateEmail')}>
+            <MaterialCommunityIcons
+              name="account-key"
+              size={24}
+              color={theme.colors.gray300}
+              style={{ marginHorizontal: 16 }}
+            />
+            <S.Title>Alterar senha</S.Title>
+          </S.ButtonPassword>
+        </S.ContainerButtons>
       </S.Container>
     </LinearGradient>
   )

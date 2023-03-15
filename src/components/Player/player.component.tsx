@@ -31,6 +31,8 @@ const Player: React.FC<T.PlayerProps> = ({
       if (!audioUrl) {
         return
       }
+     
+
       const { sound } = await Audio.Sound.createAsync(
         { uri: audioUrl },
         { shouldPlay: true }

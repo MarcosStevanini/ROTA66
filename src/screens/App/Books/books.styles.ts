@@ -35,7 +35,7 @@ margin-bottom: 64px;
 export const CardOption = styled.TouchableOpacity`
 padding: 13px 16px;
 width:${RFPercentage(21)}px;
-height:${RFPercentage(10)}px; ;
+height:${RFPercentage(10)}px; 
 background-color: ${({theme})=>theme.colors.white300};
 
 border-radius: 4px;
@@ -57,7 +57,7 @@ text-align: center;
 export const FavoritesHeader = styled.View`
 flex-direction: row;
 
-margin-bottom: 10px;
+margin-bottom: ${RFPercentage(0.5)}px; 
 align-items: center;
 
 `;
@@ -79,7 +79,7 @@ font-family: ${({theme})=>theme.fonts.regular};
 font-size: ${RFValue(12)}px;
 color: ${({theme})=>theme.colors.white400};
 
-margin-top: ${RFPercentage(1)}px;
+margin-top: ${RFPercentage(0.1)}px;
 
 
 `;

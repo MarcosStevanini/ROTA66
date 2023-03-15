@@ -4,7 +4,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 export const Container = styled.View`
 flex-direction: row;
 flex-wrap: wrap;
-justify-content:space-between;
+justify-content:flex-start;
 //align-items: flex-start;
 `;
 
@@ -37,7 +37,6 @@ align-items: center;
 justify-content: center;
 `;
 
-
 export const CardChapter = styled.TouchableOpacity`
 width: ${RFPercentage(7)}px;
 height: ${RFPercentage(7)}px;
@@ -45,7 +44,7 @@ border-radius: ${RFPercentage(5)}px;
 background-color: ${({theme})=>theme.colors.blue300};
 align-items: center;
 justify-content: center;
-margin-left: ${RFPercentage(0.6)}px;
+margin-left: ${RFPercentage(1.4)}px;
 margin-top: ${RFPercentage(0.8)}px;
 box-shadow: 2px 2px 0px  white;
 `;

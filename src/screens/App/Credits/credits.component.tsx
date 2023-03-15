@@ -97,22 +97,9 @@ const Credits: React.FC<T.CreditsProps> = () => {
             </S.BoxDeve>
           </TouchableOpacity>
         </S.ContainerDev>
-        <S.ContainerDev>
-          <TouchableOpacity
-            onPress={() => {
-              Linking.openURL('https://www.linkedin.com/in/annyconfessor/')
-            }}
-          >
-            <S.BoxDeve>
-              <S.ImgPeople source={ImgAnny} />
-              <S.ContentInf>
-                <S.Name>Anny Confessor</S.Name>
-                <S.Office>Desenvolvedor</S.Office>
-                <S.Office>Mobile</S.Office>
-              </S.ContentInf>
-            </S.BoxDeve>
-          </TouchableOpacity>
 
+        <S.ContainerDev>
+         
           <TouchableOpacity
             onPress={() => {
               Linking.openURL(

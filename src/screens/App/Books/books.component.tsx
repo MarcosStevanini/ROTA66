@@ -111,7 +111,7 @@ const Books: React.FC<T.BooksProps> = () => {
                   source={require('../../../assets/animationFavoriteScreen.json')}
                   autoPlay
                   loop
-                  style={{ width: 200 }}
+                  style={{ width: RFPercentage(23) }}
                 />
                 <S.TitleEmptyList>
                   Ops, você não tem nenhum Livro favoritado!

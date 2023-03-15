@@ -20,63 +20,47 @@ export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(24)}px;
 color: ${({theme})=>theme.colors.white100};
-
-
 margin-left:${RFPercentage(4.8)}px;
-
 `;
 
 export const TitleInf = styled.Text`
 font-family: ${({theme})=>theme.fonts.regular};
 font-size: ${RFValue(14)}px;
 color: ${({theme})=>theme.colors.white100};
-
-
 margin-bottom: ${RFPercentage(4)}px;;
 `;
 
+export const ContainerButtons = styled.View`
+align-items: center;
+`;
 
 export const ButtonName = styled.TouchableOpacity`
-width:${RFPercentage(43)}px;
+width:100%;
 height: ${RFPercentage(7)}px;
-
 flex-direction: row;
 align-items: center;
-
 border-radius: 4px;
-
 background-color: ${({theme})=>theme.colors.white100};
-
 margin-bottom: ${RFPercentage(4)}px;
 `;
 
 export const ButtonEmail = styled.View`
-width:${RFPercentage(43)}px;
+width:100%;
 height: ${RFPercentage(7)}px;
-
 flex-direction: row;
 align-items: center;
-
-
 border-radius: 4px;
-
 background-color: ${({theme})=>theme.colors.white100};
-
 margin-bottom: ${RFPercentage(4)}px;
 `;
 
 export const ButtonPassword = styled.TouchableOpacity`
-width:${RFPercentage(43)}px;
+width:100%;
 height: ${RFPercentage(7)}px;
-
 flex-direction: row;
 align-items: center;
-
-
 border-radius: 4px;
-
 background-color: ${({theme})=>theme.colors.white100};
-
 margin-bottom: ${RFPercentage(4)}px;
 `;
 
@@ -84,5 +68,5 @@ export const Title = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(14)}px;
 color: ${({theme})=>theme.colors.gray300};
-
 `;
+

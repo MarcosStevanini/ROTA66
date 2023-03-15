@@ -138,7 +138,7 @@ margin-left: 3px;
 export const ButtonPause = styled(Ionicons)`
 font-size: ${RFValue(40)}px;
 color: ${({theme})=>theme.colors.white100};
-margin-left: 3px;
+
 
 `;
 
