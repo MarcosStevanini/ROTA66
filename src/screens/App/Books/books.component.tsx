@@ -75,7 +75,7 @@ const Books: React.FC<T.BooksProps> = () => {
         </S.OptionsBooks>
 
         <S.FavoritesHeader>
-          <S.FavoritesTitle>Favoritos</S.FavoritesTitle>
+          <S.FavoritesTitle>Livros Favoritos</S.FavoritesTitle>
         </S.FavoritesHeader>
 
         <S.FavoritesList>

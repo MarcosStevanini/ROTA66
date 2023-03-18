@@ -25,7 +25,7 @@ export const TitleHeader = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
 font-size: ${RFValue(22)}px;
 color: ${({theme})=>theme.colors.white200};
-font-size: ${RFValue(24)}px;
+
 `;
 
 export const Favorite = styled.TouchableOpacity`

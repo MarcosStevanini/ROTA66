@@ -1,7 +1,7 @@
-import React,{useCallback,useState} from 'react'
+import React, { useCallback, useState } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
-import { useNavigation,useFocusEffect} from '@react-navigation/native'
+import { useNavigation, useFocusEffect } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
 import useHome from './home.hook'
 import Toast from 'react-native-toast-message'
@@ -12,35 +12,32 @@ import {
   MaterialCommunityIcons,
   AntDesign
 } from '@expo/vector-icons'
-import  Loading  from '../../../components/Loading/loading.component'
+import Loading from '../../../components/Loading/loading.component'
 
 import * as S from './home.styles'
 import * as T from './home.types'
 
-
 const Home: React.FC<T.HomeProps> = () => {
   const [isLoading, setIsLoading] = useState(false)
-  
+
   const auth = useHome()
   const userName = auth.users.name
 
   const navigator = useNavigation()
   const theme = useTheme()
 
-
   const updateHomeData = useCallback(() => {
     setIsLoading(true)
-     setTimeout(() => {
+    setTimeout(() => {
       setIsLoading(false)
     }, 100)
-  }, []);
+  }, [])
 
-useFocusEffect(updateHomeData);
+  useFocusEffect(updateHomeData)
 
-if (isLoading) {
-  return <Loading />
-}
-
+  if (isLoading) {
+    return <Loading />
+  }
 
   return (
     <LinearGradient
@@ -105,36 +102,36 @@ if (isLoading) {
 
           <S.ContainerCardsTheme>
             <S.CardsTheme background="#FFF066">
-              <S.TextCardsTheme>Dízimos e Ofertas</S.TextCardsTheme>
+              <S.TextCardsTheme>Leis</S.TextCardsTheme>
               {/* Icon */}
               <FontAwesome5 name="church" size={25} color="#101010" />
             </S.CardsTheme>
             <S.CardsTheme background="#5F78FF">
-              <S.TextCardsTheme>Gratidão e Felicidade</S.TextCardsTheme>
+              <S.TextCardsTheme>Históricos</S.TextCardsTheme>
               {/* Icon */}
               <FontAwesome5 name="praying-hands" size={25} color="black" />
             </S.CardsTheme>
           </S.ContainerCardsTheme>
           <S.ContainerCardsTheme>
             <S.CardsTheme background="#67FE7F">
-              <S.TextCardsTheme>Sobre a{'\n'}Família</S.TextCardsTheme>
+              <S.TextCardsTheme>Poéticos</S.TextCardsTheme>
               {/* Icon */}
               <MaterialIcons name="family-restroom" size={25} color="#101010" />
             </S.CardsTheme>
             <S.CardsTheme background="#FF9E57">
-              <S.TextCardsTheme>Palavras de Conforto</S.TextCardsTheme>
+              <S.TextCardsTheme>Proféticos</S.TextCardsTheme>
               {/* Icon */}
               <Entypo name="chat" size={25} color="#101010" />
             </S.CardsTheme>
           </S.ContainerCardsTheme>
           <S.ContainerCardsTheme>
             <S.CardsTheme background="#E1E1E1">
-              <S.TextCardsTheme>União e Casamento</S.TextCardsTheme>
+              <S.TextCardsTheme>Evangelhos de Atos</S.TextCardsTheme>
               {/* Icon */}
               <MaterialCommunityIcons name="church" size={25} color="#101010" />
             </S.CardsTheme>
             <S.CardsTheme background="#FF6464">
-              <S.TextCardsTheme>Sobre Cura{'\n'}e Vida</S.TextCardsTheme>
+              <S.TextCardsTheme>Cartas de Apocalispse</S.TextCardsTheme>
               {/* Icon */}
               <MaterialCommunityIcons
                 name="heart-pulse"

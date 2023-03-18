@@ -186,3 +186,8 @@ const Player: React.FC<T.PlayerProps> = ({
 }
 
 export default Player
+
+
+
+
+

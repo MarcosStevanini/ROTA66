@@ -124,7 +124,7 @@ const Favorite: React.FC<T.FavoriteProps> = () => {
           <AntDesign name="left" size={30} color={theme.colors.white300} />
         </S.ButtonBack>
 
-        <S.TitleHeader>Favoritos</S.TitleHeader>
+        <S.TitleHeader>Estudos Favoritos</S.TitleHeader>
 
         <FlatList
           data={favoriteAudio}

@@ -4,7 +4,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 export const Container = styled.View`
 flex-direction: row;
 flex-wrap: wrap;
-justify-content:flex-start;
+justify-content:center;
 //align-items: flex-start;
 `;
 
@@ -44,7 +44,7 @@ border-radius: ${RFPercentage(5)}px;
 background-color: ${({theme})=>theme.colors.blue300};
 align-items: center;
 justify-content: center;
-margin-left: ${RFPercentage(1.4)}px;
+margin-left: ${RFPercentage(0.8)}px;
 margin-top: ${RFPercentage(0.8)}px;
 box-shadow: 2px 2px 0px  white;
 `;
@@ -62,7 +62,5 @@ align-items: center;
 justify-content: center;
 background-color: ${({theme})=>theme.colors.blue200};
 `;
-
-
 
 

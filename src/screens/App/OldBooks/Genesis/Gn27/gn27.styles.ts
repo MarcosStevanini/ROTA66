@@ -66,6 +66,6 @@ background-color: ${({theme})=>theme.colors.blue200};
 export const ConteinerText1 = styled.View``;
 
 export const ConteinerText2 = styled.View`
-width:${RFPercentage(22)}px;
+width:${RFPercentage(25)}px;
 height: ${RFPercentage(15)}px;
 `;
