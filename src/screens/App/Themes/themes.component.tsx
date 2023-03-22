@@ -34,10 +34,10 @@ const Themes: React.FC<T.ThemesProps> = () => {
       <S.ButtonBack onPress={() => navigator.goBack()}>
         <AntDesign name="left" size={30} color={theme.colors.white300} />
       </S.ButtonBack>
-      <S.TitleHeader>Temas populares</S.TitleHeader>
+      <S.TitleHeader>Faça sua Doação</S.TitleHeader>
     </S.Header>
 
-    <S.TitleInf>Faça uma busca rápida e encontre o tema que está procurando.</S.TitleInf>
+    <S.TitleInf>Ajude-nos a levar a Palavra de Deus ás outras nações. Contribua para o ministério Rota 66.</S.TitleInf>
 
    
   </S.Container>

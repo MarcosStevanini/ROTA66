@@ -87,7 +87,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
               color={theme.colors.gray300}
               style={{ marginHorizontal: 16 }}
             />
-            <S.TitleTheme>Temas</S.TitleTheme>
+            <S.TitleTheme>Doações</S.TitleTheme>
           </S.ButtonTheme>
 
           <S.ButtonConfig onPress={() => navigator.navigate('Config')}>
