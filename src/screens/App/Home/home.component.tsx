@@ -126,7 +126,7 @@ const Home: React.FC<T.HomeProps> = () => {
           </S.ContainerCardsTheme>
           <S.ContainerCardsTheme>
             <S.CardsTheme background="#E1E1E1">
-              <S.TextCardsTheme>Evangelhos de Atos</S.TextCardsTheme>
+              <S.TextCardsTheme>Evangelhos{`\n`}de Atos</S.TextCardsTheme>
               {/* Icon */}
               <MaterialCommunityIcons name="church" size={25} color="#101010" />
             </S.CardsTheme>
