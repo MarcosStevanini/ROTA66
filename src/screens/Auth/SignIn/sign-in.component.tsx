@@ -2,7 +2,6 @@ import { useNavigation } from '@react-navigation/native'
 import React, { useState, useMemo } from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-
 import {
   TouchableWithoutFeedback,
   Keyboard,
@@ -12,19 +11,16 @@ import {
   TextProps
 } from 'react-native'
 import Toast from 'react-native-toast-message'
-
 import { AntDesign } from '@expo/vector-icons'
 import { SvgUri } from 'react-native-svg'
-
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
+import { useTheme } from 'styled-components'
+import DeviceInfo from 'react-native-device-info' 
+import * as AuthSession from 'expo-auth-session';
 
 import * as S from './sign-in.styles'
 import * as T from './sign-in.types'
-
-import { useTheme } from 'styled-components'
-
-import * as AuthSession from 'expo-auth-session';
 
 type AuthResponse = {
   params: {
@@ -81,6 +77,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
 
   const navigator = useNavigation()
   const theme = useTheme()
+  const isIOS = DeviceInfo.getSystemName() === 'iOS'
 
   if (error) {
     Toast.show({
@@ -114,24 +111,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
     })
   }
 
-  // useMemo(() => {
-  //   if (error) {
-  //     Toast.show({
-  //       type: 'error',
-  //       visibilityTime: 3000,
-  //       text1: 'Sua credencial está errada',
-  //       text2: 'Informe um e-mail e uma senha validos'
-  //     });
-  //   }
-  // }, [])
-  // if (loading) {
-  //   Toast.show({
-  //     type: 'info',
-  //     visibilityTime: 3000,
-  //     text1: 'entrando',
-  //   });
-  // }
-
+  
   const authGoogle = () => {
     Toast.show({
       type: 'info',
@@ -153,29 +133,46 @@ const SignIn: React.FC<T.SignInProps> = () => {
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
           <S.Container>
             <S.ContainerInput>
-              <S.CreateAccountSocial onPress={() => handleGoogleSignIn()
-              } >
-                <SvgUri
-                  style={{ position: 'absolute', left: 15 }}
-                  width="23px"
-                  height="23px"
-                  uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-                />
-                <S.CreateAccountTextSocial >
-                  Continue com Google
-                </S.CreateAccountTextSocial>
-              </S.CreateAccountSocial>
-              <S.CreateAccountSocial onPress={() => authGoogle()}>
-                <AntDesign
-                  style={{ color: '#000', position: 'absolute', left: 15 }}
-                  name="apple1"
-                  size={24}
-                  color="black"
-                />
-                <S.CreateAccountTextSocial>
-                  Continue com Apple
-                </S.CreateAccountTextSocial>
-              </S.CreateAccountSocial>
+            {isIOS && (
+                <>
+                  <S.CreateAccountSocial onPress={() => {}}>
+                    <SvgUri
+                      style={{ position: 'absolute', left: 15 }}
+                      width="23px"
+                      height="23px"
+                      uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                    />
+                    <S.CreateAccountTextSocial>
+                      Continue com Google
+                    </S.CreateAccountTextSocial>
+                  </S.CreateAccountSocial>
+                  <S.CreateAccountSocial onPress={() => authGoogle()}>
+                    <AntDesign
+                      style={{ color: '#000', position: 'absolute', left: 15 }}
+                      name="apple1"
+                      size={24}
+                      color="black"
+                    />
+                    <S.CreateAccountTextSocial>
+                      Continue com Apple
+                    </S.CreateAccountTextSocial>
+                  </S.CreateAccountSocial>
+                </>
+              )}
+
+              {!isIOS && (
+                <S.CreateAccountSocial onPress={() => {handleGoogleSignIn}}>
+                  <SvgUri
+                    style={{ position: 'absolute', left: 15 }}
+                    width="23px"
+                    height="23px"
+                    uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                  />
+                  <S.CreateAccountTextSocial>
+                    Continue com Google
+                  </S.CreateAccountTextSocial>
+                </S.CreateAccountSocial>
+              )}
               <S.TextOr>ou</S.TextOr>
               <S.Input
                 placeholder="E-mail"

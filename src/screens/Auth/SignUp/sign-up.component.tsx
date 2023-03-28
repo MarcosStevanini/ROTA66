@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-
 import { SvgUri } from 'react-native-svg'
 import { AntDesign } from '@expo/vector-icons'
-
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
-
+import DeviceInfo from 'react-native-device-info' 
 import { TouchableWithoutFeedback, Keyboard } from 'react-native'
 
 import Toast from 'react-native-toast-message'
@@ -31,6 +29,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
 
   const navigator = useNavigation()
   const theme = useTheme()
+  const isIOS = DeviceInfo.getSystemName() === 'iOS'
 
   if (error) {
     if (error.code === 'auth/email-already-in-use') {
@@ -76,28 +75,46 @@ const SignUp: React.FC<T.SignUpProps> = () => {
       >
         <S.Container>
           <S.ContainerInput>
-            <S.CreateAccountSocial>
-              <SvgUri
-                style={{ position: 'absolute', left: 15 }}
-                width="23px"
-                height="23px"
-                uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-              />
-              <S.CreateAccountTextSocial>
-                Continue com Google
-              </S.CreateAccountTextSocial>
-            </S.CreateAccountSocial>
-            <S.CreateAccountSocial>
-              <AntDesign
-                style={{ color: '#000', position: 'absolute', left: 15 }}
-                name="apple1"
-                size={24}
-                color="black"
-              />
-              <S.CreateAccountTextSocial>
-                Continue com Apple
-              </S.CreateAccountTextSocial>
-            </S.CreateAccountSocial>
+          {isIOS && (
+                <>
+                  <S.CreateAccountSocial onPress={() => {}}>
+                    <SvgUri
+                      style={{ position: 'absolute', left: 15 }}
+                      width="23px"
+                      height="23px"
+                      uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                    />
+                    <S.CreateAccountTextSocial>
+                      Continue com Google
+                    </S.CreateAccountTextSocial>
+                  </S.CreateAccountSocial>
+                  <S.CreateAccountSocial onPress={() => {}}>
+                    <AntDesign
+                      style={{ color: '#000', position: 'absolute', left: 15 }}
+                      name="apple1"
+                      size={24}
+                      color="black"
+                    />
+                    <S.CreateAccountTextSocial>
+                      Continue com Apple
+                    </S.CreateAccountTextSocial>
+                  </S.CreateAccountSocial>
+                </>
+              )}
+
+              {!isIOS && (
+                <S.CreateAccountSocial onPress={() => {}}>
+                  <SvgUri
+                    style={{ position: 'absolute', left: 15 }}
+                    width="23px"
+                    height="23px"
+                    uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                  />
+                  <S.CreateAccountTextSocial>
+                    Continue com Google
+                  </S.CreateAccountTextSocial>
+                </S.CreateAccountSocial>
+              )}
             <S.TextOr>ou</S.TextOr>
             <S.Input
               keyboardType="email-address"
