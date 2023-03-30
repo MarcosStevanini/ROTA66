@@ -16,59 +16,33 @@ import { SvgUri } from 'react-native-svg'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
 import { useTheme } from 'styled-components'
-import DeviceInfo from 'react-native-device-info' 
-import * as AuthSession from 'expo-auth-session';
+import DeviceInfo from 'react-native-device-info'
+
+import { GoogleSignin } from '@react-native-google-signin/google-signin'
+import Auth from '@react-native-firebase/auth'
 
 import * as S from './sign-in.styles'
 import * as T from './sign-in.types'
 
 type AuthResponse = {
   params: {
-    access_token: string;
-  };
-  type: string;
+    access_token: string
+  }
+  type: string
 }
 
 export type UserProps = {
-  name: string;
-  email: string;
-  picture: string;
+  name: string
+  email: string
+  picture: string
 }
 
 type Props = {
-  user: UserProps;
+  user: UserProps
 }
 
 const SignIn: React.FC<T.SignInProps> = () => {
-  // const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth)
-  const [userGoogle, setUserGoogle] = useState<UserProps>({} as UserProps);
-
-  async function handleGoogleSignIn() {
-    try {
-      const CLIENT_ID = "514784960772-bc6p7upmcc9bllhlsbkqci3150lvdmsf.apps.googleusercontent.com";
-      const REDIRECT_URI = "https://auth.expo.io/@andersonbarros123/Rota66";
-      const SCOPE = encodeURI("profile email"); // encodeURI serve para decodificar na linguagem que o servidor entenda.
-      const RESPONSE_TYPE = "token"; // token do usuários
-      const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=${RESPONSE_TYPE}&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}`;
-
-      // o fluxo de autenticação sera iniciado pelo start async
-      const { type, params } = await AuthSession.startAsync({ authUrl }) as AuthResponse;
-      //  console.log(type, params, user);
-
-      if (type === 'success') {
-        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
-        const user = await response.json();
-        console.log(user);
-        setUserGoogle(user);
-        // navigator.navigate('CreateProfile');
-        navigator.navigate('Books')
-      }
-
-
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const [userGoogle, setUserGoogle] = useState<UserProps>({} as UserProps)
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth)
@@ -111,7 +85,6 @@ const SignIn: React.FC<T.SignInProps> = () => {
     })
   }
 
-  
   const authGoogle = () => {
     Toast.show({
       type: 'info',
@@ -119,6 +92,18 @@ const SignIn: React.FC<T.SignInProps> = () => {
       text1: 'Funcionalidade inativa',
       text2: 'Estamos em constante evolução'
     })
+  }
+
+  GoogleSignin.configure({
+    webClientId:
+      '355377107221-o0tksbtvhqh3087badjt9hrcbledldtj.apps.googleusercontent.com'
+  })
+
+  async function onGoogleButtonPress() {
+      await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true })
+    const { idToken } = await GoogleSignin.signIn()
+    const googleCredential = Auth.GoogleAuthProvider.credential(idToken)
+    return Auth().signInWithCredential(googleCredential)
   }
 
   return (
@@ -133,9 +118,13 @@ const SignIn: React.FC<T.SignInProps> = () => {
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
           <S.Container>
             <S.ContainerInput>
-            {isIOS && (
+              {isIOS && (
                 <>
-                  <S.CreateAccountSocial onPress={() => {}}>
+                  <S.CreateAccountSocial
+                    onPress={() => {
+                      onGoogleButtonPress
+                    }}
+                  >
                     <SvgUri
                       style={{ position: 'absolute', left: 15 }}
                       width="23px"
@@ -161,7 +150,9 @@ const SignIn: React.FC<T.SignInProps> = () => {
               )}
 
               {!isIOS && (
-                <S.CreateAccountSocial onPress={() => {handleGoogleSignIn}}>
+                <S.CreateAccountSocial
+                  onPress={ onGoogleButtonPress}
+                >
                   <SvgUri
                     style={{ position: 'absolute', left: 15 }}
                     width="23px"

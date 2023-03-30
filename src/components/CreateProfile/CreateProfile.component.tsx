@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components'
 import { useUpdateProfile, useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from '../../services/firebaseConfig'
-import {
-  TouchableWithoutFeedback,
-  Keyboard,
-} from 'react-native'
+import Auth from '@react-native-firebase/auth'
+import { TouchableWithoutFeedback, Keyboard } from 'react-native'
 
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
 import Toast from 'react-native-toast-message'
-
 
 import * as S from './createProfile.styles'
 import * as T from './createProfile.types'
@@ -22,12 +19,21 @@ const Profile: React.FC<T.ProfileProps> = () => {
   // const [photoURL, setPhotoURL] = useState('')
   const [user] = useAuthState(auth)
   const [updateProfile, updating, error] = useUpdateProfile(auth)
+  const [userSocial, setUserSocial] = useState()
 
-  
+  function onAuthStateChanged(user) {
+    setUserSocial(user)
+  }
+
+  useEffect(() => {
+    const subscriber = Auth().onAuthStateChanged(onAuthStateChanged)
+    return subscriber
+  }, [])
+
   const navigator = useNavigation()
   const theme = useTheme()
 
-  if (user?.displayName) navigator.navigate('TabNavigation')
+  if (user?.displayName || userSocial) navigator.navigate('TabNavigation')
 
   if (error) {
     Toast.show({
@@ -79,7 +85,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
           <S.Button
             onPress={async () => {
               const update = {
-                displayName: name,
+                displayName: name
                 // phoneNumber: phone,
                 //photoURL: 'https://i.pravatar.cc/150'
               }

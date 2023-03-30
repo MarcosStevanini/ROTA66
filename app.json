@@ -17,9 +17,11 @@
       "**/*"
     ],
     "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./android/app/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/logo.png",
         "backgroundColor": "#132440"
@@ -28,6 +30,7 @@
     },
     "web": {
       "favicon": "./src/assets/logo.png"
-    }
+    },
+    "plugins": ["@react-native-google-signin/google-signin"]
   }
 }

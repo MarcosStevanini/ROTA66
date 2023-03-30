@@ -8,8 +8,8 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
 import DeviceInfo from 'react-native-device-info' 
 import { TouchableWithoutFeedback, Keyboard } from 'react-native'
-
 import Toast from 'react-native-toast-message'
+
 
 import * as S from './sign-up.styles'
 import * as T from './sign-up.types'
@@ -64,6 +64,9 @@ const SignUp: React.FC<T.SignUpProps> = () => {
     createUserWithEmailAndPassword(email, password)
   }
 
+ 
+
+
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <LinearGradient
@@ -75,48 +78,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
       >
         <S.Container>
           <S.ContainerInput>
-          {isIOS && (
-                <>
-                  <S.CreateAccountSocial onPress={() => {}}>
-                    <SvgUri
-                      style={{ position: 'absolute', left: 15 }}
-                      width="23px"
-                      height="23px"
-                      uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-                    />
-                    <S.CreateAccountTextSocial>
-                      Continue com Google
-                    </S.CreateAccountTextSocial>
-                  </S.CreateAccountSocial>
-                  <S.CreateAccountSocial onPress={() => {}}>
-                    <AntDesign
-                      style={{ color: '#000', position: 'absolute', left: 15 }}
-                      name="apple1"
-                      size={24}
-                      color="black"
-                    />
-                    <S.CreateAccountTextSocial>
-                      Continue com Apple
-                    </S.CreateAccountTextSocial>
-                  </S.CreateAccountSocial>
-                </>
-              )}
-
-              {!isIOS && (
-                <S.CreateAccountSocial onPress={() => {}}>
-                  <SvgUri
-                    style={{ position: 'absolute', left: 15 }}
-                    width="23px"
-                    height="23px"
-                    uri="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-                  />
-                  <S.CreateAccountTextSocial>
-                    Continue com Google
-                  </S.CreateAccountTextSocial>
-                </S.CreateAccountSocial>
-              )}
-            <S.TextOr>ou</S.TextOr>
-            <S.Input
+             <S.Input
               keyboardType="email-address"
               placeholder="E-mail"
               placeholderTextColor={theme.colors.white400}
