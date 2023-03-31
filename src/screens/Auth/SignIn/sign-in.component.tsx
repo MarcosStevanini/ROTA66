@@ -17,9 +17,9 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
 import { useTheme } from 'styled-components'
 import DeviceInfo from 'react-native-device-info'
-
 import { GoogleSignin } from '@react-native-google-signin/google-signin'
 import Auth from '@react-native-firebase/auth'
+import LogoRota from '../../../assets/logo-rota.svg'
 
 import * as S from './sign-in.styles'
 import * as T from './sign-in.types'
@@ -85,22 +85,13 @@ const SignIn: React.FC<T.SignInProps> = () => {
     })
   }
 
-  const authGoogle = () => {
-    Toast.show({
-      type: 'info',
-      visibilityTime: 3000,
-      text1: 'Funcionalidade inativa',
-      text2: 'Estamos em constante evolução'
-    })
-  }
-
   GoogleSignin.configure({
     webClientId:
       '355377107221-o0tksbtvhqh3087badjt9hrcbledldtj.apps.googleusercontent.com'
   })
 
   async function onGoogleButtonPress() {
-      await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true })
+    await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true })
     const { idToken } = await GoogleSignin.signIn()
     const googleCredential = Auth.GoogleAuthProvider.credential(idToken)
     return Auth().signInWithCredential(googleCredential)
@@ -112,13 +103,18 @@ const SignIn: React.FC<T.SignInProps> = () => {
         colors={theme.colors.gradientBlueOne}
         style={{
           flex: 1,
-          paddingTop: RFPercentage(10)
+          paddingTop: RFPercentage(5)
         }}
       >
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={'padding'}>
           <S.Container>
             <S.ContainerInput>
-              {isIOS && (
+              <S.ContainerLogo>
+                <LogoRota width={150} height={150} />
+              </S.ContainerLogo>
+              {/*          
+                      
+             {isIOS && (
                 <>
                   <S.CreateAccountSocial
                     onPress={() => {
@@ -164,7 +160,7 @@ const SignIn: React.FC<T.SignInProps> = () => {
                   </S.CreateAccountTextSocial>
                 </S.CreateAccountSocial>
               )}
-              <S.TextOr>ou</S.TextOr>
+              <S.TextOr>ou</S.TextOr>*/}
               <S.Input
                 placeholder="E-mail"
                 keyboardType="email-address"

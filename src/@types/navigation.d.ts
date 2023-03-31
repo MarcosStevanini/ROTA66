@@ -759,7 +759,12 @@ export declare global{
         Apoc612:undefined;
         Apoc613:undefined;
  
-              
+        Leis:undefined;
+        Historicos:undefined;
+        Poeticos:undefined;
+        Profeticos:undefined;
+        EvangelhoAtos:undefined;
+        CartasApocalipse:undefined;
     }
   }
 }

@@ -7,6 +7,11 @@ export const Container = styled.View`
     
 `;
 
+export const ContainerLogo = styled.View`
+    align-items: center;
+     margin-bottom: ${RFPercentage(1)}px;
+`;
+
 export const TextButton = styled.Text`
     font-family: ${({theme})=>theme.fonts.medium};  
     color: ${({theme})=>theme.colors.white100};

@@ -104,7 +104,7 @@ export const CardsTheme = styled.View<backgroundCards>`
 `;
 
 export const TextCardsTheme = styled.Text`
-  font-family: ${({theme})=>theme.fonts.medium};
+  font-family: ${({theme})=>theme.fonts.bold};
   color: ${({theme})=>theme.colors.gray500};
   font-size: ${RFValue(14)}px;
 

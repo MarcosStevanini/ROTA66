@@ -6,6 +6,11 @@ export const Container = styled.View`
     align-items: center;
 `;
 
+export const ContainerLogo = styled.View`
+    align-items: center;
+      margin-bottom: ${RFPercentage(7)}px;
+`;
+
 export const TextButton = styled.Text`
     font-family: ${({theme})=>theme.fonts.medium};
     font-size:  ${RFValue(17)}px;

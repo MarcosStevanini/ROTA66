@@ -3,7 +3,6 @@ import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components'
 import { useUpdateProfile, useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from '../../services/firebaseConfig'
-import Auth from '@react-native-firebase/auth'
 import { TouchableWithoutFeedback, Keyboard } from 'react-native'
 
 import { LinearGradient } from 'expo-linear-gradient'
@@ -19,21 +18,13 @@ const Profile: React.FC<T.ProfileProps> = () => {
   // const [photoURL, setPhotoURL] = useState('')
   const [user] = useAuthState(auth)
   const [updateProfile, updating, error] = useUpdateProfile(auth)
-  const [userSocial, setUserSocial] = useState()
 
-  function onAuthStateChanged(user) {
-    setUserSocial(user)
-  }
-
-  useEffect(() => {
-    const subscriber = Auth().onAuthStateChanged(onAuthStateChanged)
-    return subscriber
-  }, [])
+  
 
   const navigator = useNavigation()
   const theme = useTheme()
 
-  if (user?.displayName || userSocial) navigator.navigate('TabNavigation')
+  if (user?.displayName ) navigator.navigate('TabNavigation')
 
   if (error) {
     Toast.show({

@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react'
+import { TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RFPercentage } from 'react-native-responsive-fontsize'
 import { useNavigation, useFocusEffect } from '@react-navigation/native'
@@ -101,44 +102,69 @@ const Home: React.FC<T.HomeProps> = () => {
           <S.TextTheme>Encontre seu tema favorito</S.TextTheme>
 
           <S.ContainerCardsTheme>
-            <S.CardsTheme background="#FFF066">
-              <S.TextCardsTheme>Leis</S.TextCardsTheme>
-              {/* Icon */}
-              <FontAwesome5 name="church" size={25} color="#101010" />
-            </S.CardsTheme>
-            <S.CardsTheme background="#5F78FF">
-              <S.TextCardsTheme>Históricos</S.TextCardsTheme>
-              {/* Icon */}
-              <FontAwesome5 name="praying-hands" size={25} color="black" />
-            </S.CardsTheme>
+            <TouchableOpacity onPress={() => navigator.navigate('Leis')}>
+              <S.CardsTheme background="#FFF066">
+                <S.TextCardsTheme>Leis</S.TextCardsTheme>
+                {/* Icon */}
+                <FontAwesome5 name="church" size={25} color="#101010" />
+              </S.CardsTheme>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigator.navigate('Historicos')}>
+              <S.CardsTheme background="#5F78FF">
+                <S.TextCardsTheme>Históricos</S.TextCardsTheme>
+                {/* Icon */}
+                <FontAwesome5 name="praying-hands" size={25} color="black" />
+              </S.CardsTheme>
+            </TouchableOpacity>
+          </S.ContainerCardsTheme>
+
+          <S.ContainerCardsTheme>
+            <TouchableOpacity onPress={() => navigator.navigate('Poeticos')}>
+              <S.CardsTheme background="#67FE7F">
+                <S.TextCardsTheme>Poéticos</S.TextCardsTheme>
+                {/* Icon */}
+                <MaterialIcons
+                  name="family-restroom"
+                  size={25}
+                  color="#101010"
+                />
+              </S.CardsTheme>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigator.navigate('Profeticos')}>
+              <S.CardsTheme background="#FF9E57">
+                <S.TextCardsTheme>Proféticos</S.TextCardsTheme>
+                {/* Icon */}
+                <Entypo name="chat" size={25} color="#101010" />
+              </S.CardsTheme>
+            </TouchableOpacity>
           </S.ContainerCardsTheme>
           <S.ContainerCardsTheme>
-            <S.CardsTheme background="#67FE7F">
-              <S.TextCardsTheme>Poéticos</S.TextCardsTheme>
-              {/* Icon */}
-              <MaterialIcons name="family-restroom" size={25} color="#101010" />
-            </S.CardsTheme>
-            <S.CardsTheme background="#FF9E57">
-              <S.TextCardsTheme>Proféticos</S.TextCardsTheme>
-              {/* Icon */}
-              <Entypo name="chat" size={25} color="#101010" />
-            </S.CardsTheme>
-          </S.ContainerCardsTheme>
-          <S.ContainerCardsTheme>
-            <S.CardsTheme background="#E1E1E1">
-              <S.TextCardsTheme>Evangelhos{'\n'}de Atos</S.TextCardsTheme>
-              {/* Icon */}
-              <MaterialCommunityIcons name="church" size={25} color="#101010" />
-            </S.CardsTheme>
-            <S.CardsTheme background="#FF6464">
-              <S.TextCardsTheme>Cartas de Apocalispse</S.TextCardsTheme>
-              {/* Icon */}
-              <MaterialCommunityIcons
-                name="heart-pulse"
-                size={25}
-                color="#101010"
-              />
-            </S.CardsTheme>
+            <TouchableOpacity
+              onPress={() => navigator.navigate('EvangelhoAtos')}
+            >
+              <S.CardsTheme background="#E1E1E1">
+                <S.TextCardsTheme>Evangelhos{'\n'}de Atos</S.TextCardsTheme>
+                {/* Icon */}
+                <MaterialCommunityIcons
+                  name="church"
+                  size={25}
+                  color="#101010"
+                />
+              </S.CardsTheme>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigator.navigate('CartasApocalipse')}
+            >
+              <S.CardsTheme background="#FF6464">
+                <S.TextCardsTheme>Cartas de Apocalipse</S.TextCardsTheme>
+                {/* Icon */}
+                <MaterialCommunityIcons
+                  name="heart-pulse"
+                  size={25}
+                  color="#101010"
+                />
+              </S.CardsTheme>
+            </TouchableOpacity>
           </S.ContainerCardsTheme>
         </S.ContainerTheme>
       </S.ContainerExplore>

@@ -1,23 +1,21 @@
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-import { SvgUri } from 'react-native-svg'
-import { AntDesign } from '@expo/vector-icons'
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { RFPercentage } from 'react-native-responsive-fontsize'
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile
+} from 'react-firebase-hooks/auth'
 import { auth } from '../../../services/firebaseConfig'
-import DeviceInfo from 'react-native-device-info' 
 import { TouchableWithoutFeedback, Keyboard } from 'react-native'
 import Toast from 'react-native-toast-message'
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { StackAuth } from '../../../routes/stack.auth'
+import { useTheme } from 'styled-components'
+import LogoRota from '../../../assets/logo-rota.svg'
 
 import * as S from './sign-up.styles'
 import * as T from './sign-up.types'
-
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { StackAuth } from '../../../routes/stack.auth'
-
-import { useTheme } from 'styled-components'
 
 const SignUp: React.FC<T.SignUpProps> = () => {
   const [email, setEmail] = useState('')
@@ -29,7 +27,6 @@ const SignUp: React.FC<T.SignUpProps> = () => {
 
   const navigator = useNavigation()
   const theme = useTheme()
-  const isIOS = DeviceInfo.getSystemName() === 'iOS'
 
   if (error) {
     if (error.code === 'auth/email-already-in-use') {
@@ -64,9 +61,6 @@ const SignUp: React.FC<T.SignUpProps> = () => {
     createUserWithEmailAndPassword(email, password)
   }
 
- 
-
-
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <LinearGradient
@@ -77,14 +71,17 @@ const SignUp: React.FC<T.SignUpProps> = () => {
         }}
       >
         <S.Container>
+          <S.ContainerLogo>
+            <LogoRota width={150} height={150} />
+          </S.ContainerLogo>
           <S.ContainerInput>
-             <S.Input
+            <S.Input
               keyboardType="email-address"
               placeholder="E-mail"
               placeholderTextColor={theme.colors.white400}
               value={email}
               onChangeText={e => setEmail(e)}
-              style={{fontSize:16}}
+              style={{ fontSize: 16 }}
             />
             <S.Input
               secureTextEntry={true}
@@ -93,7 +90,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               placeholderTextColor={theme.colors.white400}
               value={password}
               onChangeText={e => setPassword(e)}
-              style={{fontSize:16}}
+              style={{ fontSize: 16 }}
             />
             <S.Input
               secureTextEntry={true}
@@ -102,7 +99,7 @@ const SignUp: React.FC<T.SignUpProps> = () => {
               placeholderTextColor={theme.colors.white400}
               value={confirmPassword}
               onChangeText={e => setconfirmPassword(e)}
-              style={{fontSize:16}}
+              style={{ fontSize: 16 }}
             />
 
             <S.ButtonInput onPress={() => createUser()}>
