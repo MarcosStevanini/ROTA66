@@ -55,7 +55,7 @@ import Credits from '../screens/App/Credits/credits.component'
 import Config from '../screens/App/Config/config.component'
 import UpdateName from '../components/UpdateName/update-name.component'
 import UpdateEmail from '../components/UpdateEmail/update-email.component'
-import Themes from '../screens/App/Themes/themes.component'
+import Doacao from '../screens/App/Doacao/doacao.component'
 
 import Exodo from '../screens/App/OldBooks/Exodos/exodo.component'
 import Ex43 from '../screens/App/OldBooks/Exodos/Ex43/ex43.component'
@@ -832,7 +832,7 @@ export const StackAuth = ({ userSocial }: any) => {
       <Stack.Screen name="Credits" component={Credits} />
       <Stack.Screen name="UpdateName" component={UpdateName} />
       <Stack.Screen name="UpdateEmail" component={UpdateEmail} />
-      <Stack.Screen name="Themes" component={Themes} />
+      <Stack.Screen name="Doacao" component={Doacao} />
 
       <Stack.Screen name="Leis" component={Leis} />
       <Stack.Screen name="Historicos" component={Historicos} />

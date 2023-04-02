@@ -8,10 +8,10 @@ import { FlatList, Image } from 'react-native'
 import { Feather, AntDesign } from '@expo/vector-icons'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import LottieView from 'lottie-react-native'
-import  Loading  from '../../../../components/Loading/loading.component'
+import Loading from '../../../../components/Loading/loading.component'
 
-import * as S from './hist.styles';
-import * as T from './hist.types';
+import * as S from './hist.styles'
+import * as T from './hist.types'
 
 const Hist: React.FC<T.HistProps> = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -114,7 +114,7 @@ const Hist: React.FC<T.HistProps> = () => {
   if (isLoading) {
     return <Loading />
   }
-  
+
   return (
     <S.Container>
       {animationDuration ? (
@@ -123,7 +123,7 @@ const Hist: React.FC<T.HistProps> = () => {
             source={require('../../../../assets/ok.json')}
             autoPlay
             loop
-            style={{ width: 500}}
+            style={{ width: 500 }}
             duration={animationDuration}
           />
         </S.ContainerAnimationFavorite>
@@ -197,5 +197,4 @@ const Hist: React.FC<T.HistProps> = () => {
   )
 }
 
-
-export default Hist;
+export default Hist

@@ -31,7 +31,7 @@ const EvagAtos: React.FC<T.EvagAtosProps> = () => {
 
     const subscribe = firestore()
       .collection<T.EvagAtosProps>('audios')
-      .where('tema', '==', 'Evangelhos de Atos')
+      .where('tema', '==', 'Evangelhos')
       .onSnapshot(snapshot => {
         const data = snapshot.docs.map(doc => {
           const {

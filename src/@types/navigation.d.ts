@@ -59,7 +59,7 @@ export declare global{
         Credits:undefined;
         UpdateName:undefined;
         UpdateEmail:undefined;
-        Themes:undefined;
+        Doacao:undefined;
         Exodo:undefined;
         Ex43:undefined;
         Ex44:undefined;

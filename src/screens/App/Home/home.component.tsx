@@ -143,7 +143,7 @@ const Home: React.FC<T.HomeProps> = () => {
               onPress={() => navigator.navigate('EvangelhoAtos')}
             >
               <S.CardsTheme background="#E1E1E1">
-                <S.TextCardsTheme>Evangelhos{'\n'}de Atos</S.TextCardsTheme>
+                <S.TextCardsTheme>Evangelhos{'\n'}e Atos</S.TextCardsTheme>
                 {/* Icon */}
                 <MaterialCommunityIcons
                   name="church"
@@ -156,7 +156,7 @@ const Home: React.FC<T.HomeProps> = () => {
               onPress={() => navigator.navigate('CartasApocalipse')}
             >
               <S.CardsTheme background="#FF6464">
-                <S.TextCardsTheme>Cartas de Apocalipse</S.TextCardsTheme>
+                <S.TextCardsTheme>Cartas e Apocalipse</S.TextCardsTheme>
                 {/* Icon */}
                 <MaterialCommunityIcons
                   name="heart-pulse"

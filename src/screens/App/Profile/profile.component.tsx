@@ -80,7 +80,7 @@ const Profile: React.FC<T.ProfileProps> = () => {
             />
           </S.ImageUser>
 
-          <S.ButtonTheme onPress={() => navigator.navigate('Themes')}>
+          <S.ButtonTheme onPress={() => navigator.navigate('Doacao')}>
             <Ionicons
               name="bookmark"
               size={24}

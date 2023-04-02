@@ -15,14 +15,14 @@ flex-direction: row;
 
 export const AudioItem = styled.View`
 width: 100%;
-height: ${RFPercentage(9)}px;
+height: ${RFPercentage(10)}px;
 background-color: ${({theme})=>theme.colors.gray300};
 opacity: 0.8;
 border-radius: 6px;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-margin-bottom:${RFPercentage(2.4)}px;
+margin-bottom:${RFPercentage(1.5)}px;
 `;
 
 export const ContainerInf = styled.View`
@@ -45,7 +45,7 @@ margin-bottom: 4px;
 
 export const Title = styled.Text`
 font-family: ${({theme})=>theme.fonts.medium};
-font-size: ${RFValue(12)}px;
+font-size: ${RFValue(10)}px;
 color: ${({theme})=>theme.colors.white200};
 margin-bottom: 8px;
 `;
@@ -66,6 +66,6 @@ background-color: ${({theme})=>theme.colors.blue200};
 export const ConteinerText1 = styled.View``;
 
 export const ConteinerText2 = styled.View`
-width:${RFPercentage(24)}px;
+width:${RFPercentage(23)}px;
 height: ${RFPercentage(15)}px;
 `;

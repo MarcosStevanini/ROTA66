@@ -31,7 +31,7 @@ const CartApc: React.FC<T.CartApcProps> = () => {
 
     const subscribe = firestore()
       .collection<T.CartApcProps>('audios')
-      .where('tema', '==', 'Cartas de Apocalipse')
+      .where('tema', '==', 'Cartas')
       .onSnapshot(snapshot => {
         const data = snapshot.docs.map(doc => {
           const {
