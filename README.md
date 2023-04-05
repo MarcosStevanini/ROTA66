@@ -41,7 +41,7 @@ Clone this project and start with Expo:
   npm install
   expo run:androind
   or
-   expo run:ios
+  expo run:ios
 ```
 Start App with run-android
 ```jsx
