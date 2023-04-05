@@ -40,6 +40,8 @@ Clone this project and start with Expo:
   git clone
   npm install
   expo run:androind
+  or
+   expo run:ios
 ```
 Start App with run-android
 ```jsx
