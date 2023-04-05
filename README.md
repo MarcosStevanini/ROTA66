@@ -1,4 +1,5 @@
-![3287e7163965219 63ef7a2105e1c](https://user-images.githubusercontent.com/106246945/229942830-c23ca17c-406f-491e-97d6-115275d35ae3.png)
+![developed by Victor Ciechovicz](https://user-images.githubusercontent.com/106246945/229948251-566e81a8-31d4-477b-b36d-059b2463e1eb.png)
+
 
 # ****💻 AppRota66****
 
