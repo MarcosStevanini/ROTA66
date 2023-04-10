@@ -25,12 +25,15 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/logo.png",
         "backgroundColor": "#132440"
-      
       }
     },
     "web": {
       "favicon": "./src/assets/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7e2ae743-b87e-450a-ad71-44ebea88fc4e"
+      }
     }
-
   }
 }
